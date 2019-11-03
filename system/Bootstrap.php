@@ -6,7 +6,11 @@ class Bootstrap
 	{
         ///////////////////////////////---forms---///////////////////////////////
         if(isset($_POST['send_province'])){
-            var_dump($_POST);
+            $ostan_name=$_POST['ostan'];
+            $db = Db::getInstance();
+            $db->query("INSERT INTO bnm_ostan (name) VALUES ('bbb')");
+            //$req = $db->query("INSERT INTO bnm_ostan (name) VALUES ($ostan_name)");
+
         }
         ///////////////////////////////---forms---///////////////////////////////
 		$flag = FALSE;
