@@ -9,8 +9,8 @@ class Users extends My_controller
 
 	public function index()
 	{
-		$this->view->allUsers = R::findAll( 'bnm_users' );
-		$this->view->title = 'کاربران';
+//		$this->view->allUsers = R::findAll( 'bnm_users' );
+//		$this->view->title = 'کاربران';
 		$this->view->render('users/view');
 	}
 }

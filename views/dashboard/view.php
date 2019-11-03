@@ -8,41 +8,32 @@
     <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
 
     <!-- Global stylesheets -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-    <link href="global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/icons/icomoon/styles.css' ?>" />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap.min.css' ?>" />
-    <link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap_limitless.min.css' ?>" />
-    <link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>" />
-    <link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>" />
-    <link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/main.css' ?>" />
     <!-- /global stylesheets -->
 
     <!-- Core JS files -->
-    <script src="global_assets/js/main/jquery.min.js"></script>
-    <script src="global_assets/js/main/bootstrap.bundle.min.js"></script>
-    <script src="global_assets/js/plugins/loaders/blockui.min.js"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
     <!-- /core JS files -->
 
     <!-- Theme JS files -->
-    <script src="global_assets/js/plugins/visualization/d3/d3.min.js"></script>
-    <script src="global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
-    <script src="global_assets/js/plugins/forms/styling/switchery.min.js"></script>
-    <script src="global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
-    <script src="global_assets/js/plugins/ui/moment/moment.min.js"></script>
-    <script src="global_assets/js/plugins/pickers/daterangepicker.js"></script>
-
-    <script src="assets/js/app.js"></script>
-    <script src="global_assets/js/demo_pages/dashboard.js"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/plugins/visualization/d3/d3.min.js' ?>"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/plugins/visualization/d3/d3_tooltip.js' ?>"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' ?>"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/bootstrap_multiselect.js' ?>"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/plugins/ui/moment/moment.min.js' ?>"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/plugins/pickers/daterangepicker.js' ?>"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
+    <script src="<?php echo __ROOT__ . '/public/js/demo_pages/dashboard.js' ?>"></script>
     <!-- /theme JS files -->
-
 </head>
-
 <body>
 
 <!-- Main navbar -->
@@ -50,6 +41,7 @@
     <div class="navbar-brand">
         <a href="index.html" class="d-inline-block">
             <img src="global_assets/images/logo_light.png" alt="">
+            <img src="<?php echo __ROOT__ . '/public/images/logo_light.png' ?>" alt="">
         </a>
     </div>
 
@@ -174,7 +166,7 @@
                         <ul class="media-list">
                             <li class="media">
                                 <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="<?php echo __ROOT__ . '/public/images/placeholders/placeholder.jpg' ?>" alt="">
                                 </div>
                                 <div class="media-body">
                                     <a href="#" class="media-title font-weight-semibold">Jordana Ansley</a>
@@ -386,7 +378,7 @@
         <div class="sidebar-content">
 
             <!-- User menu -->
-            <div class="sidebar-user">
+            <!--<div class="sidebar-user">
                 <div class="card-body">
                     <div class="media">
                         <div class="mr-3">
@@ -414,25 +406,22 @@
                 <ul class="nav nav-sidebar" data-nav-type="accordion">
 
                     <!-- Main -->
-                    <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
+                    <li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">عنوان ها</div> <i class="icon-menu" title="Main"></i></li>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">
+                        <a href="<?php echo __ROOT__.'dashboard';?>" class="nav-link active">
                             <i class="icon-home4"></i>
                             <span>
-									Dashboard
+									داشبورد
 								</span>
                         </a>
                     </li>
                     <li class="nav-item nav-item-submenu">
-                        <a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
+                        <a href="#" class="nav-link"><i class="icon-copy"></i> <span>عنوان ها</span></a>
 
                         <ul class="nav nav-group-sub" data-submenu-title="Layouts">
-                            <li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>
-                            <li class="nav-item"><a href="layout_2/RTL/default/full/index.html" class="nav-link">Layout 2</a></li>
-                            <li class="nav-item"><a href="layout_3/RTL/default/full/index.html" class="nav-link">Layout 3</a></li>
-                            <li class="nav-item"><a href="layout_4/RTL/default/full/index.html" class="nav-link">Layout 4</a></li>
-                            <li class="nav-item"><a href="layout_5/RTL/default/full/index.html" class="nav-link">Layout 5</a></li>
-                            <li class="nav-item"><a href="layout_6/RTL/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+<!--                            <li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>-->
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'dashboard/province';?>" class="nav-link">استان و شهر</a></li>
+<!--                            <li class="nav-item"><a href="layout_6/RTL/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
                         </ul>
                     </li>
                     <li class="nav-item nav-item-submenu">

@@ -631,7 +631,7 @@ class RPDO implements Driver
 	 * @var string
 	 */
 	protected $mysqlCharset = '';
-	
+
 	/**
 	 * @var string
 	 */
@@ -2436,7 +2436,7 @@ class OODBBean implements\IteratorAggregate,\ArrayAccess,\Countable,Jsonable
 				throw new RedException( 'Cannot cast to bean.' );
 			}
 		}
-		
+
 		if ( $isFieldLink ){
 			unset( $this->properties[ $fieldName ]);
 			$this->properties[ $property ] = NULL;
@@ -5973,7 +5973,7 @@ class MySQL extends AQueryWriter implements QueryWriter
 		$charset_collate = $this->adapter->getDatabase()->getMysqlEncoding( TRUE );
 		$charset = $charset_collate['charset'];
 		$collate = $charset_collate['collate'];
-		
+
 		$sql   = "CREATE TABLE $table (id INT( 11 ) UNSIGNED NOT NULL AUTO_INCREMENT, PRIMARY KEY ( id )) ENGINE = InnoDB DEFAULT CHARSET={$charset} COLLATE={$collate} ";
 
 		$this->adapter->exec( $sql );
@@ -13231,7 +13231,7 @@ use RedBeanPHP\RedException as RedException;
  *
  * This is a helper or service class containing frequently used
  * array functions for dealing with SQL queries.
- * 
+ *
  * @file    RedBeanPHP/Util/ArrayTool.php
  * @author  Gabor de Mooij and the RedBeanPHP Community
  * @license BSD/GPLv2
@@ -13266,7 +13266,7 @@ class ArrayTool
 	 * @return array
 	 */
 	public static function flat( $array, $result = array() )
-	{		
+	{
 		foreach( $array as $value ) {
 			if ( is_array( $value ) ) $result = self::flat( $value, $result );
 			else $result[] = $value;
@@ -13285,7 +13285,7 @@ use RedBeanPHP\RedException as RedException;
  * Dispense Helper
  *
  * A helper class containing a dispense utility.
- * 
+ *
  * @file    RedBeanPHP/Util/DispenseHelper.php
  * @author  Gabor de Mooij and the RedBeanPHP Community
  * @license BSD/GPLv2
@@ -13332,8 +13332,8 @@ class DispenseHelper
 			if ( !isset( $typeOrBeanArray['_type'] ) ) {
 				$list = array();
 				foreach( $typeOrBeanArray as $beanArray ) {
-					if ( 
-						!( is_array( $beanArray ) 
+					if (
+						!( is_array( $beanArray )
 						&& isset( $beanArray['_type'] ) ) ) {
 						throw new RedException( 'Invalid Array Bean' );
 					}
@@ -13359,8 +13359,8 @@ class DispenseHelper
 
 		return $beanOrBeans;
 	}
-	
-	
+
+
 	/**
 	 * Takes a comma separated list of bean types
 	 * and dispenses these beans. For each type in the list
@@ -13424,7 +13424,7 @@ use RedBeanPHP\OODBBean as OODBBean;
  *
  * Dumps the contents of a bean in an array for
  * debugging purposes.
- * 
+ *
  * @file    RedBeanPHP/Util/Dump.php
  * @author  Gabor de Mooij and the RedBeanPHP Community
  * @license BSD/GPLv2
@@ -13727,7 +13727,7 @@ use RedBeanPHP\Finder;
  * A matchUp is a match-and-update combination in terms of beans.
  * Typically login related problems are all about a match and
  * a conditional update.
- * 
+ *
  * @file    RedBeanPHP/Util/MatchUp.php
  * @author  Gabor de Mooij and the RedBeanPHP Community
  * @license BSD/GPLv2
@@ -13827,7 +13827,7 @@ use RedBeanPHP\Finder;
  *
  * The Look Utility class provides an easy way to generate
  * tables and selects (pulldowns) from the database.
- * 
+ *
  * @file    RedBeanPHP/Util/Look.php
  * @author  Gabor de Mooij and the RedBeanPHP Community
  * @license BSD/GPLv2
@@ -13904,7 +13904,7 @@ use RedBeanPHP\Finder;
  *
  * The Look Utility class provides an easy way to generate
  * tables and selects (pulldowns) from the database.
- * 
+ *
  * @file    RedBeanPHP/Util/Diff.php
  * @author  Gabor de Mooij and the RedBeanPHP Community
  * @license BSD/GPLv2

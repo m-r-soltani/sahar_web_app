@@ -2,9 +2,15 @@
 
 class Dashboard extends My_controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     public function index()
     {
-        $this->view->title = __SITE_NAME__ . ' - Home';
-        $this->view->render('home');
+//		$this->view->allUsers = R::findAll( 'bnm_users' );
+//		$this->view->title = 'کاربران';
+        $this->view->render('dashboard/view',false);
     }
 }
