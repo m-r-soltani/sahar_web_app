@@ -4,6 +4,11 @@ class Bootstrap
 {
 	public function __construct() 
 	{
+        ///////////////////////////////---forms---///////////////////////////////
+        if(isset($_POST['send_province'])){
+            var_dump($_POST);
+        }
+        ///////////////////////////////---forms---///////////////////////////////
 		$flag = FALSE;
 		// 1. router
 		if (isset ($_GET['path'])) {
@@ -27,24 +32,22 @@ class Bootstrap
 					// default action
 					$controller->index();
 				}				
-			}
-			else {
+			} else {
                 //if controller not found render an error page
 				$flag = TRUE;
 			}
-		}
-		else {
+		} else {
 		    //if no controller entred
 			$controllerName = 'Home';
 			$controller = new $controllerName();
 			$controller->index();
 		}
-		
 		//Error404 page
 		if ( $flag ) {
 			$controllerName = 'Error404';
 			$controller = new $controllerName();
 			$controller->index();
 		}
+
 	}
 }
