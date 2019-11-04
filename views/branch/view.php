@@ -427,13 +427,115 @@
 
                     <form action="#" method="POST">
                         <fieldset class="mb-3">
-                            <legend class="text-uppercase font-size-sm font-weight-bold">استان</legend>
-
+                            <legend class="text-uppercase font-size-sm font-weight-bold">نماینده</legend>
                             <div class="form-group row">
-                                <label class="col-form-label col-lg-2">نام استان</label>
-                                <div class="col-lg-10">
+                                <label class="col-form-label col-lg-2">نام شرکت/موسسه</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: سحر ارتباط">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">شماره ثبت/پروانه</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 123ذر45">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">شناسه ملی</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 0013302033">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">کد اقتصادی</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 123">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">نوع شرکت/موسسه</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: سحر ارتباط">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">وب سایت</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: www.abc.com">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">پست الکترونیک</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: سحر ارتباط">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تلفن1</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 021-123456789">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تلفن2</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 021-123456789">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">دورنگار</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 021-123456789">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">استان</label>
+                                <div class="col-lg-4">
                                     <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران">
                                 </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">شهر</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">کد پستی</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 123456789">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">آدرس</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران خیابان شریعتی کوچه ...">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">لوگو شرکت/موسسه</label>
+                                    <div class="col-lg-4">
+                                        <input type="file" class="form-control-uniform" data-fouc>
+                                    </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصاویر محیطی شرکت</label>
+                                <div class="col-lg-4">
+                                    <input type="file" class="form-control-uniform" data-fouc>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصاوریر تابلو</label>
+                                <div class="col-lg-4">
+                                    <input type="file" class="form-control-uniform" data-fouc>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر کد اقتصادی</label>
+                                <div class="col-lg-4">
+                                    <input type="file" class="form-control-uniform" data-fouc>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر روزنامه تاسیس</label>
+                                <div class="col-lg-4">
+                                    <input type="file" class="form-control-uniform" data-fouc>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر شناسه ملی</label>
+                                <div class="col-lg-4">
+                                    <input type="file" class="form-control-uniform" data-fouc>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر آخرین تغغیرات</label>
+                                <div class="col-lg-4">
+                                    <input type="file" class="form-control-uniform" data-fouc>
+                                </div>
+                                <br><br>
+
+
                             </div>
                         </fieldset>
                         <div class="text-right">

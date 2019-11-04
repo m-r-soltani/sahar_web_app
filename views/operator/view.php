@@ -427,13 +427,119 @@
 
                     <form action="#" method="POST">
                         <fieldset class="mb-3">
-                            <legend class="text-uppercase font-size-sm font-weight-bold">استان</legend>
-
+                            <legend class="text-uppercase font-size-sm font-weight-bold">اپراتور</legend>
                             <div class="form-group row">
-                                <label class="col-form-label col-lg-2">نام استان</label>
+                                <label class="col-form-label col-lg-2">نام نمایندگی/موسسه</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: سحر ارتباط">
+                                </div>
+                                <label class="col-form-label col-lg-2">نام</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: محمد">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">نام خانوادگی</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: محمدی">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">کد ملی</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 0013302033">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">شماره شناسنامه</label>
                                 <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: اگر کد ملی و شناسنامه تان یکیست این فیلد را خالی بگذارید.">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">نام پدر</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: اکبر">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تاریخ تولد</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 10-10-1350">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">مدرک تحصیلی</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: لیسانس">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">رشته نحصیلی</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: کامپیوتر">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">استان محل تولد</label>
+                                <div class="col-lg-4">
                                     <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران">
                                 </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">شهر محل تولد</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تلفن همراه</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 0912123456789">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">شماره تماس محل سکونت</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 021-123456789">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">آدرس محل سکونت</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران خیابان شریعتی کوچه ...">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">پست الکترونیک</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: abcd@gmail.com">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">سمت</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: مدیر داخلی">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">نام کاربری</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="ostan" placeholder="نام کاربری">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">رمز عبور</label>
+                                <div class="col-lg-10">
+                                    <input type="password" class="form-control" name="ostan" placeholder="رمز عبور">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر کارت ملی</label>
+                                <div class="col-lg-4">
+                                    <input type="file" class="form-control-uniform" data-fouc>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر شناسنامه</label>
+                                <div class="col-lg-4">
+                                    <input type="file" class="form-control-uniform" data-fouc>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر مدرک نحصیلی</label>
+                                <div class="col-lg-4">
+                                    <input type="file" class="form-control-uniform" data-fouc>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر چهره</label>
+                                <div class="col-lg-4">
+                                    <input type="file" class="form-control-uniform" data-fouc>
+                                </div>
+                                <br><br>
+
+
                             </div>
                         </fieldset>
                         <div class="text-right">
