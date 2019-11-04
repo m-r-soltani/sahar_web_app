@@ -36,8 +36,16 @@
 
                     <ul class="nav nav-group-sub" data-submenu-title="Layouts">
                         <!--                            <li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>-->
-                        <li class="nav-item"><a href="<?php echo __ROOT__.'province';?>" class="nav-link">استان و شهر</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'province';?>" class="nav-link">استان</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'city';?>" class="nav-link">شهر</a></li>
                         <!--                            <li class="nav-item"><a href="layout_6/RTL/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
+                    </ul>
+                </li>
+                <li class="nav-item nav-item-submenu">
+                    <a href="#" class="nav-link"><i class="icon-people"></i> <span>نمایندگی</span></a>
+                    <ul class="nav nav-group-sub" data-submenu-title="User pages">
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'branch';?>" class="nav-link">ثبت نمایندگی</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'operator';?>" class="nav-link">ثبت اپراتور</a></li>
                     </ul>
                 </li>
                 <li class="nav-item nav-item-submenu">
@@ -724,16 +732,6 @@
                                 <li class="nav-item"><a href="error_offline.html" class="nav-link">Offline page</a></li>
                             </ul>
                         </li>
-                    </ul>
-                </li>
-                <li class="nav-item nav-item-submenu">
-                    <a href="#" class="nav-link"><i class="icon-people"></i> <span>User pages</span></a>
-                    <ul class="nav nav-group-sub" data-submenu-title="User pages">
-                        <li class="nav-item"><a href="user_pages_list.html" class="nav-link">User list</a></li>
-                        <li class="nav-item"><a href="user_pages_cards.html" class="nav-link">User cards</a></li>
-                        <li class="nav-item"><a href="user_pages_profile.html" class="nav-link">Simple profile</a></li>
-                        <li class="nav-item"><a href="user_pages_profile_tabbed.html" class="nav-link">Tabbed profile</a></li>
-                        <li class="nav-item"><a href="user_pages_profile_cover.html" class="nav-link">Profile with cover</a></li>
                     </ul>
                 </li>
                 <li class="nav-item nav-item-submenu">
