@@ -49,6 +49,13 @@
                     </ul>
                 </li>
                 <li class="nav-item nav-item-submenu">
+                    <a href="#" class="nav-link"><i class="icon-users4"></i> <span>مشترکین</span></a>
+                    <ul class="nav nav-group-sub" data-submenu-title="User pages">
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'real_subscribers';?>" class="nav-link">مشترکین حقیقی</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'legal_subscribers';?>" class="nav-link">مشترکین حقوقی</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-item-submenu">
                     <a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Themes</span></a>
 
                     <ul class="nav nav-group-sub" data-submenu-title="Themes">
