@@ -15,20 +15,9 @@
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
-
+    <!--<link rel="stylesheet" href="<?php /*echo __ROOT__ . '/public/css/persianDatepicker-latoja.css' */?>" />-->
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>" />
     <!-- /global stylesheets -->
-
-    <!-- Core JS files -->
-    <script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
-    <!-- /core JS files -->
-
-    <!-- Theme JS files -->
-    <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
-    <!-- /theme JS files -->
 </head>
 <body>
 
@@ -430,23 +419,23 @@
                         <fieldset class="mb-3">
                             <legend class="text-uppercase font-size-sm font-weight-bold">مشترکین حقوقی</legend>
                             <div class="form-group row">
-                                <label class="col-form-label col-lg-2">نام نمایندگی/موسسه</label>
+                                <label class="col-form-label col-lg-2">نام کامل(انگلیسی)</label>
                                 <div class="col-lg-4">
                                     <input type="text" class="form-control" name="ostan" placeholder="مثال: سحر ارتباط">
                                 </div>
-                                <label class="col-form-label col-lg-2">نام</label>
+                                <label class="col-form-label col-lg-2">نام شرکت</label>
                                 <div class="col-lg-4">
                                     <input type="text" class="form-control" name="ostan" placeholder="مثال: محمد">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">نام خانوادگی</label>
+                                <label class="col-form-label col-lg-2">شماره ثبت</label>
                                 <div class="col-lg-4">
                                     <input type="text" class="form-control" name="ostan" placeholder="مثال: محمدی">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">کد ملی</label>
+                                <label class="col-form-label col-lg-2">تاریخ ثبت</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 0013302033">
+                                    <input type="text" class="form-control usage" name="tarikh_sabt" id="usage" placeholder="مثال: 0013302033">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شماره شناسنامه</label>
@@ -586,3 +575,19 @@
 
 </body>
 </html>
+<!-- Core JS files -->
+<script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
+<!--<script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>
+<script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>-->
+<script src="<?php echo __ROOT__ . '/public/js/persian-date.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/persian-datepicker.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/legal_subscribers.js' ?>"></script>
+<!-- /theme JS files -->
