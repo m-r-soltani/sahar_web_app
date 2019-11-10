@@ -42,10 +42,21 @@
                     </ul>
                 </li>
                 <li class="nav-item nav-item-submenu">
-                    <a href="#" class="nav-link"><i class="icon-people"></i> <span>نمایندگی</span></a>
+                    <a href="#" class="nav-link"><i class="icon-stack"></i> <span>تعاریف</span></a>
+                    <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'popsite';?>" class="nav-link">پاپ سایت</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'telecommunications_center';?>" class="nav-link">مرکز مخابراتی</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'terminal';?>" class="nav-link">ترمینال</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'pre_number';?>" class="nav-link">پیش شماره</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'host';?>" class="nav-link">میزبان</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'wireless_ap';?>" class="nav-link">Wireless-AP</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-item-submenu">
+                    <a href="#" class="nav-link"><i class="icon-people"></i> <span>نمایندگی ها</span></a>
                     <ul class="nav nav-group-sub" data-submenu-title="User pages">
-                        <li class="nav-item"><a href="<?php echo __ROOT__.'branch';?>" class="nav-link">ثبت نمایندگی</a></li>
-                        <li class="nav-item"><a href="<?php echo __ROOT__.'operator';?>" class="nav-link">ثبت اپراتور</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'branch';?>" class="nav-link">نمایندگی</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'operator';?>" class="nav-link">اپراتور</a></li>
                     </ul>
                 </li>
                 <li class="nav-item nav-item-submenu">
