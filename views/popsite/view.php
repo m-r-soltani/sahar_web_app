@@ -414,50 +414,20 @@
                 <div class="card-body">
                     <form action="" method="POST">
                         <fieldset class="mb-3">
-                            <legend class="text-uppercase font-size-sm font-weight-bold">مشترکین حقوقی</legend>
+                            <legend class="text-uppercase font-size-sm font-weight-bold">تعریف پاپ سایت</legend>
                             <div class="form-group row">
-                                <label class="col-form-label col-lg-2">نام کامل(انگلیسی)</label>
+                                <label class="col-form-label col-lg-2">نام دکل</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: سحر ارتباط">
+                                    <input type="text" class="form-control" name="name_dakal" placeholder="نام دکل">
                                 </div>
-                                <label class="col-form-label col-lg-2">نام شرکت</label>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">نوع دکل</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: محمد">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">شماره ثبت</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: محمدی">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">تاریخ ثبت</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control usage" name="tarikh_sabt" id="tarikh_sabt" placeholder="مثال: 12/12/1350">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">نام مدیر عامل/نماینده</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: اگر کد ملی و شناسنامه تان یکیست این فیلد را خالی بگذارید.">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">نام خانوادگی مدیر عامل / نماینده</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: اکبر">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">نام انگلیسی مدیر عامل / نماینده</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="eng_name_modir" placeholder="مثال: Mohammad">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">ملیت مدیر عامل / نماینده</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="tabeiat_meliat" placeholder="مثال: ایران">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">تابعیت مدیر عامل / نماینده</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="tabeiat_modir" placeholder="مثال: ایران">
+                                    <select class="form-control form-control-lg" name="noe_dakal">
+                                        <option value="faghededakal">فاقد دکل</option>
+                                        <option value="mahari">مهاری</option>
+                                        <option value="khodista">خود ایستا</option>
+                                    </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">استان</label>
@@ -467,162 +437,143 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران">
+                                    <input type="text" class="form-control" name="shahr" placeholder="مثال: تهران">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">تلفن</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 02112345678">
+                                <label class="col-form-label col-lg-2">نشانی</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="neshani" placeholder="مثال: تهران">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">شماره داخلی</label>
+                                <label class="col-form-label col-lg-2">ارتفاع ساختمان</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="shomare_dakheli" placeholder="مثال: 021-123456789">
+                                    <input type="text" class="form-control" name="ertefa_sakhteman" placeholder="مثال: 20 متر(عدد بدون اعشار)">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">تلفن همراه</label>
+                                <label class="col-form-label col-lg-2">ارتفاع دکل</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="telephone_hamrah" placeholder="مثال: 09121234567">
+                                    <input type="text" class="form-control" name="ertefa_dakal" placeholder="مثال: 10 متر(عدد بدون اعشار)">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">پست الکترونیک</label>
+                                <label class="col-form-label col-lg-2">مجموع ارتفاع</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="email" placeholder="مثال: abcd@gmail.com">
+                                    <input type="text" class="form-control" name="majmoe_ertefa" placeholder="مثال: 10 متر(عدد بدون اعشار)">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">فکس</label>
+                                <label class="col-form-label col-lg-2">طول جغرافیایی</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="fax" placeholder="مثال: مدیر داخلی">
+                                    <input type="text" class="form-control" name="tol_joghrafiai" placeholder="مثال: [ثانیه][دقیقه]N[ساعت]">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">وب سایت</label>
+                                <label class="col-form-label col-lg-2">عرض جغرافیایی</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: www.saharertebat.net">
+                                    <input type="text" class="form-control" name="arz_joghrafiai" placeholder="مثال: [ثانیه][دقیقه]E[ساعت]">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">شماره ثبت دکل</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="shomare_sabt_dakal" placeholder="مثال: 12345">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">کد پستی</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="code_posti" placeholder="مثال: www.saharertebat.net">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">آدرس</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: www.saharertebat.net">
-                                </div>
-                                <br><br>
-                                    <label class="col-form-label col-lg-2">نوع</label>
-                                <div class="col-lg-10">
-                                    <select class="form-control form-control-lg">
-                                        <option value="opt1">Large select height</option>
-                                        <option value="opt2">Option 2</option>
-                                        <option value="opt3">Option 3</option>
-                                    </select>
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">کد اقتصادی</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: www.saharertebat.net">
+                                    <input type="text" class="form-control" name="code_posti" placeholder="10 رقمی">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">شماره شناسه ملی</label>
+                                <label class="col-form-label col-lg-2">مالک دکل</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="shenase_meli" placeholder="مثال: www.saharertebat.net">
+                                    <input type="text" class="form-control" name="malek_dakal" placeholder="10 رقمی">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">شماره شناسنامه</label>
+                                <label class="col-form-label col-lg-2">شماره تماس مالک</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: www.saharertebat.net">
+                                    <input type="text" class="form-control" name="shomare_tamas_malek" placeholder="10 رقمی">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">تاریخ تولد مدیر عامل / نماینده</label>
+                                <label class="col-form-label col-lg-2">نوع مالکیت</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control usage" name="tarikh_sabt" id="tarikh_sabt" placeholder="مثال: 12/12/1350">
+                                    <select class="form-control form-control-lg" name="noe_malekiat">
+                                        <option value="estijari">استیجاری</option>
+                                        <option value="malekiat">مالکیت</option>
+                                    </select>
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">تاریخ تولد مدیر عامل / نماینده</label>
+                                <label class="col-form-label col-lg-2">رتبه دکل</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control usage" name="tarikh_sabt" id="tarikh_sabt" placeholder="مثال: 12/12/1350">
+                                    <select class="form-control form-control-lg" name="rotbe_dakal">
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                    </select>
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">نام پدر مدیر عامل / نماینده</label>
+                                <label class="col-form-label col-lg-2">میزبان دکل</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control usage" name="" id="" placeholder="مثال: 12/12/1350">
+                                    <input type="text" class="form-control" name="mizbane_dakal" placeholder="مثال: سحر ارتباط">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">جنسیت مدیر عامل / نماینده</label>
+                                <label class="col-form-label col-lg-2">نام پشتیبان دکل</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="name_poshtiban" placeholder="مثال: محمد">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">نام خانوادگی پشتیبان</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="family_poshtiban" placeholder="مثال: محمدی">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">شماره تماس پشتیبان</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="shoamre_tamas_poshtiban" placeholder="مثال: محمدی">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">اجاره ماهیانه نصب آنتن بر روی دکل</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ejare_mahiane_nasbe_anten_roye_dakal" placeholder="مثال: محمدی">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">مسیر اول فاکتورهای دکل</label>
                                 <div class="col-lg-10">
-                                    <select class="form-control form-control-lg" name="jensiat">
-                                        <option value="man">مرد</option>
-                                        <option value="woman">زن</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="ejare_mahiane_nasbe_anten_roye_dakal" placeholder="مثال: محمدی">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">گروه مشترک</label>
-                                <div class="col-lg-10">
-                                    <select class="form-control form-control-lg" name="jensiat">
-                                        <option value="1">1</option>
-                                        <option value="2    ">2</option>
-                                    </select>
+                                <label class="col-form-label col-lg-12">امکانات دکل:</label>
+                                <div class="form-check form-check-switchery">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">بیمه دکل
+                                    </label>
                                 </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">نوع شناسه هویتی مدیر عامل / نماینده</label>
-                                <div class="col-lg-10">
-                                    <select class="form-control form-control-lg">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
+                                <div class="form-check form-check-switchery">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">برق اضطراری
+                                    </label>
                                 </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">رشته تحصیلی مدیر عامل</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: www.saharertebat.net">
+                                <div class="form-check form-check-switchery">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">باطری پشتیبان
+                                    </label>
                                 </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">مدرک دانشگاهی مدیر عامل</label>
-                                <div class="col-lg-10">
-                                    <select class="form-control form-control-lg">
-                                        <option value="diplom">دیپلم</option>
-                                        <option value="foghdiplom">فوق دیپلم</option>
-                                        <option value="lisanse">لیسانس</option>
-                                        <option value="foghlisanse">فوق لیسانس</option>
-                                        <option value="doktora">دکتری</option>
-                                    </select>
+                                <div class="form-check form-check-switchery">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">چراغ دکل
+                                    </label>
                                 </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">رشته فعالیت</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: www.saharertebat.net">
+                                <div class="form-check form-check-switchery">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">ارت
+                                    </label>
                                 </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">نحوه معرفی</label>
-                                <div class="col-lg-10">
-                                    <select class="form-control form-control-lg">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
+                                <div class="form-check form-check-switchery">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">امکان استفاده از دکل برای نصب آنتن
+                                    </label>
                                 </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">نحوه آشنایی کمپین</label>
-                                <div class="col-lg-10">
-                                    <select class="form-control form-control-lg">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
+                                <div class="form-check form-check-switchery">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">اجازه دسترسی 24 ساعته به دکل
+                                    </label>
                                 </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">معرف</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="معرف">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">توضیحات</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="توضیحات">
-                                </div>
-                                <br><br>
                             </div>
                         </fieldset>
                         <div class="text-right">
@@ -676,7 +627,11 @@
 
 <!-- Theme JS files -->
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/js/plugins/forms/styling/switch.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_checkboxes_radios.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
 <!--<script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>
 <script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>-->
