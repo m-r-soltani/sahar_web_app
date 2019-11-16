@@ -1,5 +1,5 @@
-<?php defined('__ROOT__') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
+<?php defined('__ROOT__') OR exit('No direct script access allowed'); ?>
 <html lang="en" dir="rtl">
 <head>
     <meta charset="utf-8">
@@ -17,18 +17,6 @@
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
 
     <!-- /global stylesheets -->
-
-    <!-- Core JS files -->
-    <script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
-    <!-- /core JS files -->
-
-    <!-- Theme JS files -->
-    <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
-    <!-- /theme JS files -->
 </head>
 <body>
 
@@ -430,9 +418,11 @@
                             <legend class="text-uppercase font-size-sm font-weight-bold">شهر</legend>
 
                             <div class="form-group row">
-                                <label class="col-form-label col-lg-2">انتخاب استان</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران">
+                                <label class="col-form-label col-lg-2" id="mytestostan">انتخاب استان</label>
+                                <div class="col-lg-4">
+                                    <select class="form-control form-control-lg" name="noe_dakal">
+                                        <option value="">1</option>
+                                    </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نام شهر</label>
@@ -484,3 +474,16 @@
 
 </body>
 </html>
+<!-- Core JS files -->
+<script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/functions.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/city.js' ?>"></script>
+<!-- /theme JS files -->

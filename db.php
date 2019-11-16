@@ -18,11 +18,16 @@
 							$username,
 							$password,
 							$pdo_options);
-		}
-		catch(PDOException $ex){
+		} catch(PDOException $ex){
 			die(json_encode(array('outcome' => false, 'message' => 'Unable to connect')));
 		}
       }
       return self::$instance;
+    }
+    public static function fetchall_Query($query,$params=array()){
+        $stmt=self::getInstance()->prepare($query);
+        $stmt->execute($params);
+        $data=$stmt->fetchAll();
+        return $data;
     }
   }
