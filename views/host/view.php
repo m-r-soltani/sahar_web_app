@@ -416,24 +416,86 @@
                         <fieldset class="mb-3">
                             <legend class="text-uppercase font-size-sm font-weight-bold">میزبان</legend>
                             <div class="form-group row">
+                                <label class="col-form-label col-lg-2">مرکز مخابراتی</label>
+                                <div class="col-lg-4">
+                                    <select class="form-control form-control-lg" name="markaz_mokhaberati">
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">نوع ترمینال</label>
+                                <div class="col-lg-4">
+                                    <select class="form-control form-control-lg" name="noe_terminal">
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">استان</label>
+                                <div class="col-lg-4">
+                                    <select class="form-control form-control-lg" name="ostan">
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">شهر</label>
+                                <div class="col-lg-4">
+                                    <select class="form-control form-control-lg" name="shahr">
+                                        <option value="faghededakal">1</option>
+                                    </select>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">ردیف</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="radif" placeholder="ردیف">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تیغه</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="tighe" placeholder="تیغه">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">اتصالی</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="etesali" placeholder="اتصالی">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تا پورت</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="ta_port" placeholder="تا پورت">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">میزبان</label>
+                                <div class="col-lg-4">
+                                    <select class="form-control form-control-lg" name="mizban">
+                                        <option value="faghededakal">1</option>
+                                    </select>
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">نوع قرارداد</label>
+                                <div class="col-lg-4">
+                                    <select class="form-control form-control-lg" name="noe_gharardad">
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                                <br><br>
                                 <label class="col-form-label col-lg-2">ip ppoe server</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="neshani" placeholder="مثال: تهران">
+                                    <input type="text" class="form-control" name="ip_ppoe_server" placeholder="ip ppoe server">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">user ppoe server</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="neshani" placeholder="مثال: تهران">
+                                    <input type="text" class="form-control" name="user_ppoe_server" placeholder="user ppoe server">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">password ppoe server</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="neshani" placeholder="مثال: تهران">
+                                    <input type="text" class="form-control" name="password_ppoe_server" placeholder="password ppoe server">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">snmp ppoe server</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="neshani" placeholder="مثال: تهران">
+                                    <input type="text" class="form-control" name="snmp_ppoe_server" placeholder="snmp ppoe server">
                                 </div>
                                 <br><br>
                             </div>

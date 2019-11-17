@@ -24,19 +24,25 @@ function GETSITEURL(){
 
 }
 
-function GetProvinces(data){
+/**
+ * @return {string}
+ */
+function GetProvinces(data/*felan kari anjam nemide*/,callback){
     $.ajax({
         type: "post",
         url: "aaa",
+        timeout:5000,
         data: {GetProvinces:data},
         // dataType:'JSON',
         success: function(response){
             //console.log(response);
             // put on console what server sent back...
-            return response;
+            //console.log(response);
+            response=JSON.parse(response);
+            return callback(response);
         },
         error:function (req,res,status) {
-            return 'request_failed';
+            return callback(false);
         }
     });
 }

@@ -420,8 +420,8 @@
                             <div class="form-group row">
                                 <label class="col-form-label col-lg-2" id="mytestostan">انتخاب استان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_dakal">
-                                        <option value="">1</option>
+                                    <select class="form-control form-control-lg" name="entekhab_ostan">
+                                        <option value=""></option>
                                     </select>
                                 </div>
                                 <br><br>

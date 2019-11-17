@@ -57,12 +57,19 @@ class Bootstrap
             //$req = $db->query("INSERT INTO bnm_ostan (name) VALUES ($ostan_name)");
         }
         if(isset($_POST['GetProvinces'])){
-            //$res=$db->query("SELECT * FROM bnm_ostan");
-            /*$res=Db::fetchall_Query("SELECT * FROM bnm_ostan");
-            if ($res){
-                echo 123;
-            }*/
 
+            $connect = Db::getInstance();
+            $sql="SELECT * FROM bnm_ostan";
+            $result=$connect->prepare($sql);
+            $result->execute();
+            $rows=$result->fetchAll();
+            $rows=json_encode($rows);
+            //$rows=serialize($rows);
+            echo $rows;
+
+
+
+            //$res=Db::fetchall_Query("SELECT * FROM bnm_ostan");
         }
 //		else {
 //		    //if no controller entred

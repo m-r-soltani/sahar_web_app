@@ -24,9 +24,9 @@
       }
       return self::$instance;
     }
-    public static function fetchall_Query($query,$params=array()){
+    public static function fetchall_Query($query){
         $stmt=self::getInstance()->prepare($query);
-        $stmt->execute($params);
+        $stmt->execute($query);
         $data=$stmt->fetchAll();
         return $data;
     }
