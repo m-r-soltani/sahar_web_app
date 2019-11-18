@@ -8,15 +8,14 @@
     <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
 
     <!-- Global stylesheets -->
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/main.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/icons/icomoon/styles.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap_limitless.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
-    <!--<link rel="stylesheet" href="<?php /*echo __ROOT__ . '/public/css/persianDatepicker-latoja.css' */?>" />-->
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/main.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/icons/icomoon/styles.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap_limitless.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>"/>
     <!-- /global stylesheets -->
 </head>
 <body>
@@ -64,7 +63,9 @@
                         <ul class="media-list">
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i class="icon-git-pull-request"></i></a>
+                                    <a href="#"
+                                       class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i
+                                                class="icon-git-pull-request"></i></a>
                                 </div>
 
                                 <div class="media-body">
@@ -75,7 +76,9 @@
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-transparent border-warning text-warning rounded-round border-2 btn-icon"><i class="icon-git-commit"></i></a>
+                                    <a href="#"
+                                       class="btn bg-transparent border-warning text-warning rounded-round border-2 btn-icon"><i
+                                                class="icon-git-commit"></i></a>
                                 </div>
 
                                 <div class="media-body">
@@ -86,29 +89,38 @@
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-transparent border-info text-info rounded-round border-2 btn-icon"><i class="icon-git-branch"></i></a>
+                                    <a href="#"
+                                       class="btn bg-transparent border-info text-info rounded-round border-2 btn-icon"><i
+                                                class="icon-git-branch"></i></a>
                                 </div>
 
                                 <div class="media-body">
-                                    <a href="#">Chris Arney</a> created a new <span class="font-weight-semibold">Design</span> branch
+                                    <a href="#">Chris Arney</a> created a new <span
+                                            class="font-weight-semibold">Design</span> branch
                                     <div class="text-muted font-size-sm">2 hours ago</div>
                                 </div>
                             </li>
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon"><i class="icon-git-merge"></i></a>
+                                    <a href="#"
+                                       class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon"><i
+                                                class="icon-git-merge"></i></a>
                                 </div>
 
                                 <div class="media-body">
-                                    <a href="#">Eugene Kopyov</a> merged <span class="font-weight-semibold">Master</span> and <span class="font-weight-semibold">Dev</span> branches
+                                    <a href="#">Eugene Kopyov</a> merged <span
+                                            class="font-weight-semibold">Master</span> and <span
+                                            class="font-weight-semibold">Dev</span> branches
                                     <div class="text-muted font-size-sm">Dec 18, 18:36</div>
                                 </div>
                             </li>
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <a href="#" class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i class="icon-git-pull-request"></i></a>
+                                    <a href="#"
+                                       class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i
+                                                class="icon-git-pull-request"></i></a>
                                 </div>
 
                                 <div class="media-body">
@@ -122,8 +134,10 @@
                     <div class="dropdown-content-footer bg-light">
                         <a href="#" class="text-grey mr-auto">All updates</a>
                         <div>
-                            <a href="#" class="text-grey" data-popup="tooltip" title="Mark all as read"><i class="icon-radio-unchecked"></i></a>
-                            <a href="#" class="text-grey ml-2" data-popup="tooltip" title="Bug tracker"><i class="icon-bug2"></i></a>
+                            <a href="#" class="text-grey" data-popup="tooltip" title="Mark all as read"><i
+                                        class="icon-radio-unchecked"></i></a>
+                            <a href="#" class="text-grey ml-2" data-popup="tooltip" title="Bug tracker"><i
+                                        class="icon-bug2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -151,57 +165,67 @@
                         <ul class="media-list">
                             <li class="media">
                                 <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36"
+                                         class="rounded-circle" alt="">
                                 </div>
                                 <div class="media-body">
                                     <a href="#" class="media-title font-weight-semibold">Jordana Ansley</a>
                                     <span class="d-block text-muted font-size-sm">Lead web developer</span>
                                 </div>
-                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-success"></span></div>
+                                <div class="ml-3 align-self-center"><span
+                                            class="badge badge-mark border-success"></span></div>
                             </li>
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36"
+                                         class="rounded-circle" alt="">
                                 </div>
                                 <div class="media-body">
                                     <a href="#" class="media-title font-weight-semibold">Will Brason</a>
                                     <span class="d-block text-muted font-size-sm">Marketing manager</span>
                                 </div>
-                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-danger"></span></div>
+                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-danger"></span>
+                                </div>
                             </li>
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36"
+                                         class="rounded-circle" alt="">
                                 </div>
                                 <div class="media-body">
                                     <a href="#" class="media-title font-weight-semibold">Hanna Walden</a>
                                     <span class="d-block text-muted font-size-sm">Project manager</span>
                                 </div>
-                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-success"></span></div>
+                                <div class="ml-3 align-self-center"><span
+                                            class="badge badge-mark border-success"></span></div>
                             </li>
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36"
+                                         class="rounded-circle" alt="">
                                 </div>
                                 <div class="media-body">
                                     <a href="#" class="media-title font-weight-semibold">Dori Laperriere</a>
                                     <span class="d-block text-muted font-size-sm">Business developer</span>
                                 </div>
-                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-warning-300"></span></div>
+                                <div class="ml-3 align-self-center"><span
+                                            class="badge badge-mark border-warning-300"></span></div>
                             </li>
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36"
+                                         class="rounded-circle" alt="">
                                 </div>
                                 <div class="media-body">
                                     <a href="#" class="media-title font-weight-semibold">Vanessa Aurelius</a>
                                     <span class="d-block text-muted font-size-sm">UX expert</span>
                                 </div>
-                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-grey-400"></span></div>
+                                <div class="ml-3 align-self-center"><span
+                                            class="badge badge-mark border-grey-400"></span></div>
                             </li>
                         </ul>
                     </div>
@@ -230,7 +254,8 @@
                         <ul class="media-list">
                             <li class="media">
                                 <div class="mr-3 position-relative">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36"
+                                         class="rounded-circle" alt="">
                                 </div>
 
                                 <div class="media-body">
@@ -247,7 +272,8 @@
 
                             <li class="media">
                                 <div class="mr-3 position-relative">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36"
+                                         class="rounded-circle" alt="">
                                 </div>
 
                                 <div class="media-body">
@@ -264,7 +290,8 @@
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36"
+                                         class="rounded-circle" alt="">
                                 </div>
                                 <div class="media-body">
                                     <div class="media-title">
@@ -280,7 +307,8 @@
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36"
+                                         class="rounded-circle" alt="">
                                 </div>
                                 <div class="media-body">
                                     <div class="media-title">
@@ -296,7 +324,8 @@
 
                             <li class="media">
                                 <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36"
+                                         class="rounded-circle" alt="">
                                 </div>
                                 <div class="media-body">
                                     <div class="media-title">
@@ -313,7 +342,8 @@
                     </div>
 
                     <div class="dropdown-content-footer justify-content-center p-0">
-                        <a href="#" class="bg-light text-grey w-100 py-2" data-popup="tooltip" title="Load more"><i class="icon-menu7 d-block top-0"></i></a>
+                        <a href="#" class="bg-light text-grey w-100 py-2" data-popup="tooltip" title="Load more"><i
+                                    class="icon-menu7 d-block top-0"></i></a>
                     </div>
                 </div>
             </li>
@@ -327,7 +357,8 @@
                 <div class="dropdown-menu dropdown-menu-right">
                     <a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
                     <a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
-                    <a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span class="badge badge-pill bg-blue ml-auto">58</span></a>
+                    <a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span
+                                class="badge badge-pill bg-blue ml-auto">58</span></a>
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
                     <a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
@@ -343,7 +374,7 @@
 <div class="page-content">
 
     <!-- Main sidebar -->
-    <?php require_once('dashboard_sidemenu.php');?>
+    <?php require_once('dashboard_sidemenu.php'); ?>
     <!-- /main sidebar -->
 
 
@@ -354,15 +385,19 @@
         <div class="page-header page-header-light">
             <div class="page-header-content header-elements-md-inline">
                 <div class="page-title d-flex">
-                    <h4><i class="icon-arrow-right6 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Basic Inputs</h4>
+                    <h4><i class="icon-arrow-right6 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Basic
+                        Inputs</h4>
                     <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
                 </div>
 
                 <div class="header-elements d-none">
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-                        <a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-                        <a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+                        <a href="#" class="btn btn-link btn-float text-default"><i
+                                    class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
+                        <a href="#" class="btn btn-link btn-float text-default"><i
+                                    class="icon-calculator text-primary"></i> <span>Invoices</span></a>
+                        <a href="#" class="btn btn-link btn-float text-default"><i
+                                    class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
                     </div>
                 </div>
             </div>
@@ -414,94 +449,63 @@
                 <div class="card-body">
                     <form action="" method="POST">
                         <fieldset class="mb-3">
-                            <legend class="text-uppercase font-size-sm font-weight-bold">میزبان</legend>
                             <div class="form-group row">
-                                <label class="col-form-label col-lg-2">مرکز مخابراتی</label>
+                                <legend class="text-uppercase font-size-sm font-weight-bold">میزبان</legend>
+                                <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="markaz_mokhaberati">
-                                        <option value="1">1</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="name_service_dahande" placeholder="مثال: " required>
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">نوع ترمینال</label>
+                                <label class="col-form-label col-lg-2">شماره مجوز</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_terminal">
-                                        <option value="1">1</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="shomare_mojavez" placeholder="مثال: 123456" required>
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">استان</label>
-                                <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="ostan">
-                                        <option value="1">1</option>
-                                    </select>
+                                <label class="col-form-label col-lg-2">آدرس</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="address" placeholder="مثال: تهران-خیابان شریعتی ..." required>
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">شهر</label>
+                                <label class="col-form-label col-lg-2">شماره تماس</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="shahr">
-                                        <option value="faghededakal">1</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="shomare_tamas" placeholder="مثال: 09121234567" required>
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">ردیف</label>
+                                <label class="col-form-label col-lg-2">تلفن پشتیبانی</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="radif" placeholder="ردیف">
+                                    <input type="text" class="form-control" name="telephone_poshtibani" placeholder="مثال: 88123456" required>
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">تیغه</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="tighe" placeholder="تیغه">
+                                <label class="col-form-label col-lg-2">وب سایت</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="website" placeholder="مثال: wwww.saharertebat.net" required>
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">اتصالی</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="etesali" placeholder="اتصالی">
+                                <label class="col-form-label col-lg-2">آدرس شکایات</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="address_shekayat" placeholder="مثال: تهران-خیابان شریعتی ...">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">تا پورت</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ta_port" placeholder="تا پورت">
+                                <label class="col-form-label col-lg-2">آدرس شکایات</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" name="address_shekayat" placeholder="مثال: تهران-خیابان شریعتی ...">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">میزبان</label>
+                                <label class="col-form-label col-lg-2">آدرس لوگو</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="mizban">
-                                        <option value="faghededakal">1</option>
-                                    </select>
+                                    <input type="file" class="form-control-uniform" name="address_logo">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">نوع قرارداد</label>
+                                <label class="col-form-label col-lg-2">نام تعرفه</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_gharardad">
-                                        <option value="1">1</option>
-                                    </select>
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">ip ppoe server</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ip_ppoe_server" placeholder="ip ppoe server">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">user ppoe server</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="user_ppoe_server" placeholder="user ppoe server">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">password ppoe server</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="password_ppoe_server" placeholder="password ppoe server">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">snmp ppoe server</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="snmp_ppoe_server" placeholder="snmp ppoe server">
+                                    <input type="text" class="form-control" name="name_tarefe" placeholder="نام تعرفه">
                                 </div>
                                 <br><br>
                             </div>
                         </fieldset>
                         <div class="text-right">
-                            <button type="submit" name="send_province" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
+                            <button type="submit" name="send_province" class="btn btn-primary">ارسال <i
+                                        class="icon-paperplane ml-2"></i></button>
                         </div>
                     </form>
                 </div>
@@ -515,7 +519,8 @@
         <!-- Footer -->
         <div class="navbar navbar-expand-lg navbar-light">
             <div class="text-center d-lg-none w-100">
-                <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+                <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+                        data-target="#navbar-footer">
                     <i class="icon-unfold mr-2"></i>
                     Footer
                 </button>
@@ -523,13 +528,19 @@
 
             <div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a
+                                href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
 					</span>
 
                 <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
-                    <li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
-                    <li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+                    <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i
+                                    class="icon-lifebuoy mr-2"></i> Support</a></li>
+                    <li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link"
+                                            target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
+                    <li class="nav-item"><a
+                                href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov"
+                                class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i
+                                        class="icon-cart2 mr-2"></i> Purchase</span></a></li>
                 </ul>
             </div>
         </div>
@@ -551,7 +562,11 @@
 
 <!-- Theme JS files -->
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/js/plugins/forms/styling/switch.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_checkboxes_radios.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
 <!--<script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>
 <script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>-->
