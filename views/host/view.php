@@ -501,6 +501,52 @@
                                     <input type="text" class="form-control" name="name_tarefe" placeholder="نام تعرفه">
                                 </div>
                                 <br><br>
+                                <label class="col-form-label col-lg-12">نوع سرویس :</label>
+                                <div class="form-check form-check-switchery col-lg-3">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="dsl_lisense">لایسنس DSL
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-switchery col-lg-3">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="bitstream_dsl">بیت استریم DSL
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-switchery col-lg-3">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="lisense_wlan">لایسنس WLAN
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-switchery col-lg-3">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="bitstream_wlan">بیت استریم WLAN
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-switchery col-lg-3">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="td_lte">TD-LTE
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-switchery col-lg-3">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="ngn">NGN
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-switchery col-lg-3">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="Phone_orgination">Phone Orgination
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-switchery col-lg-3">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="domain">Domain
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-switchery col-lg-3">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input-switchery" name="host">Host
+                                    </label>
+                                </div>
                             </div>
                         </fieldset>
                         <div class="text-right">
