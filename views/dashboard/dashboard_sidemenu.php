@@ -38,6 +38,8 @@
                         <!--                            <li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>-->
                         <li class="nav-item"><a href="<?php echo __ROOT__.'province';?>" class="nav-link">استان</a></li>
                         <li class="nav-item"><a href="<?php echo __ROOT__.'city';?>" class="nav-link">شهر</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'tax';?>" class="nav-link">مالیات</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'services';?>" class="nav-link">سرویس ها</a></li>
                         <!--                            <li class="nav-item"><a href="layout_6/RTL/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
                     </ul>
                 </li>
