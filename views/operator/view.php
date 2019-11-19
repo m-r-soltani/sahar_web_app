@@ -460,7 +460,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تاریخ تولد</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 10-10-1350">
+                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 1380/05/20">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">مدرک تحصیلی</label>
