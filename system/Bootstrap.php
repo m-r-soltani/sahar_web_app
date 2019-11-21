@@ -19,7 +19,6 @@ class Bootstrap
             $db->query("INSERT INTO bnm_ostan (name) VALUES ('$ostan_name')");
             //$req = $db->query("INSERT INTO bnm_ostan (name) VALUES ($ostan_name)");
         }*/
-
         ///////////////////////////////---forms---///////////////////////////////
 		//$flag = FALSE;
 		// 1. router
@@ -56,21 +55,23 @@ class Bootstrap
 
             //$req = $db->query("INSERT INTO bnm_ostan (name) VALUES ($ostan_name)");
         }
-        if(isset($_POST['GetProvinces'])){
+        if(isset($_POST['send_city'])){
+            $shahr=$_POST['shahr'];
+            $ostan_name=$_POST['entekhab_ostan'];
+            echo $ostan_name;
+            $db = Db::getInstance();
+            $db->query("INSERT INTO bnm_shahr (name,ostan_id) VALUES ('$shahr','$ostan_name')");
 
-            $connect = Db::getInstance();
-            $sql="SELECT * FROM bnm_ostan";
-            $result=$connect->prepare($sql);
-            $result->execute();
-            $rows=$result->fetchAll();
-            $rows=json_encode($rows);
-            //$rows=serialize($rows);
-            echo $rows;
-
-
-
-            //$res=Db::fetchall_Query("SELECT * FROM bnm_ostan");
+            //$req = $db->query("INSERT INTO bnm_ostan (name) VALUES ($ostan_name)");
         }
+        if(isset($_POST['GetProvinces'])){
+            //require_once ('../models/city.php');
+            $sql="SELECT * FROM bnm_ostan order by id asc";
+            $result=Db::fetchall_Query($sql);
+            $rows=json_encode($result);
+            echo $rows;
+        }
+
 //		else {
 //		    //if no controller entred
 //			$controllerName = 'Home';

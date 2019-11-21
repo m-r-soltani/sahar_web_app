@@ -18,17 +18,6 @@
 
     <!-- /global stylesheets -->
 
-    <!-- Core JS files -->
-    <script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
-    <!-- /core JS files -->
-
-    <!-- Theme JS files -->
-    <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
-    <!-- /theme JS files -->
 </head>
 <body>
 
@@ -479,3 +468,16 @@
 
 </body>
 </html>
+
+<!-- Core JS files -->
+<script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/province.js' ?>"></script>
+<!-- /theme JS files -->

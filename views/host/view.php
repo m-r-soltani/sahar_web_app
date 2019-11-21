@@ -453,7 +453,7 @@
                                 <legend class="text-uppercase font-size-sm font-weight-bold">میزبان</legend>
                                 <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="name_service_dahande" placeholder="مثال: " required>
+                                    <input type="text" class="form-control" name="namee_service_dahande" placeholder="مثال: " required>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شماره مجوز</label>
@@ -499,6 +499,11 @@
                                 <label class="col-form-label col-lg-2">نام تعرفه</label>
                                 <div class="col-lg-4">
                                     <input type="text" class="form-control" name="name_tarefe" placeholder="نام تعرفه">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">اولویت</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="olaviat" placeholder="عدد صحیح مثال: 2">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-12">نوع سرویس :</label>

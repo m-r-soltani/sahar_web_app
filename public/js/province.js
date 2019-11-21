@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    /*GetProvinces('city',function (data) {
+    /*EditTable('provinces',function (data) {
         if (data){
             //has data
             console.log(data);

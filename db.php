@@ -24,10 +24,11 @@
       }
       return self::$instance;
     }
-    public static function fetchall_Query($query){
-        $stmt=self::getInstance()->prepare($query);
-        $stmt->execute($query);
-        $data=$stmt->fetchAll();
-        return $data;
+    public static function fetchall_Query($sql){
+        $connect = Db::getInstance();
+        $result=$connect->prepare($sql);
+        $result->execute();
+        $rows=$result->fetchAll();
+        return $rows;
     }
   }
