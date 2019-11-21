@@ -35,11 +35,12 @@
                     <a href="#" class="nav-link"><i class="icon-copy"></i> <span>عنوان ها</span></a>
 
                     <ul class="nav nav-group-sub" data-submenu-title="Layouts">
-                        <!--<li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>-->
+                        <!--                            <li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>-->
                         <li class="nav-item"><a href="<?php echo __ROOT__.'province';?>" class="nav-link">استان</a></li>
                         <li class="nav-item"><a href="<?php echo __ROOT__.'city';?>" class="nav-link">شهر</a></li>
-                        <li class="nav-item"><a href="<?php echo __ROOT__.'tax';?>" class="nav-link">مالیات</a></li>
-                        <li class="nav-item"><a href="<?php echo __ROOT__.'type_subscribers';?>" class="nav-link">نوع مشتری</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'city';?>" class="nav-link">مالیات</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'city';?>" class="nav-link">سرویس ها</a></li>
+                        <!--                            <li class="nav-item"><a href="layout_6/RTL/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>-->
                     </ul>
                 </li>
                 <li class="nav-item nav-item-submenu">
@@ -51,7 +52,6 @@
                         <li class="nav-item"><a href="<?php echo __ROOT__.'pre_number';?>" class="nav-link">پیش شماره</a></li>
                         <li class="nav-item"><a href="<?php echo __ROOT__.'host';?>" class="nav-link">میزبان</a></li>
                         <li class="nav-item"><a href="<?php echo __ROOT__.'wireless_ap';?>" class="nav-link">Wireless-AP</a></li>
-                        <li class="nav-item"><a href="<?php echo __ROOT__.'services';?>" class="nav-link">سرویس ها</a></li>
                     </ul>
                 </li>
                 <li class="nav-item nav-item-submenu">

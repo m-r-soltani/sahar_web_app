@@ -1270,11 +1270,6 @@
                                                     </select>
                                                 </div>
                                                 <br><br>
-                                                <label class="col-form-label col-lg-2">توضیحات</label>
-                                                <div class="col-lg-4">
-                                                    <input type="text" class="form-control" name="takhfig" placeholder="توضیحات">
-                                                </div>
-                                                <br><br>
                                                 <label class="col-form-label col-lg-2">رنگ نمایش پروفایل</label>
                                                 <div class="col-lg-4">
                                                     <div class="card card-body border-top-success text-center">
@@ -1292,6 +1287,17 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <legend class="text-uppercase font-size-sm font-weight-bold" style="color: #FB8C00">توضیحات</legend>
+                                                <label class="col-form-label col-lg-2">توضیحات فاکتور</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" name="tozihate_faktor" placeholder="توضیحات فاکتور">
+                                                </div>
+                                                <br><br>
+                                                <label class="col-form-label col-lg-2">توضیحات وب سایت</label>
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" name="tozihate_website" placeholder="توضیحات وب سایت">
+                                                </div>
+                                                <br><br>
                                             </div>
                                         </fieldset>
                                         <div class="text-right">
