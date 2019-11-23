@@ -583,7 +583,13 @@
                 </div>
             </div>
             <!-- /form inputs -->
+            <!--datatable-->
+            <!--datatable-->
+            <div class="card">
+                <table id="example" class="table datatable-basic">
 
+                </table>
+            </div>
         </div>
         <!-- /content area -->
 
@@ -638,5 +644,5 @@
 <script src="<?php echo __ROOT__ . '/public/js/persian-date.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/persian-datepicker.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/functions.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/legal_subscribers.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/popsite.js' ?>"></script>
 <!-- /theme JS files -->
