@@ -422,7 +422,7 @@
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نوع دکل</label>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4">امکانات دکل:
                                     <select class="form-control form-control-lg" name="noe_dakal">
                                         <option value="faghededakal">فاقد دکل</option>
                                         <option value="mahari">مهاری</option>
@@ -539,37 +539,37 @@
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-12">امکانات دکل:</label>
-                                <div class="form-check form-check-switchery">
+                                <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
                                         <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">بیمه دکل
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery">
+                                <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
                                         <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">برق اضطراری
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery">
+                                <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
                                         <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">باطری پشتیبان
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery">
+                                <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
                                         <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">چراغ دکل
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery">
+                                <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
                                         <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">ارت
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery">
+                                <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
                                         <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">امکان استفاده از دکل برای نصب آنتن
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery">
+                                <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
                                         <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">اجازه دسترسی 24 ساعته به دکل
                                     </label>
