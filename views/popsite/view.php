@@ -586,7 +586,7 @@
             <!--datatable-->
             <!--datatable-->
             <div class="card">
-                <table id="example" class="table datatable-basic">
+                <table id="example" class="table datatable-responsive">
 
                 </table>
             </div>

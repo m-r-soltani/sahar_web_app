@@ -36,10 +36,10 @@ $(document).ready(function () {
         select: 'single',     // enable single row selection
         responsive: true,     // enable responsiveness
         altEditor: true,      // Enable altEditor ****
-        buttons: [{
+        buttons: [/*{
             text: 'Add',
             name: 'add'        // DO NOT change name
-        },
+        }*/
             {
                 extend: 'selected', // Bind to Selected row
                 text: 'Edit',
@@ -50,12 +50,13 @@ $(document).ready(function () {
                 text: 'Delete',
                 name: 'delete'      // DO NOT change name
             }],
-        order: [[5, "desc"]],
-        scrollY: 400,
+        order: [[0, "asc"]],
+        scrollY: 1000,
         scrollX: true,
         scrollCollapse: true,
         paging: true,
-        fixedColumns: false
+        fixedColumns: false,
+        autoWidth: false
     });
 
 });
