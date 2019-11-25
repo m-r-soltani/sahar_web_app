@@ -33,8 +33,8 @@ $(document).ready(function () {
             { title: "Start date" },
             { title: "Salary" }
         ];
-    var myTable;
-    myTable = $('#example').DataTable({
+    var editor;
+    editor = $('#example').DataTable({
         "sPaginationType": "full_numbers",
         data: dataSet,        // data from above
         columns: columnDefs,  // columns from above
@@ -64,4 +64,8 @@ $(document).ready(function () {
         fixedColumns:   true
     });
 
+
+
+    // var versionNo = $.fn.dataTable.version;
+    // alert(versionNo);
 });

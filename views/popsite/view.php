@@ -633,9 +633,13 @@
 
 <!-- Theme JS files -->
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/js/plugins/forms/styling/switch.min.js' ?>"></script>
+
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/datatables.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/select2.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/demo_pages/datatables_basic.js' ?>"></script>
+
 <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_checkboxes_radios.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
