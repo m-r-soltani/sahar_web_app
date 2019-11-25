@@ -625,26 +625,31 @@
 
 </body>
 </html>
+
+
+<script src="js/DataTables/dataTables.altEditor.js"></script>
+
 <!-- Core JS files -->
 <script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/datatables.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/responsive.min.js' ?>"></script>
 <!-- /core JS files -->
 
 <!-- Theme JS files -->
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/js/plugins/forms/styling/switch.min.js' ?>"></script>
-
-<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/datatables.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/select2.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/demo_pages/datatables_basic.js' ?>"></script>
-
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/select.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/buttons.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/editors/datatable/dataTables.altEditor.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
+
+
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_checkboxes_radios.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
-<!--<script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>
-<script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>-->
 <script src="<?php echo __ROOT__ . '/public/js/persian-date.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/persian-datepicker.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/functions.js' ?>"></script>

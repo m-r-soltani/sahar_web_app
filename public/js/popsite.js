@@ -1,13 +1,5 @@
 $(document).ready(function () {
-    /*GetProvinces('city',function (data) {
-        if (data){
-            //has data
-            console.log(data);
-        }else{
-            //data az db gerefte nashod
-            alert('درخواست ناموفق');
-        }
-    });*/
+
     var dataSet = [
         ["Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800"],
         ["Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25", "$170,750"],
@@ -26,16 +18,18 @@ $(document).ready(function () {
 
     var columnDefs =
         [
-            { title: "Name" },
-            { title: "Position" },
-            { title: "Office" },
-            { title: "Extn." },
-            { title: "Start date" },
-            { title: "Salary" }
+            {title: "Name"},
+            {title: "Position"},
+            {title: "Office"},
+            {title: "Extn."},
+            {title: "Start date"},
+            {title: "Salary"}
         ];
+
     var editor;
+
     editor = $('#example').DataTable({
-        "sPaginationType": "full_numbers",
+        sPaginationType: "full_numbers",
         data: dataSet,        // data from above
         columns: columnDefs,  // columns from above
         dom: 'Bfrtip',        // element order: NEEDS BUTTON CONTAINER (B) ****
@@ -56,16 +50,12 @@ $(document).ready(function () {
                 text: 'Delete',
                 name: 'delete'      // DO NOT change name
             }],
-        order: [[ 5, "desc" ]],
-        scrollY:        400,
-        scrollX:        true,
+        order: [[5, "desc"]],
+        scrollY: 400,
+        scrollX: true,
         scrollCollapse: true,
-        paging:         false,
-        fixedColumns:   true
+        paging: true,
+        fixedColumns: false
     });
 
-
-
-    // var versionNo = $.fn.dataTable.version;
-    // alert(versionNo);
 });
