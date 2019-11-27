@@ -27,7 +27,7 @@ var Buttons = function() {
         // Button with spinner
         Ladda.bind('.btn-ladda-spinner', {
             dataSpinnerSize: 16,
-            timeout: 2000
+            timeout: 1000
         });
 
         // Button with progress
@@ -42,7 +42,7 @@ var Buttons = function() {
                         instance.stop();
                         clearInterval(interval);
                     }
-                }, 200);
+                }, 50);
             }
         });
     };
@@ -56,7 +56,7 @@ var Buttons = function() {
             btn.html(loadingText).addClass('disabled');
             setTimeout(function () {
                 btn.html(initialText).removeClass('disabled');
-            }, 3000)
+            }, 1000)
         });
     };
 

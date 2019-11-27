@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
     <!--<link rel="stylesheet" href="<?php /*echo __ROOT__ . '/public/css/persianDatepicker-latoja.css' */?>" />-->
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/dataTables.bootstrap4.min.css' ?>" />
     <!-- /global stylesheets -->
 </head>
 <body>
@@ -541,43 +542,43 @@
                                 <label class="col-form-label col-lg-12">امکانات دکل:</label>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">بیمه دکل
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal" value="bime_dakal">بیمه دکل
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">برق اضطراری
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal" value="barghe_ezterari">برق اضطراری
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">باطری پشتیبان
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal" value="bateye_poshtiban">باطری پشتیبان
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">چراغ دکل
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal" value="cheraghe_dakal">چراغ دکل
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">ارت
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal" value="ert">ارت
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">امکان استفاده از دکل برای نصب آنتن
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal" value="emkane_estefade_az_dakal_baraye_nasbe_anten">امکان استفاده از دکل برای نصب آنتن
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal">اجازه دسترسی 24 ساعته به دکل
+                                        <input type="checkbox" class="form-check-input-switchery" name="emkanate_dakal" value="ejaze_dastresi_24_saate_be_dakal">اجازه دسترسی 24 ساعته به دکل
                                     </label>
                                 </div>
                             </div>
                         </fieldset>
                         <div class="text-right">
-                            <button type="submit" name="send_province" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
+                            <button type="submit" name="send_popsite" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
                         </div>
                     </form>
                 </div>
@@ -586,9 +587,12 @@
             <!--datatable-->
             <!--datatable-->
             <div class="card">
-                <table id="example" class="table datatable-responsive">
-
-                </table>
+                <div class="col-md-12">
+                    <button name="delete" class="btn btn-warning col-md-auto float-md-right"  id="delete">حذف<i class="icon-folder-remove ml-2"></i></button>
+                    <button name="delete" class="btn btn-primary col-md-auto float-md-right" id="edit">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
+                    <table id="example" class="table table-striped datatable-responsive">
+                    </table>
+                </div>
             </div>
         </div>
         <!-- /content area -->
