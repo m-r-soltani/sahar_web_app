@@ -16,4 +16,8 @@ $(document).ready(function () {
             alert('درخواست ناموفق');
         }
     });
+
+    DataTable('#view_table','dashboard_city','POST',function (data) {
+
+    });
 });

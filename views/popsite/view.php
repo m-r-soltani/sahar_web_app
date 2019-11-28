@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
-    <!--<link rel="stylesheet" href="<?php /*echo __ROOT__ . '/public/css/persianDatepicker-latoja.css' */?>" />-->
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/dataTables.bootstrap4.min.css' ?>" />
     <!-- /global stylesheets -->
@@ -631,7 +630,7 @@
 </html>
 
 
-<script src="js/DataTables/dataTables.altEditor.js"></script>
+
 
 <!-- Core JS files -->
 <script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
@@ -648,7 +647,7 @@
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/select2.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/select.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/buttons.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/plugins/editors/datatable/dataTables.altEditor.js' ?>"></script>
+<!--<script src="<?php /*echo __ROOT__ . '/public/js/plugins/editors/datatable/dataTables.altEditor.js' */?>"></script>-->
 <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
 
 
