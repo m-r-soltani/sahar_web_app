@@ -72,11 +72,10 @@ function DataTable(selector='view_table',path,type="POST",cols,callback) {
             type: type,
             timeout: 60000
         },
-        //data: data,        // data from above
-        columns: cols,  // columns from above
-        dom: 'flrtip',        // element order: NEEDS BUTTON CONTAINER (B) ****
-        select: 'single',     // enable single row selection
-        responsive: true,     // enable responsiveness
+        columns: cols,
+        dom: 'flrtip',
+        select: 'single',
+        responsive: true,
         //altEditor: true,      // Enable altEditor ****
         /*dom: 'Bflrtip',        // element order: NEEDS BUTTON CONTAINER (B) ****
         buttons: [
@@ -90,7 +89,7 @@ function DataTable(selector='view_table',path,type="POST",cols,callback) {
                 extend: 'print', text: 'پرینت', attr:  {title: 'Copy',id: 'printbtn',class:'btn btn-secondary col-lg-auto float-lg-right'}
             }
         ],*/
-        order: [[0, "asc"]],
+        //order: [[0, "asc"]],
         scrollY: 1000,
         scrollX: true,
         scrollCollapse: true,
