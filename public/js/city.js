@@ -16,8 +16,9 @@ $(document).ready(function () {
             alert('درخواست ناموفق');
         }
     });
-
-    DataTable('#view_table','dashboard_city','POST',function (data) {
+    /*===================++  DATA_TABLE  ++=========================*/
+var cols=[{ "data": "shahr",title:'نام شهر' },{ "data": "ostan_id",title:'استان' }];
+    DataTable('#view_table','/sahar/helpers/city.php','POST',cols,function (data) {
 
     });
 });

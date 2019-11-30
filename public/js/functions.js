@@ -46,39 +46,23 @@ function GetProvinces(data/*felan kari anjam nemide*/,callback){
         }
     });
 }
-function DataTable(selector='view_table',path,type="POST",callback) {
+function DataTable(selector='view_table',path,type="POST",cols,callback) {
     var table;
+/*
     var data = [
-        ["Tiger Nixon", "System Architect", "Edinburgh", "111", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "222", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "333", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "444", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "555", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "666", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "777", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "888", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "999", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "123", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "456", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "789", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "122", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "233", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "455", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "677", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "899", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "000", "2011/04/25"],
         ["Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25"],
         ["Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25"]
     ];
+*/
 
-    var cols =
-        [
-            {title: "Name"},
-            {title: "Position"},
-            {title: "Office"},
-            {title: "Extn."},
-            {title: "Start date"},
-        ];
+    // var cols =
+    //     [
+    //         {title: "Name"},
+    //         {title: "Position"},
+    //         {title: "Office"},
+    //         {title: "Extn."},
+    //         {title: "Start date"},
+    //     ];
     table = $(selector).DataTable({
         sPaginationType: "full_numbers",
         processing: true,
@@ -88,7 +72,7 @@ function DataTable(selector='view_table',path,type="POST",callback) {
             type: type,
             timeout: 60000
         },
-        data: data,        // data from above
+        //data: data,        // data from above
         columns: cols,  // columns from above
         dom: 'flrtip',        // element order: NEEDS BUTTON CONTAINER (B) ****
         select: 'single',     // enable single row selection

@@ -11,7 +11,7 @@ class Bootstrap
         }
         /*========sabte shahr========*/
         if(isset($_POST['send_city'])){
-            require_once ('models/citys.php');
+            require_once ('models/city.php');
             $result=SEND_CITY($_POST['shahr'],$_POST['entekhab_ostan']);
             //refresh datatable
         }
