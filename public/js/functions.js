@@ -20,8 +20,58 @@ function Form_Maker(selector,data){
             }
     });
 }
-function GETSITEURL(){
-
+function editform(data,param1/*felan kari anjam nemide*/,callback){
+    $.ajax({
+        type: "post",
+        url: "harddelete",
+        timeout:5000,
+        data: {
+            harddelete:data,
+            target:param1
+        },
+        success: function(response){
+            return callback(response);
+        },
+        error:function (req,res,status) {
+            return callback(false);
+        }
+    });
+}
+function harddelete(data,param1/*felan kari anjam nemide*/,callback){
+    $.ajax({
+        type: "post",
+        url: "harddelete",
+        timeout:5000,
+        data: {
+            harddelete:data,
+            target:param1
+        },
+        success: function(response){
+            return callback(response);
+        },
+        error:function (req,res,status) {
+            return callback(false);
+        }
+    });
+}
+function getostannamebyid(data/*felan kari anjam nemide*/,callback){
+    $.ajax({
+        type: "post",
+        url: "getostannamebyid",
+        timeout:5000,
+        data: {getostannamebyid:data},
+        // dataType:'JSON',
+        success: function(response){
+            //console.log(response);
+            // put on console what server sent back...
+            //console.log(response);
+            response=JSON.parse(response);
+            return callback(response);
+        },
+        error:function (req,res,status) {
+            return callback(false);
+        }
+    });
 }
 
 /**
@@ -30,7 +80,7 @@ function GETSITEURL(){
 function GetProvinces(data/*felan kari anjam nemide*/,callback){
     $.ajax({
         type: "post",
-        url: "aaa",
+        url: "GetProvinces",
         timeout:5000,
         data: {GetProvinces:data},
         // dataType:'JSON',
@@ -48,21 +98,6 @@ function GetProvinces(data/*felan kari anjam nemide*/,callback){
 }
 function DataTable(selector='view_table',path,type="POST",cols,callback) {
     var table;
-/*
-    var data = [
-        ["Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25"],
-        ["Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25"]
-    ];
-*/
-
-    // var cols =
-    //     [
-    //         {title: "Name"},
-    //         {title: "Position"},
-    //         {title: "Office"},
-    //         {title: "Extn."},
-    //         {title: "Start date"},
-    //     ];
     table = $(selector).DataTable({
         sPaginationType: "full_numbers",
         processing: true,
@@ -121,9 +156,9 @@ function DataTable(selector='view_table',path,type="POST",cols,callback) {
                 sEmptyTable: "موردی یافت نشد!",
                 sFirst: "ابتدا"
             },
-            sLoadingRecords: "لطفا صبر کنید - درحال بارگزاری...",
+            sLoadingRecords: "درحال بارگزاری...",
             sZeroRecords: "رکوردی یافت نشد!",
-            sProcessing: "در حال انجام درخواست لطفا صبر کنید...",
+            sProcessing: "لطفا صبر کنید...",
             sInfo: "_TOTAL_ رکورد یافت شده (_START_ تا _END_)",
             sInfoFiltered: "فیلتر شده از _MAX_ رکورد",
             sInfoThousands: "K",
@@ -139,7 +174,7 @@ function DataTable(selector='view_table',path,type="POST",cols,callback) {
 
         },
 
-        "emptyTable":"موردی برای نمایش وجود نداشت.",
+        emptyTable:"موردی برای نمایش وجود نداشت.",
         autoWidth: false
     });
     callback(table);

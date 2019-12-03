@@ -30,7 +30,8 @@
 // parameter represents the DataTables column identifier. In this case object
 // parameter names
     $columns = array(
-        array( 'db' => 'name', 'dt' => 'shahr' )
+        array( 'db' => 'name', 'dt' => 'shahr' ),
+        array( 'db' => 'ostan_id', 'dt' => 'ostan_id' )
     );
 
 // SQL server connection information

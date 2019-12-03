@@ -31,4 +31,11 @@
         $rows=$result->fetchAll();
         return $rows;
     }
+      public static function justexecute($sql){
+          $connect = Db::getInstance();
+          $result=$connect->prepare($sql);
+          $result->execute();
+          //$rows=$result->fetchAll();
+          return $result;
+      }
   }

@@ -2,14 +2,11 @@ $(document).ready(function () {
     GetProvinces('city',function (data) {
         if (data){
             //has data
-            console.log(data);
             var element=$('#mytestostan');
             if(element) {
                 for (let i = 0;i<data.length ; i++) {
                     element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
                 }
-            }else{
-                console.log(123);
             }
         }else{
             //data az db gerefte nashod
@@ -18,13 +15,29 @@ $(document).ready(function () {
     });
 
     /*===================++  DATA_TABLE  ++=========================*/
-var cols=[
-    { "data": "shahr",title:'نام شهر' }
-    //,{ "data": "ostan_id",title:'استان' }
+    var ostan={
+        findostan:function (data) {
+            return 'asd';
+        }
+    };
+    var cols=[
+        /*        { "data": "id",title:'id',
+                    //"targets": [ 0 ],
+                    //"visible": false,
+                    //"searchable": false
+                },*/
+        { "data": "shahr",
+            title:'نام شهر'
+        },
+        { "data": "ostan_id",
+            title:'شناسه استان',
+        }
+        //,{ "data": "ostan_id",title:'استان' }
     ];
     DataTable('#view_table','/sahar/helpers/city.php','POST',cols,function (table) {
-
-        /*===================++  select  ++=========================*/
+        /*===================++  hide first column ++=========================*/
+        //table.column(0).visible(false);
+        /*===================++  select table row ++=========================*/
         $('#view_table tbody').on( 'click', 'tr', function () {
             if ( $(this).hasClass('selected') ) {
                 $(this).removeClass('selected');
@@ -34,22 +47,27 @@ var cols=[
                 $(this).addClass('selected');
             }
         } );
-        $('#view_table tbody').on( 'click', 'tr', function () {
+        //onclick log row data
+        /*$('#view_table tbody').on( 'click', 'tr', function () {
             console.log( table.row( this ).data() );
+        } );*/
+        $('#delete').click( function () {
+            let tr=$('#view_table tbody').find('tr.selected');
+            let td=tr.find('td:first').text();
+            harddelete(td,'city',function (data) {
+                if (data==='1') {
+                    table.ajax.reload();
+                }else{
+                    alert('عملیات ناموفق');
+                }
+            });
         } );
-
-
-
-        $('#edit').click( function () {
-            //table.row('.selected').remove().draw( false );
-            // var data = table.row( $(this).parents('tr') ).data();
-            // alert( data[0]);
-            console.log( table.row( this ).data() );
-        } );
-        // $('#delete').click( function () {
-        //     alert('حذف');
-        //     console.log(table.row);
-        // } );
     });
+    $('#edit').click( function () {
+        let tr=$('#view_table tbody').find('tr.selected');
+        let td=tr.find('td:first').text();
+
+    });
+
 
 });

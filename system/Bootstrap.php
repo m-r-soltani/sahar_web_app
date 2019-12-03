@@ -22,9 +22,21 @@ class Bootstrap
             $rows=json_encode($result);
             echo $rows;
         }
-/*======================*/
-        if(isset($_POST['dashboard_city'])){
-
+/*==========hard delete============*/
+        if(isset($_POST['harddelete'])){
+            $target=$_POST['target'];
+            switch ($target){
+                case 'city':
+                    $name=$_POST['harddelete'];
+                    $sql="delete FROM bnm_shahr WHERE name = '$name'";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+            }
         }
 /*======================*/
 
