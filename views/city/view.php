@@ -417,18 +417,19 @@
                     <form action="#" method="POST">
                         <fieldset class="mb-3">
                             <legend class="text-uppercase font-size-sm font-weight-bold">شهر</legend>
+                            <input type="hidden" id="id" class="form-control" name="id" value="empty">
 
                             <div class="form-group row">
                                 <label class="col-form-label col-lg-2" >انتخاب استان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="entekhab_ostan" id="mytestostan">
+                                    <select class="form-control form-control-lg" name="entekhab_ostan" id="ostan">
 
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نام شهر</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="shahr" placeholder="مثال: تهران">
+                                    <input type="text" id="shahr" class="form-control" name="shahr" placeholder="مثال: تهران">
                                 </div>
                             </div>
                         </fieldset>

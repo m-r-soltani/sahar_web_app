@@ -12,8 +12,15 @@ class Bootstrap
         /*========sabte shahr========*/
         if(isset($_POST['send_city'])){
             require_once ('models/city.php');
-            $result=SEND_CITY($_POST['shahr'],$_POST['entekhab_ostan']);
-            //refresh datatable
+            $id=$_POST['id'];
+            //checking for insert or update
+            if($id=="empty"){
+                //insert
+                $result=Insert_city($_POST['shahr'],$_POST['entekhab_ostan']);
+            }else{
+                //update
+                $result=Update_city($id,$_POST['shahr'],$_POST['entekhab_ostan']);
+            }
         }
         if(isset($_POST['GetProvinces'])){
             //require_once ('../models/city.php');
@@ -21,6 +28,19 @@ class Bootstrap
             $result=Db::fetchall_Query($sql);
             $rows=json_encode($result);
             echo $rows;
+        }
+        /*==========edit form============*/
+        if(isset($_POST['Edit_Form'])){
+            $page=$_POST['Edit_Form'];
+            switch ($page){
+                case 'city':
+                    $condition=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_shahr WHERE name='$condition'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
+            }
         }
 /*==========hard delete============*/
         if(isset($_POST['harddelete'])){

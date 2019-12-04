@@ -2,7 +2,7 @@ $(document).ready(function () {
     GetProvinces('city',function (data) {
         if (data){
             //has data
-            var element=$('#mytestostan');
+            var element=$('#ostan');
             if(element) {
                 for (let i = 0;i<data.length ; i++) {
                     element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
@@ -54,7 +54,7 @@ $(document).ready(function () {
         $('#delete').click( function () {
             let tr=$('#view_table tbody').find('tr.selected');
             let td=tr.find('td:first').text();
-            harddelete(td,'city',function (data) {
+            Hard_Delete(td,'city',function (data) {
                 if (data==='1') {
                     table.ajax.reload();
                 }else{
@@ -66,7 +66,17 @@ $(document).ready(function () {
     $('#edit').click( function () {
         let tr=$('#view_table tbody').find('tr.selected');
         let td=tr.find('td:first').text();
+        Edit_Form('city',td,function (data) {
+            $('#id').val(data[0]['id']);
+            $('#shahr').val(data[0]['name']);
+            $('#ostan option[value="'+data[0]['ostan_id']+'"]').attr('selected','selected');
 
+
+            //$('.form-group').each(function(i) {
+
+            //});
+
+        });
     });
 
 

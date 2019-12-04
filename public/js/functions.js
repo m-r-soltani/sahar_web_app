@@ -13,23 +13,17 @@ function DATEPICKER_YYYYMMDD(selector,type) {
         });
     }
 }
-function Form_Maker(selector,data){
-    $(selector).append(function () {
-            for (let i=0;i=data.length;i++){
-
-            }
-    });
-}
-function editform(data,param1/*felan kari anjam nemide*/,callback){
+function Edit_Form(page,condition,callback){
     $.ajax({
         type: "post",
-        url: "harddelete",
+        url: "editform"+page,
         timeout:5000,
         data: {
-            harddelete:data,
-            target:param1
+            Edit_Form:page,
+            condition:condition
         },
         success: function(response){
+            response=JSON.parse(response);
             return callback(response);
         },
         error:function (req,res,status) {
@@ -37,7 +31,7 @@ function editform(data,param1/*felan kari anjam nemide*/,callback){
         }
     });
 }
-function harddelete(data,param1/*felan kari anjam nemide*/,callback){
+function Hard_Delete(data,param1/*felan kari anjam nemide*/,callback){
     $.ajax({
         type: "post",
         url: "harddelete",
