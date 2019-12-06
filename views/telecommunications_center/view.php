@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
-    <!--<link rel="stylesheet" href="<?php /*echo __ROOT__ . '/public/css/persianDatepicker-latoja.css' */?>" />-->
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/dataTables.bootstrap4.min.css' ?>" />
     <!-- /global stylesheets -->
 </head>
 <body>
@@ -418,63 +418,62 @@
                             <div class="form-group row">
                                 <label class="col-form-label col-lg-2">نام مرکز مخابراتی</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="مثال: تهران">
+                                    <input type="hidden" id="id" class="form-control" name="id" value="empty">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">استان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_malekiat">
-                                        <option value="1">تهران</option>
+                                    <select class="form-control form-control-lg" name="ostan" id="ostan">
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_malekiat">
-                                        <option value="1">تهران</option>
+                                    <select class="form-control form-control-lg" name="shahr" id="shahr">
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">پیش شماره استان</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 021">
+                                    <input type="text" class="form-control" name="pish_shomare" id="pish_shomare" placeholder="مثال: 021">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شماره تماس با مرکز</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 33334444">
+                                    <input type="text" class="form-control" name="shomare_tamas_markaz" id="shomare_tamas_markaz" placeholder="مثال: 1234567">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شماره تماس MDF مرکز</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 021">
+                                    <input type="text" class="form-control" name="shomare_tamas_mdf" id="shomare_tamas_mdf" placeholder="مثال: 021">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نشانی مرکز</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 021">
+                                    <input type="text" class="form-control" name="address" id="address" placeholder="مثال: 021">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">مسیر اول فاکتورهای مرکز</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 021">
+                                    <input type="text" class="form-control" name="masire_avale_faktorha" id="masire_avale_faktorha" placeholder="مثال: 021">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">مسیر دوم فاکتورهای مرکز</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 021">
+                                    <input type="text" class="form-control" name="masire_dovome_faktorha" id="masire_dovome_faktorha" placeholder="مثال: 021">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">میزبان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_malekiat">
+                                    <select class="form-control form-control-lg" name="mizban" id="mizban">
                                         <option value="1">1</option>
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نوع قرار داد</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_malekiat">
+                                    <select class="form-control form-control-lg" name="noe_gharardad" id="noe_gharardad">
                                         <option value="1">1</option>
                                     </select>
                                 </div>
@@ -482,13 +481,20 @@
                             </div>
                         </fieldset>
                         <div class="text-right">
-                            <button type="submit" name="send_province" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
+                            <button type="submit" name="send_telecommunications_center" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
                         </div>
                     </form>
                 </div>
             </div>
             <!-- /form inputs -->
-
+            <div class="card">
+                <div class="col-md-12">
+                    <button name="delete" class="btn btn-warning col-md-auto float-md-right"  id="delete">حذف<i class="icon-folder-remove ml-2"></i></button>
+                    <button name="edit" class="btn btn-primary col-md-auto float-md-right" id="edit">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
+                    <table id="view_table" class="table table-striped datatable-responsive table-hover">
+                    </table>
+                </div>
+            </div>
         </div>
         <!-- /content area -->
 
@@ -528,16 +534,24 @@
 <script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/datatables.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/responsive.min.js' ?>"></script>
 <!-- /core JS files -->
 
 <!-- Theme JS files -->
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/js/plugins/forms/styling/switch.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/select2.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/select.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/buttons.min.js' ?>"></script>
+<!--<script src="<?php /*echo __ROOT__ . '/public/js/plugins/editors/datatable/dataTables.altEditor.js' */?>"></script>-->
 <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
+
+
+<script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_checkboxes_radios.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
-<!--<script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>
-<script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>-->
 <script src="<?php echo __ROOT__ . '/public/js/persian-date.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/persian-datepicker.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/functions.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/legal_subscribers.js' ?>"></script>
-<!-- /theme JS files -->
+<script src="<?php echo __ROOT__ . '/public/js/telecommunications_center.js' ?>"></script>

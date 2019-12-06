@@ -4,10 +4,18 @@ class Bootstrap
 {
 	public function __construct() 
 	{
-        /*========ostan va shahr========*/
+        /*========ostan========*/
         if(isset($_POST['GetProvinces'])){
             //require_once ('../models/city.php');
             $sql="SELECT * FROM bnm_ostan order by id asc";
+            $result=Db::fetchall_Query($sql);
+            $rows=json_encode($result);
+            echo $rows;
+        }
+        /*=========shahr========*/
+        if(isset($_POST['GetCities'])){
+            //require_once ('../models/city.php');
+            $sql="SELECT * FROM bnm_shahr order by id asc";
             $result=Db::fetchall_Query($sql);
             $rows=json_encode($result);
             echo $rows;
@@ -71,6 +79,19 @@ class Bootstrap
                     $t_logo,$t_mohiti,$t_tablo,$t_code_eghtesadi,$t_rozname_tasis,$t_shenase_meli,
                     $t_akharin_taghirat);
             }
+        }
+
+        /*========sabte telecommunications_center========*/
+        if(isset($_POST['send_telecommunications_center'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_telecommunications_center');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_telecommunications_center',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
         }
         /*========sabte operator========*/
         if(isset($_POST['send_operator'])){
@@ -139,6 +160,13 @@ class Bootstrap
                     $rows=json_encode($result);
                     echo $rows;
                     break;
+                case 'telecommunications_center':
+                    $condition=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_telecommunications_center WHERE name='$condition'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
             }
         }
 /*==========hard delete============*/
@@ -168,6 +196,16 @@ class Bootstrap
                 case 'operator':
                     $name=$_POST['harddelete'];
                     $sql="delete FROM bnm_operator WHERE name = '$name'";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'telecommunications_center':
+                    $name=$_POST['harddelete'];
+                    $sql="delete FROM bnm_telecommunications_center WHERE name = '$name'";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;

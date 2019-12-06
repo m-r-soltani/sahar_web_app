@@ -26,7 +26,53 @@ spl_autoload_register(function ($className) {
         require_once $className . '.php'; 
     }
 });
-////////////////////////////////////////////php functions
+new Bootstrap();
+/////////////////////php functions///////////////////////
+//insert_Generator(data_array($_POSTED array),'table_name')
+function Insert_Generator($data,$table){
+    if (key_exists('id',$data)){
+        unset($data['id']);
+    }
+    array_pop($data);
+    end($data);
+    $lastkey = key($data);
+    $sql="INSERT INTO $table (";
+    foreach ($data as $key => $value) {
+        if($key!=$lastkey) {
+            $sql .= $key . ',';
+        }else{
+            $sql .= $key . ') VALUES(';
+            foreach ($data as $k => $val) {
+                if($k!=$lastkey) {
+                    $sql .= '\'' . $val . '\',';
+                }else{
+                    $sql .= '\'' . $val . '\')';
+                }
+            }
+        }
+    }
+    return $sql;
+}
+//Update_Generator(data_array($_POSTED array),'table_name','where id = $id')
+function Update_Generator($data,$table,$condition){
+    if (key_exists('id',$data)){
+        unset($data['id']);
+    }
+    array_pop($data);
+    end($data);
+    $lastkey = key($data);
+    $sql="UPDATE $table SET ";
+    foreach ($data as $key => $value) {
+        if($key!=$lastkey){
+            $sql .= $key . '=' . '\'' . $value . '\',';
+        }else{
+            $sql .= $key . '=' . '\'' . $value . '\'';
+            $sql .=' ' .$condition;
+        }
+    }
+    return $sql;
+}
+////////getor($variable,replace element example:'abc')
 function getor($data,$param=""){
     if($data!="" || $data!= " "){
         return $data;
@@ -34,4 +80,3 @@ function getor($data,$param=""){
         return $param;
     }
 }
-new Bootstrap();
