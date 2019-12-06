@@ -1,14 +1,37 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
-
+error_reporting(E_ALL);
 class Bootstrap
 {
 	public function __construct() 
 	{
+        /*========ostan va shahr========*/
+        if(isset($_POST['GetProvinces'])){
+            //require_once ('../models/city.php');
+            $sql="SELECT * FROM bnm_ostan order by id asc";
+            $result=Db::fetchall_Query($sql);
+            $rows=json_encode($result);
+            echo $rows;
+        }
         /*========sabte ostan========*/
         if(isset($_POST['send_province'])){
             $ostan_name=$_POST['ostan'];
             $db = Db::getInstance();
             $db->query("INSERT INTO bnm_ostan (name) VALUES ('$ostan_name')");
+        }
+        /*========sabte shahr========*/
+        if(isset($_POST['send_city'])){
+            require_once ('models/city.php');
+            $id=$_POST['id'];
+            //checking for insert or update
+            if($id=="empty"){
+                //insert
+                getor($_POST['shahr'],"");
+                getor($_POST['entekhab_ostan'],"");
+                $result=Insert_city($_POST['shahr'],$_POST['entekhab_ostan']);
+            }else{
+                //update
+                $result=Update_city($id,$_POST['shahr'],$_POST['entekhab_ostan']);
+            }
         }
         /*========sabte branch========*/
         if(isset($_POST['send_branch'])){
@@ -49,27 +72,47 @@ class Bootstrap
                     $t_akharin_taghirat);
             }
         }
-        /*========sabte shahr========*/
-        if(isset($_POST['send_city'])){
-            require_once ('models/city.php');
+        /*========sabte operator========*/
+        if(isset($_POST['send_operator'])){
+            require_once ('models/operator.php');
             $id=$_POST['id'];
+            $name_namayandegi=getor($_POST['name_namayandegi'],"");
+            $name=getor($_POST['name'],"");
+            $name_khanevadegi=getor($_POST['name_khanevadegi'],"");
+            $code_meli=getor($_POST['code_meli'],"");
+            $shomare_shenasname=getor($_POST['shomare_shenasname'],"");
+            $name_pedar=getor($_POST['name_pedar'],"");
+            $tarihke_tavalod=getor($_POST['tarihke_tavalod'],"");
+            $madrake_tahsili=getor($_POST['madrake_tahsili'],"");
+            $reshteye_tahsili=getor($_POST['reshteye_tahsili'],"");
+            $ostan_tavalod=getor($_POST['ostan_tavalod'],"");
+            $shahr_tavalod=getor($_POST['shahr_tavalod'],"");
+            $telephone_hamrah=getor($_POST['telephone_hamrah'],"");
+            $telephone_mahale_sokonat=getor($_POST['telephone_mahale_sokonat'],"");
+            $address=getor($_POST['address'],"");
+            $email=getor($_POST['email'],"");
+            $semat=getor($_POST['semat'],"");
+            $name_karbari=getor($_POST['name_karbari'],"");
+            $ramze_obor=getor($_POST['ramze_obor'],"");
+            $t_karte_meli=getor($_POST['t_karte_meli'],"");
+            $t_shenasname=getor($_POST['t_shenasname'],"");
+            $t_madrake_tahsili=getor($_POST['t_madrake_tahsili'],"");
+            $t_chehre=getor($_POST['t_chehre'],"");
             //checking for insert or update
             if($id=="empty"){
-                //insert
-                getor($_POST['shahr'],"");
-                getor($_POST['entekhab_ostan'],"");
-                $result=Insert_city($_POST['shahr'],$_POST['entekhab_ostan']);
+                $result=Insert_operator($name_namayandegi,$name,$name_khanevadegi,$code_meli,
+                    $shomare_shenasname,$name_pedar,$tarihke_tavalod,$madrake_tahsili,$reshteye_tahsili,
+                    $ostan_tavalod,$shahr_tavalod,$telephone_hamrah,$telephone_mahale_sokonat,$address,
+                    $email,$semat,$name_karbari,$ramze_obor,$t_karte_meli,$t_shenasname,$t_madrake_tahsili,
+                    $t_chehre);
             }else{
                 //update
-                $result=Update_city($id,$_POST['shahr'],$_POST['entekhab_ostan']);
+                $result=Update_operator($id,$name_namayandegi,$name,$name_khanevadegi,$code_meli,
+                    $shomare_shenasname,$name_pedar,$tarihke_tavalod,$madrake_tahsili,$reshteye_tahsili,
+                    $ostan_tavalod,$shahr_tavalod,$telephone_hamrah,$telephone_mahale_sokonat,$address,
+                    $email,$semat,$name_karbari,$ramze_obor,$t_karte_meli,$t_shenasname,$t_madrake_tahsili,
+                    $t_chehre);
             }
-        }
-        if(isset($_POST['GetProvinces'])){
-            //require_once ('../models/city.php');
-            $sql="SELECT * FROM bnm_ostan order by id asc";
-            $result=Db::fetchall_Query($sql);
-            $rows=json_encode($result);
-            echo $rows;
         }
         /*==========edit form============*/
         if(isset($_POST['Edit_Form'])){
@@ -85,6 +128,13 @@ class Bootstrap
                 case 'branch':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_namayandegi WHERE name_sherkat='$condition'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
+                case 'operator':
+                    $condition=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_operator WHERE name='$condition'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
                     echo $rows;
@@ -115,10 +165,18 @@ class Bootstrap
                         echo false;
                     }
                     break;
+                case 'operator':
+                    $name=$_POST['harddelete'];
+                    $sql="delete FROM bnm_operator WHERE name = '$name'";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
             }
         }
-/*======================*/
-
 		// 1. router
 		if (isset ($_GET['path'])) {
 			$tokens = explode('/', rtrim($_GET['path'], '/'));

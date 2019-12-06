@@ -15,20 +15,10 @@
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/dataTables.bootstrap4.min.css' ?>" />
 
     <!-- /global stylesheets -->
-
-    <!-- Core JS files -->
-    <script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
-    <!-- /core JS files -->
-
-    <!-- Theme JS files -->
-    <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
-    <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
-    <!-- /theme JS files -->
 </head>
 <body>
 
@@ -430,112 +420,113 @@
                             <legend class="text-uppercase font-size-sm font-weight-bold">اپراتور</legend>
                             <div class="form-group row">
                                 <label class="col-form-label col-lg-2">نام نمایندگی/موسسه</label>
+                                <input type="hidden" id="id" class="form-control" name="id" value="empty">
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: سحر ارتباط">
+                                    <input type="text" class="form-control" name="name_namayandegi" id="name_namayandegi" placeholder="مثال: سحر ارتباط">
                                 </div>
                                 <label class="col-form-label col-lg-2">نام</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: محمد">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="مثال: محمد">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نام خانوادگی</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: محمدی">
+                                    <input type="text" class="form-control" name="name_khanevadegi" id="name_khanevadegi" placeholder="مثال: محمدی">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">کد ملی</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 0013302033">
+                                    <input type="text" class="form-control" name="code_meli" id="code_meli" placeholder="مثال: 0013302033">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شماره شناسنامه</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: اگر کد ملی و شناسنامه تان یکیست این فیلد را خالی بگذارید.">
+                                    <input type="text" class="form-control" name="shomare_shenasname" id="shomare_shenasname" placeholder="مثال: اگر کد ملی و شناسنامه تان یکیست این فیلد را خالی بگذارید.">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نام پدر</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: اکبر">
+                                    <input type="text" class="form-control" name="name_pedar" id="name_pedar" placeholder="مثال: اکبر">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تاریخ تولد</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 1380/05/20">
+                                    <input type="text" class="form-control" name="tarihke_tavalod" id="tarihke_tavalod" placeholder="مثال: 1380/05/20">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">مدرک تحصیلی</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: لیسانس">
+                                    <input type="text" class="form-control" name="madrake_tahsili" id="madrake_tahsili" placeholder="مثال: لیسانس">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">رشته نحصیلی</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: کامپیوتر">
+                                    <input type="text" class="form-control" name="reshteye_tahsili" id="reshteye_tahsili" placeholder="مثال: کامپیوتر">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">استان محل تولد</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران">
+                                    <input type="text" class="form-control" name="ostan_tavalod" id="ostan_tavalod" placeholder="مثال: تهران">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر محل تولد</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران">
+                                    <input type="text" class="form-control" name="shahr_tavalod" id="shahr_tavalod" placeholder="مثال: تهران">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تلفن همراه</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 0912123456789">
+                                    <input type="text" class="form-control" name="telephone_hamrah" id="telephone_hamrah" placeholder="مثال: 0912123456789">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شماره تماس محل سکونت</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: 021-123456789">
+                                    <input type="text" class="form-control" name="telephone_mahale_sokonat" id="telephone_mahale_sokonat" placeholder="مثال: 021-123456789">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">آدرس محل سکونت</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران خیابان شریعتی کوچه ...">
+                                    <input type="text" class="form-control" name="address" id="address" placeholder="مثال: تهران خیابان شریعتی کوچه ...">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">پست الکترونیک</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: abcd@gmail.com">
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="مثال: abcd@gmail.com">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">سمت</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: مدیر داخلی">
+                                    <input type="text" class="form-control" name="semat" id="semat" placeholder="مثال: مدیر داخلی">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نام کاربری</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="ostan" placeholder="نام کاربری">
+                                    <input type="text" class="form-control" name="name_karbari" id="name_karbari" placeholder="نام کاربری">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">رمز عبور</label>
                                 <div class="col-lg-10">
-                                    <input type="password" class="form-control" name="ostan" placeholder="رمز عبور">
+                                    <input type="password" class="form-control" name="ramze_obor" id="ramze_obor" placeholder="رمز عبور">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تصویر کارت ملی</label>
                                 <div class="col-lg-4">
-                                    <input type="file" class="form-control-uniform" data-fouc>
+                                    <input type="file" class="form-control-uniform" id="t_karte_meli" name="t_karte_meli">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تصویر شناسنامه</label>
                                 <div class="col-lg-4">
-                                    <input type="file" class="form-control-uniform" data-fouc>
+                                    <input type="file" class="form-control-uniform" name="t_shenasname" id="t_shenasname">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تصویر مدرک نحصیلی</label>
                                 <div class="col-lg-4">
-                                    <input type="file" class="form-control-uniform" data-fouc>
+                                    <input type="file" class="form-control-uniform" name="t_madrake_tahsili" id="t_madrake_tahsili" data-fouc>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تصویر چهره</label>
                                 <div class="col-lg-4">
-                                    <input type="file" class="form-control-uniform" data-fouc>
+                                    <input type="file" class="form-control-uniform" name="t_chehre" id="t_chehre" data-fouc>
                                 </div>
                                 <br><br>
 
@@ -543,13 +534,20 @@
                             </div>
                         </fieldset>
                         <div class="text-right">
-                            <button type="submit" name="send_province" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
+                            <button type="submit" name="send_operator" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
                         </div>
                     </form>
                 </div>
             </div>
             <!-- /form inputs -->
-
+            <div class="card">
+                <div class="col-md-12">
+                    <button name="delete" class="btn btn-warning col-md-auto float-md-right"  id="delete">حذف<i class="icon-folder-remove ml-2"></i></button>
+                    <button name="edit" class="btn btn-primary col-md-auto float-md-right" id="edit">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
+                    <table id="view_table" class="table table-striped datatable-responsive table-hover">
+                    </table>
+                </div>
+            </div>
         </div>
         <!-- /content area -->
 
@@ -585,3 +583,28 @@
 
 </body>
 </html>
+<!-- Core JS files -->
+<script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/datatables.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/responsive.min.js' ?>"></script>
+<!-- /core JS files -->
+
+<!-- Theme JS files -->
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/js/plugins/forms/styling/switch.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/select2.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/select.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/buttons.min.js' ?>"></script>
+<!--<script src="<?php /*echo __ROOT__ . '/public/js/plugins/editors/datatable/dataTables.altEditor.js' */?>"></script>-->
+<script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
+
+
+<script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_checkboxes_radios.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/persian-date.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/persian-datepicker.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/functions.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/operator.js' ?>"></script>

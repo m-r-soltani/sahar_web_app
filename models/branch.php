@@ -2,7 +2,7 @@
 
 function Insert_branch($name_sherkat,$shomare_sabt,$code_eghtesadi,$shenase_meli,$noe_sherkat,$website
     ,$email,$telephone1,$telephone2,$dornegar,$ostan,$shahr,$code_posti,$address,
-    $t_logo,$t_mohiti,$t_tablo,$t_code_eghtesadi,$t_rozname_tasis,$t_shenase_meli,$t_akharin_taghirat){
+                       $t_logo,$t_mohiti,$t_tablo,$t_code_eghtesadi,$t_rozname_tasis,$t_shenase_meli,$t_akharin_taghirat){
     $res=Db::justexecute("INSERT INTO bnm_namayandegi (name_sherkat,shomare_sabt,code_eghtesadi,
 shenase_meli,noe_sherkat,website,email,telephone1,telephone2,dornegar,ostan,shahr,
 code_posti,address,t_logo,t_mohiti,t_tablo,t_code_eghtesadi,t_rozname_tasis,t_shenase_meli,t_akharin_taghirat) 
