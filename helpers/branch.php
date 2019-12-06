@@ -1,4 +1,4 @@
-<?php /*defined('__ROOT__') OR exit('No direct script access allowed');*/
+<?php
 
 /*
  * DataTables example server-side processing script.
@@ -20,37 +20,41 @@
 
 
 // DB table to use
-    $table = 'bnm_shahr';
+$table = 'bnm_namayandegi';
 
 // Table's primary key
-    $primaryKey = 'id';
+$primaryKey = 'id';
 
 // Array of database columns which should be read and sent back to DataTables.
 // The `db` parameter represents the column name in the database, while the `dt`
 // parameter represents the DataTables column identifier. In this case object
 // parameter names
-    $columns = array(
-        array( 'db' => 'name', 'dt' => 'shahr' ),
-        array( 'db' => 'ostan_id', 'dt' => 'ostan_id' )
-    );
+$columns = array(
+    array( 'db' => 'name_sherkat', 'dt' => 'name_sherkat' ),
+    array( 'db' => 'shomare_sabt', 'dt' => 'shomare_sabt' ),
+    array( 'db' => 'telephone1', 'dt' => 'telephone1' ),
+    array( 'db' => 'telephone2', 'dt' => 'telephone2' ),
+    array( 'db' => 'address', 'dt' => 'address' ),
+    array( 'db' => 'noe_sherkat', 'dt' => 'noe_sherkat' )
+);
 
 // SQL server connection information
-    $sql_details = array(
-        'user' => 'root',
-        'pass' => '',
-        'db'   => 'saharertebat',
-        'host' => 'localhost'
-    );
+$sql_details = array(
+    'user' => 'root',
+    'pass' => '',
+    'db'   => 'saharertebat',
+    'host' => 'localhost'
+);
 
 
-    /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-     * If you just want to use the basic configuration for DataTables with PHP
-     * server-side, there is no need to edit below this line.
-     */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * If you just want to use the basic configuration for DataTables with PHP
+ * server-side, there is no need to edit below this line.
+ */
 
-    require( 'ssp.class.php' );
-    echo json_encode(
-        SSP::simple( $_POST, $sql_details, $table, $primaryKey, $columns )
-    );
+require( 'ssp.class.php' );
+echo json_encode(
+    SSP::simple( $_POST, $sql_details, $table, $primaryKey, $columns )
+);
 
 

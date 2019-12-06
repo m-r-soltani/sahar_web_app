@@ -26,5 +26,12 @@ spl_autoload_register(function ($className) {
         require_once $className . '.php'; 
     }
 });
-
+////////////////////////////////////////////php functions
+function getor($data,$param=""){
+    if($data!="" || $data!= " "){
+        return $data;
+    }else{
+        return $param;
+    }
+}
 new Bootstrap();

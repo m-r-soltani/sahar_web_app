@@ -4,10 +4,50 @@ class Bootstrap
 {
 	public function __construct() 
 	{
+        /*========sabte ostan========*/
         if(isset($_POST['send_province'])){
             $ostan_name=$_POST['ostan'];
             $db = Db::getInstance();
             $db->query("INSERT INTO bnm_ostan (name) VALUES ('$ostan_name')");
+        }
+        /*========sabte branch========*/
+        if(isset($_POST['send_branch'])){
+            require_once ('models/branch.php');
+            $id=$_POST['id'];
+            $name_sherkat=getor($_POST['name_sherkat'],"");
+            $shomare_sabt=getor($_POST['shomare_sabt'],"");
+            $code_eghtesadi=getor($_POST['code_eghtesadi'],"");
+            $shenase_meli=getor($_POST['shenase_meli'],"");
+            $noe_sherkat=getor($_POST['noe_sherkat'],"");
+            $website=getor($_POST['website'],"");
+            $email=getor($_POST['email'],"");
+            $telephone1=getor($_POST['telephone1'],"");
+            $telephone2=getor($_POST['telephone2'],"");
+            $dornegar=getor($_POST['dornegar'],"");
+            $ostan=getor($_POST['ostan'],"");
+            $shahr=getor($_POST['shahr'],"");
+            $code_posti=getor($_POST['code_posti'],"");
+            $address=getor($_POST['address'],"");
+            $t_logo=getor($_POST['t_logo'],"");
+            $t_mohiti=getor($_POST['t_mohiti'],"");
+            $t_tablo=getor($_POST['t_tablo'],"");
+            $t_code_eghtesadi=getor($_POST['t_code_eghtesadi'],"");
+            $t_rozname_tasis=getor($_POST['t_rozname_tasis'],"");
+            $t_shenase_meli=getor($_POST['t_shenase_meli'],"");
+            $t_akharin_taghirat=getor($_POST['t_akharin_taghirat'],"");
+            //checking for insert or update
+            if($id=="empty"){
+                $result=Insert_branch($name_sherkat,$shomare_sabt,$code_eghtesadi,$shenase_meli,
+                    $noe_sherkat,$website,$email,$telephone1,$telephone2,$dornegar,$ostan,$shahr,
+                    $code_posti,$address, $t_logo,$t_mohiti,$t_tablo,$t_code_eghtesadi,$t_rozname_tasis,
+                    $t_shenase_meli,$t_akharin_taghirat);
+            }else{
+                //update
+                $result=Update_branch($id,$name_sherkat,$shomare_sabt,$code_eghtesadi,$shenase_meli,$noe_sherkat,$website
+                    ,$email,$telephone1,$telephone2,$dornegar,$ostan,$shahr,$code_posti,$address,
+                    $t_logo,$t_mohiti,$t_tablo,$t_code_eghtesadi,$t_rozname_tasis,$t_shenase_meli,
+                    $t_akharin_taghirat);
+            }
         }
         /*========sabte shahr========*/
         if(isset($_POST['send_city'])){
@@ -16,6 +56,8 @@ class Bootstrap
             //checking for insert or update
             if($id=="empty"){
                 //insert
+                getor($_POST['shahr'],"");
+                getor($_POST['entekhab_ostan'],"");
                 $result=Insert_city($_POST['shahr'],$_POST['entekhab_ostan']);
             }else{
                 //update
@@ -40,6 +82,13 @@ class Bootstrap
                     $rows=json_encode($result);
                     echo $rows;
                     break;
+                case 'branch':
+                    $condition=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_namayandegi WHERE name_sherkat='$condition'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
             }
         }
 /*==========hard delete============*/
@@ -49,6 +98,16 @@ class Bootstrap
                 case 'city':
                     $name=$_POST['harddelete'];
                     $sql="delete FROM bnm_shahr WHERE name = '$name'";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'branch':
+                    $name=$_POST['harddelete'];
+                    $sql="delete FROM bnm_namayandegi WHERE name_sherkat = '$name'";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;
