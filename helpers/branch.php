@@ -53,8 +53,10 @@ $sql_details = array(
  */
 
 require( 'ssp.class.php' );
+//$where = "name_sherkat = 'sdf'";
+$where=false;
 echo json_encode(
-    SSP::simple( $_POST, $sql_details, $table, $primaryKey, $columns )
+    SSP::simple( $_POST, $sql_details, $table, $primaryKey, $columns,$where )
 );
 
 
