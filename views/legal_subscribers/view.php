@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>" />
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
+    <!--<link rel="stylesheet" href="<?php /*echo __ROOT__ . '/public/css/persianDatepicker-latoja.css' */?>" />-->
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/dataTables.bootstrap4.min.css' ?>" />
+
     <!-- /global stylesheets -->
 </head>
 <body>

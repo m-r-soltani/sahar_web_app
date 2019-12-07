@@ -450,7 +450,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تاریخ تولد</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="tarihke_tavalod" id="tarihke_tavalod" placeholder="مثال: 1380/05/20">
+                                    <input type="text" class="form-control" name="tarikhe_tavalod" id="tarikhe_tavalod" placeholder="مثال: 1380/05/20">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">مدرک تحصیلی</label>
@@ -606,5 +606,5 @@
 <script src="<?php echo __ROOT__ . '/public/js/persian-date.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/persian-datepicker.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/functions.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/city.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/operator.js' ?>"></script>
 <!-- /theme JS files -->

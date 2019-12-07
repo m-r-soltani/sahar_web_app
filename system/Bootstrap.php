@@ -104,6 +104,18 @@ class Bootstrap
             }
 
         }
+        /*========wireless_ap========*/
+        if(isset($_POST['send_wireless_ap'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_wireless_ap');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_wireless_ap',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
+        }
         /*========sabte terminal========*/
         if(isset($_POST['send_terminal'])){
             if($_POST['id']=="empty") {
@@ -130,44 +142,13 @@ class Bootstrap
         }
         /*========sabte operator========*/
         if(isset($_POST['send_operator'])){
-            require_once ('models/operator.php');
-            $id=$_POST['id'];
-            $name_namayandegi=getor($_POST['name_namayandegi'],"");
-            $name=getor($_POST['name'],"");
-            $name_khanevadegi=getor($_POST['name_khanevadegi'],"");
-            $code_meli=getor($_POST['code_meli'],"");
-            $shomare_shenasname=getor($_POST['shomare_shenasname'],"");
-            $name_pedar=getor($_POST['name_pedar'],"");
-            $tarihke_tavalod=getor($_POST['tarihke_tavalod'],"");
-            $madrake_tahsili=getor($_POST['madrake_tahsili'],"");
-            $reshteye_tahsili=getor($_POST['reshteye_tahsili'],"");
-            $ostan_tavalod=getor($_POST['ostan_tavalod'],"");
-            $shahr_tavalod=getor($_POST['shahr_tavalod'],"");
-            $telephone_hamrah=getor($_POST['telephone_hamrah'],"");
-            $telephone_mahale_sokonat=getor($_POST['telephone_mahale_sokonat'],"");
-            $address=getor($_POST['address'],"");
-            $email=getor($_POST['email'],"");
-            $semat=getor($_POST['semat'],"");
-            $name_karbari=getor($_POST['name_karbari'],"");
-            $ramze_obor=getor($_POST['ramze_obor'],"");
-            $t_karte_meli=getor($_POST['t_karte_meli'],"");
-            $t_shenasname=getor($_POST['t_shenasname'],"");
-            $t_madrake_tahsili=getor($_POST['t_madrake_tahsili'],"");
-            $t_chehre=getor($_POST['t_chehre'],"");
-            //checking for insert or update
-            if($id=="empty"){
-                $result=Insert_operator($name_namayandegi,$name,$name_khanevadegi,$code_meli,
-                    $shomare_shenasname,$name_pedar,$tarihke_tavalod,$madrake_tahsili,$reshteye_tahsili,
-                    $ostan_tavalod,$shahr_tavalod,$telephone_hamrah,$telephone_mahale_sokonat,$address,
-                    $email,$semat,$name_karbari,$ramze_obor,$t_karte_meli,$t_shenasname,$t_madrake_tahsili,
-                    $t_chehre);
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_operator');
+                Db::justexecute($sql);
             }else{
-                //update
-                $result=Update_operator($id,$name_namayandegi,$name,$name_khanevadegi,$code_meli,
-                    $shomare_shenasname,$name_pedar,$tarihke_tavalod,$madrake_tahsili,$reshteye_tahsili,
-                    $ostan_tavalod,$shahr_tavalod,$telephone_hamrah,$telephone_mahale_sokonat,$address,
-                    $email,$semat,$name_karbari,$ramze_obor,$t_karte_meli,$t_shenasname,$t_madrake_tahsili,
-                    $t_chehre);
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_operator',"WHERE id = $id");
+                Db::justexecute($sql);
             }
         }
         /*==========edit form============*/
@@ -177,6 +158,13 @@ class Bootstrap
                 case 'city':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_shahr WHERE name='$condition'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
+                case 'wireless_ap':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_wireless_ap WHERE id=$id";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
                     echo $rows;
@@ -232,6 +220,16 @@ class Bootstrap
                 case 'city':
                     $name=$_POST['harddelete'];
                     $sql="delete FROM bnm_shahr WHERE name = '$name'";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'wireless_ap':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_wireless_ap WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;
