@@ -73,7 +73,6 @@ $(document).ready(function () {
             $('#id').val(data[0]['id']);
             $('#name_namayandegi').val(data[0]['name_namayandegi']);
             $('#name').val(data[0]['name']);
-            $('#name_namayandegi').val(data[0]['name_namayandegi']);
             $('#name_khanevadegi').val(data[0]['name_khanevadegi']);
             $('#code_meli').val(data[0]['code_meli']);
             $('#shomare_shenasname').val(data[0]['shomare_shenasname']);
@@ -104,7 +103,6 @@ $(document).ready(function () {
 
         });
     });
-    console.log($('#t_akharin_taghirat').val()); //.attr('value','ad.jpg')
 
 
 });

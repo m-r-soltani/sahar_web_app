@@ -54,7 +54,7 @@ $sql_details = array(
  */
 
 require( 'ssp.class.php' );
-$where = "";
+$where = false;
 echo json_encode(
     SSP::simple( $_POST, $sql_details, $table, $primaryKey, $columns,$where )
 );
