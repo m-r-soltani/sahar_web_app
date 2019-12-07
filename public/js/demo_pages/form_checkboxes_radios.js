@@ -51,7 +51,7 @@ var InputsCheckboxesRadios = function () {
         });
     };
     // Switchery
-    var _componentSwitchery = function() {
+/*    var _componentSwitchery = function() {
         if (typeof Switchery == 'undefined') {
             console.warn('Warning - switchery.min.js is not loaded.');
             return;
@@ -79,15 +79,15 @@ var InputsCheckboxesRadios = function () {
         }
         // Initialize
         $('.form-check-input-switch').bootstrapSwitch();
-    };
+    };*/
     //
     // Return objects assigned to module
     //
     return {
         initComponents: function() {
             _componentUniform();
-            _componentSwitchery();
-            _componentBootstrapSwitch();
+            // _componentSwitchery();
+            // _componentBootstrapSwitch();
         }
     }
 }();

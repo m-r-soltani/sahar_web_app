@@ -182,8 +182,8 @@ class Bootstrap
                     echo $rows;
                     break;
                 case 'host':
-                    $condition=$_POST['condition'];
-                    $sql="SELECT * FROM bnm_host WHERE name='$condition'";
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_host WHERE id=$id";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
                     echo $rows;

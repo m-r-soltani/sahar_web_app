@@ -488,6 +488,11 @@
                                     <input type="text" class="form-control" name="address_shekayat" id="address_shekayat" placeholder="مثال: تهران-خیابان شریعتی ...">
                                 </div>
                                 <br><br>
+                                <label class="col-form-label col-lg-2">اولویت</label>
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="olaviat" id="olaviat" placeholder="مثال: 2">
+                                </div>
+                                <br><br>
                                 <label class="col-form-label col-lg-2">تصویر لوگو</label>
                                 <div class="col-lg-4">
                                     <input type="file" class="form-control-uniform" name="t_logo" id="t_logo">
@@ -498,61 +503,58 @@
                                     <input type="text" class="form-control" name="name_tarefe" id="name_tarefe" placeholder="نام تعرفه">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">اولویت</label>
-                                <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="olaviat" id="olaviat" placeholder="عدد صحیح مثال: 2">
-                                </div>
-                                <br><br>
+
                                 <label class="col-form-label col-lg-12">نوع سرویس :</label>
-                                <div class="form-check form-check-switchery col-lg-3">
+                                <div class="form-check col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="dsl_license" id="dsl_license">لایسنس DSL
+                                        <input type="checkbox" class="form-check-input-styled" name="dsl_license" id="dsl_license">لایسنس DSL
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery col-lg-3">
+                                <div class="form-check col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="dsl_bitstream" id="dsl_bitstream">بیت استریم DSL
+                                        <input type="checkbox" class="form-check-input-styled" name="dsl_bitstream" id="dsl_bitstream">بیت استریم DSL
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery col-lg-3">
+                                <div class="form-check col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="wlan_license" id="wlan_license">لایسنس WLAN
+                                        <input type="checkbox" class="form-check-input-styled" name="wlan_license" id="wlan_license">لایسنس WLAN
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery col-lg-3">
+                                <div class="form-check col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="wlan_bitstream" id="wlan_bitstream">بیت استریم WLAN
+                                        <input type="checkbox" class="form-check-input-styled" name="wlan_bitstream" id="wlan_bitstream">بیت استریم WLAN
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery col-lg-3">
+                                <div class="form-check col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="td_lte" id="td_lte">TD-LTE
+                                        <input type="checkbox" class="form-check-input-styled" name="td_lte" id="td_lte">TD-LTE
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery col-lg-3">
+                                <div class="form-check col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="ngn" id="ngn">NGN
+                                        <input type="checkbox" class="form-check-input-styled" name="ngn" id="ngn">NGN
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery col-lg-3">
+                                <div class="form-check col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="phone_orgination" id="phone_orgination">Phone Orgination
+                                        <input type="checkbox" class="form-check-input-styled" name="phone_orgination" id="phone_orgination">Phone Orgination
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery col-lg-3">
+                                <div class="form-check col-lg-3" >
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="domain" id="domain">Domain
+                                        <input type="checkbox" class="form-check-input-styled" name="domain" id="domain">
+                                        میزبان
                                     </label>
                                 </div>
-                                <div class="form-check form-check-switchery col-lg-3">
+                                <div class="form-check col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="host" id="host" checked>Host
+                                        <input type="checkbox" class="form-check-input-styled" name="host" id="host">میزبان
                                     </label>
                                 </div>
                             </div>
                         </fieldset>
                         <div class="text-right">
-                            <button type="submit" name="send_province" class="btn btn-primary">ارسال <i
+                            <button type="submit" name="send_host" class="btn btn-primary">ارسال <i
                                         class="icon-paperplane ml-2"></i></button>
                         </div>
                     </form>
@@ -619,16 +621,16 @@
 
 <!-- Theme JS files -->
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/js/plugins/forms/styling/switch.min.js' ?>"></script>
+<!--<script src="<?php /*echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' */?>"></script>
+<script src="<?php /*echo __ROOT__ . '/public/js/js/plugins/forms/styling/switch.min.js' */?>"></script>-->
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/select2.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/select.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/buttons.min.js' ?>"></script>
-<!--<script src="<?php /*echo __ROOT__ . '/public/js/plugins/editors/datatable/dataTables.altEditor.js' */?>"></script>-->
+<script src="<?php echo __ROOT__ . '/public/js/plugins/editors/datatable/dataTables.altEditor.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
 
 
-<script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_checkboxes_radios.js' ?>"></script>
+<!--<script src="<?php /*echo __ROOT__ . '/public/js/demo_pages/form_checkboxes_radios.js' */?>"></script>-->
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/persian-date.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/persian-datepicker.min.js' ?>"></script>

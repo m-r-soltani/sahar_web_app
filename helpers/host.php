@@ -20,7 +20,7 @@
 
 
 // DB table to use
-$table = 'bnm_pre_number';
+$table = 'bnm_host';
 
 // Table's primary key
 $primaryKey = 'id';
