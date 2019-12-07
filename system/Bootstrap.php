@@ -80,7 +80,18 @@ class Bootstrap
                     $t_akharin_taghirat);
             }
         }
+        /*========sabte telecommunications_center========*/
+        if(isset($_POST['send_terminal'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_terminal');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_terminal',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
 
+        }
         /*========sabte telecommunications_center========*/
         if(isset($_POST['send_telecommunications_center'])){
             if($_POST['id']=="empty") {
@@ -146,6 +157,13 @@ class Bootstrap
                     $rows=json_encode($result);
                     echo $rows;
                     break;
+                case 'terminal':
+                    $condition=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_terminal WHERE id='$condition'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
                 case 'branch':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_namayandegi WHERE name_sherkat='$condition'";
@@ -176,6 +194,16 @@ class Bootstrap
                 case 'city':
                     $name=$_POST['harddelete'];
                     $sql="delete FROM bnm_shahr WHERE name = '$name'";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'terminal':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_terminal WHERE id = '$id'";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;
