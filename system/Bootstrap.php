@@ -80,7 +80,19 @@ class Bootstrap
                     $t_akharin_taghirat);
             }
         }
-        /*========sabte telecommunications_center========*/
+        /*========sabte pre_number========*/
+        if(isset($_POST['send_pre_number'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_pre_number');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_pre_number',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
+        }
+        /*========sabte terminal========*/
         if(isset($_POST['send_terminal'])){
             if($_POST['id']=="empty") {
                 $sql = Insert_Generator($_POST, 'bnm_terminal');
@@ -164,6 +176,13 @@ class Bootstrap
                     $rows=json_encode($result);
                     echo $rows;
                     break;
+                case 'pre_number':
+                    $condition=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_pre_number WHERE id='$condition'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
                 case 'branch':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_namayandegi WHERE name_sherkat='$condition'";
@@ -204,6 +223,16 @@ class Bootstrap
                 case 'terminal':
                     $id=$_POST['harddelete'];
                     $sql="delete FROM bnm_terminal WHERE id = '$id'";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'pre_number':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_pre_number WHERE id = '$id'";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;

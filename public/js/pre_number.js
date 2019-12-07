@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    GetProvinces('telecommunications_center',function (data) {
+    GetProvinces('pre_number',function (data) {
         if (data){
             //has data
             var element=$('#ostan');
@@ -13,7 +13,7 @@ $(document).ready(function () {
             alert('درخواست ناموفق');
         }
     });
-    GetCities('telecommunications_center',function (data) {
+    GetCities('pre_number',function (data) {
         if (data){
             //has data
             var element=$('#shahr');
@@ -30,26 +30,26 @@ $(document).ready(function () {
 
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[
-        { "data": "name",
+        { "data": "id",
+            title:'شناسه'
+        },
+        { "data": "name_markaz",
             title:'نام مرکز'
         },
-        { "data": "pish_shomare",
-            title:'پیش شماره'
+        { "data": "shahr",
+            title:'شهر'
         },
-        { "data": "shomare_tamas_markaz",
-            title:'شماره تماس مرکز'
+        { "data": "tedade_pishshomare",
+            title:'تعداد پیش شماره'
         },
-        { "data": "masire_avale_faktorha",
-            title:'مسیر اول فاکتورها'
-        },
-        { "data": "masire_dovome_faktorha",
-            title:'مسیر دوم فاکتورها'
+        { "data": "sarshomare",
+            title:'سر شماره'
         },
         { "data": "noe_gharardad",
             title:'نوع قرارداد'
         }
     ];
-    DataTable('#view_table','/sahar/helpers/telecommunications_center.php','POST',cols,function (table) {
+    DataTable('#view_table','/sahar/helpers/pre_number.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/
@@ -66,7 +66,7 @@ $(document).ready(function () {
             //shenase avalin soton dt mibashad
             let tr=$('#view_table tbody').find('tr.selected');
             let td=tr.find('td:first').text();
-            Hard_Delete(td,'telecommunications_center',function (data) {
+            Hard_Delete(td,'pre_number',function (data) {
                 if (data==='1') {
                     table.ajax.reload();
                 }else{
@@ -78,19 +78,21 @@ $(document).ready(function () {
     $('#edit').click( function () {
         let tr=$('#view_table tbody').find('tr.selected');
         let td=tr.find('td:first').text();
-        Edit_Form('telecommunications_center',td,function (data) {
+        Edit_Form('pre_number',td,function (data) {
             $('#id').val(data[0]['id']);
-            $('#name').val(data[0]['name']);
+            $('#name_markaz').val(data[0]['name_markaz']);
+            $('#tedade_pishshomare').val(data[0]['tedade_pishshomare']);
+            $('#mantaghe').val(data[0]['mantaghe']);
+            $('#ostan').val(data[0]['ostan']);
+            $('#shahr').val(data[0]['shahr']);
+            $('#mizban').val(data[0]['mizban']);
+            $('#sarshomare').val(data[0]['sarshomare']);
+            $('#noe_gharardad').val(data[0]['noe_gharardad']);
+            $('#tozihat').val(data[0]['tozihat']);
+
+
             //$('#ostan option[value="'+data[0]['ostan_id']+'"]').attr('selected','selected');
             //$('#shahr option[value="'+data[0]['shahr_id']+'"]').attr('selected','selected');
-            $('#pish_shomare').val(data[0]['pish_shomare']);
-            $('#shomare_tamas_markaz').val(data[0]['shomare_tamas_markaz']);
-            $('#shomare_tamas_mdf').val(data[0]['shomare_tamas_mdf']);
-            $('#address').val(data[0]['address']);
-            $('#masire_avale_faktorha').val(data[0]['masire_avale_faktorha']);
-            $('#masire_dovome_faktorha').val(data[0]['masire_dovome_faktorha']);
-            $('#mizban').val(data[0]['mizban']);
-            $('#noe_gharardad').val(data[0]['noe_gharardad']);
 
 
             //$('#ostan option[value="'+data[0]['ostan_id']+'"]').attr('selected','selected');

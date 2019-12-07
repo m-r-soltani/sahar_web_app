@@ -112,7 +112,4 @@ $(document).ready(function () {
 
         });
     });
-    console.log($('#t_akharin_taghirat').val()); //.attr('value','ad.jpg')
-
-
 });
