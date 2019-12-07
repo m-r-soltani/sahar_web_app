@@ -8,14 +8,15 @@
     <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
 
     <!-- Global stylesheets -->
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/main.css' ?>"/>
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/icons/icomoon/styles.css' ?>"/>
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap.min.css' ?>"/>
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap_limitless.min.css' ?>"/>
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>"/>
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>"/>
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>"/>
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/main.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/icons/icomoon/styles.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap_limitless.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/dataTables.bootstrap4.min.css' ?>" />
     <!-- /global stylesheets -->
 </head>
 <body>
@@ -453,103 +454,99 @@
                                 <legend class="text-uppercase font-size-sm font-weight-bold">میزبان</legend>
                                 <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="namee_service_dahande" placeholder="مثال: " required>
+                                    <input type="hidden" id="id" class="form-control" name="id" value="empty">
+                                    <input type="text" class="form-control" id="name_service_dahande" name="name_service_dahande" placeholder="مثال: " required>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شماره مجوز</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="shomare_mojavez" placeholder="مثال: 123456" required>
+                                    <input type="text" class="form-control" name="shomare_mojavez" id="shomare_mojavez" placeholder="مثال: 123456" required>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">آدرس</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="address" placeholder="مثال: تهران-خیابان شریعتی ..." required>
+                                    <input type="text" class="form-control" name="address" id="address" placeholder="مثال: تهران-خیابان شریعتی ..." required>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شماره تماس</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="shomare_tamas" placeholder="مثال: 09121234567" required>
+                                    <input type="text" class="form-control" name="shomare_tamas" id="shomare_tamas" placeholder="مثال: 09121234567" required>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تلفن پشتیبانی</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="telephone_poshtibani" placeholder="مثال: 88123456" required>
+                                    <input type="text" class="form-control" name="shomare_poshtibani" id="shomare_poshtibani" placeholder="مثال: 88123456" required>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">وب سایت</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="website" placeholder="مثال: wwww.saharertebat.net" required>
+                                    <input type="text" class="form-control" name="website" id="website" placeholder="مثال: wwww.saharertebat.net" required>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">آدرس شکایات</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="address_shekayat" placeholder="مثال: تهران-خیابان شریعتی ...">
+                                    <input type="text" class="form-control" name="address_shekayat" id="address_shekayat" placeholder="مثال: تهران-خیابان شریعتی ...">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">آدرس شکایات</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="address_shekayat" placeholder="مثال: تهران-خیابان شریعتی ...">
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">آدرس لوگو</label>
+                                <label class="col-form-label col-lg-2">تصویر لوگو</label>
                                 <div class="col-lg-4">
-                                    <input type="file" class="form-control-uniform" name="address_logo">
+                                    <input type="file" class="form-control-uniform" name="t_logo" id="t_logo">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نام تعرفه</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="name_tarefe" placeholder="نام تعرفه">
+                                    <input type="text" class="form-control" name="name_tarefe" id="name_tarefe" placeholder="نام تعرفه">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">اولویت</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="olaviat" placeholder="عدد صحیح مثال: 2">
+                                    <input type="text" class="form-control" name="olaviat" id="olaviat" placeholder="عدد صحیح مثال: 2">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-12">نوع سرویس :</label>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="dsl_lisense">لایسنس DSL
+                                        <input type="checkbox" class="form-check-input-switchery" name="dsl_license" id="dsl_license">لایسنس DSL
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="bitstream_dsl">بیت استریم DSL
+                                        <input type="checkbox" class="form-check-input-switchery" name="dsl_bitstream" id="dsl_bitstream">بیت استریم DSL
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="lisense_wlan">لایسنس WLAN
+                                        <input type="checkbox" class="form-check-input-switchery" name="wlan_license" id="wlan_license">لایسنس WLAN
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="bitstream_wlan">بیت استریم WLAN
+                                        <input type="checkbox" class="form-check-input-switchery" name="wlan_bitstream" id="wlan_bitstream">بیت استریم WLAN
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="td_lte">TD-LTE
+                                        <input type="checkbox" class="form-check-input-switchery" name="td_lte" id="td_lte">TD-LTE
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="ngn">NGN
+                                        <input type="checkbox" class="form-check-input-switchery" name="ngn" id="ngn">NGN
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="Phone_orgination">Phone Orgination
+                                        <input type="checkbox" class="form-check-input-switchery" name="phone_orgination" id="phone_orgination">Phone Orgination
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="domain">Domain
+                                        <input type="checkbox" class="form-check-input-switchery" name="domain" id="domain">Domain
                                     </label>
                                 </div>
                                 <div class="form-check form-check-switchery col-lg-3">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input-switchery" name="host">Host
+                                        <input type="checkbox" class="form-check-input-switchery" name="host" id="host" checked>Host
                                     </label>
                                 </div>
                             </div>
@@ -562,7 +559,14 @@
                 </div>
             </div>
             <!-- /form inputs -->
-
+            <div class="card">
+                <div class="col-md-12">
+                    <button name="delete" class="btn btn-warning col-md-auto float-md-right"  id="delete">حذف<i class="icon-folder-remove ml-2"></i></button>
+                    <button name="edit" class="btn btn-primary col-md-auto float-md-right" id="edit">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
+                    <table id="view_table" class="table table-striped datatable-responsive table-hover">
+                    </table>
+                </div>
+            </div>
         </div>
         <!-- /content area -->
 
@@ -609,20 +613,24 @@
 <script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/datatables.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/responsive.min.js' ?>"></script>
 <!-- /core JS files -->
 
 <!-- Theme JS files -->
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/js/plugins/forms/styling/switch.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/select2.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/select.min.js' ?>"></script>
+<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/buttons.min.js' ?>"></script>
+<!--<script src="<?php /*echo __ROOT__ . '/public/js/plugins/editors/datatable/dataTables.altEditor.js' */?>"></script>-->
 <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
+
+
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_checkboxes_radios.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
-<!--<script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>
-<script src="<?php /*echo __ROOT__ . '/public/js/persianDatepicker.min.js' */?>"></script>-->
 <script src="<?php echo __ROOT__ . '/public/js/persian-date.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/persian-datepicker.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/functions.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/legal_subscribers.js' ?>"></script>
-<!-- /theme JS files -->
+<script src="<?php echo __ROOT__ . '/public/js/host.js' ?>"></script>
