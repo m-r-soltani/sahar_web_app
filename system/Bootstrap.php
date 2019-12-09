@@ -128,6 +128,18 @@ class Bootstrap
             }
 
         }
+        /*========wireless_ap========*/
+        if(isset($_POST['send_wireless_station'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_wireless_station');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_wireless_station',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
+        }
         /*========sabte terminal========*/
         if(isset($_POST['send_terminal'])){
             if($_POST['id']=="empty") {
@@ -177,6 +189,13 @@ class Bootstrap
                 case 'wireless_ap':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_wireless_ap WHERE id=$id";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
+                case 'wireless_station':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_wireless_station WHERE id=$id";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
                     echo $rows;
@@ -239,6 +258,16 @@ class Bootstrap
                 case 'city':
                     $name=$_POST['harddelete'];
                     $sql="delete FROM bnm_shahr WHERE name = '$name'";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'wireless_station':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_wireless_station WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;
