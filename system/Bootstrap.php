@@ -41,6 +41,18 @@ class Bootstrap
                 $result=Update_city($id,$_POST['shahr'],$_POST['entekhab_ostan']);
             }
         }
+        /*========sabte host========*/
+        if(isset($_POST['send_popsite'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_popsite');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_popsite',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
+        }
         /*========sabte branch========*/
         if(isset($_POST['send_branch'])){
             require_once ('models/branch.php');
@@ -169,6 +181,13 @@ class Bootstrap
                     $rows=json_encode($result);
                     echo $rows;
                     break;
+                case 'popsite':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_popsite WHERE id=$id";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
                 case 'host':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_host WHERE id=$id";
@@ -230,6 +249,16 @@ class Bootstrap
                 case 'wireless_ap':
                     $id=$_POST['harddelete'];
                     $sql="delete FROM bnm_wireless_ap WHERE id = $id";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'popsite':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_popsite WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;

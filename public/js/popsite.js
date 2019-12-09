@@ -1,157 +1,149 @@
 $(document).ready(function () {
-    var data = [
-        ["Tiger Nixon", "System Architect", "Edinburgh", "111", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "222", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "333", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "444", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "555", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "666", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "777", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "888", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "999", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "123", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "456", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "789", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "122", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "233", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "455", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "677", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "899", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "000", "2011/04/25"],
-        ["Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25"],
-        ["Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25"]
-    ];
-
-    var cols =
-        [
-            {title: "Name"},
-            {title: "Position"},
-            {title: "Office"},
-            {title: "Extn."},
-            {title: "Start date"},
-        ];
-
-    var table;
-
-    table = $('#example').DataTable({
-        sPaginationType: "full_numbers",
-        data: data,        // data from above
-        columns: cols,  // columns from above
-        dom: 'flrtip',        // element order: NEEDS BUTTON CONTAINER (B) ****
-        /*dom: 'Bflrtip',        // element order: NEEDS BUTTON CONTAINER (B) ****
-        buttons: [
-            {
-                extend: 'copy',footer: true, text: 'کپی' , attr:  {title: 'copy', id: 'copybtn', class:'btn btn-secondary col-lg-auto float-lg-right'}
-            },
-            {
-                extend: 'csv', text: 'خروجی csv' , attr:  {title: 'csv', id: 'csvbtn', class:'btn btn-secondary col-lg-auto float-lg-right'}
-            },
-            {
-                extend: 'print', text: 'پرینت', attr:  {title: 'Copy',id: 'printbtn',class:'btn btn-secondary col-lg-auto float-lg-right'}
-            }
-        ],*/
-        select: 'single',     // enable single row selection
-        responsive: true,     // enable responsiveness
-        //altEditor: true,      // Enable altEditor ****
-        order: [[0, "asc"]],
-        scrollY: 1000,
-        scrollX: true,
-        scrollCollapse: true,
-        paging: true,
-        fixedColumns: false,
-
-        oLanguage: {
-            select: {
-                rows: {
-                    _: "شما %d خط را انتخاب کرده ایید",
-                    0: "برای انتخاب کلیک کنید",
-                    1: "1 آیتم انتخاب شده",
-                    2: "2 آیتم انتخاب شده",
-                    3: "3 آیتم انتخاب شده",
-                    4: "4 آیتم انتخاب شده",
-                    5: "5 آیتم انتخاب شده",
-                    6: "6 آیتم انتخاب شده",
-                    7: "7 آیتم انتخاب شده",
-                    8: "8 آیتم انتخاب شده",
-                    9: "9 آیتم انتخاب شده",
-                    10: "10 آیتم انتخاب شده",
+    /*GetProvinces('popsite',function (data) {
+        if (data){
+            //has data
+            var element=$('#ostan');
+            if(element) {
+                for (let i = 0;i<data.length ; i++) {
+                    element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
                 }
-            },
-            sSearch: "جستجو : ",
-            oPaginate: {
-                sPrevious: "قبلی",
-                sNext: "بعدی",
-                sLast: "آخر",
-                sEmptyTable: "موردی یافت نشد!",
-                sFirst: "ابتدا"
-            },
-            sLoadingRecords: "لطفا صبر کنید - درحال بارگزاری...",
-            sZeroRecords: "رکوردی یافت نشد!",
-            sProcessing: "در حال انجام درخواست لطفا صبر کنید...",
-            sInfo: "_TOTAL_ رکورد یافت شده (_START_ تا _END_)",
-            sInfoFiltered: "فیلتر شده از _MAX_ رکورد",
-            sInfoThousands: "K",
-            sLengthMenu:
-                'نمایش <select id="datatable_rownum">'+
-                '<option value="10">10</option>'+
-                '<option value="20">20</option>'+
-                '<option value="30">30</option>'+
-                '<option value="40">40</option>'+
-                '<option value="50">50</option>'+
-                '<option value="50">100</option>'+
-                '</select> رکورد',
-
-        },
-
-        "emptyTable":"موردی برای نمایش وجود نداشت.",
-        autoWidth: false
-    });
-    $('#example tbody').on( 'click', 'tr', function () {
-        if ( $(this).hasClass('selected') ) {
-            $(this).removeClass('selected');
-        }
-        else {
-            table.$('tr.selected').removeClass('selected');
-            $(this).addClass('selected');
-        }
-    } );
-    $('#edit').click( function () {
-        //table.row('.selected').remove().draw( false );
-        alert('ویرایش');
-        console.log(table.row);
-    } );
-    $('#delete').click( function () {
-        alert('حذف');
-        console.log(table.row);
-    } );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*buttons: [
-        {
-            text: 'ویرایش',
-            action: function ( e, dt, node, config ) {
-                console.log(dt);
-                dt.ajax.reload();
             }
+        }else{
+            //data az db gerefte nashod
+            alert('درخواست ناموفق');
         }
-    ],*/
+    });*/
+
+    /*===================++  DATA_TABLE  ++=========================*/
+    var cols=[
+        { "data": "id",
+            title:'شناسه دکل'
+        },
+        { "data": "name_dakal",
+            title:'نام دکل'
+        },
+        { "data": "noe_dakal",
+            title:'نوع دکل',
+        },
+        { "data": "ertefa_dakal",
+            title:'ارتفاع دکل'
+        },
+        { "data": "tol_joghrafiai",
+            title:'طول جغرافیایی'
+        },
+        { "data": "arz_joghrafiai",
+            title:'عرض جغرافیایی'
+        },
+        { "data": "shomare_sabt",
+            title:'آدرس'
+        },
+        { "data": "maleke_dakal",
+            title:'مالک دکل'
+        },
+        { "data": "shomare_tamas_malek",
+            title:'شماره تماس مالک'
+        },
+        { "data": "name_poshtiban",
+            title:'نام پشتیبان'
+        },
+    ];
+    DataTable('#view_table','/sahar/helpers/popsite.php','POST',cols,function (table) {
+        /*===================++  hide first column ++=========================*/
+
+        /*===================++  select table row ++=========================*/
+        $('#view_table tbody').on( 'click', 'tr', function () {
+            if ( $(this).hasClass('selected') ) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        } );
+        $('#delete').click( function () {
+            //shenase avalin soton dt mibashad
+            let tr=$('#view_table tbody').find('tr.selected');
+            let td=tr.find('td:first').text();
+            Hard_Delete(td,'popsite',function (data) {
+                if (data==='1') {
+                    table.ajax.reload();
+                }else{
+                    alert('عملیات ناموفق');
+                }
+            });
+        } );
+    });
+    $('#edit').click( function () {
+        // $(".form-group").find("input").each(function () {
+        //     console.log(123);
+        // });
+        let tr=$('#view_table tbody').find('tr.selected');
+        let td=tr.find('td:first').text();
+        Edit_Form('popsite',td,function (data) {
+
+            $('#id').val(data[0]['id']);
+            $('#name_dakal').val(data[0]['name_dakal']);
+            if(data[0]['noe_dakal']=='faghededakal') {
+                $('#noe_dakal option[value="فاقد دکل"]').attr('selected', 'selected');
+            }else if(data[0]['noe_dakal']=='mahari'){
+                $('#noe_dakal option[value="مهاری"]').attr('selected', 'selected');
+            }else if(data[0]['noe_dakal']=='khodista'){
+                $('#noe_dakal option[value="خودایستا"]').attr('selected', 'selected');
+            }
+            $('#ostan').val(data[0]['ostan']);
+            $('#shahr').val(data[0]['shahr']);
+            $('#address').val(data[0]['address']);
+            $('#ertefa_sakhteman').val(data[0]['ertefa_sakhteman']);
+            $('#ertefa_dakal').val(data[0]['ertefa_dakal']);
+            $('#majmoe_ertefa').val(data[0]['majmoe_ertefa']);
+            $('#tol_joghrafiai').val(data[0]['tol_joghrafiai']);
+            $('#arz_joghrafiai').val(data[0]['arz_joghrafiai']);
+            $('#shomare_sabt').val(data[0]['shomare_sabt']);
+            $('#code_posti').val(data[0]['code_posti']);
+            $('#maleke_dakal').val(data[0]['maleke_dakal']);
+            $('#shomare_tamas_malek').val(data[0]['shomare_tamas_malek']);
+            // console.log(data[0]['noe_malekiat']);
+            // if(data[0]['noe_malekiat']==='estijari') {
+            //     $('#noe_malekiat option[value="'+data[0]['noe_malekiat']+'"]').attr('selected', 'selected');
+            // }else if(data[0]['noe_malekiat']==='malekiat'){
+            //$('#noe_malekiat option[value="'+data[0]['noe_malekiat']+'"]').attr('selected', 'selected');
+            // }
+            $('#noe_malekiat option[value="'+data[0]['noe_malekiat']+'"]').attr('selected', 'selected');
+            $('#rotbe_dakal option[value="'+data[0]['rotbe_dakal']+'"]').attr('selected', 'selected');
+            $('#mizbane_dakal').val(data[0]['mizbane_dakal']);
+            $('#name_poshtiban').val(data[0]['name_poshtiban']);
+            $('#family_poshtiban').val(data[0]['family_poshtiban']);
+            $('#shoamre_tamas_poshtiban').val(data[0]['shoamre_tamas_poshtiban']);
+            $('#ejare_mahiane_nasbe_anten_roye_dakal').val(data[0]['ejare_mahiane_nasbe_anten_roye_dakal']);
+            $('#masire_avale_faktorha').val(data[0]['masire_avale_faktorha']);
+            $('#shomare_tamas_malek').val(data[0]['shomare_tamas_malek']);
 
 
 
+            $('#bime_dakal option[value="'+data[0]['bime_dakal']+'"]').attr('selected', 'selected');
+            $('#barghe_ezterari option[value="'+data[0]['barghe_ezterari']+'"]').attr('selected', 'selected');
+            $('#batrie_poshtiban option[value="'+data[0]['batrie_poshtiban']+'"]').attr('selected', 'selected');
+            $('#cheraghe_dakal option[value="'+data[0]['cheraghe_dakal']+'"]').attr('selected', 'selected');
+            $('#ert option[value="'+data[0]['ert']+'"]').attr('selected', 'selected');
+            $('#emkane_nasbe_anten option[value="'+data[0]['emkane_nasbe_anten']+'"]').attr('selected', 'selected');
+            $('#ejaze_dastresi_24_saate option[value="'+data[0]['ejaze_dastresi_24_saate']+'"]').attr('selected', 'selected');
+
+
+            // if(data[0]['batrie_poshtiban']==="on") {
+            //     $('#batrie_poshtiban').prop('checked', true);
+            // }else{
+            //     $('#batrie_poshtiban').prop('checked', false);
+            // }
+
+
+            //$('#ostan option[value="'+data[0]['ostan_id']+'"]').attr('selected','selected');
+
+
+            //$('.form-group').each(function(i) {
+
+            //});
+
+        });
+    });
 
 });

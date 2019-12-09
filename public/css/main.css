@@ -27,8 +27,10 @@ input[type="color"]:focus,
     outline: 0 none;
 }
 *{
+
     font-size: 14px !important;
 }
+
 /*.form-check-switchery{*/
 /*    margin-left: 10px;*/
 /*}*/
