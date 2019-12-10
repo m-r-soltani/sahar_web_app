@@ -1,6 +1,6 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
 
-class Popsite extends My_controller
+class Popsite extends Controller
 {
     public function __construct()
     {

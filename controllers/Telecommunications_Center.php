@@ -1,6 +1,6 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
 
-class Telecommunications_Center extends My_controller
+class Telecommunications_Center extends Controller
 {
     public function __construct()
     {

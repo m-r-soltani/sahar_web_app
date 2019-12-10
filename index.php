@@ -19,7 +19,8 @@ spl_autoload_register(function ($className) {
 	else if (file_exists('Models/' . $className . '.php')) { 
         require_once 'Models/' . $className . '.php'; 
     }
-    else if (file_exists('Libraries/' . $className . '.php')) { 
+    else if (file_exists('Libraries/' . $className . '.php')) {
+        echo 'Libraries/' . $className . '.php';
         require_once 'Libraries/' . $className . '.php'; 
     }
     else if (file_exists($className . '.php')) { 
@@ -27,6 +28,7 @@ spl_autoload_register(function ($className) {
     }
 });
 new Bootstrap();
+new testlib();
 /////////////////////php functions///////////////////////
 //insert_Generator(data_array($_POSTED array),'table_name')
 function Insert_Generator($data,$table){

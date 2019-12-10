@@ -1,6 +1,6 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
 
-class Host extends My_controller
+class Host extends Controller
 {
     public function __construct()
     {

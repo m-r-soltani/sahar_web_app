@@ -1,6 +1,6 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
 
-class Province extends My_controller
+class Province extends Controller
 {
     public function __construct()
     {

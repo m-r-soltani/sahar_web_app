@@ -1,6 +1,6 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
 
-class Services extends My_controller
+class Services extends Controller
 {
     public function __construct()
     {

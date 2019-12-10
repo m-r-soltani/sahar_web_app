@@ -1,6 +1,6 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
 
-class Operator extends My_controller
+class Operator extends Controller
 {
     public function __construct()
     {

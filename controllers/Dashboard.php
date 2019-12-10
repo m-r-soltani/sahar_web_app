@@ -1,6 +1,6 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
 
-class Dashboard extends My_controller
+class Dashboard extends Controller
 {
     public function __construct()
     {

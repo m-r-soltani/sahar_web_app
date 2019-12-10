@@ -1,6 +1,6 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
 
-class Real_Subscribers extends My_controller
+class Real_Subscribers extends Controller
 {
     public function __construct()
     {
