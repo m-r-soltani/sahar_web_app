@@ -17,6 +17,7 @@
 			self::$instance = new pdo( 'mysql:host='.$localhost.';dbname='.$dbname.';charset=utf8',
 							$username,
 							$password,
+//                array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")
 							$pdo_options);
 		} catch(PDOException $ex){
 			die(json_encode(array('outcome' => false, 'message' => 'Unable to connect')));

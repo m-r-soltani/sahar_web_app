@@ -1,10 +1,11 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
 ini_set('display_errors',1);
+//ini_set('file_uploads','on');
 ini_set('display_startup_errors',1);
 error_reporting(E_ALL);
 class Bootstrap
 {
-	public function __construct() 
+	public function __construct()
 	{
         /*========ostan========*/
         if(isset($_POST['GetProvinces'])){
@@ -57,41 +58,17 @@ class Bootstrap
         }
         /*========sabte branch========*/
         if(isset($_POST['send_branch'])){
-            require_once ('models/branch.php');
-            $id=$_POST['id'];
-            $name_sherkat=getor($_POST['name_sherkat'],"");
-            $shomare_sabt=getor($_POST['shomare_sabt'],"");
-            $code_eghtesadi=getor($_POST['code_eghtesadi'],"");
-            $shenase_meli=getor($_POST['shenase_meli'],"");
-            $noe_sherkat=getor($_POST['noe_sherkat'],"");
-            $website=getor($_POST['website'],"");
-            $email=getor($_POST['email'],"");
-            $telephone1=getor($_POST['telephone1'],"");
-            $telephone2=getor($_POST['telephone2'],"");
-            $dornegar=getor($_POST['dornegar'],"");
-            $ostan=getor($_POST['ostan'],"");
-            $shahr=getor($_POST['shahr'],"");
-            $code_posti=getor($_POST['code_posti'],"");
-            $address=getor($_POST['address'],"");
-            $t_logo=getor($_POST['t_logo'],"");
-            $t_mohiti=getor($_POST['t_mohiti'],"");
-            $t_tablo=getor($_POST['t_tablo'],"");
-            $t_code_eghtesadi=getor($_POST['t_code_eghtesadi'],"");
-            $t_rozname_tasis=getor($_POST['t_rozname_tasis'],"");
-            $t_shenase_meli=getor($_POST['t_shenase_meli'],"");
-            $t_akharin_taghirat=getor($_POST['t_akharin_taghirat'],"");
-            //checking for insert or update
-            if($id=="empty"){
-                $result=Insert_branch($name_sherkat,$shomare_sabt,$code_eghtesadi,$shenase_meli,
-                    $noe_sherkat,$website,$email,$telephone1,$telephone2,$dornegar,$ostan,$shahr,
-                    $code_posti,$address, $t_logo,$t_mohiti,$t_tablo,$t_code_eghtesadi,$t_rozname_tasis,
-                    $t_shenase_meli,$t_akharin_taghirat);
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_namayandegi');
+                Db::justexecute($sql);
             }else{
-                //update
-                $result=Update_branch($id,$name_sherkat,$shomare_sabt,$code_eghtesadi,$shenase_meli,$noe_sherkat,$website
-                    ,$email,$telephone1,$telephone2,$dornegar,$ostan,$shahr,$code_posti,$address,
-                    $t_logo,$t_mohiti,$t_tablo,$t_code_eghtesadi,$t_rozname_tasis,$t_shenase_meli,
-                    $t_akharin_taghirat);
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_namayandegi',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+            if (isset($_POST['t_logo'])){
+                $test=$_POST['t_logo'];
+                move_uploaded_file($_POST['t_logo'],__ROOT__.$test);
             }
         }
         /*========sabte host========*/
@@ -362,14 +339,17 @@ class Bootstrap
 		// 1. router
 		if (isset ($_GET['path'])) {
 			$tokens = explode('/', rtrim($_GET['path'], '/'));
+
+			//print_r($tokens);
 			// 2. Dispatcher
+
 			$controllerName = ucfirst(array_shift($tokens));
 			if (file_exists('Controllers/'.$controllerName.'.php')) {
 				$controller = new $controllerName();
 				if (!empty($tokens)) {
 					$actionName = array_shift($tokens);
 					if (method_exists ( $controller , $actionName )) {
-						$controller->{$actionName}(@$tokens);	
+						$controller->{$actionName}(@$tokens);
 					}
 					else {
 					    //if action not found error page
@@ -380,7 +360,7 @@ class Bootstrap
 				{
 					// default action
 					$controller->index();
-				}				
+				}
 			} else {
                 //if controller not found render an error page
 				$flag = TRUE;

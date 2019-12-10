@@ -1,5 +1,5 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
-class City extends Controller
+class Register extends Controller
 {
     public function __construct()
     {
@@ -10,6 +10,6 @@ class City extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
-        $this->view->render('dashboard/city/view',false);
+        $this->view->render('register/view',false);
     }
 }

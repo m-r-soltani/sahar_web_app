@@ -28,7 +28,7 @@ spl_autoload_register(function ($className) {
     }
 });
 new Bootstrap();
-new testlib();
+//new Authentication();
 /////////////////////php functions///////////////////////
 //insert_Generator(data_array($_POSTED array),'table_name')
 function Insert_Generator($data,$table){
