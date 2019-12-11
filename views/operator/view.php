@@ -493,9 +493,11 @@
                                     <input type="text" class="form-control" name="email" id="email" placeholder="مثال: abcd@gmail.com">
                                 </div>
                                 <br><br>
-                                <label class="col-form-label col-lg-2">سمت</label>
+                                <label class="col-form-label col-lg-2" >سمت</label>
                                 <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="semat" id="semat" placeholder="مثال: مدیر داخلی">
+                                    <select class="form-control form-control-lg" name="level_id" id="level_id">
+
+                                    </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نام کاربری</label>

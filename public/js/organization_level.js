@@ -43,9 +43,7 @@ $(document).ready(function () {
         let td=tr.find('td:first').text();
         Edit_Form('organization_level',td,function (data) {
             $('#id').val(data[0]['id']);
-            $('#name_sherkat').val(data[0]['name_sherkat']);
-
-
+            $('#level').val(data[0]['level']);
 
         });
     });

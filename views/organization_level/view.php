@@ -417,7 +417,7 @@
 
                     <form action="#" method="POST">
                         <fieldset class="mb-3">
-                            <legend class="text-uppercase font-size-sm font-weight-bold">استان</legend>
+                            <legend class="text-uppercase font-size-sm font-weight-bold">سمت های سازمانی</legend>
                             <div class="form-group row">
                                 <label class="col-form-label col-lg-2">سمت</label>
                                 <div class="col-lg-10">

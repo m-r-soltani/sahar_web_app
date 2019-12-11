@@ -60,7 +60,7 @@
                     <a href="#" class="nav-link"><i class="icon-people"></i> <span>نمایندگی ها</span></a>
                     <ul class="nav nav-group-sub" data-submenu-title="User pages">
                         <li class="nav-item"><a href="<?php echo __ROOT__.'branch';?>" class="nav-link">نمایندگی</a></li>
-                        <li class="nav-item"><a href="<?php echo __ROOT__.'operator';?>" class="nav-link">اپراتور</a></li>
+                        <li class="nav-item"><a href="<?php echo __ROOT__.'operator';?>" class="nav-link">پرسنل</a></li>
                     </ul>
                 </li>
                 <li class="nav-item nav-item-submenu">

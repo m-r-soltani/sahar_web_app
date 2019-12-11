@@ -7,6 +7,14 @@ class Bootstrap
 {
 	public function __construct()
 	{
+        /*========levels========*/
+        if(isset($_POST['Get_organization_levels'])){
+            //require_once ('../models/city.php');
+            $sql="SELECT * FROM bnm_organization_level order by id asc";
+            $result=Db::fetchall_Query($sql);
+            $rows=json_encode($result);
+            echo $rows;
+        }
         /*========ostan========*/
         if(isset($_POST['GetProvinces'])){
             //require_once ('../models/city.php');

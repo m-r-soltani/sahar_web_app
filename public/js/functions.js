@@ -100,6 +100,25 @@ function GetCities(data/*felan kari anjam nemide*/,callback){
         }
     });
 }
+function Get_organization_levels(data/*felan kari anjam nemide*/,callback){
+    $.ajax({
+        type: "post",
+        url: "GetProvinces",
+        timeout:5000,
+        data: {Get_organization_levels:data},
+        // dataType:'JSON',
+        success: function(response){
+            //console.log(response);
+            // put on console what server sent back...
+            //console.log(response);
+            response=JSON.parse(response);
+            return callback(response);
+        },
+        error:function (req,res,status) {
+            return callback(false);
+        }
+    });
+}
 function DataTable(selector='view_table',path,type="POST",cols,callback) {
     var table;
     table = $(selector).DataTable({

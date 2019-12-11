@@ -1,18 +1,18 @@
 $(document).ready(function () {
-    /*GetProvinces('operator',function (data) {
+    Get_organization_levels('operator',function (data) {
         if (data){
             //has data
-            var element=$('#ostan');
+            var element=$('#level_id');
             if(element) {
                 for (let i = 0;i<data.length ; i++) {
-                    element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
+                    element.append('<option value='+data[i]['id']+'>'+data[i]['level']+'</option>')
                 }
             }
         }else{
             //data az db gerefte nashod
             alert('درخواست ناموفق');
         }
-    });*/
+    });
 
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[
@@ -86,7 +86,8 @@ $(document).ready(function () {
             $('#telephone_mahale_sokonat').val(data[0]['telephone_mahale_sokonat']);
             $('#address').val(data[0]['address']);
             $('#email').val(data[0]['email']);
-            $('#semat').val(data[0]['semat']);
+            $('#level_id option[value="'+data[0]['level_id']+'"]').attr('selected','selected');
+            //$('#level_id').val(data[0]['semat']);
             $('#name_karbari').val(data[0]['name_karbari']);
             $('#ramze_obor').val(data[0]['ramze_obor']);
             $('#t_karte_meli').val(data[0]['t_karte_meli']);
