@@ -84,6 +84,18 @@ class Bootstrap
 
         }
         /*========sabte pre_number========*/
+        if(isset($_POST['send_organization_level'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_organization_level');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_organization_level',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
+        }
+        /*========sabte pre_number========*/
         if(isset($_POST['send_pre_number'])){
             if($_POST['id']=="empty") {
                 $sql = Insert_Generator($_POST, 'bnm_pre_number');
@@ -158,6 +170,13 @@ class Bootstrap
         if(isset($_POST['Edit_Form'])){
             $page=$_POST['Edit_Form'];
             switch ($page){
+                case 'organization_level':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_organization_level WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
                 case 'city':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_shahr WHERE name='$condition'";
@@ -247,6 +266,16 @@ class Bootstrap
                 case 'wireless_station':
                     $id=$_POST['harddelete'];
                     $sql="delete FROM bnm_wireless_station WHERE id = $id";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'organization_level':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_organization_level WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;
