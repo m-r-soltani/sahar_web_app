@@ -216,6 +216,13 @@ class Bootstrap
                     $rows=json_encode($result);
                     echo $rows;
                     break;
+                case 'legal_subscribers':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_subscribers WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
                 case 'city':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_shahr WHERE name='$condition'";
@@ -322,6 +329,16 @@ class Bootstrap
                         echo false;
                     }
                 case 'real_subscribers':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_subscribers WHERE id = $id";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'legal_subscribers':
                     $id=$_POST['harddelete'];
                     $sql="delete FROM bnm_subscribers WHERE id = $id";
                     $result=Db::justexecute($sql);

@@ -465,7 +465,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">استان</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" placeholder="مثال: تهران">
+                                    <input type="text" class="form-control" name="ostan" id="ostan" placeholder="مثال: تهران">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر</label>
@@ -475,7 +475,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تلفن</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="telephone" placeholder="بدون پیش شماره">
+                                    <input type="text" class="form-control" name="telephone" id="telephone" placeholder="بدون پیش شماره">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شماره داخلی</label>
@@ -538,7 +538,7 @@
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">جنسیت مدیر عامل / نماینده</label>
-                                <div class="col-lg-10">
+                                <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="jensiat" id="jensiat">
                                         <option value="man">مرد</option>
                                         <option value="woman">زن</option>
@@ -546,10 +546,10 @@
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">گروه مشترک</label>
-                                <div class="col-lg-10">
+                                <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="gorohe_moshtarak" id="gorohe_moshtarak">
                                         <option value="1">1</option>
-                                        <option value="2    ">2</option>
+                                        <option value="2">2</option>
                                     </select>
                                 </div>
                                 <br><br>
@@ -565,13 +565,13 @@
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">رشته تحصیلی مدیر عامل</label>
-                                <div class="col-lg-10">
+                                <div class="col-lg-4">
                                     <input type="text" class="form-control" name="reshte_tahsili_modir_amel" id="reshte_tahsili_modir_amel" placeholder="">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">مدرک دانشگاهی مدیر عامل</label>
-                                <div class="col-lg-10">
-                                    <select class="form-control form-control-lg" name="madrake_daneshgahi_modir_amel" id="reshte_tahsili_modir_amel">
+                                <div class="col-lg-4">
+                                    <select class="form-control form-control-lg" name="madrake_daneshgahi_modir_amel" id="madrake_daneshgahi_modir_amel">
                                         <option value="diplom">دیپلم</option>
                                         <option value="foghdiplom">فوق دیپلم</option>
                                         <option value="lisanse">لیسانس</option>
@@ -581,12 +581,12 @@
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">رشته فعالیت</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" name="reshteye_faaliat" id="reshte_tahsili_modir_amel" placeholder="">
+                                <div class="col-lg-4">
+                                    <input type="text" class="form-control" name="reshteye_faaliat" id="reshteye_faaliat" placeholder="">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نحوه معرفی</label>
-                                <div class="col-lg-10">
+                                <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="nahve_moarefi" id="nahve_moarefi">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -595,20 +595,70 @@
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نحوه آشنایی کمپین</label>
-                                <div class="col-lg-10">
+                                <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="nahve_ashnai_campain">
                                         <option value="1">1</option>
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">معرف</label>
-                                <div class="col-lg-10">
+                                <div class="col-lg-4">
                                     <input type="text" class="form-control" name="moaref" id="moaref" placeholder="">
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">توضیحات</label>
                                 <div class="col-lg-10">
                                     <input type="text" class="form-control" name="tozihat" id="tozihat" placeholder="">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر آگهری تاسیس</label>
+                                <div class="col-lg-4">
+                                    <input type="file" name="l_t_agahie_tasis" id="l_t_agahie_tasis" class="form-control-uniform">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر آخرین تغییرات</label>
+                                <div class="col-lg-4">
+                                    <input type="file" name="l_t_akharin_taghirat" id="l_t_akharin_taghirat" class="form-control-uniform">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر کارت ملی صاحب امضای اول</label>
+                                <div class="col-lg-4">
+                                    <input type="file" name="l_t_saheb_kartemeli_emzaye_aval" id="l_t_saheb_kartemeli_emzaye_aval" class="form-control-uniform">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر کارت ملی صاحب امضای دوم</label>
+                                <div class="col-lg-4">
+                                    <input type="file" name="l_t_saheb_kartemeli_emzaye_dovom" id="l_t_saheb_kartemeli_emzaye_dovom" class="form-control-uniform">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر کارت ملی نماینده</label>
+                                <div class="col-lg-4">
+                                    <input type="file" name="l_t_kartemeli_namayande" id="l_t_kartemeli_namayande" class="form-control-uniform">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر معرفی نامه نماینده</label>
+                                <div class="col-lg-4">
+                                    <input type="file" name="l_t_moarefiname_namayande" id="l_t_moarefiname_namayande" class="form-control-uniform">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر قبض تلفن</label>
+                                <div class="col-lg-4">
+                                    <input type="file" name="l_t_ghabze_telephone" id="l_t_ghabze_telephone" class="form-control-uniform">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر قرارداد</label>
+                                <div class="col-lg-4">
+                                    <input type="file" name="l_t_gharardad" id="l_t_gharardad" class="form-control-uniform">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر اجاره نامه / مالکیت</label>
+                                <div class="col-lg-4">
+                                    <input type="file" name="l_t_ejarename_malekiat" id="l_t_ejarename_malekiat" class="form-control-uniform">
+                                </div>
+                                <br><br>
+                                <label class="col-form-label col-lg-2">تصویر سایر</label>
+                                <div class="col-lg-4">
+                                    <input type="file" name="l_t_sayer" id="l_t_sayer" class="form-control-uniform">
                                 </div>
                                 <br><br>
                             </div>
@@ -620,7 +670,14 @@
                 </div>
             </div>
             <!-- /form inputs -->
-
+            <div class="card">
+                <div class="col-md-12">
+                    <button name="delete" class="btn btn-warning col-md-auto float-md-right"  id="delete">حذف<i class="icon-folder-remove ml-2"></i></button>
+                    <button name="edit" class="btn btn-primary col-md-auto float-md-right" id="edit">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
+                    <table id="view_table" class="table table-striped datatable-responsive table-hover">
+                    </table>
+                </div>
+            </div>
         </div>
         <!-- /content area -->
 
@@ -636,14 +693,14 @@
 
             <div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+						&copy; 2015 - <?php echo '2019'; ?>. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
 					</span>
-
+<!--
                 <ul class="navbar-nav ml-lg-auto">
                     <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
                     <li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
                     <li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
-                </ul>
+                </ul>-->
             </div>
         </div>
         <!-- /footer -->
