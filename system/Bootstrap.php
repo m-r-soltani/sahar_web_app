@@ -52,7 +52,7 @@ class Bootstrap
                 $result=Update_city($id,$_POST['shahr'],$_POST['entekhab_ostan']);
             }
         }
-        /*========sabte host========*/
+        /*========host========*/
         if(isset($_POST['send_popsite'])){
             if($_POST['id']=="empty") {
                 $sql = Insert_Generator($_POST, 'bnm_popsite');
@@ -60,6 +60,30 @@ class Bootstrap
             }else{
                 $id=$_POST['id'];
                 $sql = Update_Generator($_POST, 'bnm_popsite',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
+        }
+        /*========real_subscribers========*/
+        if(isset($_POST['send_real_subscribers'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_subscribers');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_popsite',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
+        }
+        /*========legal_subscribers========*/
+        if(isset($_POST['send_legal_subscribers'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_subscribers');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_subscribers',"WHERE id = $id");
                 Db::justexecute($sql);
             }
 
@@ -185,6 +209,13 @@ class Bootstrap
                     $rows=json_encode($result);
                     echo $rows;
                     break;
+                case 'real_subscribers':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_subscribers WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
                 case 'city':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_shahr WHERE name='$condition'";
@@ -284,6 +315,15 @@ class Bootstrap
                 case 'organization_level':
                     $id=$_POST['harddelete'];
                     $sql="delete FROM bnm_organization_level WHERE id = $id";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                case 'real_subscribers':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_subscribers WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;
