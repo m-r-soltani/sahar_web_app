@@ -114,11 +114,6 @@ $(document).ready(function () {
             $('#jensiat option[value="'+data[0]["jensiat"]+'"]').attr('selected', 'selected');
             ////////////////tasvire logo dorost shavad
             //$('#t_logo').val(data[0]['name_service_dahande']);
-            if(data[0]['dsl_license']==="on") {
-                $('#dsl_license').prop('checked', true);
-            }else{
-                $('#dsl_license').prop('checked', false);
-            }
 
 
         });

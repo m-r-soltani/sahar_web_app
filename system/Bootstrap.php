@@ -64,6 +64,52 @@ class Bootstrap
             }
 
         }
+        /*========host========*/
+        if(isset($_POST['send_services_adsl'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_services');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_services',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+        }
+        /*========host========*/
+        if(isset($_POST['send_services_wireless'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_services');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_services',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
+        }
+        /*========host========*/
+        if(isset($_POST['send_services_tdlte'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_services');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_services',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
+        }
+        /*========host========*/
+        if(isset($_POST['send_services_voip'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_services');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_services',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+        }
         /*========real_subscribers========*/
         if(isset($_POST['send_real_subscribers'])){
             if($_POST['id']=="empty") {
@@ -74,7 +120,17 @@ class Bootstrap
                 $sql = Update_Generator($_POST, 'bnm_popsite',"WHERE id = $id");
                 Db::justexecute($sql);
             }
-
+        }
+        /*========services wireless========*/
+        if(isset($_POST['send_real_subscribers'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_subscribers');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_popsite',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
         }
         /*========legal_subscribers========*/
         if(isset($_POST['send_legal_subscribers'])){
@@ -209,6 +265,34 @@ class Bootstrap
                     $rows=json_encode($result);
                     echo $rows;
                     break;
+                case 'services_voip':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_services WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
+                case 'services_adsl':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_services WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
+                case 'services_wireless':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_services WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
+                case 'services_tdlte':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_services WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
                 case 'real_subscribers':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_subscribers WHERE id='$id'";
@@ -312,6 +396,46 @@ class Bootstrap
                 case 'wireless_station':
                     $id=$_POST['harddelete'];
                     $sql="delete FROM bnm_wireless_station WHERE id = $id";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'services_adsl':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_services WHERE id = $id";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'services_wireless':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_services WHERE id = $id";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'services_tdlte':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_services WHERE id = $id";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'services_voip':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_services WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;

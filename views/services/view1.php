@@ -65,7 +65,7 @@
                                 <div class="mr-3">
                                     <a href="#"
                                        class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i
-                                                class="icon-git-pull-request"></i></a>
+                                            class="icon-git-pull-request"></i></a>
                                 </div>
 
                                 <div class="media-body">
@@ -78,7 +78,7 @@
                                 <div class="mr-3">
                                     <a href="#"
                                        class="btn bg-transparent border-warning text-warning rounded-round border-2 btn-icon"><i
-                                                class="icon-git-commit"></i></a>
+                                            class="icon-git-commit"></i></a>
                                 </div>
 
                                 <div class="media-body">
@@ -91,12 +91,12 @@
                                 <div class="mr-3">
                                     <a href="#"
                                        class="btn bg-transparent border-info text-info rounded-round border-2 btn-icon"><i
-                                                class="icon-git-branch"></i></a>
+                                            class="icon-git-branch"></i></a>
                                 </div>
 
                                 <div class="media-body">
                                     <a href="#">Chris Arney</a> created a new <span
-                                            class="font-weight-semibold">Design</span> branch
+                                        class="font-weight-semibold">Design</span> branch
                                     <div class="text-muted font-size-sm">2 hours ago</div>
                                 </div>
                             </li>
@@ -105,13 +105,13 @@
                                 <div class="mr-3">
                                     <a href="#"
                                        class="btn bg-transparent border-success text-success rounded-round border-2 btn-icon"><i
-                                                class="icon-git-merge"></i></a>
+                                            class="icon-git-merge"></i></a>
                                 </div>
 
                                 <div class="media-body">
                                     <a href="#">Eugene Kopyov</a> merged <span
-                                            class="font-weight-semibold">Master</span> and <span
-                                            class="font-weight-semibold">Dev</span> branches
+                                        class="font-weight-semibold">Master</span> and <span
+                                        class="font-weight-semibold">Dev</span> branches
                                     <div class="text-muted font-size-sm">Dec 18, 18:36</div>
                                 </div>
                             </li>
@@ -120,7 +120,7 @@
                                 <div class="mr-3">
                                     <a href="#"
                                        class="btn bg-transparent border-primary text-primary rounded-round border-2 btn-icon"><i
-                                                class="icon-git-pull-request"></i></a>
+                                            class="icon-git-pull-request"></i></a>
                                 </div>
 
                                 <div class="media-body">
@@ -135,9 +135,9 @@
                         <a href="#" class="text-grey mr-auto">All updates</a>
                         <div>
                             <a href="#" class="text-grey" data-popup="tooltip" title="Mark all as read"><i
-                                        class="icon-radio-unchecked"></i></a>
+                                    class="icon-radio-unchecked"></i></a>
                             <a href="#" class="text-grey ml-2" data-popup="tooltip" title="Bug tracker"><i
-                                        class="icon-bug2"></i></a>
+                                    class="icon-bug2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                                     <span class="d-block text-muted font-size-sm">Lead web developer</span>
                                 </div>
                                 <div class="ml-3 align-self-center"><span
-                                            class="badge badge-mark border-success"></span></div>
+                                        class="badge badge-mark border-success"></span></div>
                             </li>
 
                             <li class="media">
@@ -199,7 +199,7 @@
                                     <span class="d-block text-muted font-size-sm">Project manager</span>
                                 </div>
                                 <div class="ml-3 align-self-center"><span
-                                            class="badge badge-mark border-success"></span></div>
+                                        class="badge badge-mark border-success"></span></div>
                             </li>
 
                             <li class="media">
@@ -212,7 +212,7 @@
                                     <span class="d-block text-muted font-size-sm">Business developer</span>
                                 </div>
                                 <div class="ml-3 align-self-center"><span
-                                            class="badge badge-mark border-warning-300"></span></div>
+                                        class="badge badge-mark border-warning-300"></span></div>
                             </li>
 
                             <li class="media">
@@ -225,7 +225,7 @@
                                     <span class="d-block text-muted font-size-sm">UX expert</span>
                                 </div>
                                 <div class="ml-3 align-self-center"><span
-                                            class="badge badge-mark border-grey-400"></span></div>
+                                        class="badge badge-mark border-grey-400"></span></div>
                             </li>
                         </ul>
                     </div>
@@ -343,7 +343,7 @@
 
                     <div class="dropdown-content-footer justify-content-center p-0">
                         <a href="#" class="bg-light text-grey w-100 py-2" data-popup="tooltip" title="Load more"><i
-                                    class="icon-menu7 d-block top-0"></i></a>
+                                class="icon-menu7 d-block top-0"></i></a>
                     </div>
                 </div>
             </li>
@@ -358,7 +358,7 @@
                     <a href="#" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
                     <a href="#" class="dropdown-item"><i class="icon-coins"></i> My balance</a>
                     <a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span
-                                class="badge badge-pill bg-blue ml-auto">58</span></a>
+                            class="badge badge-pill bg-blue ml-auto">58</span></a>
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
                     <a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
@@ -393,11 +393,11 @@
                 <div class="header-elements d-none">
                     <div class="d-flex justify-content-center">
                         <a href="#" class="btn btn-link btn-float text-default"><i
-                                    class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
+                                class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
                         <a href="#" class="btn btn-link btn-float text-default"><i
-                                    class="icon-calculator text-primary"></i> <span>Invoices</span></a>
+                                class="icon-calculator text-primary"></i> <span>Invoices</span></a>
                         <a href="#" class="btn btn-link btn-float text-default"><i
-                                    class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
+                                class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
                     </div>
                 </div>
             </div>
@@ -450,32 +450,29 @@
                     <legend class="text-uppercase font-size-sm font-weight-bold">سرویس ها</legend>
                     <ul class="nav nav-tabs nav-tabs-bottom border-bottom-0 nav-justified">
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab1" class="nav-link active"
-                                                data-toggle="tab">ADSL</a></li>
+                                                              data-toggle="tab">ADSL</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab2" class="nav-link"
-                                                data-toggle="tab">Wireless</a></li>
+                                                              data-toggle="tab">Wireless</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab3" class="nav-link"
-                                                data-toggle="tab">TD-LTE/4G</a></li>
+                                                              data-toggle="tab">TD-LTE/4G</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab4" class="nav-link"
-                                                data-toggle="tab">Voip</a></li>
+                                                              data-toggle="tab">Voip</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab5" class="nav-link"
-                                                data-toggle="tab">Domain</a></li>
+                                                              data-toggle="tab">Domain</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab6" class="nav-link"
-                                                data-toggle="tab">Host</a></li>
+                                                              data-toggle="tab">Host</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab7" class="nav-link"
-                                                data-toggle="tab">NGN</a></li>
+                                                              data-toggle="tab">NGN</a></li>
                     </ul>
                     <div class="tab-content">
                         <!------------ADSL------------->
                         <div class="adsl_tab tab-pane fade show active" id="bottom-justified-divided-tab1">
                             <form action="#" method="POST">
-                                <input type="hidden" id="id"  name="id" value="empty" class="form-control">
-                                <input type="hidden" id="type" name="type" value="adsl" class="form-control">
-
                                 <fieldset class="mb-3">
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع خدمات</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="noe_khadamat" id="noe_khadamat">
+                                            <select class="form-control form-control-lg">
                                                 <option value="ADSL(Share)">ADSL(Share)</option>
                                                 <option value="ADSL(Transport)">ADSL(Transport)</option>
                                                 <option value="VDSL(Share)">VDSL(Share)</option>
@@ -485,7 +482,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش سرویس</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_service" id="namayeshe_service">
+                                            <select class="form-control form-control-lg">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -493,7 +490,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش در پروفایل</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_dar_profile" id="namayeshe_dar_profile">
+                                            <select class="form-control form-control-lg">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -501,85 +498,86 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">عنوان سرویس</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="onvane_service"
-                                                   placeholder="مثال: " id="onvane_service">
+                                            <input type="text" class="form-control" name="onvane_kart"
+                                                   placeholder="مثال: " required>
                                         </div>
                                         <label class="col-form-label col-lg-2">قيمت</label>
                                         <div class="col-lg-4">
                                             <input type="number" class="form-control" name="gheymat"
-                                                   placeholder="به ریال" id="gheymat" required>
+                                                   placeholder="به ریال" required>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">زمان استفاده</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="zaname_estefade" id="zaname_estefade" placeholder="زمان به ماه مثال:6">
+                                            <input type="text" class="form-control" name="name_estefade"
+                                                   placeholder="زمان به ماه مثال:6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تخفيف</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="takhfif" id="takhfif"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="به درصد مثال : 6.5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_service_dahande" id="name_service_dahande">
+                                            <select class="form-control form-control-lg">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">پورسانت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="porsant" id="porsant"
-                                                   placeholder="مثال : 6.5">
+                                            <input type="text" class="form-control" name="porsant"
+                                                   placeholder="به درصد مثال : 6.5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ شروع نمایش</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tarikhe_shoroe_namayesh" id="tarikhe_shoroe_namayesh"
+                                            <input type="text" class="form-control" name="tarikhe_shoroe_namayesh"
                                                    placeholder="مثال: 1380/05/20">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ پایان نمایش</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tarikhe_payane_namayesh" id="tarikhe_payane_namayesh"
+                                            <input type="text" class="form-control" name="tarikhe_payane_namayesh"
                                                    placeholder="مثال: 1380/05/20">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">امتیاز جایزه</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="emtiaze_jayeze" id="emtiaze_jayeze"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداقل امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaghale_emtiaz" id="hadeaghale_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداکثر امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaksare_emtiaz" id="hadeaksare_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">مبلغ هر امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="mablaghe_har_emtiaz" id="mablaghe_har_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه مشتری</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_grohe_moshtari" id="name_grohe_moshtari">
+                                            <select class="form-control form-control-lg" name="name_grouhe_moshtari">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" id="name_groh" name="name_groh">
+                                            <select class="form-control form-control-lg">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
@@ -593,9 +591,10 @@
                                         <label class="col-form-label col-lg-2">رنگ نمایش پروفایل</label>
                                         <div class="col-lg-4">
                                             <div class="card card-body border-top-success text-center">
+
                                                 <div class="d-inline-block">
                                                     <input type="text" class="form-control colorpicker-palette-toggle"
-                                                           name="range_namayeshe_profile" id="range_namayeshe_profile" value="#27ADCA" data-fouc>
+                                                           name="range_namayeshe_profile" value="#27ADCA" data-fouc>
                                                 </div>
                                             </div>
                                         </div>
@@ -604,7 +603,7 @@
                                             <div class="card card-body border-top-success text-center">
                                                 <div class="d-inline-block">
                                                     <input type="text" class="form-control colorpicker-palette-toggle"
-                                                           name="range_vizhesazie_profile" id="range_vizhesazie_profile" value="#27ADCA" data-fouc>
+                                                           name="range_vizhesazie_profile" value="#27ADCA" data-fouc>
                                                 </div>
                                             </div>
                                         </div>
@@ -613,19 +612,19 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">ساعت وصل موقت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="saat_vasle_movaghat" id="saat_vasle_movaghat"
+                                            <input type="text" class="form-control" name="saat_vasle_movaghat"
                                                    placeholder="مثال : 2">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">روز وصل موقت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="roze_vasle_movaghat" id="roze_vasle_movaghat"
+                                            <input type="text" class="form-control" name="roze_vasle_movaghat"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ترافیک وصل موقت</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="terafike_vasle_movaghat" id="terafike_vasle_movaghat"
+                                            <input type="text" class="form-control" name="terafike_vasle_movaghat"
                                                    placeholder="(مگابایت) مثال: 1024">
                                         </div>
                                         <br><br>
@@ -634,25 +633,25 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">دوره به ماه</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="dore_be_mah" id="dore_be_mah"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">دوره به روز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="dore_be_mah" id="dore_be_mah"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">دوره به ساعت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="dore_be_saat" id="dore_be_saat"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ترافیک</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="terafik" id="terafik"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="(مگابایت)">
                                         </div>
                                         <br><br>
@@ -661,25 +660,25 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">هزینه رانژه</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hazine_ranzhe" id="hazine_ranzhe"
+                                            <input type="text" class="form-control" name="hazine_ranzhe"
                                                    placeholder="ریال">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">هزینه نصب</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hazine_nasb" id="hazine_nasb"
+                                            <input type="text" class="form-control" name="hazine_nasb"
                                                    placeholder="ریال">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">هزینه درانژه</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hazine_dranzhe" id="hazine_dranzhe"
+                                            <input type="text" class="form-control" name="hazine_dranzhe"
                                                    placeholder="ریال">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">هزینه خرابی</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hazine_kharabi" id="hazine_kharabi"
+                                            <input type="text" class="form-control" name="hazine_kharabi"
                                                    placeholder="ریال">
                                         </div>
                                         <br><br>
@@ -689,13 +688,13 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">توضیحات فاکتور</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="tozihate_faktor" id="tozihate_faktor"
+                                            <input type="text" class="form-control" name="tozihate_faktor"
                                                    placeholder="توضیحات فاکتور">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">توضیحات وب سایت</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="tozihate_website" id="tozihate_website"
+                                            <input type="text" class="form-control" name="tozihate_website"
                                                    placeholder="توضیحات وب سایت">
                                         </div>
                                         <br><br>
@@ -704,19 +703,19 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">سرعت پایه دریافت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="sorate_paye_daryaft" id="sorate_paye_daryaft"
+                                            <input type="text" class="form-control" name="sorat_paye_daryaft"
                                                    placeholder="مگابیت">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداکثر سرعت دریافت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaxar_sorat_daryaft" id="hadeaxar_sorat_daryaft"
+                                            <input type="text" class="form-control" name="hadeaxar_sorat_daryaft"
                                                    placeholder="مگابیت">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">سرعت پایه ارسال</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="sorat_paye_ersal" id="sorat_paye_ersal"
+                                            <input type="text" class="form-control" name="sorat_paye_ersal"
                                                    placeholder="مگابیت">
                                         </div>
                                         <br><br>
@@ -726,30 +725,30 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">پورت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="port" id="port" placeholder="">
+                                            <input type="text" class="form-control" name="port" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تجهیزات</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tajhizat" id="tajhizat" placeholder="">
+                                            <input type="text" class="form-control" name="tajhizat" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">فضا</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="faza" id="faza" placeholder="">
+                                            <input type="text" class="form-control" name="faza" placeholder="">
                                         </div>
                                         <br><br>
                                     </div>
                                 </fieldset>
                                 <div class="text-right">
                                     <button type="submit" name="send_services_adsl" class="btn btn-primary">ارسال <i
-                                                class="icon-paperplane ml-2"></i></button>
+                                            class="icon-paperplane ml-2"></i></button>
                                 </div>
                             </form>
                             <div class="card" style="margin-top: 10px">
                                 <div class="col-md-12">
-                                    <button name="delete_adsl" class="btn btn-warning col-md-auto float-md-right"  id="delete_adsl">حذف<i class="icon-folder-remove ml-2"></i></button>
-                                    <button name="edit_adsl" class="btn btn-primary col-md-auto float-md-right" id="edit_adsl">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
+                                    <button name="delete" class="btn btn-warning col-md-auto float-md-right"  id="delete">حذف<i class="icon-folder-remove ml-2"></i></button>
+                                    <button name="edit" class="btn btn-primary col-md-auto float-md-right" id="edit">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
                                     <table id="view_table_adsl" class="table table-striped datatable-responsive table-hover">
                                     </table>
                                 </div>
@@ -758,13 +757,11 @@
                         <!------------Wireless------------->
                         <div class="wireless_tab tab-pane fade" id="bottom-justified-divided-tab2">
                             <form action="#" method="POST">
-                                <input type="hidden" id="id"  name="id" value="empty" class="form-control">
-                                <input type="hidden" id="type" name="type" value="wireless" class="form-control">
                                 <fieldset class="mb-3">
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع خدمات</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="noe_khadamat" id="noe_khadamat">
+                                            <select class="form-control form-control-lg">
                                                 <option value="Wireless(Share)">Wireless(Share)</option>
                                                 <option value="Wireless(Transport)">Wireless(Transport)</option>
                                                 <option value="Wireless(Hotspot)">Wireless(Hotspot)</option>
@@ -773,7 +770,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش سرویس</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_service" id="namayeshe_service">
+                                            <select class="form-control form-control-lg">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -781,7 +778,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش در پروفایل</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_dar_profile" id="namayeshe_dar_profile">
+                                            <select class="form-control form-control-lg">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -789,85 +786,86 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">عنوان سرویس</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="onvane_service"
-                                                   placeholder="مثال: " id="onvane_service">
+                                            <input type="text" class="form-control" name="onvane_kart"
+                                                   placeholder="مثال: " required>
                                         </div>
                                         <label class="col-form-label col-lg-2">قيمت</label>
                                         <div class="col-lg-4">
                                             <input type="number" class="form-control" name="gheymat"
-                                                   placeholder="به ریال" id="gheymat" required>
+                                                   placeholder="به ریال" required>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">زمان استفاده</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="zaname_estefade" id="zaname_estefade" placeholder="زمان به ماه مثال:6">
+                                            <input type="text" class="form-control" name="name_estefade"
+                                                   placeholder="زمان به ماه مثال:6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تخفيف</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="takhfif" id="takhfif"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="به درصد مثال : 6.5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_service_dahande" id="name_service_dahande">
+                                            <select class="form-control form-control-lg">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">پورسانت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="porsant" id="porsant"
-                                                   placeholder="مثال : 6.5">
+                                            <input type="text" class="form-control" name="porsant"
+                                                   placeholder="به درصد مثال : 6.5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ شروع نمایش</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tarikhe_shoroe_namayesh" id="tarikhe_shoroe_namayesh"
+                                            <input type="text" class="form-control" name="tarikhe_shoroe_namayesh"
                                                    placeholder="مثال: 1380/05/20">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ پایان نمایش</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tarikhe_payane_namayesh" id="tarikhe_payane_namayesh"
+                                            <input type="text" class="form-control" name="tarikhe_payane_namayesh"
                                                    placeholder="مثال: 1380/05/20">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">امتیاز جایزه</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="emtiaze_jayeze" id="emtiaze_jayeze"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداقل امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaghale_emtiaz" id="hadeaghale_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداکثر امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaksare_emtiaz" id="hadeaksare_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">مبلغ هر امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="mablaghe_har_emtiaz" id="mablaghe_har_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه مشتری</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_grohe_moshtari" id="name_grohe_moshtari">
+                                            <select class="form-control form-control-lg" name="name_grouhe_moshtari">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" id="name_groh" name="name_groh">
+                                            <select class="form-control form-control-lg">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
@@ -881,9 +879,10 @@
                                         <label class="col-form-label col-lg-2">رنگ نمایش پروفایل</label>
                                         <div class="col-lg-4">
                                             <div class="card card-body border-top-success text-center">
+
                                                 <div class="d-inline-block">
                                                     <input type="text" class="form-control colorpicker-palette-toggle"
-                                                           name="range_namayeshe_profile" id="range_namayeshe_profile" value="#27ADCA" data-fouc>
+                                                           name="range_namayeshe_profile" value="#27ADCA" data-fouc>
                                                 </div>
                                             </div>
                                         </div>
@@ -892,7 +891,7 @@
                                             <div class="card card-body border-top-success text-center">
                                                 <div class="d-inline-block">
                                                     <input type="text" class="form-control colorpicker-palette-toggle"
-                                                           name="range_vizhesazie_profile" id="range_vizhesazie_profile" value="#27ADCA" data-fouc>
+                                                           name="range_vizhesazie_profile" value="#27ADCA" data-fouc>
                                                 </div>
                                             </div>
                                         </div>
@@ -901,19 +900,19 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">ساعت وصل موقت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="saat_vasle_movaghat" id="saat_vasle_movaghat"
+                                            <input type="text" class="form-control" name="saat_vasle_movaghat"
                                                    placeholder="مثال : 2">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">روز وصل موقت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="roze_vasle_movaghat" id="roze_vasle_movaghat"
+                                            <input type="text" class="form-control" name="roze_vasle_movaghat"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ترافیک وصل موقت</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="terafike_vasle_movaghat" id="terafike_vasle_movaghat"
+                                            <input type="text" class="form-control" name="terafike_vasle_movaghat"
                                                    placeholder="(مگابایت) مثال: 1024">
                                         </div>
                                         <br><br>
@@ -922,25 +921,25 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">دوره به ماه</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="dore_be_mah" id="dore_be_mah"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">دوره به روز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="dore_be_mah" id="dore_be_mah"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">دوره به ساعت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="dore_be_saat" id="dore_be_saat"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ترافیک</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="terafik" id="terafik"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="(مگابایت)">
                                         </div>
                                         <br><br>
@@ -950,13 +949,13 @@
 
                                         <label class="col-form-label col-lg-2">هزینه نصب</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hazine_nasb" id="hazine_nasb"
+                                            <input type="text" class="form-control" name="hazine_nasb"
                                                    placeholder="ریال">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">هزینه خرابی</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hazine_kharabi" id="hazine_kharabi"
+                                            <input type="text" class="form-control" name="hazine_kharabi"
                                                    placeholder="ریال">
                                         </div>
                                         <br><br>
@@ -966,13 +965,13 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">توضیحات فاکتور</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="tozihate_faktor" id="tozihate_faktor"
+                                            <input type="text" class="form-control" name="tozihate_faktor"
                                                    placeholder="توضیحات فاکتور">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">توضیحات وب سایت</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="tozihate_website" id="tozihate_website"
+                                            <input type="text" class="form-control" name="tozihate_website"
                                                    placeholder="توضیحات وب سایت">
                                         </div>
                                         <br><br>
@@ -981,19 +980,19 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">سرعت پایه دریافت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="sorate_paye_daryaft" id="sorate_paye_daryaft"
+                                            <input type="text" class="form-control" name="sorat_paye_daryaft"
                                                    placeholder="مگابیت">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداکثر سرعت دریافت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaxar_sorat_daryaft" id="hadeaxar_sorat_daryaft"
+                                            <input type="text" class="form-control" name="hadeaxar_sorat_daryaft"
                                                    placeholder="مگابیت">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">سرعت پایه ارسال</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="sorat_paye_ersal" id="sorat_paye_ersal"
+                                            <input type="text" class="form-control" name="sorat_paye_ersal"
                                                    placeholder="مگابیت">
                                         </div>
                                         <br><br>
@@ -1003,30 +1002,36 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">پورت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="port" id="port" placeholder="">
+                                            <input type="text" class="form-control" name="port" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تجهیزات</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tajhizat" id="tajhizat" placeholder="">
+                                            <input type="text" class="form-control" name="tajhizat" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">فضا</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="faza" id="faza" placeholder="">
+                                            <input type="text" class="form-control" name="faza" placeholder="">
+                                        </div>
+                                        <br><br>
+                                        <label class="col-form-label col-lg-2">حداکثر سرعت ارسال</label>
+                                        <div class="col-lg-4">
+                                            <input type="text" class="form-control" name="sorat_paye_ersal"
+                                                   placeholder="مگابیت">
                                         </div>
                                         <br><br>
                                     </div>
                                 </fieldset>
                                 <div class="text-right">
                                     <button type="submit" name="send_services_wireless" class="btn btn-primary">ارسال <i
-                                                class="icon-paperplane ml-2"></i></button>
+                                            class="icon-paperplane ml-2"></i></button>
                                 </div>
                             </form>
                             <div class="card" style="margin-top: 10px">
                                 <div class="col-md-12">
-                                    <button name="delete_wireless" class="btn btn-warning col-md-auto float-md-right"  id="delete_wireless">حذف<i class="icon-folder-remove ml-2"></i></button>
-                                    <button name="edit_wireless" class="btn btn-primary col-md-auto float-md-right" id="edit_wireless">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
+                                    <button name="delete" class="btn btn-warning col-md-auto float-md-right"  id="delete">حذف<i class="icon-folder-remove ml-2"></i></button>
+                                    <button name="edit" class="btn btn-primary col-md-auto float-md-right" id="edit_wireless">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
                                     <table id="view_table_wireless" class="table table-striped datatable-responsive table-hover">
                                     </table>
                                 </div>
@@ -1035,21 +1040,19 @@
                         <!------------TD-LTE/4G------------->
                         <div class="tdlte_tab tab-pane fade" id="bottom-justified-divided-tab3">
                             <form action="#" method="POST">
-                                <input type="hidden" id="id"  name="id" value="empty" class="form-control">
-                                <input type="hidden" id="type" name="type" value="tdlte" class="form-control">
                                 <fieldset class="mb-3">
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع خدمات</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="noe_khadamat" id="noe_khadamat">
-                                                <<option value="TD-LTE(Share)">TD-LTE(Share)</option>
+                                            <select class="form-control form-control-lg">
+                                                <option value="TD-LTE(Share)">TD-LTE(Share)</option>
                                                 <option value="TD-LTE(Transport)">TD-LTE(Transport)</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش سرویس</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_service" id="namayeshe_service">
+                                            <select class="form-control form-control-lg">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -1057,7 +1060,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش در پروفایل</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_dar_profile" id="namayeshe_dar_profile">
+                                            <select class="form-control form-control-lg">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -1065,85 +1068,86 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">عنوان سرویس</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="onvane_service"
-                                                   placeholder="مثال: " id="onvane_service">
+                                            <input type="text" class="form-control" name="onvane_kart"
+                                                   placeholder="مثال: " required>
                                         </div>
                                         <label class="col-form-label col-lg-2">قيمت</label>
                                         <div class="col-lg-4">
                                             <input type="number" class="form-control" name="gheymat"
-                                                   placeholder="به ریال" id="gheymat" required>
+                                                   placeholder="به ریال" required>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">زمان استفاده</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="zaname_estefade" id="zaname_estefade" placeholder="زمان به ماه مثال:6">
+                                            <input type="text" class="form-control" name="name_estefade"
+                                                   placeholder="زمان به ماه مثال:6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تخفيف</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="takhfif" id="takhfif"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="به درصد مثال : 6.5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_service_dahande" id="name_service_dahande">
+                                            <select class="form-control form-control-lg">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">پورسانت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="porsant" id="porsant"
-                                                   placeholder="مثال : 6.5">
+                                            <input type="text" class="form-control" name="porsant"
+                                                   placeholder="به درصد مثال : 6.5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ شروع نمایش</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tarikhe_shoroe_namayesh" id="tarikhe_shoroe_namayesh"
+                                            <input type="text" class="form-control" name="tarikhe_shoroe_namayesh"
                                                    placeholder="مثال: 1380/05/20">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ پایان نمایش</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tarikhe_payane_namayesh" id="tarikhe_payane_namayesh"
+                                            <input type="text" class="form-control" name="tarikhe_payane_namayesh"
                                                    placeholder="مثال: 1380/05/20">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">امتیاز جایزه</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="emtiaze_jayeze" id="emtiaze_jayeze"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداقل امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaghale_emtiaz" id="hadeaghale_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداکثر امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaksare_emtiaz" id="hadeaksare_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">مبلغ هر امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="mablaghe_har_emtiaz" id="mablaghe_har_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه مشتری</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_grohe_moshtari" id="name_grohe_moshtari">
+                                            <select class="form-control form-control-lg" name="name_grouhe_moshtari">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" id="name_groh" name="name_groh">
+                                            <select class="form-control form-control-lg">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
@@ -1157,9 +1161,10 @@
                                         <label class="col-form-label col-lg-2">رنگ نمایش پروفایل</label>
                                         <div class="col-lg-4">
                                             <div class="card card-body border-top-success text-center">
+
                                                 <div class="d-inline-block">
                                                     <input type="text" class="form-control colorpicker-palette-toggle"
-                                                           name="range_namayeshe_profile" id="range_namayeshe_profile" value="#27ADCA" data-fouc>
+                                                           name="range_namayeshe_profile" value="#27ADCA" data-fouc>
                                                 </div>
                                             </div>
                                         </div>
@@ -1168,7 +1173,7 @@
                                             <div class="card card-body border-top-success text-center">
                                                 <div class="d-inline-block">
                                                     <input type="text" class="form-control colorpicker-palette-toggle"
-                                                           name="range_vizhesazie_profile" id="range_vizhesazie_profile" value="#27ADCA" data-fouc>
+                                                           name="range_vizhesazie_profile" value="#27ADCA" data-fouc>
                                                 </div>
                                             </div>
                                         </div>
@@ -1177,19 +1182,19 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">ساعت وصل موقت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="saat_vasle_movaghat" id="saat_vasle_movaghat"
+                                            <input type="text" class="form-control" name="saat_vasle_movaghat"
                                                    placeholder="مثال : 2">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">روز وصل موقت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="roze_vasle_movaghat" id="roze_vasle_movaghat"
+                                            <input type="text" class="form-control" name="roze_vasle_movaghat"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ترافیک وصل موقت</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="terafike_vasle_movaghat" id="terafike_vasle_movaghat"
+                                            <input type="text" class="form-control" name="terafike_vasle_movaghat"
                                                    placeholder="(مگابایت) مثال: 1024">
                                         </div>
                                         <br><br>
@@ -1198,56 +1203,47 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">دوره به ماه</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="dore_be_mah" id="dore_be_mah"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">دوره به روز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="dore_be_mah" id="dore_be_mah"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">دوره به ساعت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="dore_be_saat" id="dore_be_saat"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="مثال : 5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ترافیک</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="terafik" id="terafik"
+                                            <input type="text" class="form-control" name="dore_be_mah"
                                                    placeholder="(مگابایت)">
-                                        </div>
-                                        <br><br>
-                                        <legend class="text-uppercase font-size-sm font-weight-bold"
-                                                style="color: #FB8C00">هزینه راه اندازی
-                                        </legend>
-
-                                        <label class="col-form-label col-lg-2">هزینه نصب</label>
-                                        <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hazine_nasb" id="hazine_nasb"
-                                                   placeholder="ریال">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">هزینه خرابی</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hazine_kharabi" id="hazine_kharabi"
+                                            <input type="text" class="form-control" name="hazine_kharabi"
                                                    placeholder="ریال">
                                         </div>
                                         <br><br>
+
                                         <legend class="text-uppercase font-size-sm font-weight-bold"
                                                 style="color: #FB8C00">توضیحات
                                         </legend>
                                         <label class="col-form-label col-lg-2">توضیحات فاکتور</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="tozihate_faktor" id="tozihate_faktor"
+                                            <input type="text" class="form-control" name="tozihate_faktor"
                                                    placeholder="توضیحات فاکتور">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">توضیحات وب سایت</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="tozihate_website" id="tozihate_website"
+                                            <input type="text" class="form-control" name="tozihate_website"
                                                    placeholder="توضیحات وب سایت">
                                         </div>
                                         <br><br>
@@ -1256,19 +1252,19 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">سرعت پایه دریافت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="sorate_paye_daryaft" id="sorate_paye_daryaft"
+                                            <input type="text" class="form-control" name="sorat_paye_daryaft"
                                                    placeholder="مگابیت">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداکثر سرعت دریافت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaxar_sorat_daryaft" id="hadeaxar_sorat_daryaft"
+                                            <input type="text" class="form-control" name="hadeaxar_sorat_daryaft"
                                                    placeholder="مگابیت">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">سرعت پایه ارسال</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="sorat_paye_ersal" id="sorat_paye_ersal"
+                                            <input type="text" class="form-control" name="sorat_paye_ersal"
                                                    placeholder="مگابیت">
                                         </div>
                                         <br><br>
@@ -1278,30 +1274,36 @@
                                         </legend>
                                         <label class="col-form-label col-lg-2">پورت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="port" id="port" placeholder="">
+                                            <input type="text" class="form-control" name="port" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تجهیزات</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tajhizat" id="tajhizat" placeholder="">
+                                            <input type="text" class="form-control" name="tajhizat" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">فضا</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="faza" id="faza" placeholder="">
+                                            <input type="text" class="form-control" name="faza" placeholder="">
+                                        </div>
+                                        <br><br>
+                                        <label class="col-form-label col-lg-2">حداکثر سرعت ارسال</label>
+                                        <div class="col-lg-4">
+                                            <input type="text" class="form-control" name="sorat_paye_ersal"
+                                                   placeholder="مگابیت">
                                         </div>
                                         <br><br>
                                     </div>
                                 </fieldset>
                                 <div class="text-right">
                                     <button type="submit" name="send_services_tdlte" class="btn btn-primary">ارسال <i
-                                                class="icon-paperplane ml-2"></i></button>
+                                            class="icon-paperplane ml-2"></i></button>
                                 </div>
                             </form>
                             <div class="card" style="margin-top: 10px">
                                 <div class="col-md-12">
-                                    <button name="delete_tdlte" class="btn btn-warning col-md-auto float-md-right"  id="delete_tdlte">حذف<i class="icon-folder-remove ml-2"></i></button>
-                                    <button name="edit_tdlte" class="btn btn-primary col-md-auto float-md-right" id="edit_tdlte">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
+                                    <button name="delete" class="btn btn-warning col-md-auto float-md-right"  id="delete">حذف<i class="icon-folder-remove ml-2"></i></button>
+                                    <button name="edit" class="btn btn-primary col-md-auto float-md-right" id="edit">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
                                     <table id="view_table_tdlte" class="table table-striped datatable-responsive table-hover">
                                     </table>
                                 </div>
@@ -1310,13 +1312,11 @@
                         <!------------Voip------------->
                         <div class="voip_tab tab-pane fade" id="bottom-justified-divided-tab4">
                             <form action="#" method="POST">
-                                <input type="hidden" id="id"  name="id" value="empty" class="form-control">
-                                <input type="hidden" id="type" name="type" value="voip" class="form-control">
                                 <fieldset class="mb-3">
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع پرداخت</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="noe_pardakht" id=""noe_pardakht"">
+                                            <select class="form-control form-control-lg">
                                                 <option value="carti">کارتی</option>
                                                 <option value="etebari">اعتباری</option>
                                             </select>
@@ -1324,7 +1324,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش سرویس</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_service" id="namayeshe_service">
+                                            <select class="form-control form-control-lg">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -1332,7 +1332,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش در پروفایل</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_dar_profile" id="namayeshe_dar_profile">
+                                            <select class="form-control form-control-lg">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -1340,101 +1340,97 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">عنوان سرویس</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="onvane_service"
-                                                   placeholder="مثال: " id="onvane_service">
+                                            <input type="text" class="form-control" name="onvane_kart"
+                                                   placeholder="مثال: " required>
                                         </div>
                                         <label class="col-form-label col-lg-2">قيمت</label>
                                         <div class="col-lg-4">
                                             <input type="number" class="form-control" name="gheymat"
-                                                   placeholder="به ریال" id="gheymat" required>
+                                                   placeholder="به ریال" required>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">زمان استفاده</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="zaname_estefade" id="zaname_estefade" placeholder="زمان به ماه مثال:6">
+                                            <input type="text" class="form-control" name="name_estefade"
+                                                   placeholder="زمان به ماه مثال:6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تخفيف</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="takhfif" id="takhfif"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="به درصد مثال : 6.5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_service_dahande" id="name_service_dahande">
+                                            <select class="form-control form-control-lg">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">پورسانت</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="porsant" id="porsant"
-                                                   placeholder="مثال : 6.5">
+                                            <input type="text" class="form-control" name="porsant"
+                                                   placeholder="به درصد مثال : 6.5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ شروع نمایش</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tarikhe_shoroe_namayesh" id="tarikhe_shoroe_namayesh"
+                                            <input type="text" class="form-control" name="tarikhe_shoroe_namayesh"
                                                    placeholder="مثال: 1380/05/20">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ پایان نمایش</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="tarikhe_payane_namayesh" id="tarikhe_payane_namayesh"
+                                            <input type="text" class="form-control" name="tarikhe_payane_namayesh"
                                                    placeholder="مثال: 1380/05/20">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">امتیاز جایزه</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="emtiaze_jayeze" id="emtiaze_jayeze"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداقل امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaghale_emtiaz" id="hadeaghale_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداکثر امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaksare_emtiaz" id="hadeaksare_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">مبلغ هر امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="mablaghe_har_emtiaz" id="mablaghe_har_emtiaz"
+                                            <input type="text" class="form-control" name="takhfig"
                                                    placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه مشتری</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_grohe_moshtari" id="name_grohe_moshtari">
+                                            <select class="form-control form-control-lg" name="name_grouhe_moshtari">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" id="name_groh" name="name_groh">
+                                            <select class="form-control form-control-lg">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
-
-                                        <label class="col-form-label col-lg-2"></label>
-                                        <div class="col-lg-4">
-                                        </div>
-                                        <br><br>
-
                                         <label class="col-form-label col-lg-2">رنگ نمایش پروفایل</label>
                                         <div class="col-lg-4">
                                             <div class="card card-body border-top-success text-center">
+
                                                 <div class="d-inline-block">
                                                     <input type="text" class="form-control colorpicker-palette-toggle"
-                                                           name="range_namayeshe_profile" id="range_namayeshe_profile" value="#27ADCA" data-fouc>
+                                                           name="range_namayeshe_profile" value="#27ADCA" data-fouc>
                                                 </div>
                                             </div>
                                         </div>
@@ -1443,23 +1439,22 @@
                                             <div class="card card-body border-top-success text-center">
                                                 <div class="d-inline-block">
                                                     <input type="text" class="form-control colorpicker-palette-toggle"
-                                                           name="range_vizhesazie_profile" id="range_vizhesazie_profile" value="#27ADCA" data-fouc>
+                                                           name="range_vizhesazie_profile" value="#27ADCA" data-fouc>
                                                 </div>
                                             </div>
                                         </div>
-                                        <br><br>
                                         <legend class="text-uppercase font-size-sm font-weight-bold"
                                                 style="color: #FB8C00">توضیحات
                                         </legend>
                                         <label class="col-form-label col-lg-2">توضیحات فاکتور</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="tozihate_faktor" id="tozihate_faktor"
+                                            <input type="text" class="form-control" name="tozihate_faktor"
                                                    placeholder="توضیحات فاکتور">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">توضیحات وب سایت</label>
                                         <div class="col-lg-10">
-                                            <input type="text" class="form-control" name="tozihate_website" id="tozihate_website"
+                                            <input type="text" class="form-control" name="tozihate_website"
                                                    placeholder="توضیحات وب سایت">
                                         </div>
                                         <br><br>
@@ -1467,13 +1462,13 @@
                                 </fieldset>
                                 <div class="text-right">
                                     <button type="submit" name="send_services_voip" class="btn btn-primary">ارسال <i
-                                                class="icon-paperplane ml-2"></i></button>
+                                            class="icon-paperplane ml-2"></i></button>
                                 </div>
                             </form>
                             <div class="card" style="margin-top: 10px">
                                 <div class="col-md-12">
-                                    <button name="delete_voip" class="btn btn-warning col-md-auto float-md-right"  id="delete_voip">حذف<i class="icon-folder-remove ml-2"></i></button>
-                                    <button name="edit_voip" class="btn btn-primary col-md-auto float-md-right" id="edit_voip">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
+                                    <button name="delete" class="btn btn-warning col-md-auto float-md-right"  id="delete">حذف<i class="icon-folder-remove ml-2"></i></button>
+                                    <button name="edit" class="btn btn-primary col-md-auto float-md-right" id="edit">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
                                     <table id="view_table_voip" class="table table-striped datatable-responsive table-hover">
                                     </table>
                                 </div>
@@ -1501,18 +1496,18 @@
             <div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
 						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a
-                                href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
+                            href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
 					</span>
 
                 <ul class="navbar-nav ml-lg-auto">
                     <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i
-                                    class="icon-lifebuoy mr-2"></i> Support</a></li>
+                                class="icon-lifebuoy mr-2"></i> Support</a></li>
                     <li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link"
                                             target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
                     <li class="nav-item"><a
-                                href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov"
-                                class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i
-                                        class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+                            href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov"
+                            class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i
+                                    class="icon-cart2 mr-2"></i> Purchase</span></a></li>
                 </ul>
             </div>
         </div>
