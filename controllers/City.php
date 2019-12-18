@@ -10,6 +10,6 @@ class City extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
-        $this->view->render('dashboard/city/view',false);
+        $this->view->render('city/view','dashboard_template','/public/js/city.js',false);
     }
 }

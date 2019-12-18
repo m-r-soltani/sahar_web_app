@@ -8,8 +8,7 @@ class Dashboard extends Controller
     }
     public function index()
     {
-//		$this->view->allUsers = R::findAll( 'bnm_users' );
-//		$this->view->title = 'کاربران';
-        $this->view->render('dashboard/view',false);
+        //$this->view->render('dashboard/view','dashboard/dashboard_sidemenu');
+        $this->view->render('dashboard/view','dashboard_template','/public/js/demo_pages/dashboard.js');
     }
 }

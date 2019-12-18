@@ -1,5 +1,4 @@
 <?php
-session_start();
 if (isset($_POST["submit"])) {
     if ($_POST["user"] == "admin" && $_POST["pass"] == "admin") {
         $_SESSION["loginOk"] = 'yes';

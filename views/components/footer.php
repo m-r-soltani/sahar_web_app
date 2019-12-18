@@ -1,4 +1,5 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed'); ?>
+<h1>this is footer 2</h1>
 </main>
 <footer class="container">
   <p>&copy; Company 2019-2020</p>

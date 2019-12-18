@@ -242,17 +242,17 @@ iframe {
     width: 100%;
     background: #e6e6e6;
     height: 50px;
-    border-radius: 25px;
+    border-radius: 2px;
     padding: 0 30px 0 68px;
 }
 
 
 /*------------------------------------------------------------------
 [ Focus ]*/
-.focus-input100 {
+/*.focus-input100 {
     display: block;
     position: absolute;
-    border-radius: 25px;
+    border-radius: 2px;
     bottom: 0;
     left: 0;
     z-index: -1;
@@ -260,12 +260,12 @@ iframe {
     height: 100%;
     box-shadow: 0px 0px 0px 0px;
     color: rgba(87,184,70, 0.8);
-}
+}*/
 
-.input100:focus + .focus-input100 {
+/*.input100:focus + .focus-input100 {
     -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
     animation: anim-shadow 0.5s ease-in-out forwards;
-}
+}*/
 
 @-webkit-keyframes anim-shadow {
     to {
@@ -306,10 +306,10 @@ iframe {
     transition: all 0.4s;
 }
 
-.input100:focus + .focus-input100 + .symbol-input100 {
+/*.input100:focus + .focus-input100 + .symbol-input100 {
     color: #57b846;
     padding-left: 28px;
-}
+}*/
 
 /*------------------------------------------------------------------
 [ Button ]*/
@@ -334,7 +334,7 @@ iframe {
 
     width: 100%;
     height: 50px;
-    border-radius: 25px;
+    border-radius: 2px;
     background: #57b846;
     display: -webkit-box;
     display: -webkit-flex;

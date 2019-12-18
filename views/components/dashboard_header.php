@@ -1,5 +1,5 @@
+<?php //defined('__ROOT__') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
-<?php defined('__ROOT__') OR exit('No direct script access allowed'); ?>
 <html lang="en" dir="rtl">
 <head>
     <meta charset="utf-8">
@@ -8,15 +8,15 @@
     <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
 
     <!-- Global stylesheets -->
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/main.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/icons/icomoon/styles.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap_limitless.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>" />
-    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/dataTables.bootstrap4.min.css' ?>" />
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/main.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/icons/icomoon/styles.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap_limitless.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/layout.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/components.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/dataTables.bootstrap4.min.css' ?>"/>
     <!-- /global stylesheets -->
 </head>
 <body>
@@ -26,6 +26,7 @@
     <div class="navbar-brand">
         <a href="index.html" class="d-inline-block">
             <img src="global_assets/images/logo_light.png" alt="">
+            <img src="<?php echo __ROOT__ . '/public/images/logo_light.png' ?>" alt="">
         </a>
     </div>
 
@@ -150,7 +151,7 @@
                         <ul class="media-list">
                             <li class="media">
                                 <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
+                                    <img src="<?php echo __ROOT__ . '/public/images/placeholders/placeholder.jpg' ?>" alt="">
                                 </div>
                                 <div class="media-body">
                                     <a href="#" class="media-title font-weight-semibold">Jordana Ansley</a>
@@ -340,175 +341,81 @@
 
 <!-- Page content -->
 <div class="page-content">
+    <div class="sidebar sidebar-dark sidebar-main sidebar-expand-md">
 
-    <!-- Main sidebar -->
-    <?php require_once('dashboard_sidemenu.php');?>
-    <!-- /main sidebar -->
+        <!-- Sidebar mobile toggler -->
+        <div class="sidebar-mobile-toggler text-center">
+            <a href="#" class="sidebar-mobile-main-toggle">
+                <i class="icon-arrow-right8"></i>
+            </a>
+            Navigation
+            <a href="#" class="sidebar-mobile-expand">
+                <i class="icon-screen-full"></i>
+                <i class="icon-screen-normal"></i>
+            </a>
+        </div>
+        <!-- /sidebar mobile toggler -->
 
 
-    <!-- Main content -->
-    <div class="content-wrapper">
+        <!-- Sidebar content -->
+        <div class="sidebar-content">
 
-        <!-- Page header -->
-        <div class="page-header page-header-light">
-            <div class="page-header-content header-elements-md-inline">
-                <div class="page-title d-flex">
-                    <h4><i class="icon-arrow-right6 mr-2"></i> <span class="font-weight-semibold">Forms</span> - Basic Inputs</h4>
-                    <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-                </div>
+            <!-- Main navigation -->
+            <div class="card card-sidebar-mobile">
+                <ul class="nav nav-sidebar" data-nav-type="accordion">
 
-                <div class="header-elements d-none">
-                    <div class="d-flex justify-content-center">
-                        <a href="#" class="btn btn-link btn-float text-default"><i class="icon-bars-alt text-primary"></i><span>Statistics</span></a>
-                        <a href="#" class="btn btn-link btn-float text-default"><i class="icon-calculator text-primary"></i> <span>Invoices</span></a>
-                        <a href="#" class="btn btn-link btn-float text-default"><i class="icon-calendar5 text-primary"></i> <span>Schedule</span></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-                <div class="d-flex">
-                    <div class="breadcrumb">
-                        <a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-                        <a href="../../index.php" class="breadcrumb-item">Forms</a>
-                        <span class="breadcrumb-item active">Basic inputs</span>
-                    </div>
-
-                    <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-                </div>
-
-                <div class="header-elements d-none">
-                    <div class="breadcrumb justify-content-center">
-                        <a href="#" class="breadcrumb-elements-item">
-                            <i class="icon-comment-discussion mr-2"></i>
-                            Support
+                    <!-- Main -->
+                    <li class="nav-item">
+                        <a href="<?php echo __ROOT__.'dashboard';?>" class="nav-link active">
+                            <i class="icon-home4"></i>
+                            <span>
+									داشبورد
+								</span>
                         </a>
+                    </li>
+                    <li class="nav-item nav-item-submenu">
+                        <a href="#" class="nav-link"><i class="icon-copy"></i> <span>عنوان ها</span></a>
 
-                        <div class="breadcrumb-elements-item dropdown p-0">
-                            <a href="#" class="breadcrumb-elements-item dropdown-toggle" data-toggle="dropdown">
-                                <i class="icon-gear mr-2"></i>
-                                Settings
-                            </a>
-
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <a href="#" class="dropdown-item"><i class="icon-user-lock"></i> Account security</a>
-                                <a href="#" class="dropdown-item"><i class="icon-statistics"></i> Analytics</a>
-                                <a href="#" class="dropdown-item"><i class="icon-accessibility"></i> Accessibility</a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item"><i class="icon-gear"></i> All settings</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /page header -->
-
-
-        <!-- Content area -->
-        <div class="content">
-
-            <!-- Form inputs -->
-            <div class="card">
-
-
-                <div class="card-body">
-
-                    <form action="#" method="POST">
-                        <fieldset class="mb-3">
-                            <legend class="text-uppercase font-size-sm font-weight-bold">شهر</legend>
-                            <input type="hidden" id="id" class="form-control" name="id" value="empty">
-
-                            <div class="form-group row">
-                                <label class="col-form-label col-lg-2" >انتخاب استان</label>
-                                <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="entekhab_ostan" id="ostan">
-
-                                    </select>
-                                </div>
-                                <br><br>
-                                <label class="col-form-label col-lg-2">نام شهر</label>
-                                <div class="col-lg-4">
-                                    <input type="text" id="shahr" class="form-control" name="shahr" placeholder="مثال: تهران">
-                                </div>
-                            </div>
-                        </fieldset>
-                        <div class="text-right">
-                            <button type="submit" name="send_city" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!-- /form inputs -->
-            <!--datatable-->
-            <div class="card">
-                <div class="col-md-12">
-                    <button name="delete" class="btn btn-warning col-md-auto float-md-right"  id="delete">حذف<i class="icon-folder-remove ml-2"></i></button>
-                    <button name="edit" class="btn btn-primary col-md-auto float-md-right" id="edit">ویرایش<i class="icon-database-edit2 ml-2"></i></button>
-                    <table id="view_table" class="table table-striped datatable-responsive table-hover">
-                    </table>
-                </div>
-            </div>
-            <!--/datatable-->
-
-        </div>
-        <!-- /content area -->
-
-
-        <!-- Footer -->
-        <div class="navbar navbar-expand-lg navbar-light">
-            <div class="text-center d-lg-none w-100">
-                <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
-                    <i class="icon-unfold mr-2"></i>
-                    Footer
-                </button>
-            </div>
-
-            <div class="navbar-collapse collapse" id="navbar-footer">
-					<span class="navbar-text">
-						&copy; 2015 - 2018. <a href="#">Limitless Web App Kit</a> by <a href="http://themeforest.net/user/Kopyov" target="_blank">Eugene Kopyov</a>
-					</span>
-
-                <ul class="navbar-nav ml-lg-auto">
-                    <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
-                    <li class="nav-item"><a href="http://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
-                    <li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink-400"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+                        <ul class="nav nav-group-sub" data-submenu-title="عنوان ها">
+                            <!--<li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>-->
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'province';?>" class="nav-link">استان</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'organization_level';?>" class="nav-link">سمت</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'city';?>" class="nav-link">شهر</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'tax';?>" class="nav-link">مالیات</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'type_subscribers';?>" class="nav-link">نوع مشتری</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-item-submenu">
+                        <a href="#" class="nav-link"><i class="icon-stack"></i> <span>تعاریف</span></a>
+                        <ul class="nav nav-group-sub" data-submenu-title="تعاریف">
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'popsite';?>" class="nav-link">پاپ سایت</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'telecommunications_center';?>" class="nav-link">مرکز مخابراتی</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'terminal';?>" class="nav-link">ترمینال</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'pre_number';?>" class="nav-link">پیش شماره</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'host';?>" class="nav-link">میزبان</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'wireless_ap';?>" class="nav-link">Wireless-AP</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'wireless_station';?>" class="nav-link">Wireless-Staion</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'services';?>" class="nav-link">سرویس ها</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-item-submenu">
+                        <a href="#" class="nav-link"><i class="icon-people"></i> <span>نمایندگی ها</span></a>
+                        <ul class="nav nav-group-sub" data-submenu-title="نمایندگی ها">
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'branch';?>" class="nav-link">نمایندگی</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'operator';?>" class="nav-link">پرسنل</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-item-submenu">
+                        <a href="#" class="nav-link"><i class="icon-users4"></i> <span>مشترکین</span></a>
+                        <ul class="nav nav-group-sub" data-submenu-title="مشترکین">
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'real_subscribers';?>" class="nav-link">مشترکین حقیقی</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'legal_subscribers';?>" class="nav-link">مشترکین حقوقی</a></li>
+                        </ul>
+                    </li>
+                    <!-- /main -->
                 </ul>
             </div>
+            <!-- /main navigation -->
         </div>
-        <!-- /footer -->
-
+        <!-- /sidebar content -->
     </div>
-    <!-- /main content -->
-
-</div>
-<!-- /page content -->
-
-</body>
-</html>
-<!-- Core JS files -->
-<script src="<?php echo __ROOT__ . '/public/js/main/jquery.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/main/bootstrap.bundle.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/plugins/loaders/blockui.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/datatables.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/responsive.min.js' ?>"></script>
-<!-- /core JS files -->
-
-<!-- Theme JS files -->
-<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
-<!--<script src="<?php /*echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js' */?>"></script>
-<script src="<?php /*echo __ROOT__ . '/public/js/js/plugins/forms/styling/switch.min.js' */?>"></script>-->
-<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/select2.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/select.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/buttons.min.js' ?>"></script>
-<!--<script src="<?php /*echo __ROOT__ . '/public/js/plugins/editors/datatable/dataTables.altEditor.js' */?>"></script>-->
-<script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
-
-
-<!--<script src="<?php /*echo __ROOT__ . '/public/js/demo_pages/form_checkboxes_radios.js' */?>"></script>-->
-<script src="<?php echo __ROOT__ . '/public/js/demo_pages/form_inputs.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/persian-date.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/persian-datepicker.min.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/functions.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/city.js' ?>"></script>
-<!-- /theme JS files -->

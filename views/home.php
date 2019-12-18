@@ -4,4 +4,3 @@
 	  <h1 class="display-3"><?php echo __SITE_NAME__; ?></h1>
 	</div>
 </div>
-adsdasdad

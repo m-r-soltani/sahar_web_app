@@ -11,6 +11,6 @@ class Users extends Controller
 	{
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
-		$this->view->render('users/view');
+		$this->view->render('users','dashboard_template','/public/js/users.js');
 	}
 }

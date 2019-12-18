@@ -2,18 +2,28 @@
 
 class View
 {
-	public function render($viewPath, $layout = NULL)
+
+	public function render($viewPath, $layout = null,$js1= false,$js2=false)
 	{
-		if ($layout === NULL) {
+		if ($layout === null) {
 			$this->view = $viewPath;
-			require('Views/layout.php');
+
 		}
-		else if ($layout === FALSE) {
+		else if ($layout === false) {
 			require('Views/' . $viewPath . '.php');			
 		}
 		else {
 			$this->view = $viewPath;
-			require("Views/$layout.php");
+			if ($js1){
+			    $this->js1=$js1;
+            }
+            if ($js2){
+			    $this->js2=$js2;
+            }
+            require("views/$layout.php");
+			//require("Views/$layout.php");
+			//require("Views/$layout.php");
 		}
 	}
+
 }
