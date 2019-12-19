@@ -73,7 +73,6 @@ class Bootstrap
                 $sql = Update_Generator($_POST, 'bnm_users',"WHERE id = $id");
                 Db::justexecute($sql);
             }
-
         }
         /*========host========*/
         if(isset($_POST['send_services_adsl'])){
@@ -265,6 +264,15 @@ class Bootstrap
                 Db::justexecute($sql);
             }
         }
+        /*==========factors============*/
+//        if(isset($_POST['fuctor'])){
+//            $id=$_POST['condition'];
+//            $fuctor=$_POST['fuctor'];
+//            $sql="SELECT * FROM bnm_subscribers WHERE id=$id";
+//            $result=Db::fetchall_Query($sql);
+//            $rows=json_encode($result);
+//            echo $rows;
+//        }
         /*==========edit form============*/
         if(isset($_POST['Edit_Form'])){
             $page=$_POST['Edit_Form'];
@@ -279,6 +287,13 @@ class Bootstrap
                 case 'services_voip':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_services WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    echo $rows;
+                    break;
+                case 'factors':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_subscribers WHERE id='$id'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
                     echo $rows;

@@ -10,8 +10,12 @@ $primaryKey = 'id';
 // parameter represents the DataTables column identifier. In this case object
 // parameter names
 $columns = array(
-    array( 'db' => 'name', 'dt' => 'shahr' ),
-    array( 'db' => 'ostan_id', 'dt' => 'ostan_id' )
+    array( 'db' => 'id', 'dt' => 'id' ),
+    array( 'db' => 'name', 'dt' => 'name' ),
+    array( 'db' => 'f_name', 'dt' => 'f_name' ),
+    array( 'db' => 'telephone', 'dt' => 'telephone' ),
+    array( 'db' => 'telephone_hamrah', 'dt' => 'telephone_hamrah' ),
+    array( 'db' => 'shenase_hoviati', 'dt' => 'shenase_hoviati' )
 );
 
 // SQL server connection information
@@ -29,7 +33,7 @@ $sql_details = array(
  */
 
 require( 'ssp.class.php' );
-$where=false;
+$where="type='real'";
 echo json_encode(
     SSP::simple( $_POST, $sql_details, $table, $primaryKey, $columns,$where )
 );

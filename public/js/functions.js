@@ -22,6 +22,24 @@ function Edit_Form(page,condition,callback){
         }
     });
 }
+function Factors(page,condition,callback){
+    $.ajax({
+        type: "post",
+        url: "factor"+page,
+        timeout:5000,
+        data: {
+            factors:page,
+            condition:condition
+        },
+        success: function(response){
+            response=JSON.parse(response);
+            return callback(response);
+        },
+        error:function (req,res,status) {
+            return callback(false);
+        }
+    });
+}
 function Hard_Delete(data,param1/*felan kari anjam nemide*/,callback){
     $.ajax({
         type: "post",
