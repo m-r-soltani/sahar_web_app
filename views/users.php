@@ -68,25 +68,24 @@
 
                 <form action="#" method="POST">
                     <fieldset class="mb-3">
-                        <legend class="text-uppercase font-size-sm font-weight-bold">شهر</legend>
+                        <legend class="text-uppercase font-size-sm font-weight-bold">کاربران</legend>
                         <input type="hidden" id="id" class="form-control" name="id" value="empty">
 
                         <div class="form-group row">
-                            <label class="col-form-label col-lg-2" >انتخاب استان</label>
+                            <label class="col-form-label col-lg-2">نام کاربری</label>
                             <div class="col-lg-4">
-                                <select class="form-control form-control-lg" name="entekhab_ostan" id="ostan">
-
-                                </select>
+                                <input type="text" id="username" class="form-control" name="username" placeholder="">
                             </div>
                             <br><br>
-                            <label class="col-form-label col-lg-2">نام شهر</label>
+                            <label class="col-form-label col-lg-2">رمز عبور</label>
                             <div class="col-lg-4">
-                                <input type="text" id="shahr" class="form-control" name="shahr" placeholder="مثال: تهران">
+                                <input type="text" id="password" class="form-control" name="password" placeholder="">
                             </div>
+                            <br><br>
                         </div>
                     </fieldset>
                     <div class="text-right">
-                        <button type="submit" name="send_city" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
+                        <button type="submit" name="send_users" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
                     </div>
                 </form>
             </div>

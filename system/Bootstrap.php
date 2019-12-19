@@ -64,6 +64,17 @@ class Bootstrap
             }
 
         }
+        if(isset($_POST['send_users'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_users');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_users',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+
+        }
         /*========host========*/
         if(isset($_POST['send_services_adsl'])){
             if($_POST['id']=="empty") {
@@ -556,12 +567,13 @@ class Bootstrap
         }
 		// 1. router
 		if (isset ($_GET['path'])) {
-			$tokens = explode('/', rtrim($_GET['path'], '/'));
-
-			//print_r($tokens);
-			// 2. Dispatcher
-
-			$controllerName = ucfirst(array_shift($tokens));
+            $tokens = explode('/', rtrim($_GET['path'], '/'));
+            ///////////////////////////////+++++++++++++-----static value------+++++++++++///////////////////////////////////////
+            $restrections=array('city','dashboard','province','branch','host');
+            ///////////////////////////////+++++++++++++-----static value------+++++++++++///////////////////////////////////////
+            // 2. Dispatcher
+            $controllerName = ucfirst(array_shift($tokens));
+            $real_controllerName=strtolower($controllerName);
 			if (file_exists('Controllers/'.$controllerName.'.php')) {
 				$controller = new $controllerName();
 				if (!empty($tokens)) {
@@ -577,9 +589,26 @@ class Bootstrap
 				else
 				{
 					// default action
-					$controller->index();
+                    //checking user login
+                    if (in_array($real_controllerName,$restrections)){
+                        if (isset($_SESSION['loginOk']) && $_SESSION['loginOk']=='yes'){
+                            $controller->index();
+                        }else{
+                            //if not authenticated
+                            $controllerName = 'Login';
+                            $controller = new $controllerName();
+                            $controller->index();
+                        }
+                    }else{
+                        $controller->index();
+                    }
+
+
 				}
 			} else {
+                $controllerName = 'Error404';
+                $controller = new $controllerName();
+                $controller->index();
                 //if controller not found render an error page
 				$flag = TRUE;
 			}

@@ -20,7 +20,7 @@
 
 
 // DB table to use
-$table = 'bnm_shahr';
+$table = 'bnm_users';
 
 // Table's primary key
 $primaryKey = 'id';
@@ -30,8 +30,9 @@ $primaryKey = 'id';
 // parameter represents the DataTables column identifier. In this case object
 // parameter names
 $columns = array(
-    array( 'db' => 'name', 'dt' => 'shahr' ),
-    array( 'db' => 'ostan_id', 'dt' => 'ostan_id' )
+    array( 'db' => 'id', 'dt' => 'id' ),
+    array( 'db' => 'username', 'dt' => 'username' ),
+    array( 'db' => 'password', 'dt' => 'password' ),
 );
 
 // SQL server connection information

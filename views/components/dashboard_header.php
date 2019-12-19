@@ -330,7 +330,7 @@
                     <a href="#" class="dropdown-item"><i class="icon-comment-discussion"></i> Messages <span class="badge badge-pill bg-blue ml-auto">58</span></a>
                     <div class="dropdown-divider"></div>
                     <a href="#" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
-                    <a href="#" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+                    <?php echo "<a class='dropdown-item' href='".__ROOT__."login/?logout=yes'><i class='icon-exit2'></i>Logout</a>"; ?>
                 </div>
             </li>
         </ul>
@@ -383,6 +383,9 @@
                             <li class="nav-item"><a href="<?php echo __ROOT__.'city';?>" class="nav-link">شهر</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'tax';?>" class="nav-link">مالیات</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'type_subscribers';?>" class="nav-link">نوع مشتری</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'users';?>" class="nav-link">کاربران</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'menus';?>" class="nav-link">منوها</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'restriction';?>" class="nav-link">محدودیت ها</a></li>
                         </ul>
                     </li>
                     <li class="nav-item nav-item-submenu">

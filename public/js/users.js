@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    GetProvinces('city',function (data) {
+    /*GetProvinces('users',function (data) {
         if (data){
             //has data
             var element=$('#ostan');
@@ -12,29 +12,22 @@ $(document).ready(function () {
             //data az db gerefte nashod
             alert('درخواست ناموفق');
         }
-    });
+    });*/
 
     /*===================++  DATA_TABLE  ++=========================*/
-    var ostan={
-        findostan:function (data) {
-            return 'asd';
-        }
-    };
     var cols=[
-        /*        { "data": "id",title:'id',
-                    //"targets": [ 0 ],
-                    //"visible": false,
-                    //"searchable": false
-                },*/
-        { "data": "shahr",
-            title:'نام شهر'
+        { "data": "id",
+            title:'شناسه'
         },
-        { "data": "ostan_id",
-            title:'شناسه استان',
+        { "data": "username",
+            title:'نام کاربری',
+        },
+        { "data": "password",
+            title:'رمز',
         }
         //,{ "data": "ostan_id",title:'استان' }
     ];
-    DataTable('#view_table','/sahar/helpers/city.php','POST',cols,function (table) {
+    DataTable('#view_table','/sahar/helpers/users.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/
@@ -54,7 +47,7 @@ $(document).ready(function () {
         $('#delete').click( function () {
             let tr=$('#view_table tbody').find('tr.selected');
             let td=tr.find('td:first').text();
-            Hard_Delete(td,'city',function (data) {
+            Hard_Delete(td,'users',function (data) {
                 if (data==='1') {
                     table.ajax.reload();
                 }else{
@@ -66,10 +59,10 @@ $(document).ready(function () {
     $('#edit').click( function () {
         let tr=$('#view_table tbody').find('tr.selected');
         let td=tr.find('td:first').text();
-        Edit_Form('city',td,function (data) {
+        Edit_Form('users',td,function (data) {
             $('#id').val(data[0]['id']);
-            $('#shahr').val(data[0]['name']);
-            $('#ostan option[value="'+data[0]['ostan_id']+'"]').attr('selected','selected');
+            $('#username').val(data[0]['username']);
+            $('#password').val(data[0]['password']);
 
 
             //$('.form-group').each(function(i) {
