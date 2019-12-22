@@ -3,6 +3,7 @@ ini_set('display_errors',1);
 //ini_set('file_uploads','on');
 ini_set('display_startup_errors',1);
 error_reporting(E_ALL);
+
 class Bootstrap
 {
 	public function __construct()
@@ -52,7 +53,7 @@ class Bootstrap
                 $result=Update_city($id,$_POST['shahr'],$_POST['entekhab_ostan']);
             }
         }
-        /*========host========*/
+        /*========popsite========*/
         if(isset($_POST['send_popsite'])){
             if($_POST['id']=="empty") {
                 $sql = Insert_Generator($_POST, 'bnm_popsite');
@@ -64,15 +65,10 @@ class Bootstrap
             }
 
         }
-        if(isset($_POST['send_users'])){
-            if($_POST['id']=="empty") {
-                $sql = Insert_Generator($_POST, 'bnm_users');
-                Db::justexecute($sql);
-            }else{
-                $id=$_POST['id'];
-                $sql = Update_Generator($_POST, 'bnm_users',"WHERE id = $id");
-                Db::justexecute($sql);
-            }
+        /*========host========*/
+        if(isset($_POST['send_restrictions'])){
+            $operator=$_POST['user'];
+
         }
         /*========host========*/
         if(isset($_POST['send_services_adsl'])){
@@ -253,7 +249,7 @@ class Bootstrap
             }
 
         }
-        /*========sabte operator========*/
+        /*================initializing=================*/
         if(isset($_POST['send_operator'])){
             if($_POST['id']=="empty") {
                 $sql = Insert_Generator($_POST, 'bnm_operator');
@@ -264,15 +260,25 @@ class Bootstrap
                 Db::justexecute($sql);
             }
         }
-        /*==========factors============*/
-//        if(isset($_POST['fuctor'])){
-//            $id=$_POST['condition'];
-//            $fuctor=$_POST['fuctor'];
-//            $sql="SELECT * FROM bnm_subscribers WHERE id=$id";
-//            $result=Db::fetchall_Query($sql);
-//            $rows=json_encode($result);
-//            echo $rows;
-//        }
+        if(isset($_POST['initialize_request'])){
+            //kharhaye avalie baraye namayeshe form ha
+            $page=$_POST['initialize_request'];
+            switch ($page){
+                case 'restrictions_menu':
+                    $sql="select * from bnm_dashboard_menu";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
+                    break;
+                case 'restrictions_users':
+                    $sql="select name_karbari from bnm_operator";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
+                    break;
+
+            }
+        }
         /*==========edit form============*/
         if(isset($_POST['Edit_Form'])){
             $page=$_POST['Edit_Form'];

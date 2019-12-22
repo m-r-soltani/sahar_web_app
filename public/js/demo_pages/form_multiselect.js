@@ -201,13 +201,13 @@ var BootstrapMultiselect = function() {
 
         // Select option
         $('.multiselect-select-button').on('click', function() {
-            
+
             $('option[value="tomatoes"]', $('.multiselect-method-refresh')).attr('selected', 'selected');
             $('option[value="tomatoes"]', $('.multiselect-method-refresh')).prop('selected', true);
-            
+
             $('option[value="mushrooms"]', $('.multiselect-method-refresh')).prop('selected', true);
             $('option[value="mushrooms"]', $('.multiselect-method-refresh')).attr('selected', 'selected');
-            
+
             $('option[value="onions"]', $('.multiselect-method-refresh')).prop('selected', true);
             $('option[value="onions"]', $('.multiselect-method-refresh')).attr('selected', 'selected');
 
@@ -478,7 +478,7 @@ var BootstrapMultiselect = function() {
                 }
             }
         });
-     
+
         // Order selected options on button click
         $('.multiselect-order-options-button').on('click', function() {
             var selected = [];
@@ -536,7 +536,7 @@ var BootstrapMultiselect = function() {
     return {
         init: function() {
             _componentMultiselect();
-            _componentUniform();
+            //_componentUniform();
         }
     }
 }();

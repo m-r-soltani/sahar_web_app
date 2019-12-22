@@ -38,7 +38,6 @@
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/styling/uniform.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/visualization/d3/d3.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/visualization/d3/d3_tooltip.js' ?>"></script>
-<script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/bootstrap_multiselect.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/ui/moment/moment.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/pickers/daterangepicker.js' ?>"></script>
 <!--<script src="<?php /*echo __ROOT__ . '/public/js/plugins/forms/styling/switchery.min.js'*/ ?>"></script>-->
@@ -46,6 +45,7 @@
 <script src="<?php echo __ROOT__ . '/public/js/plugins/forms/selects/select2.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/select.min.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/plugins/tables/datatables/extensions/buttons.min.js' ?>"></script>
+
 <!--<script src="<?php /*echo __ROOT__ . '/public/js/plugins/editors/datatable/dataTables.altEditor.js' */ ?>"></script>-->
 <script src="<?php echo __ROOT__ . '/public/js/app.js' ?>"></script>
 <script src="<?php echo __ROOT__ . '/public/js/demo_pages/picker_color.js' ?>"></script>

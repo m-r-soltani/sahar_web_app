@@ -22,6 +22,23 @@ function Edit_Form(page,condition,callback){
         }
     });
 }
+function Initialize(page,callback){
+    $.ajax({
+        type: "post",
+        url: page,
+        timeout:5000,
+        data: {
+            initialize_request:page,
+        },
+        success: function(response){
+            response=JSON.parse(response);
+            return callback(response);
+        },
+        error:function (req,res,status) {
+            return callback(false);
+        }
+    });
+}
 function Factors(page,condition,callback){
     $.ajax({
         type: "post",

@@ -21,7 +21,6 @@ spl_autoload_register(function ($className) {
         require_once 'Models/' . $className . '.php'; 
     }
     else if (file_exists('Libraries/' . $className . '.php')) {
-        echo 'Libraries/' . $className . '.php';
         require_once 'Libraries/' . $className . '.php'; 
     }
     else if (file_exists($className . '.php')) { 

@@ -1,4 +1,4 @@
-<?php //defined('__ROOT__') OR exit('No direct script access allowed'); ?>
+<?php defined('__ROOT__') OR exit('No direct script access allowed'); ?>
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
 <head>
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>"/>
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>"/>
     <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/dataTables.bootstrap4.min.css' ?>"/>
+    <!--<link rel="stylesheet" href="<?php /*echo __ROOT__ . '/public/css/bootstrap-select.min.css' */?>"/>-->
     <!-- /global stylesheets -->
 </head>
 <body>
@@ -383,9 +384,8 @@
                             <li class="nav-item"><a href="<?php echo __ROOT__.'city';?>" class="nav-link">شهر</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'tax';?>" class="nav-link">مالیات</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'type_subscribers';?>" class="nav-link">نوع مشتری</a></li>
-                            <li class="nav-item"><a href="<?php echo __ROOT__.'users';?>" class="nav-link">کاربران</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'menus';?>" class="nav-link">منوها</a></li>
-                            <li class="nav-item"><a href="<?php echo __ROOT__.'restriction';?>" class="nav-link">محدودیت ها</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'restrictions';?>" class="nav-link">محدودیت ها</a></li>
                         </ul>
                     </li>
                     <li class="nav-item nav-item-submenu">
@@ -397,7 +397,7 @@
                             <li class="nav-item"><a href="<?php echo __ROOT__.'pre_number';?>" class="nav-link">پیش شماره</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'host';?>" class="nav-link">میزبان</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'wireless_ap';?>" class="nav-link">Wireless-AP</a></li>
-                            <li class="nav-item"><a href="<?php echo __ROOT__.'wireless_station';?>" class="nav-link">Wireless-Staion</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'wireless_station ';?>" class="nav-link">Wireless-Staion</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'services';?>" class="nav-link">سرویس ها</a></li>
                         </ul>
                     </li>
@@ -413,11 +413,6 @@
                         <ul class="nav nav-group-sub" data-submenu-title="مشترکین">
                             <li class="nav-item"><a href="<?php echo __ROOT__.'real_subscribers';?>" class="nav-link">مشترکین حقیقی</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'legal_subscribers';?>" class="nav-link">مشترکین حقوقی</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item nav-item-submenu">
-                        <a href="#" class="nav-link"><i class="icon-copy"></i> <span>فاکتورها</span></a>
-                        <ul class="nav nav-group-sub" data-submenu-title="فاکتورها">
                             <li class="nav-item"><a href="<?php echo __ROOT__.'factors';?>" class="nav-link">فاکتورها</a></li>
                         </ul>
                     </li>

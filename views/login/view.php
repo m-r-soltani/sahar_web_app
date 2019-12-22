@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST["submit"])) {
+if (isset($_POST["send_login"])) {
     if ($_POST["user"] == "admin" && $_POST["pass"] == "admin") {
         $_SESSION["loginOk"] = 'yes';
         header("Location:".__ROOT__.'dashboard');
@@ -73,7 +73,7 @@ if (isset($_SESSION["loginOk"])&& $_SESSION["loginOk"] == 'yes') {
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn font-weight-bold" name="submit">
+                        <button class="login100-form-btn font-weight-bold" name="send_login">
                             ورود
                         </button>
                     </div>
