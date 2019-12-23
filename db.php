@@ -32,6 +32,13 @@
         $rows=$result->fetchAll();
         return $rows;
     }
+    public static function fetch_assoc($sql){
+        $connect = Db::getInstance();
+        $result=$connect->prepare($sql);
+        $result->execute();
+        $rows=$result->fetchAll(PDO::FETCH_ASSOC);
+        return $rows;
+    }
       public static function justexecute($sql){
           $connect = Db::getInstance();
           $result=$connect->prepare($sql);

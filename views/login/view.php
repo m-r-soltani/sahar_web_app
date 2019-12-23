@@ -1,13 +1,13 @@
 <?php
-if (isset($_POST["send_login"])) {
-    if ($_POST["user"] == "admin" && $_POST["pass"] == "admin") {
-        $_SESSION["loginOk"] = 'yes';
-        header("Location:".__ROOT__.'dashboard');
-    } else {
-        $_SESSION["loginFailed"] = 'yes';
-        header("location:".__ROOT__);
-    }
-}
+//if (isset($_POST["send_login"])) {
+//    if ($_POST["user"] == "admin" && $_POST["pass"] == "admin") {
+//        $_SESSION["loginOk"] = 'yes';
+//        header("Location:".__ROOT__.'dashboard');
+//    } else {
+//        $_SESSION["loginFailed"] = 'yes';
+//        header("location:".__ROOT__);
+//    }
+//}
 ?>
 <html>
 <head>

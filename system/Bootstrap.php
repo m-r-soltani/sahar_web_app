@@ -8,6 +8,62 @@ class Bootstrap
 {
 	public function __construct()
 	{
+        if (isset($_POST["send_login"])) {
+            //initializing SESSION on login
+            $restrections='';
+            $_SESSION['dashboard_detail']=array();
+            $name_karbari=$_POST["user"];
+            $ramze_obor=$_POST["pass"];
+            $userinfo = Db::fetchall_Query("SELECT * FROM bnm_operator WHERE name_karbari='$name_karbari' AND ramze_obor='$ramze_obor'");
+            if ($userinfo) {
+                $userid = $userinfo[0]['id'];
+                $restrections = Db::fetchall_Query("SELECT menu_id FROM bnm_access_menu_operator WHERE operator_id=$userid");
+                $access_list = array();
+            }
+
+            if ($restrections) {
+                for ($i = 0; $i < count($restrections); $i++) {
+                    array_push($access_list, $restrections[$i]['menu_id']);
+                }
+                for ($i = 0; $i < count($access_list); $i++) {
+                    $menu_id = $access_list[$i];
+                    $_SESSION['dashboard_detail'][$i] = Db::fetch_assoc("select en_name,fa_name,category_id from bnm_dashboard_menu WHERE id=$menu_id");
+                }
+                for ($i = 0; $i < count($_SESSION['dashboard_detail']); $i++) {
+                    for ($j = 0; $j < count($_SESSION['dashboard_detail'][$i]); $j++) {
+                        $dash_det_catid = $_SESSION['dashboard_detail'][$i][$j]['category_id'];
+                        $menu_category[$i] = Db::fetchall_Query("SELECT id,name FROM bnm_dashboard_menu_category WHERE id=$dash_det_catid");
+                    }
+                }
+                for ($i = 0; $i < count($_SESSION['dashboard_detail']); $i++) {
+                    for ($j = 0; $j < count($_SESSION['dashboard_detail'][$i]); $j++) {
+                        if ($_SESSION['dashboard_detail'][$i][$j]['category_id'] == $menu_category[$i][$j]['id']) {
+                            $_SESSION['dashboard_detail'][$i][$j]['category_name'] = $menu_category[$i][$j]['name'];
+                        }
+                    }
+                }
+            }else{
+                $_SESSION['dashboard_detail']='no_access';
+            }
+//            print_r($_SESSION['dashboard_detail']);
+//            die();
+//            foreach ($_SESSION['access_list'] as $key => $value){
+//                $menu_name=Db::fetchall_Query("select en_name,fa_name,category_id from bnm_dashboard_menu WHERE id=$value");
+//                array_push($_SESSION['dashboard_detail'],$menu_name[0]['en_name']);
+//                array_push($_SESSION['dashboard_detail'],$menu_name[0]['fa_name']);
+//                array_push($_SESSION['dashboard_detail'],$menu_name[0]['category_id']);
+//            }
+            if ($userinfo) {
+                $_SESSION['user_id']=$userinfo[0]['id'];
+                $_SESSION['name_karbari']=$userinfo[0]['name_karbari'];
+                $_SESSION["loginOk"] = 'yes';
+                header("Location:".__ROOT__.'dashboard');
+            } else {
+                $_SESSION["loginFailed"] = 'yes';
+                header("Location:".__ROOT__.'login');
+            }
+        }
+
         /*========levels========*/
         if(isset($_POST['Get_organization_levels'])){
             //require_once ('../models/city.php');
@@ -611,6 +667,7 @@ class Bootstrap
 				{
 					// default action
                     //checking user login
+                    //$_SESSION['access_list']
                     if (in_array($real_controllerName,$restrections)){
                         if (isset($_SESSION['loginOk']) && $_SESSION['loginOk']=='yes'){
                             $controller->index();
