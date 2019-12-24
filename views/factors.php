@@ -33,7 +33,7 @@
         </div>
         <!--/datatable-->
         <!--1st tabs-->
-        <div class="card">
+        <div class="card" id="st_tab_boxes">
             <div class="card-body factors_tab1 col-lg-12">
                 <div class="factors_tab1_box" id="sefareshe_jadid_box">سفارش جدید</div>
                 <div class="factors_tab1_box" id="faktorha_box">فاکتور ها</div>
@@ -46,15 +46,16 @@
         <!--1st tabs-->
         <!--2nd tabs-->
 
-            <div class="card">
-                <div class="card-body">
-                    <div class="col-lg-2" style="position: relative;float: right;display: inline-block">
-                        <ul class="sefareshe_jadid_serviceslist" id="sefareshe_jadid_serviceslist">
+        <div class="card" id="sefareshejadid_tab">
+            <div class="card-body">
+                <div class="col-lg-2" style="position: relative;float: right;display: inline-block">
+                    <label for="asd">انتخاب سرویس:</label>
+                    <ul class="sefareshe_jadid_serviceslist" id="sefareshe_jadid_serviceslist">
 
 
-                        </ul>
-                    </div>
-                    <div class="col-lg-10" style="position: relative;float: right;display: inline-block">
+                    </ul>
+                </div>
+                <div class="col-lg-10" style="position: relative;float: right;display: inline-block">
                     <!--                <legend class="text-uppercase font-size-sm font-weight-bold">سرویس ها</legend>-->
                     <ul class="nav nav-tabs nav-tabs-bottom border-bottom-0 nav-justified">
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab1"
@@ -87,72 +88,86 @@
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع سرویس</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="noe_service" id="noe_service" placeholder="">
+                                            <input type="text" class="form-control" name="noe_service" id="noe_service"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ترافیک</label>
                                         <div class="col-lg-4">
-                                            <input name="terafik" id="terafik" type="text" class="form-control"  placeholder="">
+                                            <input name="terafik" id="terafik" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">زمان استفاده</label>
                                         <div class="col-lg-4">
-                                            <input name="zamane_estefade" id="zamane_estefade" type="text" class="form-control"  placeholder="">
+                                            <input name="zamane_estefade" id="zamane_estefade" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ شروع سرویس</label>
                                         <div class="col-lg-4">
-                                            <input name="tarikhe_shoroe_service" id="tarikhe_shoroe_service" type="text" class="form-control"  placeholder="">
+                                            <input name="tarikhe_shoroe_service" id="tarikhe_shoroe_service" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ پایان سروسی</label>
                                         <div class="col-lg-4">
-                                            <input name="tarikhe_payane_service" id="tarikhe_payane_service" type="text" class="form-control"  placeholder="">
+                                            <input name="tarikhe_payane_service" id="tarikhe_payane_service" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">قیمت</label>
                                         <div class="col-lg-4">
-                                            <input name="gheymat" id="gheymat" type="text" class="form-control"  placeholder="">
+                                            <input name="gheymat" id="gheymat" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تخفیف</label>
                                         <div class="col-lg-4">
-                                            <input name="takhfif" id="takhfif" type="text" class="form-control"  placeholder="">
+                                            <input name="takhfif" id="takhfif" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">هزینه رانژه</label>
                                         <div class="col-lg-4">
-                                            <input name="hazine_ranzhe" id="hazine_ranzhe" type="text" class="form-control"  placeholder="">
+                                            <input name="hazine_ranzhe" id="hazine_ranzhe" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">هزینه درانژه</label>
                                         <div class="col-lg-4">
-                                            <input name="hazine_dranzhe" id="hazine_dranzhe" type="text" class="form-control"  placeholder="">
+                                            <input name="hazine_dranzhe" id="hazine_dranzhe" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان پورت</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_port" id="abonmane_port" type="text" class="form-control"  placeholder="">
+                                            <input name="abonmane_port" id="abonmane_port" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان فضا</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_faza" id="abonmane_faza" type="text" class="form-control"  placeholder="">
+                                            <input name="abonmane_faza" id="abonmane_faza" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان تجهیزات</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_tajhizat" id="abonmane_tajhizat" type="text" class="form-control"  placeholder="">
+                                            <input name="abonmane_tajhizat" id="abonmane_tajhizat" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ارزش افزوده</label>
                                         <div class="col-lg-4">
-                                            <input name="arzeshe_afzode" id="arzeshe_afzode" type="text" class="form-control"  placeholder="">
+                                            <input name="arzeshe_afzode" id="arzeshe_afzode" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">مبلغ قابل پرداخت</label>
                                         <div class="col-lg-4">
-                                            <input name="mablaghe_ghabele_pardakht" id="mablaghe_ghabele_pardakht" type="text" class="form-control"  placeholder="">
+                                            <input name="mablaghe_ghabele_pardakht" id="mablaghe_ghabele_pardakht"
+                                                   type="text" class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                     </div>
@@ -172,62 +187,74 @@
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع سرویس</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="noe_service" id="noe_service" placeholder="">
+                                            <input type="text" class="form-control" name="noe_service" id="noe_service"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ترافیک</label>
                                         <div class="col-lg-4">
-                                            <input name="terafik" id="terafik" type="text" class="form-control"  placeholder="">
+                                            <input name="terafik" id="terafik" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">زمان استفاده</label>
                                         <div class="col-lg-4">
-                                            <input name="zamane_estefade" id="zamane_estefade" type="text" class="form-control"  placeholder="">
+                                            <input name="zamane_estefade" id="zamane_estefade" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ شروع سرویس</label>
                                         <div class="col-lg-4">
-                                            <input name="tarikhe_shoroe_service" id="tarikhe_shoroe_service" type="text" class="form-control"  placeholder="">
+                                            <input name="tarikhe_shoroe_service" id="tarikhe_shoroe_service" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ پایان سروسی</label>
                                         <div class="col-lg-4">
-                                            <input name="tarikhe_payane_service" id="tarikhe_payane_service" type="text" class="form-control"  placeholder="">
+                                            <input name="tarikhe_payane_service" id="tarikhe_payane_service" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">قیمت</label>
                                         <div class="col-lg-4">
-                                            <input name="gheymat" id="gheymat" type="text" class="form-control"  placeholder="">
+                                            <input name="gheymat" id="gheymat" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تخفیف</label>
                                         <div class="col-lg-4">
-                                            <input name="takhfif" id="takhfif" type="text" class="form-control"  placeholder="">
+                                            <input name="takhfif" id="takhfif" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان پورت</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_port" id="abonmane_port" type="text" class="form-control"  placeholder="">
+                                            <input name="abonmane_port" id="abonmane_port" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان فضا</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_faza" id="abonmane_faza" type="text" class="form-control"  placeholder="">
+                                            <input name="abonmane_faza" id="abonmane_faza" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان تجهیزات</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_tajhizat" id="abonmane_tajhizat" type="text" class="form-control"  placeholder="">
+                                            <input name="abonmane_tajhizat" id="abonmane_tajhizat" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ارزش افزوده</label>
                                         <div class="col-lg-4">
-                                            <input name="arzeshe_afzode" id="arzeshe_afzode" type="text" class="form-control"  placeholder="">
+                                            <input name="arzeshe_afzode" id="arzeshe_afzode" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">مبلغ قابل پرداخت</label>
                                         <div class="col-lg-4">
-                                            <input name="mablaghe_ghabele_pardakht" id="mablaghe_ghabele_pardakht" type="text" class="form-control"  placeholder="">
+                                            <input name="mablaghe_ghabele_pardakht" id="mablaghe_ghabele_pardakht"
+                                                   type="text" class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                     </div>
@@ -248,62 +275,74 @@
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع سرویس</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="noe_service" id="noe_service" placeholder="">
+                                            <input type="text" class="form-control" name="noe_service" id="noe_service"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ترافیک</label>
                                         <div class="col-lg-4">
-                                            <input name="terafik" id="terafik" type="text" class="form-control"  placeholder="">
+                                            <input name="terafik" id="terafik" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">زمان استفاده</label>
                                         <div class="col-lg-4">
-                                            <input name="zamane_estefade" id="zamane_estefade" type="text" class="form-control"  placeholder="">
+                                            <input name="zamane_estefade" id="zamane_estefade" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ شروع سرویس</label>
                                         <div class="col-lg-4">
-                                            <input name="tarikhe_shoroe_service" id="tarikhe_shoroe_service" type="text" class="form-control"  placeholder="">
+                                            <input name="tarikhe_shoroe_service" id="tarikhe_shoroe_service" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ پایان سروسی</label>
                                         <div class="col-lg-4">
-                                            <input name="tarikhe_payane_service" id="tarikhe_payane_service" type="text" class="form-control"  placeholder="">
+                                            <input name="tarikhe_payane_service" id="tarikhe_payane_service" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">قیمت</label>
                                         <div class="col-lg-4">
-                                            <input name="gheymat" id="gheymat" type="text" class="form-control"  placeholder="">
+                                            <input name="gheymat" id="gheymat" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تخفیف</label>
                                         <div class="col-lg-4">
-                                            <input name="takhfif" id="takhfif" type="text" class="form-control"  placeholder="">
+                                            <input name="takhfif" id="takhfif" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان پورت</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_port" id="abonmane_port" type="text" class="form-control"  placeholder="">
+                                            <input name="abonmane_port" id="abonmane_port" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان فضا</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_faza" id="abonmane_faza" type="text" class="form-control"  placeholder="">
+                                            <input name="abonmane_faza" id="abonmane_faza" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان تجهیزات</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_tajhizat" id="abonmane_tajhizat" type="text" class="form-control"  placeholder="">
+                                            <input name="abonmane_tajhizat" id="abonmane_tajhizat" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ارزش افزوده</label>
                                         <div class="col-lg-4">
-                                            <input name="arzeshe_afzode" id="arzeshe_afzode" type="text" class="form-control"  placeholder="">
+                                            <input name="arzeshe_afzode" id="arzeshe_afzode" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">مبلغ قابل پرداخت</label>
                                         <div class="col-lg-4">
-                                            <input name="mablaghe_ghabele_pardakht" id="mablaghe_ghabele_pardakht" type="text" class="form-control"  placeholder="">
+                                            <input name="mablaghe_ghabele_pardakht" id="mablaghe_ghabele_pardakht"
+                                                   type="text" class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                     </div>
@@ -323,47 +362,56 @@
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع سرویس</label>
                                         <div class="col-lg-4">
-                                            <input name="noe_service" id="noe_service" type="text" class="form-control" placeholder="">
+                                            <input name="noe_service" id="noe_service" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">زمان استفاده</label>
                                         <div class="col-lg-4">
-                                            <input name="noe_service" id="noe_service" type="text" class="form-control" placeholder="">
+                                            <input name="noe_service" id="noe_service" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">از تاریخ</label>
                                         <div class="col-lg-4">
-                                            <input name="noe_service" id="noe_service" type="text" class="form-control" placeholder="">
+                                            <input name="noe_service" id="noe_service" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تا تاریخ</label>
                                         <div class="col-lg-4">
-                                            <input name="noe_service" id="noe_service" type="text" class="form-control" placeholder="">
+                                            <input name="noe_service" id="noe_service" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">Pin Code</label>
                                         <div class="col-lg-4">
-                                            <input name="noe_service" id="noe_service" type="text" class="form-control" placeholder="">
+                                            <input name="noe_service" id="noe_service" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">قیمت</label>
                                         <div class="col-lg-4">
-                                            <input name="gheymat" id="gheymat" type="text" class="form-control" placeholder="">
+                                            <input name="gheymat" id="gheymat" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تخفیف</label>
                                         <div class="col-lg-4">
-                                            <input name="takhfif" id="takhfif" type="text" class="form-control" placeholder="">
+                                            <input name="takhfif" id="takhfif" type="text" class="form-control"
+                                                   placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ارزش افزوده</label>
                                         <div class="col-lg-4">
-                                            <input name="arzeshe_afzode" id="arzeshe_afzode" type="text" class="form-control" placeholder="">
+                                            <input name="arzeshe_afzode" id="arzeshe_afzode" type="text"
+                                                   class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">مبلغ قابل پرداخت</label>
                                         <div class="col-lg-4">
-                                            <input name="mablaghe_ghabele_pardakht" id="mablaghe_ghabele_pardakht" type="text" class="form-control" placeholder="">
+                                            <input name="mablaghe_ghabele_pardakht" id="mablaghe_ghabele_pardakht"
+                                                   type="text" class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                     </div>
@@ -376,10 +424,131 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
+        </div>
 
         <!--2nd tabs-->
+
+
+
+
+        <div class="card" id="faktorha_tab">
+            <div class="card-body">
+                    <form action="#" method="POST">
+                        <fieldset class="mb-3">
+                            <legend class="text-uppercase font-size-sm font-weight-bold">فاکتورها</legend>
+                            <div class="form-group row" style="position: relative;">
+                                    <label class="col-form-label col-lg-2">نوع سرویس</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">ترافیک ماهانه</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">نام ویزیتور</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">تاریخ فاکتور</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">تاریخ شروع اشتراک</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">آبونمان</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">عوارض</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">هزینه مودم</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">هزینه رانژه</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">شماره اشتراک</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">قیمت</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">مدت اشتراک</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">username</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">password</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">تاریخ پایان اشتراک</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">ترافیک اضافه(مبلغ)</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">هزینه راه اندازی</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">تخفیف</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" placeholder="">
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">مبلغ قابل پرداخت</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" disabled>
+                                    </div>
+                                    <br><br>
+                                    <label class="col-form-label col-lg-2">ثبت کننده</label>
+                                    <div class="col-lg-4">
+                                        <input type="text" id="shahr" class="form-control" name="shahr" disabled>
+                                    </div>
+                                    <br><br>
+                            </div>
+                        </fieldset>
+                        <div class="text-right">
+                            <button type="submit" name="send_faktorha_tab" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
+                        </div>
+                    </form>
+
+            </div>
+        </div>
+        <!--3th tabs-->
+
     </div>
     <!-- /content area -->
 

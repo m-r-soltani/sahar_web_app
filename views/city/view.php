@@ -59,19 +59,15 @@
 
     <!-- Content area -->
     <div class="content">
-
         <!-- Form inputs -->
         <div class="card">
-
-
             <div class="card-body">
-
                 <form action="#" method="POST">
                     <fieldset class="mb-3">
                         <legend class="text-uppercase font-size-sm font-weight-bold">شهر</legend>
-                        <input type="hidden" id="id" class="form-control" name="id" value="empty">
-
                         <div class="form-group row">
+                            <input type="hidden" id="id" class="form-control" name="id" value="empty">
+
                             <label class="col-form-label col-lg-2" >انتخاب استان</label>
                             <div class="col-lg-4">
                                 <select class="form-control form-control-lg" name="entekhab_ostan" id="ostan">

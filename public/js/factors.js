@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $("#st_tab_boxes").hide();
+    $("#sefareshejadid_tab").hide();
+    $("#faktorha_tab").hide();
     /* GetProvinces('factors',function (data) {
          if (data){
              //has data
@@ -47,18 +50,13 @@ $(document).ready(function () {
             }
         });
     });
-    // $('#edit').click( function () {
-    //     let tr = $('#view_table tbody').find('tr.selected');
-    //     let td = tr.find('td:first').text();
-    //      Edit_Form('factors', td, function (data) {
-    //         //console.log(data);
-    //     });
-    // });
     $('#initconfirm').click( function () {
         let tr=$('#view_table tbody').find('tr.selected');
         let td=tr.find('td:first').text();
         Factors_Initialize('findbyid', td, function (data) {
             //console.log(data);
+
+            $("#st_tab_boxes").show();
         });
     });
     ///click on box
@@ -82,11 +80,42 @@ $(document).ready(function () {
 
         });
     });
+    $("#faktorha_box").click(function () {
+        Factors_Initialize(this.id, false, function (data) {
+            $("#faktorha_serviceslist").empty();
+            for (let i=0;i<data.length;i++) {
+                $("#faktorha_serviceslist").append("<li class='faktorha_serviceslist_li' id='"+data[i]['id']+"'>"+data[i]['noe_khadamat']+"</li>");
+            }
+            //click on li
+            $(".faktorha_serviceslist_li").on('click',function () {
+                let id=this.id;
+                $(".faktorha_tab_serviceslist").each(function () {
+                    $(this).css('background-color','#fafafa');
+                });
+                $(this).css('background-color','#26a69a');
+                Factors_Initialize('faktorha_tab_serviceslist', id, function (data) {
+
+                });
+            });
+
+        });
+    });
     //range box ha
     $(".factors_tab1_box").on('click',function () {
+        let id=this.id;
         $(".factors_tab1_box").each(function () {
             $(this).css('background-color','#e0e0e0');
         });
         $(this).css('background-color','#26a69a');
+        switch (id){
+            case 'sefareshe_jadid_box':
+                $("#sefareshejadid_tab").show();
+                $("#faktorha_tab").hide();
+                break;
+            case 'faktorha_box':
+                $("#sefareshejadid_tab").hide();
+                $("#faktorha_tab").show();
+                break;
+        }
     });
 });
