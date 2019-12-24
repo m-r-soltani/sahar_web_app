@@ -31,6 +31,52 @@ input[type="color"]:focus,
     font-size: 14px !important;
 }
 
-/*.form-check-switchery{*/
-/*    margin-left: 10px;*/
-/*}*/
+.factors_tab1_box{
+    display: inline-block;
+    height: 60px;
+    width: 120px;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+.factors_tab1_box:hover{
+cursor: pointer;
+}
+#sefareshe_jadid_box{
+    margin-right: 5%;
+    background: #e0e0e0;
+}
+#faktorha_box{
+    margin-right: 2%;
+    background: #e0e0e0;
+}
+#ekhtesase_emkanat_box{
+    margin-right: 2%;
+    background: #e0e0e0;
+}
+#pardakhtha_box{
+    margin-right: 2%;
+    background: #e0e0e0;
+}
+#moshkelat_box{
+    margin-right: 2%;
+    background: #e0e0e0;
+}
+#tamasha_box{
+    margin-right: 2%;
+    background: #e0e0e0;
+}
+.sefareshe_jadid_serviceslist{
+    text-align: right;
+    height: auto;
+    background: #fafafa;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    text-decoration: none;
+    list-style-type: decimal;
+    padding: 5px;
+}

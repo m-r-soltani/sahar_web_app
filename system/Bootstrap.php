@@ -353,13 +353,6 @@ class Bootstrap
                     $rows=json_encode($result);
                     echo $rows;
                     break;
-                case 'factors':
-                    $id=$_POST['condition'];
-                    $sql="SELECT * FROM bnm_subscribers WHERE id='$id'";
-                    $result=Db::fetchall_Query($sql);
-                    $rows=json_encode($result);
-                    echo $rows;
-                    break;
                 case 'services_adsl':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_services WHERE id='$id'";
@@ -643,6 +636,35 @@ class Bootstrap
             }
         }
 		// 1. router
+
+        /*========ostan========*/
+        if(isset($_POST['factors_initialize'])){
+            //require_once ('../models/city.php');
+            switch ($_POST['factors_initialize']){
+                case 'findbyid':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_subscribers WHERE id=$id";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
+                    break;
+                case 'sefareshe_jadid_box':
+                    //$id=$_POST['condition'];
+                    $sql="SELECT id,noe_khadamat FROM bnm_services";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
+                    break;
+                case 'sefareshe_jadid_serviceslist_li':
+//                    $sql="SELECT id,noe_khadamat FROM bnm_services";
+//                    $result=Db::fetchall_Query($sql);
+//                    $rows=json_encode($result);
+                    die('');
+                    break;
+            }
+
+        }
+
 		if (isset ($_GET['path'])) {
             $tokens = explode('/', rtrim($_GET['path'], '/'));
             ///////////////////////////////+++++++++++++-----static value------+++++++++++///////////////////////////////////////

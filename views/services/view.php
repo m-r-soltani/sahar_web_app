@@ -450,19 +450,19 @@
                     <legend class="text-uppercase font-size-sm font-weight-bold">سرویس ها</legend>
                     <ul class="nav nav-tabs nav-tabs-bottom border-bottom-0 nav-justified">
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab1" class="nav-link active"
-                                                data-toggle="tab">ADSL</a></li>
+                                                              data-toggle="tab">ADSL</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab2" class="nav-link"
-                                                data-toggle="tab">Wireless</a></li>
+                                                              data-toggle="tab">Wireless</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab3" class="nav-link"
-                                                data-toggle="tab">TD-LTE/4G</a></li>
+                                                              data-toggle="tab">TD-LTE/4G</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab4" class="nav-link"
-                                                data-toggle="tab">Voip</a></li>
+                                                              data-toggle="tab">Voip</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab5" class="nav-link"
-                                                data-toggle="tab">Domain</a></li>
+                                                              data-toggle="tab">Domain</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab6" class="nav-link"
-                                                data-toggle="tab">Host</a></li>
+                                                              data-toggle="tab">Host</a></li>
                         <li class="nav-item services_tabs"><a href="#bottom-justified-divided-tab7" class="nav-link"
-                                                data-toggle="tab">NGN</a></li>
+                                                              data-toggle="tab">NGN</a></li>
                     </ul>
                     <div class="tab-content">
                         <!------------ADSL------------->
@@ -1317,8 +1317,8 @@
                                         <label class="col-form-label col-lg-2">نوع پرداخت</label>
                                         <div class="col-lg-4">
                                             <select class="form-control form-control-lg" name="noe_pardakht" id=""noe_pardakht"">
-                                                <option value="carti">کارتی</option>
-                                                <option value="etebari">اعتباری</option>
+                                            <option value="carti">کارتی</option>
+                                            <option value="etebari">اعتباری</option>
                                             </select>
                                         </div>
                                         <br><br>

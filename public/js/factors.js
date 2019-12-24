@@ -47,18 +47,46 @@ $(document).ready(function () {
             }
         });
     });
-    $('#edit').click( function () {
-        let tr = $('#view_table tbody').find('tr.selected');
-        let td = tr.find('td:first').text();
-        Edit_Form('factors', td, function (data) {
+    // $('#edit').click( function () {
+    //     let tr = $('#view_table tbody').find('tr.selected');
+    //     let td = tr.find('td:first').text();
+    //      Edit_Form('factors', td, function (data) {
+    //         //console.log(data);
+    //     });
+    // });
+    $('#initconfirm').click( function () {
+        let tr=$('#view_table tbody').find('tr.selected');
+        let td=tr.find('td:first').text();
+        Factors_Initialize('findbyid', td, function (data) {
             //console.log(data);
         });
     });
-    // $('#confirm').click( function () {
-    //     let tr=$('#view_table tbody').find('tr.selected');
-    //     let td=tr.find('td:first').text();
-    //     Fuctors('fuctors', td, function (data) {
-    //         console.log(data[0]['type']);
-    //     });
-    // });
+    ///click on box
+    $("#sefareshe_jadid_box").click(function () {
+        Factors_Initialize(this.id, false, function (data) {
+            $("#sefareshe_jadid_serviceslist").empty();
+            for (let i=0;i<data.length;i++) {
+                $("#sefareshe_jadid_serviceslist").append("<li class='sefareshe_jadid_serviceslist_li' id='"+data[i]['id']+"'>"+data[i]['noe_khadamat']+"</li>");
+            }
+            //click on li
+            $(".sefareshe_jadid_serviceslist_li").on('click',function () {
+                let id=this.id;
+                $(".sefareshe_jadid_serviceslist_li").each(function () {
+                    $(this).css('background-color','#fafafa');
+                });
+                $(this).css('background-color','#26a69a');
+                Factors_Initialize('sefareshe_jadid_serviceslist_li', id, function (data) {
+
+                });
+            });
+
+        });
+    });
+    //range box ha
+    $(".factors_tab1_box").on('click',function () {
+        $(".factors_tab1_box").each(function () {
+            $(this).css('background-color','#e0e0e0');
+        });
+        $(this).css('background-color','#26a69a');
+    });
 });

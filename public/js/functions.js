@@ -39,13 +39,13 @@ function Initialize(page,callback){
         }
     });
 }
-function Factors(page,condition,callback){
+function Factors_Initialize(request,condition='',callback){
     $.ajax({
         type: "post",
-        url: "factor"+page,
+        url: 'factors',
         timeout:5000,
         data: {
-            factors:page,
+            factors_initialize:request,
             condition:condition
         },
         success: function(response){
@@ -57,6 +57,7 @@ function Factors(page,condition,callback){
         }
     });
 }
+
 function Hard_Delete(data,param1/*felan kari anjam nemide*/,callback){
     $.ajax({
         type: "post",
