@@ -31,7 +31,7 @@ $primaryKey = 'id';
 // parameter names
 $columns = array(
     array( 'db' => 'id', 'dt' => 'id' ),
-    array( 'db' => 'level', 'dt' => 'level' )
+    array( 'db' => 'semat', 'dt' => 'semat' )
 );
 
 // SQL server connection information

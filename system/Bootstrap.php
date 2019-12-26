@@ -99,6 +99,16 @@ class Bootstrap
                 Db::justexecute($sql);
             }
         }
+        if(isset($_POST['send_organization_level'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_organization_level');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_organization_level',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+        }
         /*========sabte shahr========*/
         if(isset($_POST['send_city'])){
             require_once ('models/city.php');
@@ -234,18 +244,6 @@ class Bootstrap
             }else{
                 $id=$_POST['id'];
                 $sql = Update_Generator($_POST, 'bnm_host',"WHERE id = $id");
-                Db::justexecute($sql);
-            }
-
-        }
-        /*========sabte pre_number========*/
-        if(isset($_POST['send_organization_level'])){
-            if($_POST['id']=="empty") {
-                $sql = Insert_Generator($_POST, 'bnm_organization_level');
-                Db::justexecute($sql);
-            }else{
-                $id=$_POST['id'];
-                $sql = Update_Generator($_POST, 'bnm_organization_level',"WHERE id = $id");
                 Db::justexecute($sql);
             }
 

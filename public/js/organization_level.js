@@ -6,7 +6,7 @@ $(document).ready(function () {
         { "data": "id",
             title:'شناسه'
         },
-        { "data": "level",
+        { "data": "semat",
             title:'سمت',
         }
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
             let tr=$('#view_table tbody').find('tr.selected');
             let td=tr.find('td:first').text();
             Hard_Delete(td,'organization_level',function (data) {
-                if (data==='1') {
+                if (data) {
                     table.ajax.reload();
                 }else{
                     alert('عملیات ناموفق');
@@ -43,7 +43,7 @@ $(document).ready(function () {
         let td=tr.find('td:first').text();
         Edit_Form('organization_level',td,function (data) {
             $('#id').val(data[0]['id']);
-            $('#level').val(data[0]['level']);
+            $('#semat').val(data[0]['semat']);
 
         });
     });

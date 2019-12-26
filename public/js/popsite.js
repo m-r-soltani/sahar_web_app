@@ -65,7 +65,7 @@ $(document).ready(function () {
             let tr=$('#view_table tbody').find('tr.selected');
             let td=tr.find('td:first').text();
             Hard_Delete(td,'popsite',function (data) {
-                if (data==='1') {
+                if (data) {
                     table.ajax.reload();
                 }else{
                     alert('عملیات ناموفق');

@@ -35,7 +35,7 @@ $(document).ready(function () {
             let tr=$('#view_table_adsl tbody').find('tr.selected');
             let td=tr.find('td:first').text();
             Hard_Delete(td,'services_adsl',function (data) {
-                if (data==='1') {
+                if (data) {
                     table.ajax.reload();
                 }else{
                     alert('عملیات ناموفق');
@@ -122,7 +122,7 @@ $(document).ready(function () {
             let tr=$('#view_table_wireless tbody').find('tr.selected');
             let td=tr.find('td:first').text();
             Hard_Delete(td,'services_wireless',function (data) {
-                if (data==='1') {
+                if (data) {
                     table.ajax.reload();
                 }else{
                     alert('عملیات ناموفق');
@@ -206,7 +206,7 @@ $(document).ready(function () {
             let tr=$('#view_table_tdlte tbody').find('tr.selected');
             let td=tr.find('td:first').text();
             Hard_Delete(td,'services_tdlte',function (data) {
-                if (data==='1') {
+                if (data) {
                     table.ajax.reload();
                 }else{
                     alert('عملیات ناموفق');
@@ -290,7 +290,7 @@ $(document).ready(function () {
             let tr=$('#view_table_voip tbody').find('tr.selected');
             let td=tr.find('td:first').text();
             Hard_Delete(td,'services_voip',function (data) {
-                if (data==='1') {
+                if (data) {
                     table.ajax.reload();
                 }else{
                     alert('عملیات ناموفق');

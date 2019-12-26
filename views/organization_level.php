@@ -15,8 +15,7 @@
                                 <label class="col-form-label col-lg-2">سمت</label>
                                 <div class="col-lg-10">
                                     <input type="hidden" id="id" class="form-control" name="id" value="empty">
-                                    
-                                    <input type="text" class="form-control" name="level" id="level" placeholder="مثال: پشتیبان">
+                                    <input type="text" class="form-control" name="semat" id="semat" placeholder="مثال: مدیر عامل">
                                 </div>
                             </div>
                         </fieldset>
