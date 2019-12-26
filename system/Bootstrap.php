@@ -70,7 +70,7 @@ class Bootstrap
             $sql="SELECT * FROM bnm_organization_level order by id asc";
             $result=Db::fetchall_Query($sql);
             $rows=json_encode($result);
-            echo $rows;
+            die($rows);
         }
         /*========ostan========*/
         if(isset($_POST['GetProvinces'])){
@@ -78,7 +78,7 @@ class Bootstrap
             $sql="SELECT * FROM bnm_ostan order by id asc";
             $result=Db::fetchall_Query($sql);
             $rows=json_encode($result);
-            echo $rows;
+            die($rows);
         }
         /*=========shahr========*/
         if(isset($_POST['GetCities'])){
@@ -86,13 +86,18 @@ class Bootstrap
             $sql="SELECT * FROM bnm_shahr order by id asc";
             $result=Db::fetchall_Query($sql);
             $rows=json_encode($result);
-            echo $rows;
+            die($rows);
         }
         /*========sabte ostan========*/
         if(isset($_POST['send_province'])){
-            $ostan_name=$_POST['ostan'];
-            $db = Db::getInstance();
-            $db->query("INSERT INTO bnm_ostan (name) VALUES ('$ostan_name')");
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_ostan');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_ostan',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
         }
         /*========sabte shahr========*/
         if(isset($_POST['send_city'])){
@@ -344,119 +349,126 @@ class Bootstrap
                     $sql="SELECT * FROM bnm_organization_level WHERE id='$id'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'services_voip':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_services WHERE id='$id'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
+                    break;
+                case 'ostan':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_ostan WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
                     break;
                 case 'services_adsl':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_services WHERE id='$id'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'services_wireless':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_services WHERE id='$id'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'services_tdlte':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_services WHERE id='$id'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'real_subscribers':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_subscribers WHERE id='$id'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'legal_subscribers':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_subscribers WHERE id='$id'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'city':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_shahr WHERE name='$condition'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'wireless_ap':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_wireless_ap WHERE id=$id";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'wireless_station':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_wireless_station WHERE id=$id";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'popsite':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_popsite WHERE id=$id";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'host':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_host WHERE id=$id";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'terminal':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_terminal WHERE id='$condition'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'pre_number':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_pre_number WHERE id='$condition'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'branch':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_namayandegi WHERE name_sherkat='$condition'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'operator':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_operator WHERE name='$condition'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
                 case 'telecommunications_center':
                     $condition=$_POST['condition'];
                     $sql="SELECT * FROM bnm_telecommunications_center WHERE name='$condition'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
-                    echo $rows;
+                    die($rows);
                     break;
             }
         }
@@ -467,6 +479,16 @@ class Bootstrap
                 case 'city':
                     $name=$_POST['harddelete'];
                     $sql="delete FROM bnm_shahr WHERE name = '$name'";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                case 'ostan':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_ostan WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;
