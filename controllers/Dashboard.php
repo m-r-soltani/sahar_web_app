@@ -9,6 +9,9 @@ class Dashboard extends Controller
     public function index()
     {
         //$this->view->render('dashboard/view','dashboard/dashboard_sidemenu');
-        $this->view->render('dashboard/view','dashboard_template','/public/js/demo_pages/dashboard.js');
+        $this->view->home='داشبورد';
+        //$this->view->page='داشبورد';
+        $this->view->render('dashboard','dashboard_template','/public/js/demo_pages/dashboard.js',false);
+
     }
 }

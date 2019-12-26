@@ -11,6 +11,7 @@ class Wireless_Station extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
-        $this->view->render('Wireless_Station/view',false);
+        $this->view->render('wireless_station','dashboard_template','/public/js/wireless_station.js',false);
+
     }
 }

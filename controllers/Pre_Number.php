@@ -11,6 +11,7 @@ class Pre_Number extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
-        $this->view->render('pre_number/view',false);
+        $this->view->render('pre_number','dashboard_template','/public/js/pre_number.js',false);
+
     }
 }

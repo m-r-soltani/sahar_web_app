@@ -11,6 +11,7 @@ class Organization_Level extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
-        $this->view->render('organization_level/view',false);
+        $this->view->render('organization_level','dashboard_template','/public/js/organization_level.js',false);
+
     }
 }

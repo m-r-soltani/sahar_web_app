@@ -11,6 +11,7 @@ class Tax extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
-        $this->view->render('tax/view',false);
+        $this->view->render('tax','dashboard_template','/public/js/tax.js',false);
+
     }
 }

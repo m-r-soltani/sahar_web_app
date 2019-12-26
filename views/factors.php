@@ -1,25 +1,3 @@
-<!-- Main content -->
-<div class="content-wrapper">
-
-    <!-- Page header -->
-    <div class="page-header page-header-light">
-
-
-        <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
-            <div class="d-flex">
-                <div class="breadcrumb">
-                    <a href="#" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> داشبورد</a>
-                    <a href="#" class="breadcrumb-item">فاکتورها</a>
-                    <!--<span class="breadcrumb-item active">Basic inputs</span>-->
-                </div>
-
-                <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
-            </div>
-        </div>
-    </div>
-    <!-- /page header -->
-
-
     <!-- Content area -->
     <div class="content">
         <!--datatable-->
@@ -551,6 +529,3 @@
 
     </div>
     <!-- /content area -->
-
-
-    <!-- /main content -->

@@ -11,6 +11,7 @@ class Type_Subscribers extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
-        $this->view->render('type_subscribers/view',false);
+        $this->view->render('type_subscribers','dashboard_template','/public/js/type_subscribers.js',false);
+
     }
 }

@@ -9,6 +9,7 @@ class Services extends Controller
 
     public function index()
     {
-        $this->view->render('services/view',false);
+        $this->view->render('services','dashboard_template','/public/js/services.js',false);
+
     }
 }

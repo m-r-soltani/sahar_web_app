@@ -11,6 +11,7 @@ class Popsite extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
-        $this->view->render('popsite/view',false);
+        $this->view->render('popsite','dashboard_template','/public/js/popsite.js',false);
+
     }
 }

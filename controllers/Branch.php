@@ -11,6 +11,10 @@ class Branch extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
-        $this->view->render('Branch/view',false);
+        $this->view->home='داشبورد';
+        $this->view->page='نمایندگی';
+        $this->view->page_url='branch';
+        $this->view->render('branch','dashboard_template','/public/js/branch.js',false);
+
     }
 }
