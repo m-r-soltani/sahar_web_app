@@ -479,8 +479,8 @@ class Bootstrap
                     die($rows);
                     break;
                 case 'telecommunications_center':
-                    $condition=$_POST['condition'];
-                    $sql="SELECT * FROM bnm_telecommunications_center WHERE name='$condition'";
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_telecommunications_center WHERE id='$id'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
                     die($rows);
@@ -496,9 +496,9 @@ class Bootstrap
                     $sql="delete FROM bnm_shahr WHERE name = '$name'";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'ostan':
@@ -506,19 +506,19 @@ class Bootstrap
                     $sql="delete FROM bnm_ostan WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
-                    case 'tax':
+                case 'tax':
                     $id=$_POST['harddelete'];
                     $sql="delete FROM bnm_tax WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'wireless_station':
@@ -526,9 +526,9 @@ class Bootstrap
                     $sql="delete FROM bnm_wireless_station WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'services_adsl':
@@ -536,9 +536,9 @@ class Bootstrap
                     $sql="delete FROM bnm_services WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'services_wireless':
@@ -546,9 +546,9 @@ class Bootstrap
                     $sql="delete FROM bnm_services WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'services_tdlte':
@@ -556,9 +556,9 @@ class Bootstrap
                     $sql="delete FROM bnm_services WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'services_voip':
@@ -566,9 +566,9 @@ class Bootstrap
                     $sql="delete FROM bnm_services WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'organization_level':
@@ -576,18 +576,18 @@ class Bootstrap
                     $sql="delete FROM bnm_organization_level WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                 case 'real_subscribers':
                     $id=$_POST['harddelete'];
                     $sql="delete FROM bnm_subscribers WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'legal_subscribers':
@@ -595,9 +595,9 @@ class Bootstrap
                     $sql="delete FROM bnm_subscribers WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'wireless_ap':
@@ -605,9 +605,9 @@ class Bootstrap
                     $sql="delete FROM bnm_wireless_ap WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'popsite':
@@ -615,9 +615,9 @@ class Bootstrap
                     $sql="delete FROM bnm_popsite WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'host':
@@ -625,9 +625,9 @@ class Bootstrap
                     $sql="delete FROM bnm_host WHERE id = '$id'";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'terminal':
@@ -635,9 +635,9 @@ class Bootstrap
                     $sql="delete FROM bnm_terminal WHERE id = '$id'";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'pre_number':
@@ -645,9 +645,9 @@ class Bootstrap
                     $sql="delete FROM bnm_pre_number WHERE id = '$id'";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'branch':
@@ -655,9 +655,9 @@ class Bootstrap
                     $sql="delete FROM bnm_namayandegi WHERE name_sherkat = '$name'";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'operator':
@@ -665,19 +665,19 @@ class Bootstrap
                     $sql="delete FROM bnm_operator WHERE name = '$name'";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
                 case 'telecommunications_center':
-                    $name=$_POST['harddelete'];
-                    $sql="delete FROM bnm_telecommunications_center WHERE name = '$name'";
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_telecommunications_center WHERE id = '$id'";
                     $result=Db::justexecute($sql);
                     if($result) {
-                        echo true;
+                        die(true);
                     }else{
-                        echo false;
+                        die(false);
                     }
                     break;
             }

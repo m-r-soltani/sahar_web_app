@@ -30,6 +30,7 @@ $primaryKey = 'id';
 // parameter represents the DataTables column identifier. In this case object
 // parameter names
 $columns = array(
+    array( 'db' => 'id', 'dt' => 'id' ),
     array( 'db' => 'name', 'dt' => 'name' ),
     array( 'db' => 'pish_shomare', 'dt' => 'pish_shomare' ),
     array( 'db' => 'shomare_tamas_markaz', 'dt' => 'shomare_tamas_markaz' ),

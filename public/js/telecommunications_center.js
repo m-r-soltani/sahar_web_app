@@ -30,6 +30,9 @@ $(document).ready(function () {
 
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[
+        { "data": "id",
+            title:'شناسه'
+        },
         { "data": "name",
             title:'نام مرکز'
         },
