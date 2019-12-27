@@ -99,6 +99,16 @@ class Bootstrap
                 Db::justexecute($sql);
             }
         }
+        if(isset($_POST['send_tax'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_tax');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_tax',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+        }
         if(isset($_POST['send_organization_level'])){
             if($_POST['id']=="empty") {
                 $sql = Insert_Generator($_POST, 'bnm_organization_level');
@@ -363,6 +373,13 @@ class Bootstrap
                     $rows=json_encode($result);
                     die($rows);
                     break;
+                case 'tax':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_tax WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
+                    break;
                 case 'services_adsl':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_services WHERE id='$id'";
@@ -487,6 +504,16 @@ class Bootstrap
                 case 'ostan':
                     $id=$_POST['harddelete'];
                     $sql="delete FROM bnm_ostan WHERE id = $id";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        echo true;
+                    }else{
+                        echo false;
+                    }
+                    break;
+                    case 'tax':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_tax WHERE id = $id";
                     $result=Db::justexecute($sql);
                     if($result) {
                         echo true;

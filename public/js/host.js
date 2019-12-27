@@ -1,18 +1,19 @@
 $(document).ready(function () {
-   /* GetProvinces('host',function (data) {
-        if (data){
-            //has data
-            var element=$('#ostan');
-            if(element) {
-                for (let i = 0;i<data.length ; i++) {
-                    element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
-                }
-            }
-        }else{
-            //data az db gerefte nashod
-            alert('درخواست ناموفق');
-        }
-    });*/
+
+    /* GetProvinces('host',function (data) {
+         if (data){
+             //has data
+             var element=$('#ostan');
+             if(element) {
+                 for (let i = 0;i<data.length ; i++) {
+                     element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
+                 }
+             }
+         }else{
+             //data az db gerefte nashod
+             alert('درخواست ناموفق');
+         }
+     });*/
     /*GetCities('host',function (data) {
         if (data){
             //has data
@@ -72,70 +73,29 @@ $(document).ready(function () {
     $('#edit').click( function () {
         let tr=$('#view_table tbody').find('tr.selected');
         let td=tr.find('td:first').text();
-        console.log(td);
         Edit_Form('host',td,function (data) {
-            $('#olaviat').val(data[0]['olaviat']);
+            console.log(data[0]['dsl_license']);
             $('#id').val(data[0]['id']);
             $('#name_service_dahande').val(data[0]['name_service_dahande']);
-            $('#shomare_mojavez').val(data[0]['name_service_dahande']);
+            $('#shomare_mojavez').val(data[0]['shomare_mojavez']);
+            $('#address').val(data[0]['address']);
+            $('#shomare_tamas').val(data[0]['shomare_tamas']);
+            $('#shomare_poshtibani').val(data[0]['shomare_poshtibani']);
+            $('#website').val(data[0]['website']);
+            $('#address_shekayat').val(data[0]['address_shekayat']);
+            $('#olaviat').val(data[0]['olaviat']);
+            $('#t_logo').val(data[0]['t_logo']);
             $('#name_tarefe').val(data[0]['name_tarefe']);
-            $('#address').val(data[0]['name_service_dahande']);
-            $('#shomare_tamas').val(data[0]['name_service_dahande']);
-            $('#shomare_poshtibani').val(data[0]['name_service_dahande']);
-            $('#website').val(data[0]['name_service_dahande']);
-            $('#address_shekayat').val(data[0]['name_service_dahande']);
-            ////////////////tasvire logo dorost shavad
-            //$('#t_logo').val(data[0]['name_service_dahande']);
-            if(data[0]['dsl_license']==="on") {
-                $('#dsl_license').prop('checked', true);
-            }else{
-                $('#dsl_license').prop('checked', false);
-            }
-            if(data[0]['dsl_license']==="on") {
-                $('#dsl_license').prop('checked', true);
-            }else{
-                $('#dsl_license').prop('checked', false);
-            }
-            if(data[0]['dsl_bitstream']==="on") {
-                $('#dsl_bitstream').prop('checked', true);
-            }else{
-                $('#dsl_bitstream').prop('checked', false);
-            }
-            if(data[0]['wlan_license']==="on") {
-                $('#wlan_license').prop('checked', true);
-            }else{
-                $('#wlan_license').prop('checked', false);
-            }
-            if(data[0]['wlan_bitstream']==="on") {
-                $('#wlan_bitstream').prop('checked', true);
-            }else{
-                $('#wlan_bitstream').prop('checked', false);
-            }
-            if(data[0]['td_lte']==="on") {
-                $('#td_lte').prop('checked', true);
-            }else{
-                $('#td_lte').prop('checked', false);
-            }
-            if(data[0]['ngn']==="on") {
-                $('#ngn').prop('checked', true);
-            }else{
-                $('#ngn').prop('checked', false);
-            }
-            if(data[0]['phone_orgination']==="on") {
-                $('#phone_orgination').prop('checked', true);
-            }else{
-                $('#phone_orgination').prop('checked', false);
-            }
-            if(data[0]['domain']==="on") {
-                $('#domain').prop('checked', true);
-            }else{
-                $('#domain').prop('checked', false);
-            }
-            if(data[0]['host']==="on") {
-                $("#host").prop('checked',true);
-            }else{
-                $("#host").prop('checked',false);
-            }
+            $('#dsl_license option[value="'+data[0]['dsl_license']+'"]').attr('selected', 'selected');
+            $('#dsl_bitstream option[value="'+data[0]['dsl_bitstream']+'"]').attr('selected', 'selected');
+            $('#wlan_license option[value="'+data[0]['wlan_license']+'"]').attr('selected', 'selected');
+            $('#wlan_bitstream option[value="'+data[0]['wlan_bitstream']+'"]').attr('selected', 'selected');
+            $('#td_lte option[value="'+data[0]['td_lte']+'"]').attr('selected', 'selected');
+            $('#phone_orgination option[value="'+data[0]['phone_orgination']+'"]').attr('selected', 'selected');
+            $('#ngn option[value="'+data[0]['ngn']+'"]').attr('selected', 'selected');
+            $('#host option[value="'+data[0]['host']+'"]').attr('selected', 'selected');
+            $('#domain option[value="'+data[0]['domain']+'"]').attr('selected', 'selected');
+
 
         });
     });
