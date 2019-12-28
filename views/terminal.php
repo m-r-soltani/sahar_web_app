@@ -26,14 +26,13 @@
                                 <label class="col-form-label col-lg-2">استان</label>
                                 <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="ostan" id="ostan">
-                                        <option value="1">1</option>
+
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر</label>
                                 <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="shahr" id="shahr">
-                                        <option value="faghededakal">1</option>
                                     </select>
                                 </div>
                                 <br><br>
@@ -65,7 +64,6 @@
                                 <label class="col-form-label col-lg-2">میزبان</label>
                                 <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="mizban" id="mizban">
-                                        <option value="faghededakal">1</option>
                                     </select>
                                 </div>
                                 <br><br>

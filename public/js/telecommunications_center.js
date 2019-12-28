@@ -43,7 +43,7 @@ $(document).ready(function () {
         });
     });
     GetHost('telecommunications_center',function (result) {
-       let mizban=$("#mizban");
+        let mizban=$("#mizban");
         if (result.length>0) {
             mizban.find('option').remove().end().append('').val('');
             if (mizban) {
@@ -55,7 +55,6 @@ $(document).ready(function () {
             }
         }
     });
-
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[
         { "data": "id",

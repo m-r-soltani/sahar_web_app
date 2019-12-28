@@ -5,13 +5,15 @@
             <div class="card">
                 <div class="card-body">
                     <form action="" method="POST">
+                        <input type="hidden" id="id" class="form-control" name="id" value="empty">
                         <fieldset class="mb-3">
                             <legend class="text-uppercase font-size-sm font-weight-bold">ثبت پیش شماره</legend>
                             <div class="form-group row">
-                                <label class="col-form-label col-lg-2">نام مرکز</label>
+                                <label class="col-form-label col-lg-2">مرکز مخابراتی</label>
                                 <div class="col-lg-4">
-                                    <input type="hidden" id="id" class="form-control" name="id" value="empty">
-                                    <input type="text" class="form-control" name="name_markaz" id="name_markaz" placeholder="نام مرکز">
+                                    <select class="form-control form-control-lg" name="name_markaz" id="name_markaz">
+                                        <option value="1">1</option>
+                                    </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تعداد پیش شماره</label>
@@ -27,21 +29,18 @@
                                 <label class="col-form-label col-lg-2">استان</label>
                                 <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="ostan" id="ostan">
-                                        <option value="1">تهران</option>
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر</label>
                                 <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="shahr" id="shahr">
-                                        <option value="1">تهران</option>
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">میزبان</label>
                                 <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="mizban" id="mizban">
-                                        <option value="1">1</option>
                                     </select>
                                 </div>
                                 <br><br>

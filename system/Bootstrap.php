@@ -104,6 +104,12 @@ class Bootstrap
             $rows=json_encode($result);
             die($rows);
         }
+        if(isset($_POST['get_telecommunications_center'])){
+            $sql="SELECT id,name FROM bnm_telecommunications_center";
+            $result=Db::fetchall_Query($sql);
+            $rows=json_encode($result);
+            die($rows);
+        }
         /*========sabte ostan========*/
         if(isset($_POST['send_province'])){
             if($_POST['id']=="empty") {
@@ -259,7 +265,7 @@ class Bootstrap
                 Db::justexecute($sql);
             }else{
                 $id=$_POST['id'];
-                $sql = Update_Generator($_POST, 'bnm_host',"WHERE id = $id");
+                $sql = Update_Generator($_POST, 'bnm_host',"WHERE id = $id",array("t_logo"));
                 Db::justexecute($sql);
             }
 

@@ -58,7 +58,14 @@ function Insert_Generator($data,$table){
     return $sql;
 }
 //Update_Generator(data_array($_POSTED array),'table_name','where id = $id')
-function Update_Generator($data,$table,$condition){
+function Update_Generator($data,$table,$condition,$exceptions=false){
+    if ($exceptions){
+        foreach ($exceptions as $key => $val){
+            if (key_exists($val,$data) && $data[$val]=='' || $data[$val]==' '|| $data[$val]==null){
+                unset($data[$val]);
+            }
+        }
+    }
     if (key_exists('id',$data)){
         unset($data['id']);
     }

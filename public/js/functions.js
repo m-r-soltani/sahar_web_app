@@ -174,6 +174,25 @@ function GetHost(data,callback){
         }
     });
 }
+function Get_Telecommunications_center(data,callback){
+    $.ajax({
+        type: "post",
+        url: "get_telecommunications_center",
+        timeout:5000,
+        data: {get_telecommunications_center:data},
+        // dataType:'JSON',
+        success: function(response){
+            //console.log(response);
+            // put on console what server sent back...
+            //console.log(response);
+            response=JSON.parse(response);
+            return callback(response);
+        },
+        error:function (req,res,status) {
+            return callback(false);
+        }
+    });
+}
 function Get_organization_levels(data/*felan kari anjam nemide*/,callback){
     $.ajax({
         type: "post",
