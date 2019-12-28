@@ -63,7 +63,6 @@ class Bootstrap
                 header("Location:".__ROOT__.'login');
             }
         }
-
         /*========levels========*/
         if(isset($_POST['Get_organization_levels'])){
             //require_once ('../models/city.php');
@@ -88,6 +87,15 @@ class Bootstrap
             $rows=json_encode($result);
             die($rows);
         }
+        /*=========++shahrbyid++========*/
+        if(isset($_POST['getcitybyprovince'])){
+            //require_once ('../models/city.php');
+            $id=$_POST['getcitybyprovince'];
+            $sql="SELECT * FROM bnm_shahr WHERE ostan_id=$id";
+            $result=Db::fetchall_Query($sql);
+            $rows=json_encode($result);
+            die($rows);
+        }
         /*========sabte ostan========*/
         if(isset($_POST['send_province'])){
             if($_POST['id']=="empty") {
@@ -99,6 +107,7 @@ class Bootstrap
                 Db::justexecute($sql);
             }
         }
+        /*========tax========*/
         if(isset($_POST['send_tax'])){
             if($_POST['id']=="empty") {
                 $sql = Insert_Generator($_POST, 'bnm_tax');
@@ -109,6 +118,7 @@ class Bootstrap
                 Db::justexecute($sql);
             }
         }
+        /*========levels========*/
         if(isset($_POST['send_organization_level'])){
             if($_POST['id']=="empty") {
                 $sql = Insert_Generator($_POST, 'bnm_organization_level');
@@ -149,7 +159,6 @@ class Bootstrap
         /*========host========*/
         if(isset($_POST['send_restrictions'])){
             $operator=$_POST['user'];
-
         }
         /*========host========*/
         if(isset($_POST['send_services_adsl'])){

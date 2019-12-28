@@ -26,12 +26,16 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">استان</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="ostan" id="ostan" placeholder="مثال: تهران">
+                                    <select class="form-control form-control-lg" name="ostan" id="ostan">
+
+                                    </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر</label>
                                 <div class="col-lg-4">
-                                    <input type="text" class="form-control" name="shahr" id="shahr" placeholder="مثال: تهران">
+                                    <select class="form-control form-control-lg" name="shahr" id="shahr">
+
+                                    </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نشانی</label>

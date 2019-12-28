@@ -1,18 +1,47 @@
 $(document).ready(function () {
-    /*GetProvinces('popsite',function (data) {
-        if (data){
+    GetProvinces('popsite',function (data) {
+        if (data.length>0){
+            let provinceid=data[0]['id'];
+            let shahr=$("#shahr");
+            GetCityByProvince(provinceid,function (result) {
+                if (result) {
+                    if (shahr) {
+                        for (let i = 0; i < result.length; i++) {
+                            shahr.append('<option value=' + result[i].id + '>' + result[i].name + '</option>');
+                        }
+                    }
+                }
+            });
             //has data
             var element=$('#ostan');
             if(element) {
                 for (let i = 0;i<data.length ; i++) {
-                    element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
+                    element.append('<option value='+data[i].id+'>'+data[i].name+'</option>');
                 }
             }
         }else{
             //data az db gerefte nashod
             alert('درخواست ناموفق');
         }
-    });*/
+    });
+    // FindCityByProvince()
+    $('#ostan').on('change', function() {
+        //alert( this.value );
+        let provinceid=this.value;
+        let shahr=$("#shahr");
+        GetCityByProvince(provinceid,function (result) {
+            if (result.length>0) {
+                shahr.find('option').remove().end().append('').val('');
+                if (shahr) {
+                    for (let i = 0; i < result.length; i++) {
+                        shahr.append('<option value=' + result[i].id + '>' + result[i].name + '</option>');
+                    }
+                }
+            }else{
+                shahr.find('option').remove().end().append('').val('');
+            }
+        });
+    });
 
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[
