@@ -96,6 +96,14 @@ class Bootstrap
             $rows=json_encode($result);
             die($rows);
         }
+        if(isset($_POST['gethost'])){
+            //require_once ('../models/city.php');
+            //$id=$_POST['getcitybyprovince'];
+            $sql="SELECT id,name_service_dahande FROM bnm_host";
+            $result=Db::fetchall_Query($sql);
+            $rows=json_encode($result);
+            die($rows);
+        }
         /*========sabte ostan========*/
         if(isset($_POST['send_province'])){
             if($_POST['id']=="empty") {

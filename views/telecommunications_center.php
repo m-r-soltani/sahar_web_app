@@ -59,7 +59,7 @@
                                 <label class="col-form-label col-lg-2">میزبان</label>
                                 <div class="col-lg-4">
                                     <select class="form-control form-control-lg" name="mizban" id="mizban">
-                                        <option value="1">1</option>
+
                                     </select>
                                 </div>
                                 <br><br>
