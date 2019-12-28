@@ -104,6 +104,14 @@ class Bootstrap
             $rows=json_encode($result);
             die($rows);
         }
+        if(isset($_POST['getpopsite'])){
+            //require_once ('../models/city.php');
+            //$id=$_POST['getcitybyprovince'];
+            $sql="SELECT id,name_dakal FROM bnm_popsite";
+            $result=Db::fetchall_Query($sql);
+            $rows=json_encode($result);
+            die($rows);
+        }
         if(isset($_POST['get_telecommunications_center'])){
             $sql="SELECT id,name FROM bnm_telecommunications_center";
             $result=Db::fetchall_Query($sql);
