@@ -83,6 +83,13 @@
                                 </select>
                             </div>
                             <br><br>
+                            <label class="col-form-label col-lg-2">اجازه ثبت</label>
+                            <div class="col-lg-4">
+                                <select class="form-control" multiple="multiple" name="add_access[]" id="add_access" data-placeholder="انتخاب کنید">
+
+                                </select>
+                            </div>
+                            <br><br>
                             <label class="col-form-label col-lg-2">اجازه حذف</label>
                             <div class="col-lg-4">
                                 <select class="form-control" multiple="multiple" name="delete_access[]" id="delete_access" data-placeholder="انتخاب کنید">

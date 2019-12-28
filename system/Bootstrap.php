@@ -208,17 +208,6 @@ class Bootstrap
                 Db::justexecute($sql);
             }
         }
-        /*========services wireless========*/
-        if(isset($_POST['send_real_subscribers'])){
-            if($_POST['id']=="empty") {
-                $sql = Insert_Generator($_POST, 'bnm_subscribers');
-                Db::justexecute($sql);
-            }else{
-                $id=$_POST['id'];
-                $sql = Update_Generator($_POST, 'bnm_popsite',"WHERE id = $id");
-                Db::justexecute($sql);
-            }
-        }
         /*========legal_subscribers========*/
         if(isset($_POST['send_legal_subscribers'])){
             if($_POST['id']=="empty") {
@@ -234,11 +223,11 @@ class Bootstrap
         /*========sabte branch========*/
         if(isset($_POST['send_branch'])){
             if($_POST['id']=="empty") {
-                $sql = Insert_Generator($_POST, 'bnm_namayandegi');
+                $sql = Insert_Generator($_POST, 'bnm_branch');
                 Db::justexecute($sql);
             }else{
                 $id=$_POST['id'];
-                $sql = Update_Generator($_POST, 'bnm_namayandegi',"WHERE id = $id");
+                $sql = Update_Generator($_POST, 'bnm_branch',"WHERE id = $id");
                 Db::justexecute($sql);
             }
             if (isset($_POST['t_logo'])){
@@ -465,8 +454,8 @@ class Bootstrap
                     die($rows);
                     break;
                 case 'branch':
-                    $condition=$_POST['condition'];
-                    $sql="SELECT * FROM bnm_namayandegi WHERE name_sherkat='$condition'";
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_branch WHERE id='$id'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
                     die($rows);
@@ -651,8 +640,8 @@ class Bootstrap
                     }
                     break;
                 case 'branch':
-                    $name=$_POST['harddelete'];
-                    $sql="delete FROM bnm_namayandegi WHERE name_sherkat = '$name'";
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_branch WHERE id = '$id'";
                     $result=Db::justexecute($sql);
                     if($result) {
                         die(true);

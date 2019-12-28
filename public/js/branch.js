@@ -16,6 +16,9 @@ $(document).ready(function () {
 
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[
+        { "data": "id",
+            title:'شناسه'
+        },
         { "data": "name_sherkat",
             title:'نام شرکت'
         },
@@ -69,6 +72,7 @@ $(document).ready(function () {
         let tr=$('#view_table tbody').find('tr.selected');
         let td=tr.find('td:first').text();
         Edit_Form('branch',td,function (data) {
+            console.log(data);
             $('#id').val(data[0]['id']);
             $('#name_sherkat').val(data[0]['name_sherkat']);
             $('#shomare_sabt').val(data[0]['shomare_sabt']);
