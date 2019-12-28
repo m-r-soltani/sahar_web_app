@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 24, 2019 at 12:15 PM
+-- Generation Time: Dec 28, 2019 at 02:09 AM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -40,6 +40,46 @@ CREATE TABLE `bnm_access_menu_operator` (
 INSERT INTO `bnm_access_menu_operator` (`menu_id`, `operator_id`) VALUES
 (2, 2),
 (15, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bnm_branch`
+--
+
+CREATE TABLE `bnm_branch` (
+  `id` int(11) NOT NULL,
+  `name_sherkat` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `shomare_sabt` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `code_eghtesadi` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `shenase_meli` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `noe_sherkat` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `website` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `telephone1` bigint(20) DEFAULT NULL,
+  `telephone2` bigint(20) DEFAULT NULL,
+  `dornegar` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `ostan` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `shahr` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `code_posti` bigint(20) DEFAULT NULL,
+  `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_logo` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_mohiti` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_tablo` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_code_eghtesadi` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_rozname_tasis` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_shenase_meli` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_akharin_taghirat` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_persian_ci ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data for table `bnm_branch`
+--
+
+INSERT INTO `bnm_branch` (`id`, `name_sherkat`, `shomare_sabt`, `code_eghtesadi`, `shenase_meli`, `noe_sherkat`, `website`, `email`, `telephone1`, `telephone2`, `dornegar`, `ostan`, `shahr`, `code_posti`, `address`, `t_logo`, `t_mohiti`, `t_tablo`, `t_code_eghtesadi`, `t_rozname_tasis`, `t_shenase_meli`, `t_akharin_taghirat`) VALUES
+(2, 'شرکت', '123', '123', '123', 'سهامی خاص', 'www.asdad.com', 'mokhtarpour@gmail.com', 123, 123, '123', 'اصفهان', 'دماوند', 1232313, 'address', '', '', '', '', '', '', ''),
+(3, 'sdf', 'sdf', 'sdf', 'sdf', 'sfd', 'fds', '', 0, 0, '', '', '', 0, '', '', '', '', '', '', '', ''),
+(4, 'ad', 'b', 'h', 'h', 'jb', 'b', 'b', 0, 0, 'hb', 'hjb', '', 0, 'bb', 'fighter.jpg', 'fighter.jpg', 'fighter.jpg', 'fighter.jpg', 'fighter.jpg', 'fighter.jpg', 'fighter.jpg');
 
 -- --------------------------------------------------------
 
@@ -132,22 +172,22 @@ CREATE TABLE `bnm_host` (
   `id` int(11) NOT NULL,
   `name_service_dahande` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL,
   `shomare_mojavez` bigint(20) DEFAULT NULL,
-  `address` varchar(200) COLLATE utf8_persian_ci DEFAULT NULL,
+  `address` varchar(255) COLLATE utf8_persian_ci DEFAULT NULL,
   `shomare_tamas` bigint(20) DEFAULT NULL,
   `shomare_poshtibani` bigint(20) DEFAULT NULL,
   `website` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL,
   `address_shekayat` varchar(150) COLLATE utf8_persian_ci DEFAULT NULL,
   `t_logo` varchar(150) COLLATE utf8_persian_ci DEFAULT NULL,
   `name_tarefe` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL,
-  `dsl_license` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL,
-  `dsl_bitstream` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL,
-  `wlan_license` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL,
-  `wlan_bitstream` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL,
-  `td_lte` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL,
-  `ngn` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL,
-  `phone_orgination` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL,
-  `domain` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL,
-  `host` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL,
+  `dsl_license` varchar(20) COLLATE utf8_persian_ci DEFAULT NULL,
+  `dsl_bitstream` varchar(20) COLLATE utf8_persian_ci DEFAULT NULL,
+  `wlan_license` varchar(20) COLLATE utf8_persian_ci DEFAULT NULL,
+  `wlan_bitstream` varchar(20) COLLATE utf8_persian_ci DEFAULT NULL,
+  `td_lte` varchar(20) COLLATE utf8_persian_ci DEFAULT NULL,
+  `ngn` varchar(20) COLLATE utf8_persian_ci DEFAULT NULL,
+  `phone_orgination` varchar(20) COLLATE utf8_persian_ci DEFAULT NULL,
+  `domain` varchar(20) COLLATE utf8_persian_ci DEFAULT NULL,
+  `host` varchar(20) COLLATE utf8_persian_ci DEFAULT NULL,
   `olaviat` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
 
@@ -156,7 +196,7 @@ CREATE TABLE `bnm_host` (
 --
 
 INSERT INTO `bnm_host` (`id`, `name_service_dahande`, `shomare_mojavez`, `address`, `shomare_tamas`, `shomare_poshtibani`, `website`, `address_shekayat`, `t_logo`, `name_tarefe`, `dsl_license`, `dsl_bitstream`, `wlan_license`, `wlan_bitstream`, `td_lte`, `ngn`, `phone_orgination`, `domain`, `host`, `olaviat`) VALUES
-(1, 'fg', 0, 'asdsad', 0, 0, 'asdsad', 'asdsad', '', 'asd', 'on', 'on', 'on', NULL, 'on', 'on', 'on', NULL, 'on', 123);
+(2, 'test2', 0, 'test2', 0, 0, 'test2', 'test2', '', 'asd', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 12);
 
 -- --------------------------------------------------------
 
@@ -264,45 +304,6 @@ CREATE TABLE `bnm_moshtarakine_hoghoghi` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bnm_namayandegi`
---
-
-CREATE TABLE `bnm_namayandegi` (
-  `id` int(11) NOT NULL,
-  `name_sherkat` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `shomare_sabt` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `code_eghtesadi` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `shenase_meli` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `noe_sherkat` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `website` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `telephone1` bigint(20) DEFAULT NULL,
-  `telephone2` bigint(20) DEFAULT NULL,
-  `dornegar` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `ostan` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `shahr` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `code_posti` bigint(20) DEFAULT NULL,
-  `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `t_logo` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `t_mohiti` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `t_tablo` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `t_code_eghtesadi` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `t_rozname_tasis` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `t_shenase_meli` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `t_akharin_taghirat` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_persian_ci ROW_FORMAT=COMPACT;
-
---
--- Dumping data for table `bnm_namayandegi`
---
-
-INSERT INTO `bnm_namayandegi` (`id`, `name_sherkat`, `shomare_sabt`, `code_eghtesadi`, `shenase_meli`, `noe_sherkat`, `website`, `email`, `telephone1`, `telephone2`, `dornegar`, `ostan`, `shahr`, `code_posti`, `address`, `t_logo`, `t_mohiti`, `t_tablo`, `t_code_eghtesadi`, `t_rozname_tasis`, `t_shenase_meli`, `t_akharin_taghirat`) VALUES
-(2, 'شرکت', '123', '123', '123', 'سهامی خاص', 'www.asdad.com', 'mokhtarpour@gmail.com', 123, 123, '123', 'اصفهان', 'دماوند', 1232313, 'address', '', '', '', '', '', '', ''),
-(3, 'sdf', 'sdf', 'sdf', 'sdf', 'sfd', 'fds', '', 0, 0, '', '', '', 0, '', '', '', '', '', '', '', '');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `bnm_operator`
 --
 
@@ -330,16 +331,35 @@ CREATE TABLE `bnm_operator` (
   `t_shenasname` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
   `t_madrake_tahsili` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
   `t_chehre` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
-  `namayandegi_id` int(11) DEFAULT NULL
+  `namayandegi_id` int(11) DEFAULT NULL,
+  `level_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_persian_ci ROW_FORMAT=COMPACT;
 
 --
 -- Dumping data for table `bnm_operator`
 --
 
-INSERT INTO `bnm_operator` (`id`, `name_namayandegi`, `name`, `name_khanevadegi`, `code_meli`, `shomare_shenasname`, `name_pedar`, `tarikhe_tavalod`, `madrake_tahsili`, `reshteye_tahsili`, `ostan_tavalod`, `shahr_tavalod`, `telephone_hamrah`, `telephone_mahale_sokonat`, `address`, `email`, `semat`, `name_karbari`, `ramze_obor`, `t_karte_meli`, `t_shenasname`, `t_madrake_tahsili`, `t_chehre`, `namayandegi_id`) VALUES
-(2, 'dfg', 'sdf', 'sdf', 123, '345435', 'sdfdsfg', '1390-12-12', 'sdf', 'sdf', 'sdf', 'sdfg', 1232131, 123213, 'asdasd', 'assdf@asd.com', 'dfgfdg', 'operator1', '1234', '', '', '', '', 2),
-(3, 'asdsa', 'sadsa', 'sdsad', 123, '123', 'asd', '0000-00-00', 'sdf', 'sd', 'safd', 'asdf', 123, 345, 'sdf', 'asd', 'sdf', 'operator2', '1234', '', '', '', '', 3);
+INSERT INTO `bnm_operator` (`id`, `name_namayandegi`, `name`, `name_khanevadegi`, `code_meli`, `shomare_shenasname`, `name_pedar`, `tarikhe_tavalod`, `madrake_tahsili`, `reshteye_tahsili`, `ostan_tavalod`, `shahr_tavalod`, `telephone_hamrah`, `telephone_mahale_sokonat`, `address`, `email`, `semat`, `name_karbari`, `ramze_obor`, `t_karte_meli`, `t_shenasname`, `t_madrake_tahsili`, `t_chehre`, `namayandegi_id`, `level_id`) VALUES
+(2, 'aaa', 'sdf', 'sdf', 123, '345435', 'sdfdsfg', '0000-00-00', 'sdf', 'sdf', 'sdf', 'sdfg', 1232131, 123213, 'asdasd', 'assdf@asd.com', 'dfgfdg', 'operator1', '1234', '', '', '', '', 2, 5),
+(3, 'asdsa', 'sadsa', 'sdsad', 123, '123', 'asd', '0000-00-00', 'sdf', 'sd', 'safd', 'asdf', 123, 345, 'sdf', 'asd', 'sdf', 'operator2', '1234', '', '', '', '', 3, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bnm_organization_level`
+--
+
+CREATE TABLE `bnm_organization_level` (
+  `id` int(11) NOT NULL,
+  `semat` varchar(80) COLLATE utf8_persian_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+--
+-- Dumping data for table `bnm_organization_level`
+--
+
+INSERT INTO `bnm_organization_level` (`id`, `semat`) VALUES
+(5, 'مدیر عامل');
 
 -- --------------------------------------------------------
 
@@ -357,10 +377,9 @@ CREATE TABLE `bnm_ostan` (
 --
 
 INSERT INTO `bnm_ostan` (`id`, `name`) VALUES
-(8, ''),
 (3, 'اصفهان'),
 (2, 'تهران'),
-(5, 'فارس');
+(10, 'فارس');
 
 -- --------------------------------------------------------
 
@@ -393,16 +412,36 @@ CREATE TABLE `bnm_popsite` (
   `name_khanevadegi_poshtiban_dakal` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL,
   `shomare_poshtiban` bigint(20) DEFAULT NULL,
   `ejare_mahiane_nasbe_anten_roye_dakal` bigint(20) DEFAULT NULL,
-  `bime_dakal` tinyint(1) DEFAULT NULL,
-  `cheragh_dakal` tinyint(1) DEFAULT NULL,
-  `bargh_ezterari` tinyint(1) DEFAULT NULL,
-  `batri_poshtiban` tinyint(1) DEFAULT NULL,
-  `ert` tinyint(1) DEFAULT NULL,
-  `emkane_nasbe_anten` tinyint(1) DEFAULT NULL,
-  `ejaze_dastresi24_saate_dakal` tinyint(1) DEFAULT NULL,
+  `bime_dakal` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
+  `cheragh_dakal` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
+  `bargh_ezterari` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
+  `batri_poshtiban` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
+  `ert` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
+  `emkane_nasbe_anten` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
+  `ejaze_dastresi24_saate_dakal` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
   `masire_avale_faktore_dakal` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL,
-  `masire_dovome_faktore_dakal` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL
+  `masire_dovome_faktore_dakal` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL,
+  `maleke_dakal` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL,
+  `shomare_tamas_malek` bigint(20) DEFAULT NULL,
+  `name_poshtiban` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL,
+  `code_posti` varchar(25) COLLATE utf8_persian_ci DEFAULT NULL,
+  `noe_malekiat` varchar(40) COLLATE utf8_persian_ci DEFAULT NULL,
+  `mizbane_dakal` int(11) DEFAULT NULL,
+  `family_poshtiban` varchar(60) COLLATE utf8_persian_ci DEFAULT NULL,
+  `shoamre_tamas_poshtiban` bigint(20) DEFAULT NULL,
+  `masire_avale_faktorha` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL,
+  `barghe_ezterari` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
+  `batrie_poshtiban` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
+  `cheraghe_dakal` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
+  `ejaze_dastresi_24_saate` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data for table `bnm_popsite`
+--
+
+INSERT INTO `bnm_popsite` (`id`, `name_dakal`, `ostan`, `shahr`, `address`, `post_code`, `noe_dakal`, `ertefa_sakhteman`, `ertefa_dakal`, `majmoe_ertefa`, `tol_joghrafiai`, `arz_joghrafiai`, `shomare_sabt`, `noe_malekiat_dakal`, `malek_dakal`, `name_malek`, `name_khanevadegi_malek`, `rotbe_dakal`, `mizban_dakal`, `postiban_dakal`, `name_postiban_dakal`, `name_khanevadegi_poshtiban_dakal`, `shomare_poshtiban`, `ejare_mahiane_nasbe_anten_roye_dakal`, `bime_dakal`, `cheragh_dakal`, `bargh_ezterari`, `batri_poshtiban`, `ert`, `emkane_nasbe_anten`, `ejaze_dastresi24_saate_dakal`, `masire_avale_faktore_dakal`, `masire_dovome_faktore_dakal`, `maleke_dakal`, `shomare_tamas_malek`, `name_poshtiban`, `code_posti`, `noe_malekiat`, `mizbane_dakal`, `family_poshtiban`, `shoamre_tamas_poshtiban`, `masire_avale_faktorha`, `barghe_ezterari`, `batrie_poshtiban`, `cheraghe_dakal`, `ejaze_dastresi_24_saate`) VALUES
+(0, 'دکل1', 'asd', 'sd', 'sd', NULL, 'faghededakal', 123, 123, 123, 'sd', 'sd', 'sd', NULL, NULL, NULL, NULL, 'A', NULL, NULL, NULL, NULL, NULL, 1231321, 'no', NULL, NULL, NULL, 'no', 'no', NULL, NULL, NULL, 'asd', 123123, 'ad', 'asd', 'estijari', 0, 'asd', 123123, 'asd', 'no', 'no', 'no', 'no');
 
 -- --------------------------------------------------------
 
@@ -422,13 +461,6 @@ CREATE TABLE `bnm_pre_number` (
   `noe_gharardad` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
   `tozihat` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_persian_ci ROW_FORMAT=COMPACT;
-
---
--- Dumping data for table `bnm_pre_number`
---
-
-INSERT INTO `bnm_pre_number` (`id`, `name_markaz`, `tedade_pishshomare`, `mantaghe`, `ostan`, `shahr`, `mizban`, `sarshomare`, `noe_gharardad`, `tozihat`) VALUES
-(2, 'aaa', 345, '4', '1', '1', '1', '456', 'fdsf', 'fsdfdf');
 
 -- --------------------------------------------------------
 
@@ -493,16 +525,17 @@ CREATE TABLE `bnm_services` (
   `faza` varchar(255) COLLATE utf8_persian_ci DEFAULT NULL,
   `type` varchar(255) COLLATE utf8_persian_ci DEFAULT NULL,
   `noe_pardakht` varchar(255) COLLATE utf8_persian_ci DEFAULT NULL,
-  `gheymat` bigint(20) DEFAULT NULL
+  `gheymat` bigint(20) DEFAULT NULL,
+  `dore_be_rooz` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 --
 -- Dumping data for table `bnm_services`
 --
 
-INSERT INTO `bnm_services` (`id`, `noe_khadamat`, `namayeshe_service`, `namayeshe_dar_profile`, `onvane_service`, `zaname_estefade`, `takhfif`, `name_service_dahande`, `porsant`, `tarikhe_shoroe_namayesh`, `tarikhe_payane_namayesh`, `emtiaze_jayeze`, `hadeaghale_emtiaz`, `hadeaksare_emtiaz`, `mablaghe_har_emtiaz`, `name_grohe_moshtari`, `name_groh`, `range_namayeshe_profile`, `range_vizhesazie_profile`, `saat_vasle_movaghat`, `roze_vasle_movaghat`, `terafike_vasle_movaghat`, `dore_be_mah`, `dore_be_saat`, `terafik`, `hazine_nasb`, `hazine_dranzhe`, `hazine_kharabi`, `hazine_ranzhe`, `tozihate_faktor`, `tozihate_website`, `sorate_paye_daryaft`, `hadeaxar_sorat_daryaft`, `sorat_paye_ersal`, `port`, `tajhizat`, `faza`, `type`, `noe_pardakht`, `gheymat`) VALUES
-(1, 'ADSL(Share)', 'yes', 'yes', '', 'sdf', 'sdf', '1', 0, '0000-00-00', '0000-00-00', 'sdf', 'df', 'sdf', 'sdf', '1', '1', '#27ADCA', '#27ADCA', 'sdf', 'sdf', 'sdf', '13', '123', 13, 123, 123, 123, 123, 'sdf', 'd', 123, 123, 123, 123, '123', '123', 'adsl', NULL, 123),
-(2, 'Wireless(Hotspot)', 'yes', 'yes', 'عنوان1', '4', '4.5', '1', 5, '1398-09-30', '1398-10-30', '2', '3', '3', '4', '1', '1', 'rgb(0, 0, 0)', 'rgb(246, 13, 13)', '1', '1', '1024', '5', '5', 2048, 123123, NULL, 123123, NULL, 'sdfsf', 'sdf', 512, 512, 256, 3000, 'asd', '2000', 'wireless', NULL, 123);
+INSERT INTO `bnm_services` (`id`, `noe_khadamat`, `namayeshe_service`, `namayeshe_dar_profile`, `onvane_service`, `zaname_estefade`, `takhfif`, `name_service_dahande`, `porsant`, `tarikhe_shoroe_namayesh`, `tarikhe_payane_namayesh`, `emtiaze_jayeze`, `hadeaghale_emtiaz`, `hadeaksare_emtiaz`, `mablaghe_har_emtiaz`, `name_grohe_moshtari`, `name_groh`, `range_namayeshe_profile`, `range_vizhesazie_profile`, `saat_vasle_movaghat`, `roze_vasle_movaghat`, `terafike_vasle_movaghat`, `dore_be_mah`, `dore_be_saat`, `terafik`, `hazine_nasb`, `hazine_dranzhe`, `hazine_kharabi`, `hazine_ranzhe`, `tozihate_faktor`, `tozihate_website`, `sorate_paye_daryaft`, `hadeaxar_sorat_daryaft`, `sorat_paye_ersal`, `port`, `tajhizat`, `faza`, `type`, `noe_pardakht`, `gheymat`, `dore_be_rooz`) VALUES
+(1, 'VDSL(Share)', 'yes', 'yes', '', 'sdf', 'sdf', '1', 0, '0000-00-00', '0000-00-00', 'sdf', 'df', '', '', '1', '1', '#27ADCA', '#27ADCA', 'sdf', 'sdf', 'sdf', '13', '123', 13, 123, 123, 123, 123, 'sdf', 'd', 123, 123, 123, 123, '123', '123', 'adsl', NULL, 123, ''),
+(2, 'Wireless(Transport)', 'yes', 'yes', 'عنوان1', '4', '4.5', '1', 5, '1398-09-30', '1398-10-30', '2', '3', '', '', '1', '1', 'rgb(0, 0, 0)', 'rgb(246, 13, 13)', '1', '1', '1024', '', '5', 2048, 123123, NULL, 123123, NULL, 'sdfsf', 'sdf', 512, 512, 256, 3000, 'asd', '2000', 'wireless', NULL, 123, '');
 
 -- --------------------------------------------------------
 
@@ -521,10 +554,7 @@ CREATE TABLE `bnm_shahr` (
 --
 
 INSERT INTO `bnm_shahr` (`id`, `name`, `ostan_id`) VALUES
-(21, 'پردیس', 2),
-(30, 'شهرضا', 3),
-(32, 'دماوند', 2),
-(34, 'اسلامشهر', 2);
+(30, 'شهرضا', 3);
 
 -- --------------------------------------------------------
 
@@ -603,8 +633,9 @@ CREATE TABLE `bnm_subscribers` (
 --
 
 INSERT INTO `bnm_subscribers` (`id`, `type`, `name`, `f_name`, `name_pedar`, `meliat`, `tabeiat`, `noe_shenase_hoviati`, `shenase_hoviati`, `shomare_shenasname`, `tarikhe_tavalod`, `ostane_tavalod`, `shahre_tavalod`, `telephone`, `telephone_hamrah`, `email`, `fax`, `website`, `code_posti`, `address`, `shoghl`, `reshteye_tehsili`, `akharin_madrake_tahsili`, `nahve_ashnai_campain`, `gorohe_moshtarak`, `moaref`, `tozihat`, `r_t_karte_meli`, `r_t_ghabze_telephone`, `r_t_ejare_malekiat`, `r_t_gharardad`, `r_t_sayer`, `jensiat`, `name_en`, `name_sherkat`, `shomare_sabt`, `tarikhe_sabt`, `name_modir_amel`, `fname_modir_amel`, `name_en_modir_amel`, `meliat_modir_amel`, `tabeiat_modir_amel`, `ostan`, `shahr`, `shomare_dakheli`, `code_eghtesadi`, `shenase_meli`, `tarikhe_tavalode_modir_amel`, `name_pedare_modir_amel`, `reshte_tahsili_modir_amel`, `madrake_daneshgahi_modir_amel`, `reshteye_faaliat`, `nahve_moarefi`, `l_t_agahie_tasis`, `l_t_akharin_taghirat`, `l_t_saheb_kartemeli_emzaye_aval`, `l_t_saheb_kartemeli_emzaye_dovom`, `l_t_kartemeli_namayande`, `l_t_moarefiname_namayande`, `l_t_ghabze_telephone`, `l_t_gharardad`, `l_t_ejarename_malekiat`, `l_t_sayer`) VALUES
-(1, 'real', 'امین', 'سلطانی', 'رضا', 'ایران', 'ایران', 'کد ملی', '0014304002', 23131312, '1992-12-19', 'asd', 'asd', 8880000, 9120247696, 'asd', 0, 'asd', 0, 'asd', 'asd', 'asd', 'diplom', '1', '1', 'asd', 'asd', 'fighter.jpg', 'fighter.jpg', 'fighter.jpg', 'fighter.jpg', 'fighter.jpg', 'mard', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(2, 'legal', NULL, NULL, NULL, NULL, NULL, 'code_melo', NULL, 0, NULL, NULL, NULL, 0, 0, 'h', 0, 'h', 0, 'kj', NULL, NULL, NULL, '1', '1', 'hk', 'h', NULL, NULL, NULL, NULL, NULL, 'man', 'ads', 'asd', 'asd', '0000-00-00', 'asdasdsdf', 'jkh', 'u', 'gkj', 'h', 'jkh', 'kh', 0, 'hj', 0, '0000-00-00', 'jh', 'kh', 'diplom', '', '1', '', '', '', '', '', '', '', '', '', '');
+(2, 'legal', NULL, NULL, NULL, NULL, NULL, 'code_melo', NULL, 0, NULL, NULL, NULL, 0, 0, 'h', 0, 'h', 0, 'kj', NULL, NULL, NULL, '1', '1', 'hk', 'h', NULL, NULL, NULL, NULL, NULL, 'man', 'aaaaa', 'aaa', 'aaaa', '0000-00-00', 'aaa', 'jkh', 'u', 'gkj', 'h', 'jkh', 'kh', 0, 'hj', 0, '0000-00-00', 'jh', 'kh', 'diplom', '', '1', '', '', '', '', '', '', '', '', '', ''),
+(3, 'real', 'ads', 'h', 'h', 'kh', 'kjhk', 'opt1', 'h', 0, '0000-00-00', 'jh', 'jkh', 0, 0, 'jkh', 0, 'jk', 0, 'hjk', 'h', 'kh', 'diplom', '1', '1', '', '', '', '', '', '', '', 'mard', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'real', 'ads', 'h', 'h', 'kh', 'kjhk', 'opt1', 'h', 0, '0000-00-00', 'jh', 'jkh', 0, 0, 'jkh', 0, 'jk', 0, 'hjk', 'h', 'kh', 'diplom', '1', '1', '', '', '', '', '', '', '', 'mard', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -620,6 +651,26 @@ CREATE TABLE `bnm_tajhizate_standard` (
   `tarihke_sodor` datetime(6) NOT NULL,
   `tarikhe_payan` datetime(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bnm_tax`
+--
+
+CREATE TABLE `bnm_tax` (
+  `id` int(11) NOT NULL,
+  `darsade_arzeshe_afzode` double DEFAULT NULL,
+  `darsade_maliate_arzeshe_afzode` double DEFAULT NULL,
+  `darsade_avarez_arzeshe_afzode` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+--
+-- Dumping data for table `bnm_tax`
+--
+
+INSERT INTO `bnm_tax` (`id`, `darsade_arzeshe_afzode`, `darsade_maliate_arzeshe_afzode`, `darsade_avarez_arzeshe_afzode`) VALUES
+(2, 4.4, 5.5, 7.7);
 
 -- --------------------------------------------------------
 
@@ -648,7 +699,7 @@ CREATE TABLE `bnm_telecommunications_center` (
 --
 
 INSERT INTO `bnm_telecommunications_center` (`id`, `name`, `ostan`, `shahr`, `pish_shomare`, `shomare_tamas_markaz`, `shomare_tamas_mdf`, `address`, `masire_avale_faktorha`, `masire_dovome_faktorha`, `mizban`, `noe_gharardad`, `mizban_id`) VALUES
-(7, 'bbb', '2', '21', '123', 123, 123123, 'adsda', 'adsa', 'asd', '1', '1', NULL);
+(8, 'testttt', '2', '30', '123', 123, 123, 'fsd', 'sdfsdf', 'sff', '1', '1', NULL);
 
 -- --------------------------------------------------------
 
@@ -674,13 +725,6 @@ CREATE TABLE `bnm_terminal` (
   `snmp_ppoe_server` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL,
   `password_ppoe_server` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
-
---
--- Dumping data for table `bnm_terminal`
---
-
-INSERT INTO `bnm_terminal` (`id`, `ostan`, `shahr`, `markaze_mokhaberati`, `noe_terminal`, `tighe`, `etesali`, `radif`, `az_port`, `ta_port`, `mizban`, `noe_gharardad`, `ip_ppoe_server`, `user_ppoe_server`, `snmp_ppoe_server`, `password_ppoe_server`) VALUES
-(3, '1', 'faghededakal', '1', '1', '123', 'asd', '123', 'asd', 'asd', 'faghededakal', '1', 'asda', 'asd', 'asd', 'asd');
 
 -- --------------------------------------------------------
 
@@ -763,6 +807,12 @@ ALTER TABLE `bnm_access_menu_operator`
   ADD KEY `operator_id` (`operator_id`);
 
 --
+-- Indexes for table `bnm_branch`
+--
+ALTER TABLE `bnm_branch`
+  ADD PRIMARY KEY (`id`) USING BTREE;
+
+--
 -- Indexes for table `bnm_dashboard_menu`
 --
 ALTER TABLE `bnm_dashboard_menu`
@@ -813,12 +863,6 @@ ALTER TABLE `bnm_moshtarakine_hoghoghi`
   ADD PRIMARY KEY (`id`) USING BTREE;
 
 --
--- Indexes for table `bnm_namayandegi`
---
-ALTER TABLE `bnm_namayandegi`
-  ADD PRIMARY KEY (`id`) USING BTREE;
-
---
 -- Indexes for table `bnm_operator`
 --
 ALTER TABLE `bnm_operator`
@@ -827,6 +871,13 @@ ALTER TABLE `bnm_operator`
   ADD UNIQUE KEY `name_karbari_2` (`name_karbari`),
   ADD UNIQUE KEY `name_karbari_3` (`name_karbari`),
   ADD KEY `namayandegi-operator` (`namayandegi_id`) USING BTREE;
+
+--
+-- Indexes for table `bnm_organization_level`
+--
+ALTER TABLE `bnm_organization_level`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `semat` (`semat`);
 
 --
 -- Indexes for table `bnm_ostan`
@@ -879,6 +930,12 @@ ALTER TABLE `bnm_tajhizate_standard`
   ADD PRIMARY KEY (`id`) USING BTREE;
 
 --
+-- Indexes for table `bnm_tax`
+--
+ALTER TABLE `bnm_tax`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `bnm_telecommunications_center`
 --
 ALTER TABLE `bnm_telecommunications_center`
@@ -914,6 +971,12 @@ ALTER TABLE `test`
 --
 
 --
+-- AUTO_INCREMENT for table `bnm_branch`
+--
+ALTER TABLE `bnm_branch`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `bnm_dashboard_menu`
 --
 ALTER TABLE `bnm_dashboard_menu`
@@ -929,13 +992,7 @@ ALTER TABLE `bnm_dashboard_menu_category`
 -- AUTO_INCREMENT for table `bnm_host`
 --
 ALTER TABLE `bnm_host`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT for table `bnm_namayandegi`
---
-ALTER TABLE `bnm_namayandegi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `bnm_operator`
@@ -944,10 +1001,16 @@ ALTER TABLE `bnm_operator`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `bnm_organization_level`
+--
+ALTER TABLE `bnm_organization_level`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `bnm_ostan`
 --
 ALTER TABLE `bnm_ostan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `bnm_pre_number`
@@ -959,31 +1022,37 @@ ALTER TABLE `bnm_pre_number`
 -- AUTO_INCREMENT for table `bnm_services`
 --
 ALTER TABLE `bnm_services`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `bnm_shahr`
 --
 ALTER TABLE `bnm_shahr`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `bnm_subscribers`
 --
 ALTER TABLE `bnm_subscribers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `bnm_tax`
+--
+ALTER TABLE `bnm_tax`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `bnm_telecommunications_center`
 --
 ALTER TABLE `bnm_telecommunications_center`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `bnm_terminal`
 --
 ALTER TABLE `bnm_terminal`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `bnm_users`
@@ -995,7 +1064,7 @@ ALTER TABLE `bnm_users`
 -- AUTO_INCREMENT for table `bnm_wireless_ap`
 --
 ALTER TABLE `bnm_wireless_ap`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `test`
@@ -1030,7 +1099,7 @@ ALTER TABLE `bnm_delete_menu_operator`
 -- Constraints for table `bnm_operator`
 --
 ALTER TABLE `bnm_operator`
-  ADD CONSTRAINT `namayandegi-operator` FOREIGN KEY (`namayandegi_id`) REFERENCES `bnm_namayandegi` (`id`) ON DELETE NO ACTION;
+  ADD CONSTRAINT `namayandegi-operator` FOREIGN KEY (`namayandegi_id`) REFERENCES `bnm_branch` (`id`) ON DELETE NO ACTION;
 
 --
 -- Constraints for table `bnm_shahr`
