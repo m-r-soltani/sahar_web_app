@@ -184,12 +184,12 @@ function DataTable(selector='view_table',path,type="POST",cols,callback) {
             }
         ],*/
         //order: [[0, "asc"]],
-        scrollY: 1000,
+        scrollY: 2000,
         scrollX: true,
         scrollCollapse: true,
         paging: true,
         fixedColumns: false,
-
+        "bDestroy": true,//zamani ke chandta datatable dakhele tab dashte bashim age in nabashe error mide
         oLanguage: {
             select: {
                 rows: {
@@ -222,14 +222,14 @@ function DataTable(selector='view_table',path,type="POST",cols,callback) {
             sInfoFiltered: "فیلتر شده از _MAX_ رکورد",
             sInfoThousands: "K",
             sLengthMenu:
-                'نمایش <select id="datatable_rownum">'+
-                '<option value="10">10</option>'+
-                '<option value="20">20</option>'+
-                '<option value="30">30</option>'+
-                '<option value="40">40</option>'+
-                '<option value="50">50</option>'+
-                '<option value="50">100</option>'+
-                '</select> رکورد',
+            'نمایش <select id="datatable_rownum">'+
+            '<option value="10">10</option>'+
+            '<option value="20">20</option>'+
+            '<option value="30">30</option>'+
+            '<option value="40">40</option>'+
+            '<option value="50">50</option>'+
+            '<option value="50">100</option>'+
+            '</select> رکورد',
 
         },
 

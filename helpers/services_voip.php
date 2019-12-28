@@ -31,7 +31,7 @@ $primaryKey = 'id';
 // parameter names
 $columns = array(
     array( 'db' => 'id', 'dt' => 'id' ),
-    array( 'db' => 'noe_pardakht', 'dt' => 'noe_pardakht' ),
+    array( 'db' => 'noe_khadamat', 'dt' => 'noe_khadamat' ),
     array( 'db' => 'onvane_service', 'dt' => 'onvane_service' ),
     array( 'db' => 'tarikhe_shoroe_namayesh', 'dt' => 'tarikhe_shoroe_namayesh' ),
     array( 'db' => 'tarikhe_payane_namayesh', 'dt' => 'tarikhe_payane_namayesh' )
