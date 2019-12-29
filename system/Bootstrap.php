@@ -714,24 +714,60 @@ class Bootstrap
             //require_once ('../models/city.php');
             switch ($_POST['factors_initialize']){
                 case 'findbyid':
-                    $id=$_POST['condition'];
-                    $sql="SELECT * FROM bnm_subscribers WHERE id=$id";
+//                    $id=$_POST['condition'];
+//                    $sql="SELECT * FROM bnm_subscribers WHERE id=$id";
+//                    $result=Db::fetchall_Query($sql);
+//                    $rows=json_encode($result);
+//                    die($rows);
+//                    break;
+                case 'adsl_services':
+                    //$id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_services WHERE type='adsl'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
                     die($rows);
                     break;
-                case 'sefareshe_jadid_box':
+                case 'wireless_services':
                     //$id=$_POST['condition'];
-                    $sql="SELECT id,noe_khadamat FROM bnm_services";
+                    $sql="SELECT * FROM bnm_services WHERE type='wireless'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
+                    break;
+                case 'tdlte_services':
+                    //$id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_services WHERE type='tdlte'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
+                    break;
+                case 'voip_services':
+                    //$id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_services WHERE type='voip'";
                     $result=Db::fetchall_Query($sql);
                     $rows=json_encode($result);
                     die($rows);
                     break;
                 case 'sefareshe_jadid_serviceslist_li':
-//                    $sql="SELECT id,noe_khadamat FROM bnm_services";
-//                    $result=Db::fetchall_Query($sql);
-//                    $rows=json_encode($result);
-                    die('');
+                    $id=$_POST['condition'];
+                    $sql="select * FROM bnm_services WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
+                    break;
+                case 'factors_serviceslist_li':
+                    $id=$_POST['condition'];
+                    $sql="select * FROM bnm_services WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
+                    break;
+                case 'factors':
+                    $id=$_POST['condition'];
+                    $sql="select * FROM bnm_services";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
                     break;
             }
 
