@@ -74,15 +74,12 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تخفيف</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="takhfif" id="adsl_takhfif"
-                                                   placeholder="به درصد مثال : 6.5">
+                                            <input type="text" class="form-control" name="takhfif" id="adsl_takhfif" placeholder="به درصد مثال : 6.5">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_service_dahande" id="adsl_name_service_dahande">
-                                                <option value="1">1</option>
-                                            </select>
+                                            <input type="text" class="form-control" name="name_service_dahande" id="adsl_name_service_dahande" placeholder="مثال: سحر ارتباط">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">پورسانت</label>
@@ -368,9 +365,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_service_dahande" id="wireless_name_service_dahande">
-                                                <option value="1">1</option>
-                                            </select>
+                                            <input type="text" class="form-control" name="name_service_dahande" id="wireless_name_service_dahande" placeholder="مثال: سحر ارتباط">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">پورسانت</label>
@@ -644,9 +639,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_service_dahande" id="tdlte_name_service_dahande">
-                                                <option value="1">1</option>
-                                            </select>
+                                            <input type="text" class="form-control" name="name_service_dahande" id="tdlte_name_service_dahande" placeholder="مثال: سحر ارتباط">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">پورسانت</label>
@@ -919,9 +912,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_service_dahande" id="voip_name_service_dahande">
-                                                <option value="1">1</option>
-                                            </select>
+                                            <input type="text" class="form-control" name="name_service_dahande" id="voip_name_service_dahande" placeholder="مثال: سحر ارتباط">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">پورسانت</label>
@@ -956,8 +947,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">حداکثر امتیاز</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="hadeaksare_emtiaz" id="voip_hadeaksare_emtiaz"
-                                                   placeholder="مثال : 6">
+                                            <input type="text" class="form-control" name="hadeaksare_emtiaz" id="voip_hadeaksare_emtiaz" placeholder="مثال : 6">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">مبلغ هر امتیاز</label>

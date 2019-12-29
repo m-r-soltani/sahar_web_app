@@ -1,32 +1,6 @@
 $(document).ready(function () {
-    /* GetProvinces('legal_subscribers',function (data) {
-         if (data){
-             //has data
-             var element=$('#ostan');
-             if(element) {
-                 for (let i = 0;i<data.length ; i++) {
-                     element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
-                 }
-             }
-         }else{
-             //data az db gerefte nashod
-             alert('درخواست ناموفق');
-         }
-     });*/
-    /*GetCities('legal_subscribers',function (data) {
-        if (data){
-            //has data
-            var element=$('#shahr');
-            if(element) {
-                for (let i = 0;i<data.length ; i++) {
-                    element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
-                }
-            }
-        }else{
-            //data az db gerefte nashod
-            alert('درخواست ناموفق');
-        }
-    });*/
+    DATEPICKER_YYYYMMDD('#tarikh_sabt');
+    DATEPICKER_YYYYMMDD('#tarikhe_tavalode_modir_amel');
 
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[
@@ -78,6 +52,7 @@ $(document).ready(function () {
         Edit_Form('legal_subscribers',td,function (data) {
             $('#id').val(data[0]['id']);
             $('#name_en').val(data[0]['name']);
+            $('#noe_moshtarak').val(data[0]['noe_moshtarak']);
             $('#name_sherkat').val(data[0]['name_sherkat']);
             $('#shomare_sabt').val(data[0]['shomare_sabt']);
             $('#tarikhe_sabt').val(data[0]['tarikhe_sabt']);

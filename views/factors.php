@@ -59,92 +59,92 @@
                         <!------------ADSL------------->
                         <div class="adsl_tab tab-pane fade show active" id="bottom-justified-divided-tab1">
                             <form action="#" method="POST">
-                                <input type="hidden" id="id" name="id" value="empty" class="form-control">
-                                <input type="hidden" id="type" name="type" value="adsl" class="form-control">
+                                <input type="hidden" id="adsl_id" name="id" value="empty" class="form-control">
+                                <input type="hidden" id="adsl_type" name="type" value="adsl" class="form-control">
 
                                 <fieldset class="mb-3">
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع سرویس</label>
                                         <div class="col-lg-4">
-                                            <input type="text" class="form-control" name="noe_service" id="noe_service"
+                                            <input type="text" class="form-control" name="noe_service" id="adsl_noe_service"
                                                    placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ترافیک</label>
                                         <div class="col-lg-4">
-                                            <input name="terafik" id="terafik" type="text" class="form-control"
+                                            <input name="terafik" id="adsl_terafik" type="text" class="form-control"
                                                    placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">زمان استفاده</label>
                                         <div class="col-lg-4">
-                                            <input name="zamane_estefade" id="zamane_estefade" type="text"
+                                            <input name="zamane_estefade" id="adsl_zamane_estefade" type="text"
                                                    class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ شروع سرویس</label>
                                         <div class="col-lg-4">
-                                            <input name="tarikhe_shoroe_service" id="tarikhe_shoroe_service" type="text"
+                                            <input name="tarikhe_shoroe_service" id="adsl_tarikhe_shoroe_service" type="text"
                                                    class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تاریخ پایان سروسی</label>
                                         <div class="col-lg-4">
-                                            <input name="tarikhe_payane_service" id="tarikhe_payane_service" type="text"
+                                            <input name="tarikhe_payane_service" id="adsl_tarikhe_payane_service" type="text"
                                                    class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">قیمت</label>
                                         <div class="col-lg-4">
-                                            <input name="gheymat" id="gheymat" type="text" class="form-control"
+                                            <input name="gheymat" id="adsl_gheymat" type="text" class="form-control"
                                                    placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">تخفیف</label>
                                         <div class="col-lg-4">
-                                            <input name="takhfif" id="takhfif" type="text" class="form-control"
+                                            <input name="takhfif" id="adsl_takhfif" type="text" class="form-control"
                                                    placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">هزینه رانژه</label>
                                         <div class="col-lg-4">
-                                            <input name="hazine_ranzhe" id="hazine_ranzhe" type="text"
+                                            <input name="hazine_ranzhe" id="adsl_hazine_ranzhe" type="text"
                                                    class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">هزینه درانژه</label>
                                         <div class="col-lg-4">
-                                            <input name="hazine_dranzhe" id="hazine_dranzhe" type="text"
+                                            <input name="hazine_dranzhe" id="adsl_hazine_dranzhe" type="text"
                                                    class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان پورت</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_port" id="abonmane_port" type="text"
+                                            <input name="abonmane_port" id="adsl_abonmane_port" type="text"
                                                    class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان فضا</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_faza" id="abonmane_faza" type="text"
+                                            <input name="abonmane_faza" id="adsl_abonmane_faza" type="text"
                                                    class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">آبونمان تجهیزات</label>
                                         <div class="col-lg-4">
-                                            <input name="abonmane_tajhizat" id="abonmane_tajhizat" type="text"
+                                            <input name="abonmane_tajhizat" id="adsl_abonmane_tajhizat" type="text"
                                                    class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">ارزش افزوده</label>
                                         <div class="col-lg-4">
-                                            <input name="arzeshe_afzode" id="arzeshe_afzode" type="text"
+                                            <input name="arzeshe_afzode" id="adsl_arzeshe_afzode" type="text"
                                                    class="form-control" placeholder="">
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">مبلغ قابل پرداخت</label>
                                         <div class="col-lg-4">
-                                            <input name="mablaghe_ghabele_pardakht" id="mablaghe_ghabele_pardakht"
+                                            <input name="mablaghe_ghabele_pardakht" id="adsl_mablaghe_ghabele_pardakht"
                                                    type="text" class="form-control" placeholder="">
                                         </div>
                                         <br><br>

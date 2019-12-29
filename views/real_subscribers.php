@@ -14,7 +14,7 @@
                                 <label class="col-form-label col-lg-2">نام</label>
                                 <div class="col-lg-4">
                                     <input type="hidden" id="id" class="form-control" name="id" value="empty">
-                                    <input type="hidden" id="type" name="type" class="form-control"  value="real" >
+                                    <input type="hidden" id="noe_moshtarak" name="noe_moshtarak" class="form-control"  value="real">
                                     <input type="text" class="form-control" name="name" id="name" placeholder="">
                                 </div>
                                 <br><br>

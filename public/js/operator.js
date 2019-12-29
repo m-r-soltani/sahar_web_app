@@ -1,11 +1,12 @@
 $(document).ready(function () {
+    DATEPICKER_YYYYMMDD('#tarikhe_tavalod');
     Get_organization_levels('operator',function (data) {
         if (data){
             //has data
             var element=$('#level_id');
             if(element) {
                 for (let i = 0;i<data.length ; i++) {
-                    element.append('<option value='+data[i]['id']+'>'+data[i]['level']+'</option>')
+                    element.append('<option value='+data[i]['id']+'>'+data[i]['semat']+'</option>')
                 }
             }
         }else{

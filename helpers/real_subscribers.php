@@ -52,7 +52,7 @@ $sql_details = array(
  */
 
 require( 'ssp.class.php' );
-$where="type='real'";
+$where="noe_moshtarak='real'";
 echo json_encode(
     SSP::simple( $_POST, $sql_details, $table, $primaryKey, $columns,$where )
 );

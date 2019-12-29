@@ -12,7 +12,7 @@
                                 <label class="col-form-label col-lg-2">نام کامل(انگلیسی)</label>
                                 <div class="col-lg-4">
                                     <input type="hidden" id="id" class="form-control" name="id" value="empty">
-                                    <input type="hidden" id="type" name="type" class="form-control"  value="legal" >
+                                    <input type="hidden" id="noe_moshtarak" name="noe_moshtarak" class="form-control"  value="legal" >
                                     <input type="text" class="form-control" name="name_en" id="name_en" placeholder="مثال: Ali">
                                 </div>
                                 <label class="col-form-label col-lg-2">نام شرکت</label>

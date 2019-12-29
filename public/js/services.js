@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    DATEPICKER_YYYYMMDD('#adsl_tarikhe_shoroe_namayesh');
+    DATEPICKER_YYYYMMDD('#wireless_tarikhe_shoroe_namayesh');
+    DATEPICKER_YYYYMMDD('#tdlte_tarikhe_shoroe_namayesh');
+    DATEPICKER_YYYYMMDD('#voip_tarikhe_shoroe_namayesh');
+    DATEPICKER_YYYYMMDD('#adsl_tarikhe_payane_namayesh');
+    DATEPICKER_YYYYMMDD('#wireless_tarikhe_payane_namayesh');
+    DATEPICKER_YYYYMMDD('#tdlte_tarikhe_payane_namayesh');
+    DATEPICKER_YYYYMMDD('#voip_tarikhe_payane_namayesh');
     var services_tabs=$('a[data-toggle="tab"]');
     /*===================++  ADSL  ++=========================*/
     var cols_adsl=[
@@ -50,6 +58,8 @@ $(document).ready(function () {
             $('#adsl_namayeshe_service option[value="'+data[0]["namayeshe_service"]+'"]').attr('selected', 'selected');
             $('#adsl_namayeshe_dar_profile option[value="'+data[0]["namayeshe_dar_profile"]+'"]').attr('selected', 'selected');
             $('#adsl_onvane_service').val(data[0]['onvane_service']);
+            $('#adsl_hadeaksare_emtiaz').val(data[0]['hadeaksare_emtiaz']);
+            $('#adsl_mablaghe_har_emtiaz').val(data[0]['mablaghe_har_emtiaz']);
             $('#adsl_gheymat').val(data[0]['gheymat']);
             $('#adsl_zaname_estefade').val(data[0]['zaname_estefade']);
             $('#adsl_takhfif').val(data[0]['takhfif']);
@@ -141,6 +151,8 @@ $(document).ready(function () {
             $('#wireless_namayeshe_dar_profile option[value="'+data[0]["namayeshe_dar_profile"]+'"]').attr('selected', 'selected');
             $('#wireless_onvane_service').val(data[0]['onvane_service']);
             $('#wireless_gheymat').val(data[0]['gheymat']);
+            $('#wireless_hadeaksare_emtiaz').val(data[0]['hadeaksare_emtiaz']);
+            $('#wireless_mablaghe_har_emtiaz').val(data[0]['mablaghe_har_emtiaz']);
             $('#wireless_zaname_estefade').val(data[0]['zaname_estefade']);
             $('#wireless_takhfif').val(data[0]['takhfif']);
             $('#wireless_name_service_dahande').val(data[0]['name_service_dahande']);
@@ -229,6 +241,8 @@ $(document).ready(function () {
             $('#tdlte_namayeshe_service option[value="'+data[0]["namayeshe_service"]+'"]').attr('selected', 'selected');
             $('#tdlte_namayeshe_dar_profile option[value="'+data[0]["namayeshe_dar_profile"]+'"]').attr('selected', 'selected');
             $('#tdlte_onvane_service').val(data[0]['onvane_service']);
+            $('#tdlte_hadeaksare_emtiaz').val(data[0]['hadeaksare_emtiaz']);
+            $('#tdlte_mablaghe_har_emtiaz').val(data[0]['mablaghe_har_emtiaz']);
             $('#tdlte_gheymat').val(data[0]['gheymat']);
             $('#tdlte_zaname_estefade').val(data[0]['zaname_estefade']);
             $('#tdlte_takhfif').val(data[0]['takhfif']);
@@ -318,6 +332,8 @@ $(document).ready(function () {
             $('#voip_namayeshe_service option[value="'+data[0]["namayeshe_service"]+'"]').attr('selected', 'selected');
             $('#voip_namayeshe_dar_profile option[value="'+data[0]["namayeshe_dar_profile"]+'"]').attr('selected', 'selected');
             $('#voip_onvane_service').val(data[0]['onvane_service']);
+            $('#voip_onvane_service').val(data[0]['onvane_service']);
+            $('#voip_hadeaksare_emtiaz').val(data[0]['hadeaksare_emtiaz']);
             $('#voip_gheymat').val(data[0]['gheymat']);
             $('#voip_zaname_estefade').val(data[0]['zaname_estefade']);
             $('#voip_takhfif').val(data[0]['takhfif']);

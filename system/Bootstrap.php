@@ -235,7 +235,8 @@ class Bootstrap
                 Db::justexecute($sql);
             }else{
                 $id=$_POST['id'];
-                $sql = Update_Generator($_POST, 'bnm_popsite',"WHERE id = $id");
+                $exceptions=array("r_t_karte_meli","r_t_ghabze_telephone","r_t_ejare_malekiat","r_t_gharardad","r_t_sayer");
+                $sql = Update_Generator($_POST, 'bnm_subscribers',"WHERE id = $id",$exceptions);
                 Db::justexecute($sql);
             }
         }
@@ -246,7 +247,9 @@ class Bootstrap
                 Db::justexecute($sql);
             }else{
                 $id=$_POST['id'];
-                $sql = Update_Generator($_POST, 'bnm_subscribers',"WHERE id = $id");
+                $exceptions=array("l_t_agahie_tasis","l_t_saheb_kartemeli_emzaye_aval","l_t_saheb_kartemeli_emzaye_dovom","l_t_kartemeli_namayande","l_t_akharin_taghirat",
+                    "l_t_moarefiname_namayande","l_t_ghabze_telephone","l_t_gharardad","l_t_ejarename_malekiat","l_t_sayer");
+                $sql = Update_Generator($_POST, 'bnm_subscribers',"WHERE id = $id",$exceptions);
                 Db::justexecute($sql);
             }
 
@@ -258,7 +261,8 @@ class Bootstrap
                 Db::justexecute($sql);
             }else{
                 $id=$_POST['id'];
-                $sql = Update_Generator($_POST, 'bnm_branch',"WHERE id = $id");
+                $exceptions=array("t_logo","t_mohiti","t_tablo","t_code_eghtesadi","t_rozname_tasis","t_shenase_meli","t_akharin_taghirat");
+                $sql = Update_Generator($_POST, 'bnm_branch',"WHERE id = $id",$exceptions);
                 Db::justexecute($sql);
             }
             if (isset($_POST['t_logo'])){
@@ -345,7 +349,8 @@ class Bootstrap
                 Db::justexecute($sql);
             }else{
                 $id=$_POST['id'];
-                $sql = Update_Generator($_POST, 'bnm_operator',"WHERE id = $id");
+                $exceptions=array("t_karte_meli","t_shenasname","t_madrake_tahsili","t_chehre");
+                $sql = Update_Generator($_POST, 'bnm_operator',"WHERE id = $id",$exceptions);
                 Db::justexecute($sql);
             }
         }

@@ -1,18 +1,46 @@
 $(document).ready(function () {
-    /*GetProvinces('branch',function (data) {
-        if (data){
+    GetProvinces('popsite',function (data) {
+        if (data.length>0){
+            let provinceid=data[0]['id'];
+            let shahr=$("#shahr");
+            GetCityByProvince(provinceid,function (result) {
+                if (result) {
+                    if (shahr) {
+                        for (let i = 0; i < result.length; i++) {
+                            shahr.append('<option value=' + result[i].id + '>' + result[i].name + '</option>');
+                        }
+                    }
+                }
+            });
             //has data
             var element=$('#ostan');
             if(element) {
                 for (let i = 0;i<data.length ; i++) {
-                    element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
+                    element.append('<option value='+data[i].id+'>'+data[i].name+'</option>');
                 }
             }
         }else{
             //data az db gerefte nashod
             alert('درخواست ناموفق');
         }
-    });*/
+    });
+    $('#ostan').on('change', function() {
+        //alert( this.value );
+        let provinceid=this.value;
+        let shahr=$("#shahr");
+        GetCityByProvince(provinceid,function (result) {
+            if (result.length>0) {
+                shahr.find('option').remove().end().append('').val('');
+                if (shahr) {
+                    for (let i = 0; i < result.length; i++) {
+                        shahr.append('<option value=' + result[i].id + '>' + result[i].name + '</option>');
+                    }
+                }
+            }else{
+                shahr.find('option').remove().end().append('').val('');
+            }
+        });
+    });
 
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[
@@ -84,8 +112,8 @@ $(document).ready(function () {
             $('#telephone1').val(data[0]['telephone1']);
             $('#telephone2').val(data[0]['telephone2']);
             $('#dornegar').val(data[0]['dornegar']);
-            $('#ostan').val(data[0]['ostan']);
-            $('#shahr').val(data[0]['shahr']);
+            //$('#ostan option[value="'+data[0]['ostan_id']+'"]').attr('selected','selected');
+
             $('#code_posti').val(data[0]['code_posti']);
             $('#address').val(data[0]['address']);
             $('#t_logo').val(data[0]['t_logo']);
