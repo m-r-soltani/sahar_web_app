@@ -1,7 +1,6 @@
 <?php
 session_start();
-
-$root = (isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'];
+$root = (isset($_SERVER['HTTPS']) ? "http://" : "http://").$_SERVER['HTTP_HOST'];
 $script_name = str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
 
 define ('__ROOT__', $root.$script_name);
