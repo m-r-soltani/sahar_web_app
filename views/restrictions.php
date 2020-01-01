@@ -72,20 +72,20 @@
                             <br><br>
                             <label class="col-form-label col-lg-2">دسترسی منو ها</label>
                             <div class="col-lg-4">
-                                <select class="form-control" multiple="multiple" name="menu_access[]" id="menu_access" data-placeholder="انتخاب کنید">
+                                <select class="form-control form-control-lg" multiple="multiple" name="menu_access[]" id="menu_access" data-placeholder="انتخاب کنید">
 
                             </select>
                             </div>
                             <label class="col-form-label col-lg-2">اجازه ویرایش</label>
                             <div class="col-lg-4">
-                                <select class="form-control" multiple="multiple" name="edit_access[]" id="edit_access" data-placeholder="انتخاب کنید">
+                                <select class="form-control form-control-lg" multiple="multiple" name="edit_access[]" id="edit_access" data-placeholder="انتخاب کنید">
 
                                 </select>
                             </div>
                             <br><br>
                             <label class="col-form-label col-lg-2">اجازه ثبت</label>
                             <div class="col-lg-4">
-                                <select class="form-control" multiple="multiple" name="add_access[]" id="add_access" data-placeholder="انتخاب کنید">
+                                <select class="form-control form-control-lg" multiple="multiple" name="add_access[]" id="add_access" data-placeholder="انتخاب کنید">
 
                                 </select>
                             </div>

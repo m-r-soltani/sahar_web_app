@@ -384,8 +384,7 @@
                             <li class="nav-item"><a href="<?php echo __ROOT__.'organization_level';?>" class="nav-link">سمت</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'city';?>" class="nav-link">شهر</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'tax';?>" class="nav-link">مالیات</a></li>
-                            <li class="nav-item"><a href="<?php echo __ROOT__.'type_subscribers';?>" class="nav-link">نوع مشتری</a></li>
-                            <li class="nav-item"><a href="<?php echo __ROOT__.'restrictions';?>" class="nav-link">محدودیت ها</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'restrictions';?>" class="nav-link">دسترسی ها</a></li>
                         </ul>
                     </li>
                     <li class="nav-item nav-item-submenu">

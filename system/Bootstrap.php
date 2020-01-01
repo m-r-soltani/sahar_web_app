@@ -71,6 +71,14 @@ class Bootstrap
             $rows=json_encode($result);
             die($rows);
         }
+        /*========branch========*/
+        if(isset($_POST['get_branch_info'])){
+            //require_once ('../models/city.php');
+            $sql="SELECT id,name_sherkat FROM bnm_branch";
+            $result=Db::fetchall_Query($sql);
+            $rows=json_encode($result);
+            die($rows);
+        }
         /*========ostan========*/
         if(isset($_POST['GetProvinces'])){
             //require_once ('../models/city.php');
@@ -126,6 +134,17 @@ class Bootstrap
             }else{
                 $id=$_POST['id'];
                 $sql = Update_Generator($_POST, 'bnm_ostan',"WHERE id = $id");
+                Db::justexecute($sql);
+            }
+        }
+        /*========sabte modir========*/
+        if(isset($_POST['send_modir'])){
+            if($_POST['id']=="empty") {
+                $sql = Insert_Generator($_POST, 'bnm_modir');
+                Db::justexecute($sql);
+            }else{
+                $id=$_POST['id'];
+                $sql = Update_Generator($_POST, 'bnm_modir',"WHERE id = $id");
                 Db::justexecute($sql);
             }
         }
@@ -384,6 +403,13 @@ class Bootstrap
                     $rows=json_encode($result);
                     die($rows);
                     break;
+                case 'modir':
+                    $id=$_POST['condition'];
+                    $sql="SELECT * FROM bnm_modir WHERE id='$id'";
+                    $result=Db::fetchall_Query($sql);
+                    $rows=json_encode($result);
+                    die($rows);
+                    break;
                 case 'services_voip':
                     $id=$_POST['condition'];
                     $sql="SELECT * FROM bnm_services WHERE id='$id'";
@@ -519,6 +545,15 @@ class Bootstrap
                 case 'city':
                     $name=$_POST['harddelete'];
                     $sql="delete FROM bnm_shahr WHERE name = '$name'";
+                    $result=Db::justexecute($sql);
+                    if($result) {
+                        die(true);
+                    }else{
+                        die(false);
+                    }
+                case 'modir':
+                    $id=$_POST['harddelete'];
+                    $sql="delete FROM bnm_shahr WHERE id = '$id'";
                     $result=Db::justexecute($sql);
                     if($result) {
                         die(true);

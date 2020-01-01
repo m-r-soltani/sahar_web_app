@@ -212,6 +212,21 @@ function Get_Telecommunications_center(data,callback){
         }
     });
 }
+function Get_Branch_Info(data/*felan kari anjam nemide*/,callback){
+    $.ajax({
+        type: "post",
+        url: "Get-branch",
+        timeout:5000,
+        data: {get_branch_info:data},
+        success: function(response){
+            response=JSON.parse(response);
+            return callback(response);
+        },
+        error:function (req,res,status) {
+            return callback(false);
+        }
+    });
+}
 function Get_organization_levels(data/*felan kari anjam nemide*/,callback){
     $.ajax({
         type: "post",

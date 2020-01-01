@@ -8,14 +8,16 @@
         <div class="card-body">
 
             <form action="#" method="POST">
+                <input type="hidden" id="id" class="form-control" name="id" value="empty">
                 <fieldset class="mb-3">
-                    <legend class="text-uppercase font-size-sm font-weight-bold">اپراتور</legend>
+                    <legend class="text-uppercase font-size-sm font-weight-bold">مدیر</legend>
                     <div class="form-group row">
-                        <label class="col-form-label col-lg-2">نام نمایندگی/موسسه</label>
-                        <input type="hidden" id="id" class="form-control" name="id" value="empty">
+                        <label class="col-form-label col-lg-2">نام نمایندگی</label>
                         <div class="col-lg-4">
-                            <input type="text" class="form-control" name="name_namayandegi" id="name_namayandegi" placeholder="مثال: سحر ارتباط">
+                            <select class="form-control form-control-lg custom_select" name="namayandegi_id" id="name_namayandegi">
+                            </select>
                         </div>
+                        <br><br>
                         <label class="col-form-label col-lg-2">نام</label>
                         <div class="col-lg-4">
                             <input type="text" class="form-control" name="name" id="name" placeholder="مثال: محمد">
@@ -46,9 +48,15 @@
                             <input type="text" class="form-control" name="tarikhe_tavalod" id="tarikhe_tavalod" placeholder="مثال: 1380/05/20">
                         </div>
                         <br><br>
-                        <label class="col-form-label col-lg-2">مدرک تحصیلی</label>
+                        <label class="col-form-label col-lg-2">آخرین مدرک تحصیلی</label>
                         <div class="col-lg-4">
-                            <input type="text" class="form-control" name="madrake_tahsili" id="madrake_tahsili" placeholder="مثال: لیسانس">
+                            <select class="form-control form-control-lg custom_select" id="madrake_tahsili" name="madrake_tahsili">
+                                <option value="diplom">دیپلم</option>
+                                <option value="foghdiplom">فوق دیپلم</option>
+                                <option value="lisanse">لیسانس</option>
+                                <option value="foghlisanse">فوق لیسانس</option>
+                                <option value="doktora">دکتری</option>
+                            </select>
                         </div>
                         <br><br>
                         <label class="col-form-label col-lg-2">رشته نحصیلی</label>

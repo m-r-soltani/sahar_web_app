@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    Get_Branch_Info('modir',function (data) {
+        if (data){
+            //has data
+            var element=$('#name_namayandegi');
+            if(element) {
+                for (let i = 0;i<data.length ; i++) {
+                    element.append('<option value='+data[i]['id']+'>'+data[i]['name_sherkat']+'</option>')
+                }
+            }
+        }else{
+            //data az db gerefte nashod
+            alert('درخواست ناموفق');
+        }
+    });
     $(".custom_select").select2();
     DATEPICKER_YYYYMMDD('#tarikhe_tavalod');
     Get_organization_levels('modir',function (data) {
@@ -74,14 +88,15 @@ $(document).ready(function () {
         let td=tr.find('td:first').text();
         Edit_Form('modir',td,function (data) {
             $('#id').val(data[0]['id']);
-            $('#name_namayandegi').val(data[0]['name_namayandegi']);
+            $('#name_namayandegi option[value="'+data[0]['namayandegi_id']+'"]').attr('selected','selected');
+            $("#name_namayandegi").attr('disabled','disabled');
             $('#name').val(data[0]['name']);
             $('#name_khanevadegi').val(data[0]['name_khanevadegi']);
             $('#code_meli').val(data[0]['code_meli']);
             $('#shomare_shenasname').val(data[0]['shomare_shenasname']);
             $('#name_pedar').val(data[0]['name_pedar']);
             $('#tarihke_tavalod').val(data[0]['tarihke_tavalod']);
-            $('#madrake_tahsili').val(data[0]['madrake_tahsili']);
+            $('#madrake_tahsili option[value="'+data[0]['madrake_tahsili']+'"]').attr('selected','selected');
             $('#reshteye_tahsili').val(data[0]['reshteye_tahsili']);
             $('#ostan_tavalod').val(data[0]['ostan_tavalod']);
             $('#shahr_tavalod').val(data[0]['shahr_tavalod']);
