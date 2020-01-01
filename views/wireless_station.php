@@ -26,7 +26,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">پاپ سایت</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="popsite" id="popsite">
+                                    <select class="form-control form-control-lg custom_select" name="popsite" id="popsite">
                                     </select>
                                 </div>
                                 <br><br>
@@ -77,7 +77,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">تکه باند فرکانسی</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="teke_bande_ferekansi" id="teke_bande_ferekansi">
+                                    <select class="form-control form-control-lg custom_select" name="teke_bande_ferekansi" id="teke_bande_ferekansi">
                                         <option value="5470-5725 Mhz">5470-5725 Mhz</option>
                                         <option value="5725-5850 Mhz">5725-5850 Mhz</option>
                                         <option value="5250-5350 Mhz">5250-5350 Mhz</option>

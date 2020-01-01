@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".custom_select").select2();
     DATEPICKER_YYYYMMDD('#tarikhe_tavalod');
-    Get_organization_levels('operator',function (data) {
+    Get_organization_levels('modir',function (data) {
         if (data){
             //has data
             var element=$('#level_id');
@@ -18,6 +18,9 @@ $(document).ready(function () {
 
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[
+        { "data": "id",
+            title:'شناسه'
+        },
         { "data": "name",
             title:'نام'
         },
@@ -39,10 +42,8 @@ $(document).ready(function () {
         { "data": "name_karbari",
             title:'نام کاربری'
         }
-
-
     ];
-    DataTable('#view_table','/sahar/helpers/operator.php','POST',cols,function (table) {
+    DataTable('#view_table','/sahar/helpers/modir.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/
@@ -59,7 +60,7 @@ $(document).ready(function () {
             //shenase avalin soton dt mibashad
             let tr=$('#view_table tbody').find('tr.selected');
             let td=tr.find('td:first').text();
-            Hard_Delete(td,'operator',function (data) {
+            Hard_Delete(td,'modir',function (data) {
                 if (data) {
                     table.ajax.reload();
                 }else{
@@ -71,7 +72,7 @@ $(document).ready(function () {
     $('#edit').click( function () {
         let tr=$('#view_table tbody').find('tr.selected');
         let td=tr.find('td:first').text();
-        Edit_Form('operator',td,function (data) {
+        Edit_Form('modir',td,function (data) {
             $('#id').val(data[0]['id']);
             $('#name_namayandegi').val(data[0]['name_namayandegi']);
             $('#name').val(data[0]['name']);

@@ -32,7 +32,7 @@
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع خدمات</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="noe_khadamat" id="adsl_noe_khadamat">
+                                            <select class="form-control form-control-lg custom_select" name="noe_khadamat" id="adsl_noe_khadamat">
                                                 <option value="ADSL(Share)">ADSL(Share)</option>
                                                 <option value="ADSL(Transport)">ADSL(Transport)</option>
                                                 <option value="VDSL(Share)">VDSL(Share)</option>
@@ -42,7 +42,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش سرویس</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_service" id="adsl_namayeshe_service">
+                                            <select class="form-control form-control-lg custom_select" name="namayeshe_service" id="adsl_namayeshe_service">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -50,7 +50,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش در پروفایل</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_dar_profile" id="adsl_namayeshe_dar_profile">
+                                            <select class="form-control form-control-lg custom_select" name="namayeshe_dar_profile" id="adsl_namayeshe_dar_profile">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -126,14 +126,14 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه مشتری</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_grohe_moshtari" id="adsl_name_grohe_moshtari">
+                                            <select class="form-control form-control-lg custom_select" name="name_grohe_moshtari" id="adsl_name_grohe_moshtari">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" id="adsl_name_groh" name="name_groh">
+                                            <select class="form-control form-control-lg custom_select" id="adsl_name_groh" name="name_groh">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
@@ -318,7 +318,7 @@
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع خدمات</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="noe_khadamat" id="wireless_noe_khadamat">
+                                            <select class="form-control form-control-lg custom_select" name="noe_khadamat" id="wireless_noe_khadamat">
                                                 <option value="Wireless(Share)">Wireless(Share)</option>
                                                 <option value="Wireless(Transport)">Wireless(Transport)</option>
                                                 <option value="Wireless(Hotspot)">Wireless(Hotspot)</option>
@@ -327,7 +327,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش سرویس</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_service" id="wireless_namayeshe_service">
+                                            <select class="form-control form-control-lg custom_select" name="namayeshe_service" id="wireless_namayeshe_service">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -335,7 +335,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش در پروفایل</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_dar_profile" id="wireless_namayeshe_dar_profile">
+                                            <select class="form-control form-control-lg custom_select" name="namayeshe_dar_profile" id="wireless_namayeshe_dar_profile">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -412,14 +412,14 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه مشتری</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_grohe_moshtari" id="wireless_name_grohe_moshtari">
+                                            <select class="form-control form-control-lg custom_select" name="name_grohe_moshtari" id="wireless_name_grohe_moshtari">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" id="wireless_name_groh" name="name_groh">
+                                            <select class="form-control form-control-lg custom_select" id="wireless_name_groh" name="name_groh">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
@@ -593,7 +593,7 @@
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع خدمات</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="noe_khadamat" id="tdlte_noe_khadamat">
+                                            <select class="form-control form-control-lg custom_select" name="noe_khadamat" id="tdlte_noe_khadamat">
                                                 <<option value="TD-LTE(Share)">TD-LTE(Share)</option>
                                                 <option value="TD-LTE(Transport)">TD-LTE(Transport)</option>
                                             </select>
@@ -601,7 +601,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش سرویس</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_service" id="tdlte_namayeshe_service">
+                                            <select class="form-control form-control-lg custom_select" name="namayeshe_service" id="tdlte_namayeshe_service">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -609,7 +609,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش در پروفایل</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_dar_profile" id="tdlte_namayeshe_dar_profile">
+                                            <select class="form-control form-control-lg custom_select" name="namayeshe_dar_profile" id="tdlte_namayeshe_dar_profile">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -686,14 +686,14 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه مشتری</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_grohe_moshtari" id="tdlte_name_grohe_moshtari">
+                                            <select class="form-control form-control-lg custom_select" name="name_grohe_moshtari" id="tdlte_name_grohe_moshtari">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" id="tdlte_name_groh" name="name_groh">
+                                            <select class="form-control form-control-lg custom_select" id="tdlte_name_groh" name="name_groh">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
@@ -866,7 +866,7 @@
                                     <div class="form-group row">
                                         <label class="col-form-label col-lg-2">نوع پرداخت</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="noe_pardakht" id="voip_noe_khadamat">
+                                            <select class="form-control form-control-lg custom_select" name="noe_pardakht" id="voip_noe_khadamat">
                                             <option value="carti">کارتی</option>
                                             <option value="etebari">اعتباری</option>
                                             </select>
@@ -874,7 +874,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش سرویس</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_service" id="voip_namayeshe_service">
+                                            <select class="form-control form-control-lg custom_select" name="namayeshe_service" id="voip_namayeshe_service">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -882,7 +882,7 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نمایش در پروفایل</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="namayeshe_dar_profile" id="voip_namayeshe_dar_profile">
+                                            <select class="form-control form-control-lg custom_select" name="namayeshe_dar_profile" id="voip_namayeshe_dar_profile">
                                                 <option value="yes">بلی</option>
                                                 <option value="no">خیر</option>
                                             </select>
@@ -958,14 +958,14 @@
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه مشتری</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" name="name_grohe_moshtari" id="voip_name_grohe_moshtari">
+                                            <select class="form-control form-control-lg custom_select" name="name_grohe_moshtari" id="voip_name_grohe_moshtari">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>
                                         <br><br>
                                         <label class="col-form-label col-lg-2">نام گروه</label>
                                         <div class="col-lg-4">
-                                            <select class="form-control form-control-lg" id="voip_name_groh" name="name_groh">
+                                            <select class="form-control form-control-lg custom_select" id="voip_name_groh" name="name_groh">
                                                 <option value="1">1</option>
                                             </select>
                                         </div>

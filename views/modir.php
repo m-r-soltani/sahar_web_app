@@ -128,7 +128,7 @@
                     </div>
                 </fieldset>
                 <div class="text-right">
-                    <button type="submit" name="send_operator" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
+                    <button type="submit" name="send_modir" class="btn btn-primary">ارسال <i class="icon-paperplane ml-2"></i></button>
                 </div>
             </form>
         </div>

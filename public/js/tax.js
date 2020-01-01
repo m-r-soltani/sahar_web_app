@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(".custom_select").select2();
     //baraye edit_form estefade mishe
 $(".form-group").append("<input type='hidden' id='id' class='form-control' name='id' value='empty'>");
     /*GetProvinces('tax',function (data) {

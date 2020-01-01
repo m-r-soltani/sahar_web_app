@@ -62,7 +62,7 @@
                         <label class="col-form-label col-lg-12">نوع سرویس : </label>
                         <label class="col-form-label col-lg-2">لایسنس DSL</label>
                         <div class="col-lg-4">
-                            <select class="form-control form-control-lg" name="dsl_license" id="dsl_license">
+                            <select class="form-control form-control-lg custom_select" name="dsl_license" id="dsl_license">
                                 <option value="yes">بلی</option>
                                 <option value="no">خیر</option>
                             </select>
@@ -70,7 +70,7 @@
                         <br><br>
                         <label class="col-form-label col-lg-2">بیت استریم DSL</label>
                         <div class="col-lg-4">
-                            <select class="form-control form-control-lg" name="dsl_bitstream" id="dsl_bitstream">
+                            <select class="form-control form-control-lg custom_select" name="dsl_bitstream" id="dsl_bitstream">
                                 <option value="yes">بلی</option>
                                 <option value="no">خیر</option>
                             </select>
@@ -78,7 +78,7 @@
                         <br><br>
                         <label class="col-form-label col-lg-2">لایسنس WLAN</label>
                         <div class="col-lg-4">
-                            <select class="form-control form-control-lg" name="wlan_license" id="wlan_license">
+                            <select class="form-control form-control-lg custom_select" name="wlan_license" id="wlan_license">
                                 <option value="yes">بلی</option>
                                 <option value="no">خیر</option>
                             </select>
@@ -86,7 +86,7 @@
                         <br><br>
                         <label class="col-form-label col-lg-2">بیت استریم WLAN</label>
                         <div class="col-lg-4">
-                            <select class="form-control form-control-lg" name="wlan_bitstream" id="wlan_bitstream">
+                            <select class="form-control form-control-lg custom_select" name="wlan_bitstream" id="wlan_bitstream">
                                 <option value="yes">بلی</option>
                                 <option value="no">خیر</option>
                             </select>
@@ -94,7 +94,7 @@
                         <br><br>
                         <label class="col-form-label col-lg-2">TD-LTE</label>
                         <div class="col-lg-4">
-                            <select class="form-control form-control-lg" name="td_lte" id="td_lte">
+                            <select class="form-control form-control-lg custom_select" name="td_lte" id="td_lte">
                                 <option value="yes">بلی</option>
                                 <option value="no">خیر</option>
                             </select>
@@ -102,7 +102,7 @@
                         <br><br>
                         <label class="col-form-label col-lg-2">NGN</label>
                         <div class="col-lg-4">
-                            <select class="form-control form-control-lg" name="ngn" id="ngn">
+                            <select class="form-control form-control-lg custom_select" name="ngn" id="ngn">
                                 <option value="yes">بلی</option>
                                 <option value="no">خیر</option>
                             </select>
@@ -110,7 +110,7 @@
                         <br><br>
                         <label class="col-form-label col-lg-2">Phone Orgination</label>
                         <div class="col-lg-4">
-                            <select class="form-control form-control-lg" name="phone_orgination" id="phone_orgination">
+                            <select class="form-control form-control-lg custom_select" name="phone_orgination" id="phone_orgination">
                                 <option value="yes">بلی</option>
                                 <option value="no">خیر</option>
                             </select>
@@ -118,7 +118,7 @@
                         <br><br>
                         <label class="col-form-label col-lg-2">domain</label>
                         <div class="col-lg-4">
-                            <select class="form-control form-control-lg" name="domain" id="domain">
+                            <select class="form-control form-control-lg custom_select" name="domain" id="domain">
                                 <option value="yes">بلی</option>
                                 <option value="no">خیر</option>
                             </select>
@@ -126,7 +126,7 @@
                         <br><br>
                         <label class="col-form-label col-lg-2">میزبان</label>
                         <div class="col-lg-4">
-                            <select class="form-control form-control-lg" name="host" id="host">
+                            <select class="form-control form-control-lg custom_select" name="host" id="host">
                                 <option value="yes">بلی</option>
                                 <option value="no">خیر</option>
                             </select>

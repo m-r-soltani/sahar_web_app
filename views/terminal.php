@@ -11,28 +11,28 @@
                                 <input type="hidden" id="id" class="form-control" name="id" value="empty">
                                 <label class="col-form-label col-lg-2">مرکز مخابراتی</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="markaze_mokhaberati" id="markaze_mokhaberati">
+                                    <select class="form-control form-control-lg custom_select" name="markaze_mokhaberati" id="markaze_mokhaberati">
                                         <option value="1">1</option>
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نوع ترمینال</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_terminal" id="noe_terminal">
+                                    <select class="form-control form-control-lg custom_select" name="noe_terminal" id="noe_terminal">
                                         <option value="1">1</option>
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">استان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="ostan" id="ostan">
+                                    <select class="form-control form-control-lg custom_select" name="ostan" id="ostan">
 
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="shahr" id="shahr">
+                                    <select class="form-control form-control-lg custom_select" name="shahr" id="shahr">
                                     </select>
                                 </div>
                                 <br><br>
@@ -63,13 +63,13 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">میزبان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="mizban" id="mizban">
+                                    <select class="form-control form-control-lg custom_select" name="mizban" id="mizban">
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نوع قرارداد</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_gharardad" id="noe_gharardad">
+                                    <select class="form-control form-control-lg custom_select" name="noe_gharardad" id="noe_gharardad">
                                         <option value="1">1</option>
                                     </select>
                                 </div>

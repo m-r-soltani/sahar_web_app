@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(".custom_select").select2();
     GetProvinces('popsite',function (data) {
         if (data.length>0){
             let provinceid=data[0]['id'];

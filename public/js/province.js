@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    $(".custom_select").select2();
     // GetProvinces('ostan',function (data) {
     //     if (data){
     //         //has data

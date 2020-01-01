@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(".custom_select").select2();
     $("#st_tab_boxes").hide();
     $("#sefareshejadid_tab").hide();
     $("#faktorha_tab").hide();

@@ -16,13 +16,13 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">استان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="ostan" id="ostan">
+                                    <select class="form-control form-control-lg custom_select" name="ostan" id="ostan">
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="shahr" id="shahr">
+                                    <select class="form-control form-control-lg custom_select" name="shahr" id="shahr">
                                     </select>
                                 </div>
                                 <br><br>
@@ -58,14 +58,14 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">میزبان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="mizban" id="mizban">
+                                    <select class="form-control form-control-lg custom_select" name="mizban" id="mizban">
 
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نوع قرار داد</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_gharardad" id="noe_gharardad">
+                                    <select class="form-control form-control-lg custom_select" name="noe_gharardad" id="noe_gharardad">
                                         <option value="1">1</option>
                                     </select>
                                 </div>

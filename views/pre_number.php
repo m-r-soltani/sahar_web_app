@@ -11,7 +11,7 @@
                             <div class="form-group row">
                                 <label class="col-form-label col-lg-2">مرکز مخابراتی</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="name_markaz" id="name_markaz">
+                                    <select class="form-control form-control-lg custom_select" name="name_markaz" id="name_markaz">
                                         <option value="1">1</option>
                                     </select>
                                 </div>
@@ -28,19 +28,19 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">استان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="ostan" id="ostan">
+                                    <select class="form-control form-control-lg custom_select" name="ostan" id="ostan">
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="shahr" id="shahr">
+                                    <select class="form-control form-control-lg custom_select" name="shahr" id="shahr">
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">میزبان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="mizban" id="mizban">
+                                    <select class="form-control form-control-lg custom_select" name="mizban" id="mizban">
                                     </select>
                                 </div>
                                 <br><br>

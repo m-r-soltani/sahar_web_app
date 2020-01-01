@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    $(".custom_select").select2();
 
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[

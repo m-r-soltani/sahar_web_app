@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(".custom_select").select2();
     DATEPICKER_YYYYMMDD('#tarikh_sabt');
     DATEPICKER_YYYYMMDD('#tarikhe_tavalode_modir_amel');
 

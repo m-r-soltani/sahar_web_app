@@ -1,34 +1,5 @@
 $(document).ready(function () {
-
-    /* GetProvinces('host',function (data) {
-         if (data){
-             //has data
-             var element=$('#ostan');
-             if(element) {
-                 for (let i = 0;i<data.length ; i++) {
-                     element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
-                 }
-             }
-         }else{
-             //data az db gerefte nashod
-             alert('درخواست ناموفق');
-         }
-     });*/
-    /*GetCities('host',function (data) {
-        if (data){
-            //has data
-            var element=$('#shahr');
-            if(element) {
-                for (let i = 0;i<data.length ; i++) {
-                    element.append('<option value='+data[i].id+'>'+data[i].name+'</option>')
-                }
-            }
-        }else{
-            //data az db gerefte nashod
-            alert('درخواست ناموفق');
-        }
-    });*/
-
+    $(".custom_select").select2();
     /*===================++  DATA_TABLE  ++=========================*/
     var cols=[
         { "data": "id",

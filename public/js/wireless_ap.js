@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(".custom_select").select2();
     DATEPICKER_YYYYMMDD('#tarikhe_sabt');
     DATEPICKER_YYYYMMDD('#tarikhe_payan');
     GetProvinces('popsite',function (data) {

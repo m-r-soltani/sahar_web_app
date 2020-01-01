@@ -406,6 +406,7 @@
                         <ul class="nav nav-group-sub" data-submenu-title="نمایندگی ها">
                             <li class="nav-item"><a href="<?php echo __ROOT__.'branch';?>" class="nav-link">نمایندگی</a></li>
                             <li class="nav-item"><a href="<?php echo __ROOT__.'operator';?>" class="nav-link">پرسنل</a></li>
+                            <li class="nav-item"><a href="<?php echo __ROOT__.'modir';?>" class="nav-link">مدیر</a></li>
                         </ul>
                     </li>
                     <li class="nav-item nav-item-submenu">

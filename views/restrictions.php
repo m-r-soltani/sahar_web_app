@@ -62,7 +62,7 @@
                         <div class="form-group row">
                             <label class="col-form-label col-lg-2">کاربر</label>
                             <div class="col-lg-4">
-                                <select class="form-control form-control-lg" name="user" id="user">
+                                <select class="form-control form-control-lg custom_select" name="user" id="user">
 
                                 </select>
                             </div>

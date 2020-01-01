@@ -131,7 +131,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">جنسیت مدیر عامل / نماینده</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="jensiat" id="jensiat">
+                                    <select class="form-control form-control-lg custom_select" name="jensiat" id="jensiat">
                                         <option value="man">مرد</option>
                                         <option value="woman">زن</option>
                                     </select>
@@ -139,7 +139,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">گروه مشترک</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="gorohe_moshtarak" id="gorohe_moshtarak">
+                                    <select class="form-control form-control-lg custom_select" name="gorohe_moshtarak" id="gorohe_moshtarak">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                     </select>
@@ -147,7 +147,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نوع شناسه هویتی</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_shenase_hoviati" id="noe_shenase_hoviati">
+                                    <select class="form-control form-control-lg custom_select" name="noe_shenase_hoviati" id="noe_shenase_hoviati">
                                         <option value="code_melo">کد ملی</option>
                                         <option value="passport">پاسپورت</option>
                                         <option value="karte_do_tabeiati">کارت دو تابعیتی</option>
@@ -163,7 +163,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">مدرک دانشگاهی مدیر عامل</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="madrake_daneshgahi_modir_amel" id="madrake_daneshgahi_modir_amel">
+                                    <select class="form-control form-control-lg custom_select" name="madrake_daneshgahi_modir_amel" id="madrake_daneshgahi_modir_amel">
                                         <option value="diplom">دیپلم</option>
                                         <option value="foghdiplom">فوق دیپلم</option>
                                         <option value="lisanse">لیسانس</option>
@@ -179,7 +179,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نحوه معرفی</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="nahve_moarefi" id="nahve_moarefi">
+                                    <select class="form-control form-control-lg custom_select" name="nahve_moarefi" id="nahve_moarefi">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
@@ -188,8 +188,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نحوه آشنایی کمپین</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="nahve_ashnai_campain">
-                                        <option value="1">1</option>
+                                    <select class="form-control form-control-lg custom_select" name="nahve_ashnai_campain">
                                     </select>
                                 </div>
                                 <br><br>

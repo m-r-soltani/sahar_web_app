@@ -40,7 +40,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نوع شناسه هویتی</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_shenase_hoviati" id="noe_shenase_hoviati">
+                                    <select class="form-control form-control-lg custom_select" name="noe_shenase_hoviati" id="noe_shenase_hoviati">
                                         <option value="opt1">کد ملی</option>
                                         <option value="opt2">پاسپورت</option>
                                         <option value="opt3">کارت دو تابعیتی</option>
@@ -66,7 +66,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">جنسیت</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" id="jensiat" name="jensiat">
+                                    <select class="form-control form-control-lg custom_select" id="jensiat" name="jensiat">
                                         <option value="mard">مرد</option>
                                         <option value="zan">زن</option>
                                     </select>
@@ -129,7 +129,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">آخرین مدرک تحصیلی</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" id="akharin_madrake_tahsili" name="akharin_madrake_tahsili">
+                                    <select class="form-control form-control-lg custom_select" id="akharin_madrake_tahsili" name="akharin_madrake_tahsili">
                                         <option value="diplom">دیپلم</option>
                                         <option value="foghdiplom">فوق دیپلم</option>
                                         <option value="lisanse">لیسانس</option>
@@ -140,14 +140,14 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نحوه آشنایی کمپین</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="nahve_ashnai_campain" id="nahve_ashnai_campain">
+                                    <select class="form-control form-control-lg custom_select" name="nahve_ashnai_campain" id="nahve_ashnai_campain">
                                         <option value="1">1</option>
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">گروه مشترک</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="gorohe_moshtarak" id="gorohe_moshtarak">
+                                    <select class="form-control form-control-lg custom_select" name="gorohe_moshtarak" id="gorohe_moshtarak">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                     </select>

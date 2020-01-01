@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    $(".custom_select").select2();
     GetProvinces('city',function (data) {
         if (data){
 
@@ -36,6 +36,10 @@ $(document).ready(function () {
         }
         //,{ "data": "ostan_id",title:'استان' }
     ];
+    let origin=window.location.origin;
+    //http://localhost:8000
+    let pathname=window.location.pathname;
+    //sahar/city
     DataTable('#view_table','/sahar/helpers/city.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);

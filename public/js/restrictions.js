@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(".custom_select").select2();
     $('#menu_access').select2();
     $('#edit_access').select2();
     $('#delete_access').select2();

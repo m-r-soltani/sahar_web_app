@@ -17,7 +17,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نوع دکل</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_dakal" id="noe_dakal">
+                                    <select class="form-control form-control-lg custom_select" name="noe_dakal" id="noe_dakal">
                                         <option value="faghededakal">فاقد دکل</option>
                                         <option value="mahari">مهاری</option>
                                         <option value="khodista">خود ایستا</option>
@@ -26,14 +26,14 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">استان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="ostan" id="ostan">
+                                    <select class="form-control form-control-lg custom_select" name="ostan" id="ostan">
 
                                     </select>
                                 </div>
                                 <br><br>
                                 <label class="col-form-label col-lg-2">شهر</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="shahr" id="shahr">
+                                    <select class="form-control form-control-lg custom_select" name="shahr" id="shahr">
 
                                     </select>
                                 </div>
@@ -90,7 +90,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">نوع مالکیت</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="noe_malekiat" id="noe_malekiat">
+                                    <select class="form-control form-control-lg custom_select" name="noe_malekiat" id="noe_malekiat">
                                         <option value="estijari">استیجاری</option>
                                         <option value="malekiat">مالکیت</option>
                                     </select>
@@ -98,7 +98,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">رتبه دکل</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="rotbe_dakal" id="rotbe_dakal">
+                                    <select class="form-control form-control-lg custom_select" name="rotbe_dakal" id="rotbe_dakal">
                                         <option value="A">A</option>
                                         <option value="B">B</option>
                                         <option value="C">C</option>
@@ -141,7 +141,7 @@
 
                                 <label class="col-form-label col-lg-2">بیمه دکل</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="bime_dakal" id="bime_dakal">
+                                    <select class="form-control form-control-lg custom_select" name="bime_dakal" id="bime_dakal">
                                         <option value="yes">بلی</option>
                                         <option value="no">خیر</option>
                                     </select>
@@ -149,7 +149,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">برق اضطراری</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="barghe_ezterari" id="barghe_ezterari">
+                                    <select class="form-control form-control-lg custom_select" name="barghe_ezterari" id="barghe_ezterari">
                                         <option value="yes">بلی</option>
                                         <option value="no">خیر</option>
                                     </select>
@@ -157,7 +157,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">باطری پشتیبان</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="batrie_poshtiban" id="batrie_poshtiban">
+                                    <select class="form-control form-control-lg custom_select" name="batrie_poshtiban" id="batrie_poshtiban">
                                         <option value="yes">بلی</option>
                                         <option value="no">خیر</option>
                                     </select>
@@ -165,7 +165,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">چراغ دکل</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="cheraghe_dakal" id="cheraghe_dakal">
+                                    <select class="form-control form-control-lg custom_select" name="cheraghe_dakal" id="cheraghe_dakal">
                                         <option value="yes">بلی</option>
                                         <option value="no">خیر</option>
                                     </select>
@@ -174,7 +174,7 @@
 
                                 <label class="col-form-label col-lg-2">ارت</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="ert" id="ert">
+                                    <select class="form-control form-control-lg custom_select" name="ert" id="ert">
                                         <option value="yes">بلی</option>
                                         <option value="no">خیر</option>
                                     </select>
@@ -182,7 +182,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">امکان استفاده از دکل برای نصب آنتن</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="emkane_nasbe_anten" id="emkane_nasbe_anten">
+                                    <select class="form-control form-control-lg custom_select" name="emkane_nasbe_anten" id="emkane_nasbe_anten">
                                         <option value="yes">بلی</option>
                                         <option value="no">خیر</option>
                                     </select>
@@ -190,7 +190,7 @@
                                 <br><br>
                                 <label class="col-form-label col-lg-2">اجازه دسترسی 24 ساعته به دکل</label>
                                 <div class="col-lg-4">
-                                    <select class="form-control form-control-lg" name="ejaze_dastresi_24_saate" id="ejaze_dastresi_24_saate">
+                                    <select class="form-control form-control-lg custom_select" name="ejaze_dastresi_24_saate" id="ejaze_dastresi_24_saate">
                                         <option value="yes">بلی</option>
                                         <option value="no">خیر</option>
                                     </select>

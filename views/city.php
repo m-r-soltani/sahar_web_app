@@ -14,7 +14,7 @@
 
                             <label class="col-form-label col-lg-2" >انتخاب استان</label>
                             <div class="col-lg-4">
-                                <select class="form-control form-control-lg" name="entekhab_ostan" id="ostan">
+                                <select class="form-control form-control-lg custom_select" name="entekhab_ostan" id="ostan">
 
                                 </select>
                             </div>

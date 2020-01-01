@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $(".custom_select").select2();
     DATEPICKER_YYYYMMDD('#adsl_tarikhe_shoroe_namayesh');
     DATEPICKER_YYYYMMDD('#wireless_tarikhe_shoroe_namayesh');
     DATEPICKER_YYYYMMDD('#tdlte_tarikhe_shoroe_namayesh');
