@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2019 at 02:43 PM
+-- Generation Time: Jan 02, 2020 at 08:31 AM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -39,7 +39,52 @@ CREATE TABLE `bnm_access_menu_operator` (
 
 INSERT INTO `bnm_access_menu_operator` (`menu_id`, `operator_id`) VALUES
 (2, 2),
+(7, 1),
+(8, 1),
 (15, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bnm_add_menu_operator`
+--
+
+CREATE TABLE `bnm_add_menu_operator` (
+  `menu_id` int(11) NOT NULL,
+  `operator_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+--
+-- Dumping data for table `bnm_add_menu_operator`
+--
+
+INSERT INTO `bnm_add_menu_operator` (`menu_id`, `operator_id`) VALUES
+(7, 1),
+(8, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bnm_administrators`
+--
+
+CREATE TABLE `bnm_administrators` (
+  `id` int(11) NOT NULL,
+  `username` varchar(100) COLLATE utf8_persian_ci DEFAULT NULL,
+  `password` varchar(255) COLLATE utf8_persian_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+--
+-- Dumping data for table `bnm_administrators`
+--
+
+INSERT INTO `bnm_administrators` (`id`, `username`, `password`) VALUES
+(1, 'siamak_manochehry', '123'),
+(3, 'superadmin', '123'),
+(4, 'admin', '123'),
+(5, 'super_admin', '123'),
+(6, 'mainadmin', '123'),
+(7, 'main_admin', '123');
 
 -- --------------------------------------------------------
 
@@ -117,7 +162,8 @@ INSERT INTO `bnm_dashboard_menu` (`id`, `en_name`, `fa_name`, `category_id`) VAL
 (16, 'operator', 'پرسنل', 3),
 (17, 'real_subscribers', 'مشترکین حقیقی', 4),
 (18, 'legal_subscribers', 'مشترکین حقوقی', 4),
-(19, 'factors', 'فاکتورها', 4);
+(19, 'factors', 'فاکتورها', 4),
+(20, 'modir', 'مدیر', 3);
 
 -- --------------------------------------------------------
 
@@ -151,6 +197,14 @@ CREATE TABLE `bnm_delete_menu_operator` (
   `operator_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
+--
+-- Dumping data for table `bnm_delete_menu_operator`
+--
+
+INSERT INTO `bnm_delete_menu_operator` (`menu_id`, `operator_id`) VALUES
+(7, 1),
+(8, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -161,6 +215,13 @@ CREATE TABLE `bnm_edit_menu_operator` (
   `menu_id` int(11) NOT NULL,
   `operator_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+--
+-- Dumping data for table `bnm_edit_menu_operator`
+--
+
+INSERT INTO `bnm_edit_menu_operator` (`menu_id`, `operator_id`) VALUES
+(7, 1);
 
 -- --------------------------------------------------------
 
@@ -218,6 +279,47 @@ CREATE TABLE `bnm_markaz_mokhaberat` (
   `masire_avale_faktor` varchar(150) COLLATE utf8_persian_ci DEFAULT NULL,
   `masire_dovome_faktor` varchar(150) COLLATE utf8_persian_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci ROW_FORMAT=DYNAMIC;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bnm_modir`
+--
+
+CREATE TABLE `bnm_modir` (
+  `id` int(11) NOT NULL,
+  `name_namayandegi` varchar(80) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `name` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `name_khanevadegi` varchar(100) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `code_meli` bigint(20) DEFAULT NULL,
+  `shomare_shenasname` varchar(30) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `name_pedar` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `tarikhe_tavalod` date DEFAULT NULL,
+  `madrake_tahsili` varchar(70) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `reshteye_tahsili` varchar(70) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `ostan_tavalod` varchar(70) COLLATE utf32_persian_ci DEFAULT NULL,
+  `shahr_tavalod` varchar(70) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `telephone_hamrah` bigint(20) DEFAULT NULL,
+  `telephone_mahale_sokonat` bigint(20) DEFAULT NULL,
+  `address` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `semat` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `name_karbari` varchar(100) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `ramze_obor` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_karte_meli` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_shenasname` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_madrake_tahsili` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `t_chehre` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
+  `namayandegi_id` int(11) DEFAULT NULL,
+  `level_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_persian_ci ROW_FORMAT=COMPACT;
+
+--
+-- Dumping data for table `bnm_modir`
+--
+
+INSERT INTO `bnm_modir` (`id`, `name_namayandegi`, `name`, `name_khanevadegi`, `code_meli`, `shomare_shenasname`, `name_pedar`, `tarikhe_tavalod`, `madrake_tahsili`, `reshteye_tahsili`, `ostan_tavalod`, `shahr_tavalod`, `telephone_hamrah`, `telephone_mahale_sokonat`, `address`, `email`, `semat`, `name_karbari`, `ramze_obor`, `t_karte_meli`, `t_shenasname`, `t_madrake_tahsili`, `t_chehre`, `namayandegi_id`, `level_id`) VALUES
+(1, NULL, 'امین', 'سلطانی', 123, '123', 'شی', '0000-00-00', 'lisanse', 'یش', 'شسی', 'شسی', 123123, 123131, 'شسیشیی شسی', 'sdasd@asdasd.com', NULL, 'amin123', 'amin123', '', '', '', '', 2, 5);
 
 -- --------------------------------------------------------
 
@@ -332,16 +434,17 @@ CREATE TABLE `bnm_operator` (
   `t_madrake_tahsili` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
   `t_chehre` varchar(255) CHARACTER SET utf8 COLLATE utf8_persian_ci DEFAULT NULL,
   `namayandegi_id` int(11) DEFAULT NULL,
-  `level_id` int(11) DEFAULT NULL
+  `level_id` int(11) DEFAULT NULL,
+  `modir_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_persian_ci ROW_FORMAT=COMPACT;
 
 --
 -- Dumping data for table `bnm_operator`
 --
 
-INSERT INTO `bnm_operator` (`id`, `name_namayandegi`, `name`, `name_khanevadegi`, `code_meli`, `shomare_shenasname`, `name_pedar`, `tarikhe_tavalod`, `madrake_tahsili`, `reshteye_tahsili`, `ostan_tavalod`, `shahr_tavalod`, `telephone_hamrah`, `telephone_mahale_sokonat`, `address`, `email`, `semat`, `name_karbari`, `ramze_obor`, `t_karte_meli`, `t_shenasname`, `t_madrake_tahsili`, `t_chehre`, `namayandegi_id`, `level_id`) VALUES
-(2, 'aaa', 'sdf', 'sdf', 123, '345435', 'sdfdsfg', '0000-00-00', 'sdf', 'sdf', 'sdf', 'sdfg', 1232131, 123213, 'asdasd', 'assdf@asd.com', 'dfgfdg', 'operator1', '1234', '', '', '', '', 2, 5),
-(3, 'asdsa', 'sadsa', 'sdsad', 123, '123', 'asd', '0000-00-00', 'sdf', 'sd', 'safd', 'asdf', 123, 345, 'sdf', 'asd', 'sdf', 'operator2', '1234', '', '', '', '', 3, NULL);
+INSERT INTO `bnm_operator` (`id`, `name_namayandegi`, `name`, `name_khanevadegi`, `code_meli`, `shomare_shenasname`, `name_pedar`, `tarikhe_tavalod`, `madrake_tahsili`, `reshteye_tahsili`, `ostan_tavalod`, `shahr_tavalod`, `telephone_hamrah`, `telephone_mahale_sokonat`, `address`, `email`, `semat`, `name_karbari`, `ramze_obor`, `t_karte_meli`, `t_shenasname`, `t_madrake_tahsili`, `t_chehre`, `namayandegi_id`, `level_id`, `modir_id`) VALUES
+(2, 'aaa', 'sdf', 'sdf', 123, '345435', 'sdfdsfg', '0000-00-00', 'sdf', 'sdf', 'sdf', 'sdfg', 1232131, 123213, 'asdasd', 'assdf@asd.com', 'dfgfdg', 'operator1', '1234', '', '', '', '', 2, 5, NULL),
+(3, 'asdsa', 'sadsa', 'sdsad', 123, '123', 'asd', '0000-00-00', 'sdf', 'sd', 'safd', 'asdf', 123, 345, 'sdf', 'asd', 'sdf', 'operator2', '1234', '', '', '', '', 3, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -746,25 +849,6 @@ INSERT INTO `bnm_terminal` (`id`, `ostan`, `shahr`, `markaze_mokhaberati`, `noe_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `bnm_users`
---
-
-CREATE TABLE `bnm_users` (
-  `id` int(11) NOT NULL,
-  `username` varchar(255) COLLATE utf8_persian_ci DEFAULT NULL,
-  `password` varchar(255) COLLATE utf8_persian_ci DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
-
---
--- Dumping data for table `bnm_users`
---
-
-INSERT INTO `bnm_users` (`id`, `username`, `password`) VALUES
-(1, 'admin', 'admin');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `bnm_wireless_ap`
 --
 
@@ -831,6 +915,18 @@ ALTER TABLE `bnm_access_menu_operator`
   ADD KEY `operator_id` (`operator_id`);
 
 --
+-- Indexes for table `bnm_add_menu_operator`
+--
+ALTER TABLE `bnm_add_menu_operator`
+  ADD PRIMARY KEY (`menu_id`,`operator_id`);
+
+--
+-- Indexes for table `bnm_administrators`
+--
+ALTER TABLE `bnm_administrators`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `bnm_branch`
 --
 ALTER TABLE `bnm_branch`
@@ -875,6 +971,15 @@ ALTER TABLE `bnm_markaz_mokhaberat`
   ADD PRIMARY KEY (`id`) USING BTREE;
 
 --
+-- Indexes for table `bnm_modir`
+--
+ALTER TABLE `bnm_modir`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `name_karbari` (`name_karbari`),
+  ADD UNIQUE KEY `unique-username` (`name_karbari`),
+  ADD KEY `namayandegi-modir` (`namayandegi_id`) USING BTREE;
+
+--
 -- Indexes for table `bnm_moshtarakine_haghighi`
 --
 ALTER TABLE `bnm_moshtarakine_haghighi`
@@ -892,8 +997,6 @@ ALTER TABLE `bnm_moshtarakine_hoghoghi`
 ALTER TABLE `bnm_operator`
   ADD PRIMARY KEY (`id`) USING BTREE,
   ADD UNIQUE KEY `name_karbari` (`name_karbari`),
-  ADD UNIQUE KEY `name_karbari_2` (`name_karbari`),
-  ADD UNIQUE KEY `name_karbari_3` (`name_karbari`),
   ADD KEY `namayandegi-operator` (`namayandegi_id`) USING BTREE;
 
 --
@@ -972,13 +1075,6 @@ ALTER TABLE `bnm_terminal`
   ADD PRIMARY KEY (`id`) USING BTREE;
 
 --
--- Indexes for table `bnm_users`
---
-ALTER TABLE `bnm_users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `username` (`username`);
-
---
 -- Indexes for table `bnm_wireless_ap`
 --
 ALTER TABLE `bnm_wireless_ap`
@@ -995,6 +1091,12 @@ ALTER TABLE `test`
 --
 
 --
+-- AUTO_INCREMENT for table `bnm_administrators`
+--
+ALTER TABLE `bnm_administrators`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT for table `bnm_branch`
 --
 ALTER TABLE `bnm_branch`
@@ -1004,7 +1106,7 @@ ALTER TABLE `bnm_branch`
 -- AUTO_INCREMENT for table `bnm_dashboard_menu`
 --
 ALTER TABLE `bnm_dashboard_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `bnm_dashboard_menu_category`
@@ -1017,6 +1119,12 @@ ALTER TABLE `bnm_dashboard_menu_category`
 --
 ALTER TABLE `bnm_host`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `bnm_modir`
+--
+ALTER TABLE `bnm_modir`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `bnm_operator`
@@ -1079,12 +1187,6 @@ ALTER TABLE `bnm_terminal`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `bnm_users`
---
-ALTER TABLE `bnm_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT for table `bnm_wireless_ap`
 --
 ALTER TABLE `bnm_wireless_ap`
@@ -1101,23 +1203,16 @@ ALTER TABLE `test`
 --
 
 --
--- Constraints for table `bnm_access_menu_operator`
---
-ALTER TABLE `bnm_access_menu_operator`
-  ADD CONSTRAINT `bnm_access_menu_operator_ibfk_1` FOREIGN KEY (`operator_id`) REFERENCES `bnm_operator` (`id`),
-  ADD CONSTRAINT `bnm_access_menu_operator_ibfk_2` FOREIGN KEY (`menu_id`) REFERENCES `bnm_dashboard_menu` (`id`);
-
---
 -- Constraints for table `bnm_dashboard_menu`
 --
 ALTER TABLE `bnm_dashboard_menu`
   ADD CONSTRAINT `bnm_dashboard_menu_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `bnm_dashboard_menu_category` (`id`);
 
 --
--- Constraints for table `bnm_delete_menu_operator`
+-- Constraints for table `bnm_modir`
 --
-ALTER TABLE `bnm_delete_menu_operator`
-  ADD CONSTRAINT `bnm_delete_menu_operator_ibfk_1` FOREIGN KEY (`operator_id`) REFERENCES `bnm_operator` (`id`);
+ALTER TABLE `bnm_modir`
+  ADD CONSTRAINT `bnm_modir_ibfk_1` FOREIGN KEY (`namayandegi_id`) REFERENCES `bnm_branch` (`id`);
 
 --
 -- Constraints for table `bnm_operator`

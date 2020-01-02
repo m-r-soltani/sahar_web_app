@@ -1,4 +1,4 @@
-<?php defined('__ROOT__') OR exit('No direct script access allowed'); ?>
+<?php defined('__ROOT__') OR exit('No direct script access allowed');?>
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
 <head>
@@ -374,10 +374,11 @@
 								</span>
                         </a>
                     </li>
-
+                    <?php
+                    if ($_SESSION['user_level']=='admin'){
+                    ?>
                     <li class="nav-item nav-item-submenu">
                         <a href="#" class="nav-link"><i class="icon-copy"></i> <span>عنوان ها</span></a>
-
                         <ul class="nav nav-group-sub" data-submenu-title="عنوان ها">
                             <!--<li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>-->
                             <li class="nav-item"><a href="<?php echo __ROOT__.'province';?>" class="nav-link">استان</a></li>
@@ -416,6 +417,7 @@
                             <li class="nav-item"><a href="<?php echo __ROOT__.'factors';?>" class="nav-link">فاکتورها</a></li>
                         </ul>
                     </li>
+                    <?php } ?>
                     <!-- /main -->
                 </ul>
             </div>

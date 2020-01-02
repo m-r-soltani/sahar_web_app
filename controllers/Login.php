@@ -8,8 +8,10 @@ class Login extends Controller
 
     public function index()
     {
-//		$this->view->allUsers = R::findAll( 'bnm_users' );
-//		$this->view->title = 'کاربران';
+        //$sql="SELECT * from bnm_administrators";
+        //$res=Db::fetchall_Query($sql);
+
+        $_SESSION['admin_users']=array('admin','superadmin','siamak_manochehry','super_admin','mainadmin','main_admin');
         $this->view->render('login/view',false);
     }
 }

@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('#delete_access').select2();
     $('#add_access').select2();
     Initialize('restrictions_menu', function (data) {
+        console.log(data);
         if (data) {
             var access_menu=$("#menu_access");
             var edit_access=$("#edit_access");
@@ -13,23 +14,21 @@ $(document).ready(function () {
             for (let i = 0;i<data.length; i++) {
                 //$("#access_menu").append("<option value='"+data[i]['en_name']+"'>"+data[i]['fa_name']+"</option>");
                 access_menu.append($('<option>', {
-                    value: data[i]['en_name'],
+                    value: data[i]['id'],
                     text: data[i]['fa_name']
                 }));
                 edit_access.append($('<option>', {
-                    value: data[i]['en_name'],
+                    value: data[i]['id'],
                     text: data[i]['fa_name']
                 }));
                 add_access.append($('<option>', {
-                    value: data[i]['en_name'],
+                    value: data[i]['id'],
                     text: data[i]['fa_name']
                 }));
                 delete_access.append($('<option>', {
-                    value: data[i]['en_name'],
+                    value: data[i]['id'],
                     text: data[i]['fa_name']
                 }));
-            // <option value=""></option>
-                //menu_checkboxes.append("<input type='text'>a</input>");
                 BootstrapMultiselect.init();
             }
             //$("#access_menu").append("<option value='asd'>asdasd</option>");
@@ -43,7 +42,7 @@ $(document).ready(function () {
         if (data) {
             for (let i = 0; i < data.length; i++) {
                 $('#user').append($('<option>', {
-                    value: data[i]['name_karbari'],
+                    value: data[i]['id'],
                     text: data[i]['name_karbari']
                 }));
             }
@@ -55,7 +54,6 @@ $(document).ready(function () {
             alert('درخواست ناموفق');
         }
     });
-
 });
 
 

@@ -3,7 +3,6 @@
 //$verified=Helper::passwordverify('amin',$hash);
 //var_dump(passwordverify('amin',$hash));
 
-
 ?>
 <!-- Main content -->
 <div class="content-wrapper">
@@ -62,7 +61,7 @@
                         <div class="form-group row">
                             <label class="col-form-label col-lg-2">کاربر</label>
                             <div class="col-lg-4">
-                                <select class="form-control form-control-lg custom_select" name="user" id="user">
+                                <select class="form-control form-control-lg custom_select" name="karbar" id="user">
 
                                 </select>
                             </div>
