@@ -204,12 +204,16 @@ iframe {
     font-family: Poppins-Bold;
     font-size: 24px;
     color: #333333;
-    line-height: 1.2;
     text-align: center;
-
+    background: #222;
     width: 100%;
+    height: 10px;
+    color: #fff;
     display: block;
-    padding-bottom: 54px;
+    text-align: center;
+    /* padding-bottom: 30px; */
+    padding: 10px 0 30px 5px;
+    margin: 0 0 3px 0;
 }
 
 
@@ -226,7 +230,7 @@ iframe {
     font-size: 15px;
     line-height: 1.5;
     color: #666666;
-
+    border: 2px solid #222;
     display: block;
     width: 100%;
     background: #e6e6e6;
@@ -234,7 +238,9 @@ iframe {
     border-radius: 2px;
     padding: 0 30px 0 68px;
 }
-
+.logo1{
+    width: 30%;
+}
 
 /*------------------------------------------------------------------
 [ Focus ]*/
@@ -324,7 +330,7 @@ iframe {
     width: 100%;
     height: 50px;
     border-radius: 2px;
-    background: #57b846;
+    background: #fe5504;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -342,6 +348,9 @@ iframe {
 
 .login100-form-btn:hover {
     background: #333333;
+}
+.loginformlable{
+
 }
 
 

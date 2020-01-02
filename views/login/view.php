@@ -46,18 +46,21 @@ if (isset($_SESSION["loginOk"])&& $_SESSION["loginOk"] == 'yes') {
     ?>
     <div class="limiter">
         <div class="container-login100">
+            <img class="row" src="<?php echo __ROOT__ . 'public/images/logo1.jpg' ?>" alt="IMG">
+            
             <div class="wrap-login100">
-                <div class="login100-pic js-tilt" data-tilt>
+
+                <div class="login100-pic js-tilt " data-tilt>
                     <img src="<?php echo __ROOT__ . '/public/images/login.png' ?>" alt="IMG">
                 </div>
 
                 <form class="login100-form validate-form" method="post" action="">
-					<span class="login100-form-title font-weight-bold">
-						فرم ورود
+					<span class="login100-form-title font-weight-bold loginformlable">
+						User Login
 					</span>
 
                     <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="text" name="user" placeholder="نام کاربری">
+                        <input class="input100" type="text" name="user" placeholder="username">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -65,7 +68,7 @@ if (isset($_SESSION["loginOk"])&& $_SESSION["loginOk"] == 'yes') {
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate = "Password is required">
-                        <input class="input100" type="password" name="pass" placeholder="رمز عبور">
+                        <input class="input100" type="password" name="pass" placeholder="password">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -74,7 +77,7 @@ if (isset($_SESSION["loginOk"])&& $_SESSION["loginOk"] == 'yes') {
 
                     <div class="container-login100-form-btn">
                         <button class="login100-form-btn font-weight-bold" name="send_login">
-                            ورود
+                            Login
                         </button>
                     </div>
 
