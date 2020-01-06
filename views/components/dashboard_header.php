@@ -1,8 +1,9 @@
-        <?php defined('__ROOT__') OR exit('No direct script access allowed');
-        print_r($_SESSION['dashboard_detail']);
+        <?php defined('__ROOT__') OR exit('No direct script access allowed');?>
+        <?php
+
         ?>
         <!DOCTYPE html>
-        <html lang="en" dir="rtl">
+        <html lang="fa" dir="rtl">
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,7 @@
             <title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
 
             <!-- Global stylesheets -->
-            <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/main.css' ?>"/>
+
             <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/icons/icomoon/styles.css' ?>"/>
             <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap.min.css' ?>"/>
             <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/bootstrap_limitless.min.css' ?>"/>
@@ -19,6 +20,7 @@
             <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/colors.min.css' ?>"/>
             <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/persian-datepicker.min.css' ?>"/>
             <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/dataTables.bootstrap4.min.css' ?>"/>
+            <link rel="stylesheet" href="<?php echo __ROOT__ . '/public/css/main.css' ?>"/>
             <!--<link rel="stylesheet" href="<?php /*echo __ROOT__ . '/public/css/bootstrap-select.min.css' */?>"/>-->
             <!-- /global stylesheets -->
         </head>
@@ -138,188 +140,6 @@
 			</span>
 
                 <ul class="navbar-nav">
-                    <!--<li class="nav-item dropdown">
-                <a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">
-                    <i class="icon-people"></i>
-                    <span class="d-md-none ml-2">Users</span>
-                </a>
-
-                <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-300">
-                    <div class="dropdown-content-header">
-                        <span class="font-weight-semibold">Users online</span>
-                        <a href="#" class="text-default"><i class="icon-search4 font-size-base"></i></a>
-                    </div>
-
-                    <div class="dropdown-content-body dropdown-scrollable">
-                        <ul class="media-list">
-                            <li class="media">
-                                <div class="mr-3">
-                                    <img src="<?php /*echo __ROOT__ . '/public/images/placeholders/placeholder.jpg' */?>" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <a href="#" class="media-title font-weight-semibold">Jordana Ansley</a>
-                                    <span class="d-block text-muted font-size-sm">Lead web developer</span>
-                                </div>
-                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-success"></span></div>
-                            </li>
-
-                            <li class="media">
-                                <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <a href="#" class="media-title font-weight-semibold">Will Brason</a>
-                                    <span class="d-block text-muted font-size-sm">Marketing manager</span>
-                                </div>
-                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-danger"></span></div>
-                            </li>
-
-                            <li class="media">
-                                <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <a href="#" class="media-title font-weight-semibold">Hanna Walden</a>
-                                    <span class="d-block text-muted font-size-sm">Project manager</span>
-                                </div>
-                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-success"></span></div>
-                            </li>
-
-                            <li class="media">
-                                <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <a href="#" class="media-title font-weight-semibold">Dori Laperriere</a>
-                                    <span class="d-block text-muted font-size-sm">Business developer</span>
-                                </div>
-                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-warning-300"></span></div>
-                            </li>
-
-                            <li class="media">
-                                <div class="mr-3">
-                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <a href="#" class="media-title font-weight-semibold">Vanessa Aurelius</a>
-                                    <span class="d-block text-muted font-size-sm">UX expert</span>
-                                </div>
-                                <div class="ml-3 align-self-center"><span class="badge badge-mark border-grey-400"></span></div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="dropdown-content-footer bg-light">
-                        <a href="#" class="text-grey mr-auto">All users</a>
-                        <a href="#" class="text-grey"><i class="icon-gear"></i></a>
-                    </div>
-                </div>
-            </li>-->
-
-                    <!--            <li class="nav-item dropdown">-->
-                    <!--                <a href="#" class="navbar-nav-link dropdown-toggle caret-0" data-toggle="dropdown">-->
-                    <!--                    <i class="icon-bubbles4"></i>-->
-                    <!--                    <span class="d-md-none ml-2">Messages</span>-->
-                    <!--                    <span class="badge badge-pill bg-warning-400 ml-auto ml-md-0">2</span>-->
-                    <!--                </a>-->
-                    <!---->
-                    <!--                <div class="dropdown-menu dropdown-menu-right dropdown-content wmin-md-350">-->
-                    <!--                    <div class="dropdown-content-header">-->
-                    <!--                        <span class="font-weight-semibold">Messages</span>-->
-                    <!--                        <a href="#" class="text-default"><i class="icon-compose"></i></a>-->
-                    <!--                    </div>-->
-                    <!---->
-                    <!--                    <div class="dropdown-content-body dropdown-scrollable">-->
-                    <!--                        <ul class="media-list">-->
-                    <!--                            <li class="media">-->
-                    <!--                                <div class="mr-3 position-relative">-->
-                    <!--                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">-->
-                    <!--                                </div>-->
-                    <!---->
-                    <!--                                <div class="media-body">-->
-                    <!--                                    <div class="media-title">-->
-                    <!--                                        <a href="#">-->
-                    <!--                                            <span class="font-weight-semibold">James Alexander</span>-->
-                    <!--                                            <span class="text-muted float-right font-size-sm">04:58</span>-->
-                    <!--                                        </a>-->
-                    <!--                                    </div>-->
-                    <!---->
-                    <!--                                    <span class="text-muted">who knows, maybe that would be the best thing for me...</span>-->
-                    <!--                                </div>-->
-                    <!--                            </li>-->
-                    <!---->
-                    <!--                            <li class="media">-->
-                    <!--                                <div class="mr-3 position-relative">-->
-                    <!--                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">-->
-                    <!--                                </div>-->
-                    <!---->
-                    <!--                                <div class="media-body">-->
-                    <!--                                    <div class="media-title">-->
-                    <!--                                        <a href="#">-->
-                    <!--                                            <span class="font-weight-semibold">Margo Baker</span>-->
-                    <!--                                            <span class="text-muted float-right font-size-sm">12:16</span>-->
-                    <!--                                        </a>-->
-                    <!--                                    </div>-->
-                    <!---->
-                    <!--                                    <span class="text-muted">That was something he was unable to do because...</span>-->
-                    <!--                                </div>-->
-                    <!--                            </li>-->
-                    <!---->
-                    <!--                            <li class="media">-->
-                    <!--                                <div class="mr-3">-->
-                    <!--                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">-->
-                    <!--                                </div>-->
-                    <!--                                <div class="media-body">-->
-                    <!--                                    <div class="media-title">-->
-                    <!--                                        <a href="#">-->
-                    <!--                                            <span class="font-weight-semibold">Jeremy Victorino</span>-->
-                    <!--                                            <span class="text-muted float-right font-size-sm">22:48</span>-->
-                    <!--                                        </a>-->
-                    <!--                                    </div>-->
-                    <!---->
-                    <!--                                    <span class="text-muted">But that would be extremely strained and suspicious...</span>-->
-                    <!--                                </div>-->
-                    <!--                            </li>-->
-                    <!---->
-                    <!--                            <li class="media">-->
-                    <!--                                <div class="mr-3">-->
-                    <!--                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">-->
-                    <!--                                </div>-->
-                    <!--                                <div class="media-body">-->
-                    <!--                                    <div class="media-title">-->
-                    <!--                                        <a href="#">-->
-                    <!--                                            <span class="font-weight-semibold">Beatrix Diaz</span>-->
-                    <!--                                            <span class="text-muted float-right font-size-sm">Tue</span>-->
-                    <!--                                        </a>-->
-                    <!--                                    </div>-->
-                    <!---->
-                    <!--                                    <span class="text-muted">What a strenuous career it is that I've chosen...</span>-->
-                    <!--                                </div>-->
-                    <!--                            </li>-->
-                    <!---->
-                    <!--                            <li class="media">-->
-                    <!--                                <div class="mr-3">-->
-                    <!--                                    <img src="global_assets/images/placeholders/placeholder.jpg" width="36" height="36" class="rounded-circle" alt="">-->
-                    <!--                                </div>-->
-                    <!--                                <div class="media-body">-->
-                    <!--                                    <div class="media-title">-->
-                    <!--                                        <a href="#">-->
-                    <!--                                            <span class="font-weight-semibold">Richard Vango</span>-->
-                    <!--                                            <span class="text-muted float-right font-size-sm">Mon</span>-->
-                    <!--                                        </a>-->
-                    <!--                                    </div>-->
-                    <!---->
-                    <!--                                    <span class="text-muted">Other travelling salesmen live a life of luxury...</span>-->
-                    <!--                                </div>-->
-                    <!--                            </li>-->
-                    <!--                        </ul>-->
-                    <!--                    </div>-->
-                    <!---->
-                    <!--                    <div class="dropdown-content-footer justify-content-center p-0">-->
-                    <!--                        <a href="#" class="bg-light text-grey w-100 py-2" data-popup="tooltip" title="Load more"><i class="icon-menu7 d-block top-0"></i></a>-->
-                    <!--                    </div>-->
-                    <!--                </div>-->
-                    <!--            </li>-->
 
                     <li class="nav-item dropdown dropdown-user">
                         <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
@@ -424,36 +244,28 @@
                                         <li class="nav-item"><a href="<?php echo __ROOT__.'factors';?>" class="nav-link">مشترکین - فاکتورها</a></li>
                                     </ul>
                                 </li>
-                            <?php }elseif($_SESSION['user_level']=='modir'){
-//                        $access_array=array();
-//                        $userid=$_SESSION['user_id'];
-//                        $sql1="SELECT * FROM bnm_access_menu_operator where operator_id=$userid";
-//						$res1=Db::fetchall_Query($sql1);
-//                        $access_array=$res1;
-//						for ($i=0;$i<count($access_array);$i++){
-//                            $menuid1=$access_array[$i]['menu_id'];
-//                            $sql2="SELECT * FROM bnm_dashboard_menu where id=$menuid1";
-//                            $res2=Db::fetchall_Query($sql2);
-//                            print_r($res2);
-//                            for ($j=0;$j<count($res2);$j++){
-//
-//                            }
-//                        }
-                                //print_r($_SESSION['dashboard_detail'][0]);
-                                $access_list=array();
-                                print_r($_SESSION['dashboard_detail'][1]);
-                                for($i=0;$i<count($_SESSION['dashboard_detail']);$i++){
-                                    for ($j=0;$j<count($_SESSION['dashboard_detail'][$i]);$j++) {
-                                        //echo $_SESSION['dashboard_detail'][$i][$j]['fa_name'];
-                                        $access_list[$i]['category_name']=$_SESSION['dashboard_detail'][$i][$j]['category_name'];
-                                        $access_list[$i]['category_id']=$_SESSION['dashboard_detail'][$i][$j]['category_id'];
-                                        $access_list[$i]['fa_name']=$_SESSION['dashboard_detail'][$i][$j]['fa_name'];
-                                        $access_list[$i]['en_name']=$_SESSION['dashboard_detail'][$i][$j]['en_name'];
+                            <?php
+                            }elseif($_SESSION['user_level']=='modir'){
+                                $catname=array();
+                                $side_menu='';
+                                for ($i=0;$i<count($_SESSION['dashboard_detail']);$i++) {
+                                    $key = key($_SESSION['dashboard_detail'][$i]);
+                                    if ($key) {
+                                        $sql = "SELECT id,name from bnm_dashboard_menu_category WHERE id ='$key'";
+                                        $catname = Db::fetchall_Query($sql);
+                                        $side_menu.='<li class="nav-item nav-item-submenu">';
+                                        $side_menu.='<a href="#" class="nav-link"><i class="icon-users4"></i> <span></span>'.$catname[0]['name'].'</a>';
+                                        $side_menu.="<ul class='nav nav-group-sub' data-submenu-title='".$catname[0]['name']."'>";
+                                        for ($j = 0; $j < count($_SESSION['dashboard_detail'][$i]); $j++) {
+                                            if ($_SESSION['dashboard_detail'][$i][$key][$j] && is_array($_SESSION['dashboard_detail'][$i][$key][$j])){
+                                                $side_menu.='<li class="nav-item"><a href="'.__ROOT__.$_SESSION['dashboard_detail'][$i][$key][$j]['en_name'].'" class="nav-link">'.$_SESSION['dashboard_detail'][$i][$key][$j]['fa_name'].'</a></li>';
+                                            }else{
+                                                $side_menu.='</ul> </li>';
+                                            }
+                                        }
                                     }
                                 }
-
-
-
+                                echo $side_menu;
                             } ?>
                             <!-- /main -->
                         </ul>

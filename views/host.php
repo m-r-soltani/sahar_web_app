@@ -11,7 +11,7 @@
                         <label class="col-form-label col-lg-2">نام سرویس دهنده</label>
                         <div class="col-lg-4">
                             <input type="hidden" id="id" class="form-control" name="id" value="empty">
-                            <input type="text" class="form-control" id="name_service_dahande" name="name_service_dahande" placeholder="مثال: " required>
+                            <input type="text" class="form-control" id="name_service_dahande" name="name_service_dahande" placeholder="" required>
                         </div>
                         <br><br>
                         <label class="col-form-label col-lg-2">شماره مجوز</label>
@@ -26,12 +26,12 @@
                         <br><br>
                         <label class="col-form-label col-lg-2">شماره تماس</label>
                         <div class="col-lg-4">
-                            <input type="text" class="form-control" name="shomare_tamas" id="shomare_tamas" placeholder="مثال: 09121234567" required>
+                            <input type="number" class="form-control" name="shomare_tamas" id="shomare_tamas" placeholder="مثال: 09121234567" required>
                         </div>
                         <br><br>
                         <label class="col-form-label col-lg-2">تلفن پشتیبانی</label>
                         <div class="col-lg-4">
-                            <input type="text" class="form-control" name="shomare_poshtibani" id="shomare_poshtibani" placeholder="مثال: 88123456" required>
+                            <input type="number" class="form-control" name="shomare_poshtibani" id="shomare_poshtibani" placeholder="مثال: 88123456" required>
                         </div>
                         <br><br>
                         <label class="col-form-label col-lg-2">وب سایت</label>

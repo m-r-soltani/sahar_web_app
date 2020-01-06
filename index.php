@@ -82,6 +82,7 @@ function Update_Generator($data,$table,$condition,$exceptions=false){
     }
     return $sql;
 }
+
 ////////getor($variable,replace element example:'abc')
 function getor($data,$param=""){
     if($data!="" || $data!= " "){
