@@ -245,26 +245,26 @@
                                     </ul>
                                 </li>
                             <?php
-                            }elseif($_SESSION['user_level']=='modir'){
-                                $catname=array();
+                            }elseif($_SESSION['user_level']=='modir' && is_array($_SESSION['dashboard_menu'])){
+                                $arr1=array();
                                 $side_menu='';
-                                for ($i=0;$i<count($_SESSION['dashboard_detail']);$i++) {
-                                    $key = key($_SESSION['dashboard_detail'][$i]);
-                                    if ($key) {
-                                        $sql = "SELECT id,name from bnm_dashboard_menu_category WHERE id ='$key'";
-                                        $catname = Db::fetchall_Query($sql);
-                                        $side_menu.='<li class="nav-item nav-item-submenu">';
-                                        $side_menu.='<a href="#" class="nav-link"><i class="icon-users4"></i> <span></span>'.$catname[0]['name'].'</a>';
-                                        $side_menu.="<ul class='nav nav-group-sub' data-submenu-title='".$catname[0]['name']."'>";
-                                        for ($j = 0; $j < count($_SESSION['dashboard_detail'][$i]); $j++) {
-                                            if ($_SESSION['dashboard_detail'][$i][$key][$j] && is_array($_SESSION['dashboard_detail'][$i][$key][$j])){
-                                                $side_menu.='<li class="nav-item"><a href="'.__ROOT__.$_SESSION['dashboard_detail'][$i][$key][$j]['en_name'].'" class="nav-link">'.$_SESSION['dashboard_detail'][$i][$key][$j]['fa_name'].'</a></li>';
-                                            }else{
-                                                $side_menu.='</ul> </li>';
-                                            }
+                                $cat_keys=array_keys($_SESSION['dashboard_menu_category']);
+                                for ($i = 0; $i < count($cat_keys); $i++) {
+                                    $c_id=$cat_keys[$i];
+                                    $sql="SELECT name FROM bnm_dashboard_menu_category WHERE id='$c_id'";
+                                    $res = Db::fetchall_Query($sql);
+                                    $c_name=$res[0]['name'];
+                                    echo '<li class="nav-item nav-item-submenu">';
+                                    echo '<a href="#" class="nav-link"><i class="icon-users4"></i> <span>'.$c_name.'</span></a>';
+                                    echo '<ul class="nav nav-group-sub" data-submenu-title="'.$c_name.'">';
+                                    for ($j=0;$j<count($_SESSION['dashboard_menu']);$j++){
+                                        if($_SESSION['dashboard_menu'][$j]['category_id']==$c_id){
+                                            echo '<li class="nav-item"><a href="'.__ROOT__.$_SESSION['dashboard_menu'][$j]['en_name'].'" class="nav-link">'.$_SESSION['dashboard_menu'][$j]['fa_name'].'</a></li>';
                                         }
                                     }
+                                    echo "</ul>"."</li>";
                                 }
+
                                 echo $side_menu;
                             } ?>
                             <!-- /main -->

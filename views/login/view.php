@@ -1,9 +1,39 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
+function compare_multi_Arrays($array1, $array2){
+    $result = array("more"=>array(),"less"=>array(),"diff"=>array());
+    foreach($array1 as $k => $v) {
+        if(is_array($v) && isset($array2[$k]) && is_array($array2[$k])){
+            $sub_result = compare_multi_Arrays($v, $array2[$k]);
+            //merge results
+            foreach(array_keys($sub_result) as $key){
+                if(!empty($sub_result[$key])){
+                    $result[$key] = array_merge_recursive($result[$key],array($k => $sub_result[$key]));
+                }
+            }
+        }else{
+            if(isset($array2[$k])){
+                if($v !== $array2[$k]){
+                    $result["diff"][$k] = array("from"=>$v,"to"=>$array2[$k]);
+                }
+            }else{
+                $result["more"][$k] = $v;
+            }
+        }
+    }
+    foreach($array2 as $k => $v) {
+        if(!isset($array1[$k])){
+            $result["less"][$k] = $v;
+        }
+    }
+    return $result;
+}
 if (isset($_POST["send_login"])) {
     //initializing SESSION on login
     $restrections= '';
     $isadmin='';
     $_SESSION['dashboard_detail'] = array();
+    $_SESSION['dashboard_menu_category'] = array();
+    $_SESSION['dashboard_menu'] = array();
     $name_karbari = $_POST["user"];
     $ramze_obor = $_POST["pass"];
     //check if user is admin
@@ -21,7 +51,7 @@ if (isset($_POST["send_login"])) {
         $_SESSION['name_karbari'] = $isadmin[0]['username'];
         $_SESSION["loginOk"] = 'yes';
         $_SESSION["user_level"] = 'admin';
-        $_SESSION['dashboard_detail']='%';
+        $_SESSION['dashboard_menu']='%';
         header("Location:" . __ROOT__ . 'dashboard');
     }//user is a modir
     elseif ($modirinfo){
@@ -34,17 +64,9 @@ if (isset($_POST["send_login"])) {
             for ($i = 0; $i < count($restrections); $i++) {
                 array_push($access_list, $restrections[$i]['menu_id']);
             }
-
-            /*for ($i = 0; $i < count($access_list); $i++) {
-                $menu_id = $access_list[$i];
-                $_SESSION['dashboard_detail'][$i] = Db::fetchall_Query("select en_name,fa_name,category_id from bnm_dashboard_menu WHERE id=$menu_id");
-            }*/
             $first_key = key($access_list);
             end($access_list);
             $lastkey = key($access_list);
-            $arr1=array();
-            $arr2=array();
-            $arr3=array();
             $sql="SELECT * FROM bnm_dashboard_menu WHERE id IN (";
             foreach ($access_list as $key => $value) {
                 if($key!=$lastkey){
@@ -53,50 +75,49 @@ if (isset($_POST["send_login"])) {
                     $sql .= "'".$value."')";
                 }
             }
-            $arr1 = Db::fetchall_Query($sql);
+            $_SESSION['dashboard_menu'] = Db::fetchall_Query($sql);
 
-            //assign category id=>array()
-            for ($i = 0; $i < count($arr1); $i++) {
-                $_SESSION['dashboard_detail'][$arr1[$i]['category_id']]=array();
-            }
-            foreach ($_SESSION['dashboard_detail'] as $key => $value){
-                print_r($_SESSION['dashboard_detail'][$key]);
-
+            for ($i = 0; $i < count($_SESSION['dashboard_menu']); $i++) {
+                $_SESSION['dashboard_menu_category'][$_SESSION['dashboard_menu'][$i]['category_id']]=array();
             }
 
-            //unset arrays with same category_id
-            for ($i=0;$i<count($_SESSION['dashboard_detail']);$i++){
-                $key=key($_SESSION['dashboard_detail'][$i]);
-                if ($_SESSION['dashboard_detail'][$i] && is_array($_SESSION['dashboard_detail'][$i])) {
-                    for ($j = 0; $j < count($_SESSION['dashboard_detail'][$i]); $j++) {
-                        if ($_SESSION['dashboard_detail'][$i][$key] == $_SESSION['dashboard_detail'][$j][$key]) {
-                            unset($_SESSION['dashboard_detail'][$j]);
-                            $_SESSION['dashboard_detail']=array_values($_SESSION['dashboard_detail']);
 
+            //$keys=array_keys($_SESSION['dashboard_detail']);
+            /*for ($i = 0; $i < count($keys); $i++) {
+                for ($j=0;$j<count($arr1);$j++){
+                    if ($keys[$i]==$arr1[$i]['category_id']){
+                        for ($k=0;$k<count($arr1);$k++){
+                            if (isset($_SESSION['dashboard_detail'][$keys[$i]][$k]) && is_array($_SESSION['dashboard_detail'][$keys[$i]][$k])){
+                            }else{
+                                $_SESSION['dashboard_detail'][$keys[$i]][$k]=$arr1[$j];
+                            }
                         }
                     }
                 }
-            }
-
-            //assign arr1 to dashboard_detail
-            for ($i=0;$i<count($arr1);$i++){
-                for ($j=0;$j<count($_SESSION['dashboard_detail']);$j++){
-                    $key=key($_SESSION['dashboard_detail'][$j]);
-                    if ($key==$arr1[$i]['category_id']) {
-                        for ($m = 0; $m < count($arr1); $m++) {
-                            $_SESSION['dashboard_detail'][$j][$key][$m] = $arr1[$m];
-                        }
-                    }
-                }
-            }
-
+            }*/
+            //print_r($_SESSION['dashboard_detail']);
+//            die();
+//            for ($i = 0; $i < count($_SESSION['dashboard_detail']); $i++) {
+//                for ($j=0;$j<count($_SESSION['dashboard_detail'][$keys[$i]]);$j++) {
+//
+//                    print_r($_SESSION['dashboard_detail'][$keys[$i]][$j]);
+//                    echo "<br>";
+//                }
+//            }
+//            die();
         } else {
-            $_SESSION['dashboard_detail'] = 'no_access';
+            $_SESSION['dashboard_menu'] = false;
         }
-        if ($modirinfo) {
+        if ($_SESSION['dashboard_menu']) {
             $_SESSION['user_id'] = $modirinfo[0]['id'];
             $_SESSION['name_karbari'] = $modirinfo[0]['username'];
             $_SESSION["loginOk"] = 'yes';
+            header("Location:" . __ROOT__ . 'dashboard');
+        }else{
+            $_SESSION["loginOk"] = 'yes';
+            $_SESSION['dashboard_menu']=false;
+            $_SESSION['user_id'] = $modirinfo[0]['id'];
+            $_SESSION['name_karbari'] = $modirinfo[0]['username'];
             header("Location:" . __ROOT__ . 'dashboard');
         }
     }//user is an operator
