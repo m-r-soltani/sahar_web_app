@@ -243,6 +243,13 @@ class Bootstrap
         }
         /*========real_subscribers========*/
         if (isset($_POST['send_real_subscribers'])) {
+            if (isset($_POST['tarikhe_tavalod'])) {
+                $date_arr=explode("/",$_POST['tarikhe_tavalod']);
+                $year=(int) Helper::convert_numbers($date_arr[0],false);
+                $month=(int) Helper::convert_numbers($date_arr[1],false);
+                $day=(int) Helper::convert_numbers($date_arr[2],false);
+                $_POST['tarikhe_tavalod']=Helper::jalali_to_gregorian($year,$month,$day,'/');
+            }
             if ($_POST['id'] == "empty") {
                 $sql = Insert_Generator($_POST, 'bnm_subscribers');
                 Db::justexecute($sql);
@@ -839,7 +846,17 @@ class Bootstrap
                     // default action
                     //checking user login
                     //$_SESSION['access_list']
-                    if (in_array($real_controllerName, $restrections)) {
+                    $access_flag=false;
+                    if ($_SESSION['user_level']!='admin') {
+                        for ($i = 0; $i < count($_SESSION['dashboard_menu']); $i++) {
+                            if ($_SESSION['dashboard_menu'][$i]['en_name'] == $real_controllerName) {
+                                $access_flag = true;
+                            }
+                        }
+                    }else{
+                        $access_flag=true;
+                    }
+                    if ($access_flag) {
                         if (isset($_SESSION['loginOk']) && $_SESSION['loginOk'] == 'yes') {
                             $controller->index();
                         } else {

@@ -1,32 +1,5 @@
 <?php defined('__ROOT__') OR exit('No direct script access allowed');
-function compare_multi_Arrays($array1, $array2){
-    $result = array("more"=>array(),"less"=>array(),"diff"=>array());
-    foreach($array1 as $k => $v) {
-        if(is_array($v) && isset($array2[$k]) && is_array($array2[$k])){
-            $sub_result = compare_multi_Arrays($v, $array2[$k]);
-            //merge results
-            foreach(array_keys($sub_result) as $key){
-                if(!empty($sub_result[$key])){
-                    $result[$key] = array_merge_recursive($result[$key],array($k => $sub_result[$key]));
-                }
-            }
-        }else{
-            if(isset($array2[$k])){
-                if($v !== $array2[$k]){
-                    $result["diff"][$k] = array("from"=>$v,"to"=>$array2[$k]);
-                }
-            }else{
-                $result["more"][$k] = $v;
-            }
-        }
-    }
-    foreach($array2 as $k => $v) {
-        if(!isset($array1[$k])){
-            $result["less"][$k] = $v;
-        }
-    }
-    return $result;
-}
+
 if (isset($_POST["send_login"])) {
     //initializing SESSION on login
     $restrections= '';
