@@ -89,7 +89,7 @@ $(document).ready(function () {
             title:'نوع قرارداد'
         }
     ];
-    DataTable('#view_table','/sahar/helpers/pre_number.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/pre_number.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

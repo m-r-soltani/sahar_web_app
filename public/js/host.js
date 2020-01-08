@@ -15,7 +15,7 @@ $(document).ready(function () {
             title:'تلفن پشتیبانی'
         }
     ];
-    DataTable('#view_table','/sahar/helpers/host.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/host.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

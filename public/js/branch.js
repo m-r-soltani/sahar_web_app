@@ -71,7 +71,7 @@ $(document).ready(function () {
         },
 
     ];
-    DataTable('#view_table','/sahar/helpers/branch.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/branch.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

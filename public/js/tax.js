@@ -37,7 +37,7 @@ $(".form-group").append("<input type='hidden' id='id' class='form-control' name=
             title: 'درصد عوارض ارزش افزوده',
         }
     ];
-    DataTable('#view_table', '/sahar/helpers/tax.php', 'POST', cols, function (table) {
+    DataTable('#view_table', '/helpers/tax.php', 'POST', cols, function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

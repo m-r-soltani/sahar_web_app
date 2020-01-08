@@ -29,7 +29,7 @@ $(document).ready(function () {
             title:'نام استان',
         }
     ];
-    DataTable('#view_table','/sahar/helpers/province.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/province.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

@@ -40,7 +40,7 @@ $(document).ready(function () {
             title: 'کد ملی'
         }
     ];
-    DataTable('#view_table', '/sahar/helpers/factors.php', 'POST', init_datatable_cols, function (table) {
+    DataTable('#view_table', '/helpers/factors.php', 'POST', init_datatable_cols, function (table) {
         /*===================++  select table row ++=========================*/
         $('#view_table tbody').on('click', 'tr', function () {
             if ($(this).hasClass('selected')) {

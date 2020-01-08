@@ -94,7 +94,7 @@ $(document).ready(function () {
             title:'user ppoe server'
         }
     ];
-    DataTable('#view_table','/sahar/helpers/terminal.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/terminal.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

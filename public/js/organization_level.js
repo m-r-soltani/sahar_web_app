@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 
     ];
-    DataTable('#view_table','/sahar/helpers/organization_level.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/organization_level.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

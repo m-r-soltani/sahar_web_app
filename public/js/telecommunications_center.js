@@ -80,7 +80,7 @@ $(document).ready(function () {
             title:'نوع قرارداد'
         }
     ];
-    DataTable('#view_table','/sahar/helpers/telecommunications_center.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/telecommunications_center.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

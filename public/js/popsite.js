@@ -77,7 +77,7 @@ $(document).ready(function () {
             title:'نام پشتیبان'
         },
     ];
-    DataTable('#view_table','/sahar/helpers/popsite.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/popsite.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
 
         /*===================++  select table row ++=========================*/

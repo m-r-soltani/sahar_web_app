@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 
     ];
-    DataTable('#view_table','/sahar/helpers/operator.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/operator.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

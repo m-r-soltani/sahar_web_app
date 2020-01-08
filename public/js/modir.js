@@ -57,7 +57,7 @@ $(document).ready(function () {
             title:'نام کاربری'
         }
     ];
-    DataTable('#view_table','/sahar/helpers/modir.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/modir.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

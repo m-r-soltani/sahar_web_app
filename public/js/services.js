@@ -27,7 +27,7 @@ $(document).ready(function () {
             title:'تاریخ پایان نمایش'
         }
     ];
-    DataTable('#view_table_adsl','/sahar/helpers/services_adsl.php','POST',cols_adsl,function (table) {
+    DataTable('#view_table_adsl','/helpers/services_adsl.php','POST',cols_adsl,function (table) {
         $('#view_table_adsl tbody').on( 'click', 'tr', function () {
             if ( $(this).hasClass('selected') ) {
                 $(this).removeClass('selected');
@@ -113,7 +113,7 @@ $(document).ready(function () {
             title:'تاریخ پایان نمایش'
         }
     ];
-    DataTable('#view_table_wireless','/sahar/helpers/services_wireless.php','POST',cols_wireless,function (table) {
+    DataTable('#view_table_wireless','/helpers/services_wireless.php','POST',cols_wireless,function (table) {
         services_tabs.on('shown.bs.tab', function(e){
             var link = $(e.target).attr("href");
             if(link==='#bottom-justified-divided-tab2'){
@@ -204,7 +204,7 @@ $(document).ready(function () {
             title:'تاریخ پایان نمایش'
         }
     ];
-    DataTable('#view_table_tdlte','/sahar/helpers/services_tdlte.php','POST',cols_tdlte,function (table) {
+    DataTable('#view_table_tdlte','/helpers/services_tdlte.php','POST',cols_tdlte,function (table) {
         services_tabs.on('shown.bs.tab', function(e){
             var link = $(e.target).attr("href");
             if(link==='#bottom-justified-divided-tab3'){
@@ -295,7 +295,7 @@ $(document).ready(function () {
             title:'تاریخ پایان نمایش'
         }
     ];
-    DataTable('#view_table_voip','/sahar/helpers/services_voip.php','POST',cols_voip,function (table) {
+    DataTable('#view_table_voip','/helpers/services_voip.php','POST',cols_voip,function (table) {
         services_tabs.on('shown.bs.tab', function(e){
             var link = $(e.target).attr("href");
             if(link==='#bottom-justified-divided-tab4'){

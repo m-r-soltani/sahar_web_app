@@ -21,7 +21,7 @@ $(document).ready(function () {
             title:'شناسه ملی'
         }
     ];
-    DataTable('#view_table','/sahar/helpers/legal_subscribers.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/legal_subscribers.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

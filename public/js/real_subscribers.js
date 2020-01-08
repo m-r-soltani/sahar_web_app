@@ -20,7 +20,7 @@ $(document).ready(function () {
             title:'تلفن پشتیبانی'
         }
     ];
-    DataTable('#view_table','/sahar/helpers/real_subscribers.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/real_subscribers.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/
