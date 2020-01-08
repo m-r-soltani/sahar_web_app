@@ -5,7 +5,6 @@ $(document).ready(function () {
     $('#delete_access').select2();
     $('#add_access').select2();
     Initialize('restrictions_menu', function (data) {
-        console.log(data);
         if (data) {
             var access_menu=$("#menu_access");
             var edit_access=$("#edit_access");

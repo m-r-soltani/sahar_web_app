@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 06, 2020 at 10:17 PM
+-- Generation Time: Jan 08, 2020 at 09:12 AM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -753,7 +753,8 @@ CREATE TABLE `bnm_subscribers` (
 INSERT INTO `bnm_subscribers` (`id`, `noe_moshtarak`, `name`, `f_name`, `name_pedar`, `meliat`, `tabeiat`, `noe_shenase_hoviati`, `shenase_hoviati`, `shomare_shenasname`, `tarikhe_tavalod`, `ostane_tavalod`, `shahre_tavalod`, `telephone`, `telephone_hamrah`, `email`, `fax`, `website`, `code_posti`, `address`, `shoghl`, `reshteye_tehsili`, `akharin_madrake_tahsili`, `nahve_ashnai_campain`, `gorohe_moshtarak`, `moaref`, `tozihat`, `r_t_karte_meli`, `r_t_ghabze_telephone`, `r_t_ejare_malekiat`, `r_t_gharardad`, `r_t_sayer`, `jensiat`, `name_en`, `name_sherkat`, `shomare_sabt`, `tarikhe_sabt`, `name_modir_amel`, `fname_modir_amel`, `name_en_modir_amel`, `meliat_modir_amel`, `tabeiat_modir_amel`, `ostan`, `shahr`, `shomare_dakheli`, `code_eghtesadi`, `shenase_meli`, `tarikhe_tavalode_modir_amel`, `name_pedare_modir_amel`, `reshte_tahsili_modir_amel`, `madrake_daneshgahi_modir_amel`, `reshteye_faaliat`, `nahve_moarefi`, `l_t_agahie_tasis`, `l_t_akharin_taghirat`, `l_t_saheb_kartemeli_emzaye_aval`, `l_t_saheb_kartemeli_emzaye_dovom`, `l_t_kartemeli_namayande`, `l_t_moarefiname_namayande`, `l_t_ghabze_telephone`, `l_t_gharardad`, `l_t_ejarename_malekiat`, `l_t_sayer`) VALUES
 (2, 'legal', NULL, NULL, NULL, NULL, NULL, 'code_melo', NULL, 0, NULL, NULL, NULL, 0, 0, 'h', 0, 'h', 0, 'kj', NULL, NULL, NULL, '1', '1', 'hk', 'h', NULL, NULL, NULL, NULL, NULL, 'man', '', 'aaa', 'aaaa', '0000-00-00', 'aaa', 'jkh', 'u', 'gkj', 'h', 'jkh', 'kh', 0, 'hj', 0, '0000-00-00', 'jh', 'kh', 'diplom', '', '1', '', '', '', '', '', '', '', '', '', ''),
 (3, 'real', 'ads', 'h', 'h', 'kh', 'kjhk', 'opt1', 'kjhk', 123, '0000-00-00', 'jh', 'jkh', 0, 0, 'jkh', 0, 'jk', 0, 'hjk', 'h', 'kh', 'lisanse', '1', '1', 'sdf', '', '', '', '', '', '', 'zan', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(4, 'real', 'ads', 'h', 'h', 'kh', 'kjhk', 'opt1', 'h', 0, '0000-00-00', 'jh', 'jkh', 0, 0, 'jkh', 0, 'jk', 0, 'hjk', 'h', 'kh', 'diplom', '1', '1', '', '', '', '', '', '', '', 'mard', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(4, 'real', 'ads', 'h', 'h', 'kh', 'kjhk', 'opt1', 'h', 0, '0000-00-00', 'jh', 'jkh', 0, 0, 'jkh', 0, 'jk', 0, 'hjk', 'h', 'kh', 'diplom', '1', '1', '', '', '', '', '', '', '', 'mard', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 'real', '', '', '', '', '', 'opt1', '', 0, '2020-01-07', '', '', 0, 0, '', 0, '', 0, '', '', '', 'diplom', '1', '1', '', '', '', '', '', '', '', 'mard', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1171,7 +1172,7 @@ ALTER TABLE `bnm_shahr`
 -- AUTO_INCREMENT for table `bnm_subscribers`
 --
 ALTER TABLE `bnm_subscribers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `bnm_tax`
@@ -1201,7 +1202,7 @@ ALTER TABLE `bnm_wireless_ap`
 -- AUTO_INCREMENT for table `test`
 --
 ALTER TABLE `test`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20000;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables

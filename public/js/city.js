@@ -39,8 +39,16 @@ $(document).ready(function () {
     let origin=window.location.origin;
     //http://localhost:8000
     let pathname=window.location.pathname;
+    pathname=pathname.split('/');
+    var dt_url='';
+    if (pathname[0]!=""){
+        dt_url=pathname[0];
+    }else{
+        dt_url=pathname[1];
+    }
+    //console.log(window.location.origin+'/'+dt_url+'/helpers/city.php');
     //sahar/city
-    DataTable('#view_table','/sahar/helpers/city.php','POST',cols,function (table) {
+    DataTable('#view_table','/helpers/city.php','POST',cols,function (table) {
         /*===================++  hide first column ++=========================*/
         //table.column(0).visible(false);
         /*===================++  select table row ++=========================*/

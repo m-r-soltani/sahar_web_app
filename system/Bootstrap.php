@@ -380,20 +380,28 @@ class Bootstrap
             switch ($page) {
                 case 'restrictions_menu':
                     if($_SESSION['user_level']=='admin') {
-                        $sql = "select * from bnm_dashboard_menu WHERE category_id <> '1'";
+                        $sql = "select * from bnm_dashboard_menu";
                         $result = Db::fetchall_Query($sql);
                         $rows = json_encode($result);
                         die($rows);
                     }else{
-                        $rows = json_encode($_SESSION['dashboard_detail']);
+                        $rows = json_encode($_SESSION['dashboard_menu']);
                         die($rows);
                     }
                     break;
                 case 'restrictions_users':
-                    $sql = "select id,name_karbari from bnm_modir";
-                    $result = Db::fetchall_Query($sql);
-                    $rows = json_encode($result);
-                    die($rows);
+                    if($_SESSION['user_level']=='admin') {
+                        $sql = "select id,name_karbari from bnm_modir";
+                        $result = Db::fetchall_Query($sql);
+                        $rows = json_encode($result);
+                        die($rows);
+                    }else{
+                        $modirid=$_SESSION['user_id'];
+                        $sql = "select id,name_karbari from bnm_operator WHERE modir_id='$modirid'";
+                        $result = Db::fetchall_Query($sql);
+                        $rows = json_encode($result);
+                        die($rows);
+                    }
                     break;
 
             }
