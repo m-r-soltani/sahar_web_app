@@ -4,6 +4,7 @@ class Error404 extends Controller
 {
 	public function index()
 	{
-		$this->view->render('error/index', FALSE);
+        $this->view->pagename='error';
+        $this->view->render('error/index', FALSE);
 	}
 }

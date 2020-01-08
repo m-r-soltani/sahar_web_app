@@ -10,6 +10,7 @@ class Factors extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
+        $this->view->pagename='factors';
         $this->view->render('factors','dashboard_template','/public/js/factors.js',false);
     }
 }

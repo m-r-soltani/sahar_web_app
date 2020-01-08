@@ -11,6 +11,7 @@ class Province extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
+        $this->view->pagename='province';
         $this->view->render('province','dashboard_template','/public/js/province.js',false);
 
     }

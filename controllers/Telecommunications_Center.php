@@ -11,6 +11,7 @@ class Telecommunications_Center extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
+        $this->view->pagename='telecommunications_center';
         $this->view->render('telecommunications_center','dashboard_template','/public/js/telecommunications_center.js',false);
 
     }

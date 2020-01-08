@@ -11,6 +11,7 @@ class Modir extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
+        $this->view->pagename='modir';
         $this->view->render('modir','dashboard_template','/public/js/modir.js',false);
     }
 }

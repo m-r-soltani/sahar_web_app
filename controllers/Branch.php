@@ -14,6 +14,7 @@ class Branch extends Controller
         $this->view->home='داشبورد';
         $this->view->page='نمایندگی';
         $this->view->page_url='branch';
+        $this->view->pagename='branch';
         $this->view->render('branch','dashboard_template','/public/js/branch.js',false);
 
     }

@@ -11,6 +11,7 @@ class Host extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
+        $this->view->pagename='host';
         $this->view->render('host','dashboard_template','/public/js/host.js',false);
 
     }

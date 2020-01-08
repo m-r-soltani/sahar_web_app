@@ -11,6 +11,7 @@ class Legal_Subscribers extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
+        $this->view->pagename='legal_subscribers';
         $this->view->render('legal_subscribers','dashboard_template','/public/js/legal_subscribers.js',false);
 
     }

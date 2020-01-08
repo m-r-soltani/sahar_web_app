@@ -10,7 +10,7 @@ class Login extends Controller
     {
         //$sql="SELECT * from bnm_administrators";
         //$res=Db::fetchall_Query($sql);
-
+        $this->view->pagename='login';
         $_SESSION['admin_users']=array('admin','superadmin','siamak_manochehry','super_admin','mainadmin','main_admin');
         $this->view->render('login/view',false);
     }

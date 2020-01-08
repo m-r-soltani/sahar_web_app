@@ -11,6 +11,7 @@ class Terminal extends Controller
     {
 //		$this->view->allUsers = R::findAll( 'bnm_users' );
 //		$this->view->title = 'کاربران';
+        $this->view->pagename='terminal';
         $this->view->render('terminal','dashboard_template','/public/js/terminal.js',false);
 
     }
